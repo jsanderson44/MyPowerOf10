@@ -16,7 +16,7 @@ final class HTMLParserTests: XCTestCase {
         let data = FileLoader.dataFrom(filename: "AthleteSearchListMultiAthletes", fileType: "html")
         do {
             let parser = try HTMLParser(htmlData: data)
-            let athletes = try parser.athletes()
+            let athletes = parser.athletesFromSearchResults()
             print(athletes)
         } catch {
             XCTFail(#function)
