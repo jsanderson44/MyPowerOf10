@@ -10,6 +10,11 @@
 		6A66FDD0FD1E7024421163FE /* Pods_MyPowerOf10Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */; };
 		8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
 		916F3FE01FAF464300D36B2D /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F3FDF1FAF464300D36B2D /* HTMLParser.swift */; };
+		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
+		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
+		91A4FCAD1FAF499800D8493D /* HTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* HTMLParserTests.swift */; };
+		91A4FCAF1FAF598700D8493D /* HTMLParser+AthleteSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAE1FAF598700D8493D /* HTMLParser+AthleteSearch.swift */; };
+		91A4FCB11FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */; };
 		91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D402581FAF42E70032ED26 /* AppDelegate.swift */; };
 		91D4025B1FAF42E70032ED26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4025A1FAF42E70032ED26 /* ViewController.swift */; };
 		91D4025E1FAF42E70032ED26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D4025C1FAF42E70032ED26 /* Main.storyboard */; };
@@ -33,6 +38,11 @@
 		2FE05CB57D473338CB361414 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
 		5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		916F3FDF1FAF464300D36B2D /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
+		91A4FCAC1FAF499800D8493D /* HTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParserTests.swift; sourceTree = "<group>"; };
+		91A4FCAE1FAF598700D8493D /* HTMLParser+AthleteSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTMLParser+AthleteSearch.swift"; sourceTree = "<group>"; };
+		91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListMultiAthletes.html; sourceTree = "<group>"; };
 		91D402551FAF42E70032ED26 /* MyPowerOf10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPowerOf10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D402581FAF42E70032ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D4025A1FAF42E70032ED26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +91,28 @@
 			isa = PBXGroup;
 			children = (
 				916F3FDF1FAF464300D36B2D /* HTMLParser.swift */,
+				91A4FCAE1FAF598700D8493D /* HTMLParser+AthleteSearch.swift */,
 			);
 			path = "HTML Parser";
+			sourceTree = "<group>";
+		};
+		91A4FCA61FAF489800D8493D /* HTML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				91A4FCA91FAF491E00D8493D /* HTML Files */,
+				91A4FCA71FAF48F700D8493D /* FileLoader.swift */,
+				91A4FCAC1FAF499800D8493D /* HTMLParserTests.swift */,
+			);
+			path = "HTML Parser";
+			sourceTree = "<group>";
+		};
+		91A4FCA91FAF491E00D8493D /* HTML Files */ = {
+			isa = PBXGroup;
+			children = (
+				91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */,
+				91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */,
+			);
+			path = "HTML Files";
 			sourceTree = "<group>";
 		};
 		91D4024C1FAF42E70032ED26 = {
@@ -122,6 +152,7 @@
 		91D4026C1FAF42E70032ED26 /* MyPowerOf10Tests */ = {
 			isa = PBXGroup;
 			children = (
+				91A4FCA61FAF489800D8493D /* HTML Parser */,
 				91D4026D1FAF42E70032ED26 /* MyPowerOf10Tests.swift */,
 				91D4026F1FAF42E70032ED26 /* Info.plist */,
 			);
@@ -238,6 +269,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A4FCB11FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html in Resources */,
+				91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +388,7 @@
 				916F3FE01FAF464300D36B2D /* HTMLParser.swift in Sources */,
 				91D4025B1FAF42E70032ED26 /* ViewController.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
+				91A4FCAF1FAF598700D8493D /* HTMLParser+AthleteSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A4FCAD1FAF499800D8493D /* HTMLParserTests.swift in Sources */,
+				91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */,
 				91D4026E1FAF42E70032ED26 /* MyPowerOf10Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
