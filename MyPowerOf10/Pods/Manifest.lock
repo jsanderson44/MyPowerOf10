@@ -1,0 +1,15 @@
+PODS:
+  - Kanna (2.0.0)
+  - TABResourceLoader (7.0.0)
+
+DEPENDENCIES:
+  - Kanna (~> 2.0.0)
+  - TABResourceLoader (~> 7.0.0)
+
+SPEC CHECKSUMS:
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
+  TABResourceLoader: 2bb76d2446b438a9ea081bfef7299cf117bfe214
+
+PODFILE CHECKSUM: 33bc378c9497c723e915f9144903f9c9e066293c
+
+COCOAPODS: 1.3.1
