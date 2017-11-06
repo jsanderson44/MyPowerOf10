@@ -19,7 +19,7 @@ extension Gender {
     init(parsedValue: String) {
         switch parsedValue {
         case "M": self = .male
-        case "F": self = .female
+        case "W": self = .female
         default: self = .unknown
         }
     }
