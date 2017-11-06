@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A66FDD0FD1E7024421163FE /* Pods_MyPowerOf10Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */; };
 		8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
-		91499D7F1FAF8DEB0086134E /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D7E1FAF8DEB0086134E /* Athlete.swift */; };
+		91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D7E1FAF8DEB0086134E /* AthleteResult.swift */; };
 		91499D821FAF8E570086134E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D811FAF8E570086134E /* String+Additions.swift */; };
 		916F3FE01FAF464300D36B2D /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F3FDF1FAF464300D36B2D /* HTMLParser.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
@@ -39,7 +39,7 @@
 		2B9A26B7E92130898935AA16 /* Pods-MyPowerOf10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.debug.xcconfig"; sourceTree = "<group>"; };
 		2FE05CB57D473338CB361414 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
 		5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91499D7E1FAF8DEB0086134E /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		91499D7E1FAF8DEB0086134E /* AthleteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteResult.swift; sourceTree = "<group>"; };
 		91499D811FAF8E570086134E /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		916F3FDF1FAF464300D36B2D /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		91499D7D1FAF8DDB0086134E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				91499D7E1FAF8DEB0086134E /* Athlete.swift */,
+				91499D7E1FAF8DEB0086134E /* AthleteResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91499D7F1FAF8DEB0086134E /* Athlete.swift in Sources */,
+				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
 				916F3FE01FAF464300D36B2D /* HTMLParser.swift in Sources */,
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
 				91D4025B1FAF42E70032ED26 /* ViewController.swift in Sources */,

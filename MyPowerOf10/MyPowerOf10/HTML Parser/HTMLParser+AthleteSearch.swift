@@ -11,14 +11,13 @@ import Kanna
 
 extension HTMLParser {
     
-    func athletesFromSearchResults() -> [Athlete] {
-        var athletes: [Athlete] = document.css("#cphBody_dgAthletes tr").flatMap { (athlete) in
+    func athletesFromSearchResults() -> [AthleteResult] {
+        var athletes: [AthleteResult] = document.css("#cphBody_dgAthletes tr").flatMap { (athlete) in
             guard let profileHTML = athlete.css("a[href]").first?.toHTML,
                 var components = athlete.text?.components(separatedBy: .newlines) else { return nil }
             components.append(profileHTML)
-            return Athlete(components: components)
+            return AthleteResult(components: components)
         }
-        athletes.removeFirst()
         return athletes
     }
     

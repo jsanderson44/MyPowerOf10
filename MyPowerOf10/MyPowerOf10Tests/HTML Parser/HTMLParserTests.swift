@@ -12,12 +12,23 @@ import XCTest
 
 final class HTMLParserTests: XCTestCase {
     
-    func testGetAthlete() {
+    func test_searchMultipleAthletes() {
         let data = FileLoader.dataFrom(filename: "AthleteSearchListMultiAthletes", fileType: "html")
         do {
             let parser = try HTMLParser(htmlData: data)
             let athletes = parser.athletesFromSearchResults()
-            print(athletes)
+            XCTAssertEqual(athletes.count, 4)
+        } catch {
+            XCTFail(#function)
+        }
+    }
+    
+    func test_searchOneAthlete() {
+        let data = FileLoader.dataFrom(filename: "AthleteSearchListOneAthlete", fileType: "html")
+        do {
+            let parser = try HTMLParser(htmlData: data)
+            let athletes = parser.athletesFromSearchResults()
+            XCTAssertEqual(athletes.count, 1)
         } catch {
             XCTFail(#function)
         }

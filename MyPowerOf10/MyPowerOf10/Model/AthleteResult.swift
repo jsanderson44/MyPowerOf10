@@ -1,5 +1,5 @@
 //
-//  Athlete.swift
+//  AthleteResult.swift
 //  MyPowerOf10
 //
 //  Created by John Sanderson on 05/11/2017.
@@ -25,18 +25,18 @@ extension Gender {
     }
 }
 
-struct Athlete {
+struct AthleteResult {
     
     let firstName: String
     let surname: String
-    let ageGroup: String //TODO Create enum
+    let ageGroup: String //TODO Create enum?
     let gender: Gender
     let clubs: [String]
     let athleteID: String?
     
 }
 
-extension Athlete {
+extension AthleteResult {
     // TODO Safe array
     init(components: [String]) {
         firstName = components[1].cleaned
@@ -44,6 +44,6 @@ extension Athlete {
         ageGroup = components[3].cleaned
         gender = Gender(parsedValue: components[6].cleaned)
         clubs = components[7].cleaned.components(separatedBy: "/")
-        athleteID = components.last?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        athleteID = components.last?.digitsOnly
     }
 }
