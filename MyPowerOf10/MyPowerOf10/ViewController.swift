@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         let presenter = AthleteSearchPresenter()
-        presenter.performSearch(firstname: "John", surname: "Sanderson", club: "")
+        presenter.performSearch(firstname: "Ben", surname: "Jones", club: "")
     }
     
     override func didReceiveMemoryWarning() {

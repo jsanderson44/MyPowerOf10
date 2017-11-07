@@ -16,15 +16,9 @@ struct SubmitAthleteSearchResource: NetworkResourceType, DataResourceType {
     var url: URL
     var queryItems: [URLQueryItem]? {
         let queryItems = [
-//            URLQueryItem(name: "__EVENTTARGET.value", value: ""),
-//            URLQueryItem(name: "__EVENTARGUMENT.value", value: ""),
-//            URLQueryItem(name: "__VIEWSTATE.value", value: Config.viewState),
-//            URLQueryItem(name: "__VIEWSTATEGENERATOR.value", value: "5B00603F"),
-//            URLQueryItem(name: "__EVENTVALIDATION.value", value: Config.eventValidation),
             URLQueryItem(name: "surname", value: surname),
             URLQueryItem(name: "firstname", value: firstname),
-            URLQueryItem(name: "club", value: club),
-//            URLQueryItem(name: "ctl00$cphBody$btnLookup.value", value: "Lookup")
+            URLQueryItem(name: "club", value: club)
         ]
 
         return queryItems
