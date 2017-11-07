@@ -28,7 +28,9 @@ final class AthleteSearchPresenter {
     func performSearch(firstname: String, surname: String, club: String) {
         let resource = SubmitAthleteSearchResource(firstname: firstname, surname: surname, club: club)
         let service = SubmitAthleteSearchResourceService()
-        let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { [weak self] (_,  result) in
+        let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { [weak self] (service, result) in
+          print(service)
+          print(result)
             self?.handleAthleteSearchResult(result)
         }
         queue.addOperation(athleteSearchOperation)

@@ -11,7 +11,10 @@ import Foundation
 extension String {
     
     var cleaned: String {
-        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+        let stringToTrim = self.trimmingCharacters(in: .whitespacesAndNewlines)
+        let startTrimIndex = stringToTrim.index(stringToTrim.startIndex, offsetBy: 4)
+        let endTrimIndex = stringToTrim.index(stringToTrim.endIndex, offsetBy: -6)
+        return String(stringToTrim[startTrimIndex...endTrimIndex])
     }
     
     var digitsOnly: String {

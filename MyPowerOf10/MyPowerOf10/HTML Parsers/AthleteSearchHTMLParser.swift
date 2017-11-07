@@ -21,7 +21,7 @@ struct AthleteSearchHTMLParser {
     func athletesFromSearchResults() -> [AthleteResult] {
         let athletes: [AthleteResult] = document.css("#cphBody_dgAthletes tr").flatMap { (athlete) in
             guard let profileHTML = athlete.css("a[href]").first?.toHTML,
-                var components = athlete.text?.components(separatedBy: .newlines) else { return nil }
+                var components = athlete.innerHTML?.components(separatedBy: .newlines) else { return nil }
             components.append(profileHTML)
             return AthleteResult(components: components)
         }
