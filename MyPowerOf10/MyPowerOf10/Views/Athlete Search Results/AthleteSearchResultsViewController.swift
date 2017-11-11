@@ -22,6 +22,9 @@ final class AthleteSearchResultsViewController: UIViewController {
   // MARK: Private
   
   private let presenter: AthleteSearchResultsViewPresenter
+  private var athleteResults: [AthleteResult]?
+  
+  @IBOutlet private var tableView: UITableView!
   
   // MARK: - Initialiers -
   
@@ -52,6 +55,31 @@ final class AthleteSearchResultsViewController: UIViewController {
 extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterDelegate {
   
   func updateWithResults(results: [AthleteResult]) {
-    print(results)
+    athleteResults = results
+    tableView.reloadData()
   }
+}
+
+// MARK: - UITableViewDelegate + UITableViewDataSource
+
+extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    guard let results = athleteResults else { return 0 }
+    return results.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let athleteResults = athleteResults else {
+      return UITableViewCell()
+    }
+    let cell = UITableViewCell()
+    cell.textLabel?.text = athleteResults[indexPath.row].firstName + " " + athleteResults[indexPath.row].surname + ", " + athleteResults[indexPath.row].clubs.first!
+    return cell
+  }
+  
 }
