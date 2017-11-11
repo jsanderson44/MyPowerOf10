@@ -50,6 +50,27 @@ final class AthleteSearchViewController: UIViewController {
     athleteSurnameTextField.becomeFirstResponder()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    // TODO - Remove this?
+    [athleteSurnameTextField, athleteFirstNameTextField, athleteClubTextField].forEach { (textField) in
+      guard let textField = textField else { return }
+      textField.text = ""
+      updatePresenter(withValue: "", forTextField: textField)
+    }
+  }
+  
+  private func updatePresenter(withValue value: String, forTextField textField: UITextField) {
+    if textField == athleteSurnameTextField {
+      presenter.athleteSurnameDidChange(to: value)
+    } else if textField == athleteFirstNameTextField {
+      presenter.athleteFirstNameDidChange(to: value)
+    } else {
+      presenter.athleteClubDidChange(to: value)
+    }
+  }
+  
   // MARK: - Outlets
   
   @IBAction private func didTapSearch() {
@@ -92,15 +113,5 @@ extension AthleteSearchViewController: UITextFieldDelegate {
       return true
     }
     return false
-  }
-  
-  private func updatePresenter(withValue value: String, forTextField textField: UITextField) {
-    if textField == athleteSurnameTextField {
-      presenter.athleteSurnameDidChange(to: value)
-    } else if textField == athleteFirstNameTextField {
-      presenter.athleteFirstNameDidChange(to: value)
-    } else {
-      presenter.athleteClubDidChange(to: value)
-    }
   }
 }
