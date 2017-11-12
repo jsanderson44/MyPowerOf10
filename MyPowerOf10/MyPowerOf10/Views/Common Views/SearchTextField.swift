@@ -47,6 +47,7 @@ final class SearchTextField: UITextField {
   
   private func styleKeyboard() {
     autocorrectionType = .no
+    autocapitalizationType = .words
   }
   
   private func stylePlaceholderText(placeholder: String) {

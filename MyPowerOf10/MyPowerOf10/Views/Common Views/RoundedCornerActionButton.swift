@@ -50,7 +50,7 @@ class RoundedCornerActionButton: UIButton {
   
   // MARK: - Private functions
   private func style() {
-    layer.cornerRadius = 8.0
+    layer.cornerRadius = 8.0 // TODO default corner radius
     backgroundColor = .potRed
     styleTitleLabel(isLoading: false)
     layoutLoadingView()
