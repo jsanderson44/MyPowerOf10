@@ -10,7 +10,7 @@ import Foundation
 import TABResourceLoader
 
 protocol AthleteSearchViewPresenterDelegate: class {
-  func updateLoadingState()
+  func updateLoadingState(isLoading: Bool)
   func showError()
   func updateSearchButton(isEnabled: Bool)
   func didRecieveResults(athletes: [AthleteResult])
@@ -45,9 +45,11 @@ final class AthleteSearchViewPresenter {
   // MARK: - Internal
   
   func performSearch() {
+    delegate?.updateLoadingState(isLoading: true)
     let resource = SubmitAthleteSearchResource(firstname: athleteFirstName, surname: athleteSurname, club: athleteClub)
     let service = SubmitAthleteSearchResourceService()
     let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { (_, result) in
+      self.delegate?.updateLoadingState(isLoading: false)
       self.handleAthleteSearchResult(result)
     }
     queue.addOperation(athleteSearchOperation)

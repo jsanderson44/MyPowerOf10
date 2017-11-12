@@ -26,6 +26,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   private var accessoryView = ActionButtonInputAccessoryView.loadFromNib()
   
   @IBOutlet private var scrollView: UIScrollView!
+  @IBOutlet private var contentView: UIView!
   @IBOutlet private var athleteSurnameTextField: SearchTextField!
   @IBOutlet private var athleteFirstNameTextField: SearchTextField!
   @IBOutlet private var athleteClubTextField: SearchTextField!
@@ -107,8 +108,11 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
 
 extension AthleteSearchViewController: AthleteSearchViewPresenterDelegate {
   
-  func updateLoadingState() {
-    // Change loading state
+  func updateLoadingState(isLoading: Bool) {
+    accessoryView.isLoading = isLoading
+    UIView.animate(withDuration: 0.23) { //TODO Universal animation time
+      self.contentView.alpha = isLoading ? 0.3 : 1.0
+    }
   }
   
   func showError() {

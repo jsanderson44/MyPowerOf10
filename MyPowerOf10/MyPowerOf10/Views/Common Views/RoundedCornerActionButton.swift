@@ -10,6 +10,26 @@ import UIKit
 
 class RoundedCornerActionButton: UIButton {
   
+  // MARK: - Public properties
+  public var isLoading: Bool = false {
+    didSet {
+      styleTitleLabel(isLoading: isLoading)
+      if isLoading {
+        loadingSpinner.startAnimating()
+      } else {
+        loadingSpinner.stopAnimating()
+      }
+    }
+  }
+  
+  // MARK: - Private properties
+  
+  private lazy var loadingSpinner: UIActivityIndicatorView = {
+    let indicator = UIActivityIndicatorView()
+    indicator.translatesAutoresizingMaskIntoConstraints = false
+    return indicator
+  }()
+  
   // MARK: - Override properties
   public override var isEnabled: Bool {
     didSet {
@@ -32,12 +52,22 @@ class RoundedCornerActionButton: UIButton {
   private func style() {
     layer.cornerRadius = 8.0
     backgroundColor = .potRed
-    styleTitleLabel()
+    styleTitleLabel(isLoading: false)
+    layoutLoadingView()
   }
   
-  private func styleTitleLabel() {
+  private func styleTitleLabel(isLoading: Bool) {
     titleLabel?.font = .systemFont(ofSize: 24)
-    setTitleColor(.white, for: .normal)
-    setTitleColor(.white, for: .highlighted)
+    let titleColor: UIColor = isLoading ? .clear : .white
+    setTitleColor(titleColor, for: .normal)
+  }
+  
+  private func layoutLoadingView() {
+    addSubview(loadingSpinner)
+    loadingSpinner.hidesWhenStopped = true
+    NSLayoutConstraint.activate([
+      loadingSpinner.centerXAnchor.constraint(equalTo: centerXAnchor),
+      loadingSpinner.centerYAnchor.constraint(equalTo: centerYAnchor)
+      ])
   }
 }

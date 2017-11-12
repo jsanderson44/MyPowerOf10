@@ -14,6 +14,13 @@ protocol ActionButtonInputAccessoryViewDelegate: class {
 
 final class ActionButtonInputAccessoryView: UIInputView {
   
+  // MARK: - Public properties
+  public var isLoading: Bool = false {
+    didSet {
+      actionButton.isLoading = isLoading
+    }
+  }
+  
   // MARK: - Private properties
   
   private weak var delegate: ActionButtonInputAccessoryViewDelegate?
@@ -24,6 +31,8 @@ final class ActionButtonInputAccessoryView: UIInputView {
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    
+    isLoading = false
   }
 
   // MARK: - Actions

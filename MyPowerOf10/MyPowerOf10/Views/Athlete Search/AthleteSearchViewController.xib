@@ -14,6 +14,7 @@
                 <outlet property="athleteClubTextField" destination="OcY-zs-IGV" id="cVX-WR-bNe"/>
                 <outlet property="athleteFirstNameTextField" destination="bJj-Nl-f3p" id="vxa-3H-GkC"/>
                 <outlet property="athleteSurnameTextField" destination="DTJ-2a-8GS" id="Noq-v2-3Vu"/>
+                <outlet property="contentView" destination="0KT-R3-wiR" id="Xbv-NP-QmB"/>
                 <outlet property="scrollView" destination="5wR-Cl-rYj" id="vLW-Ao-67M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
