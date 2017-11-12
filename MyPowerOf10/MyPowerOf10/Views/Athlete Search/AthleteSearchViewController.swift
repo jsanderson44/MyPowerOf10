@@ -93,6 +93,14 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     scrollView.contentInset.bottom = height
   }
   
+  // MARK: Scroll view adjusting
+  
+  private func animateScrollView(by offset: CGFloat) {
+    UIView.animate(withDuration: 0.23) {
+      self.scrollView.contentOffset.y = offset
+    }
+  }
+  
 }
 
 // MARK: - AthleteSearchViewPresenterDelegate
@@ -129,6 +137,18 @@ extension AthleteSearchViewController: UITextFieldDelegate {
       return true
     }
     return false
+  }
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    textField.resignFirstResponder()
+    textField.layoutIfNeeded()
+  }
+  
+  func textFieldDidBeginEditing(_ textField: UITextField) {
+    let offset = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.bounds.size.height
+    guard textField == athleteFirstNameTextField,
+      offset > 0 else { return }
+    animateScrollView(by: offset)
   }
 }
 

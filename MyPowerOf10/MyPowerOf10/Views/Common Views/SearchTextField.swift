@@ -29,7 +29,7 @@ final class SearchTextField: UITextField {
   }
   
   private func styleText() {
-    font = .systemFont(ofSize: 24)
+    font = .systemFont(ofSize: 18)
     textColor = .potDarkGray
     tintColor = .potLightGray
   }
@@ -49,7 +49,7 @@ final class SearchTextField: UITextField {
   }
   
   private func stylePlaceholderText(placeholder: String) {
-    let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24)]
+    let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
     let placeholderString = NSAttributedString(string: placeholder, attributes: attributes)
     attributedPlaceholder = placeholderString
   }
