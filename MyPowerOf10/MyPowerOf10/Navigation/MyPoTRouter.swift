@@ -18,6 +18,8 @@ final class MyPoTRouter: UINavigationController {
   
   private func style() {
     navigationBar.prefersLargeTitles = true
+    navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
+    navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
   }
   
   private func populateViewControllers() {

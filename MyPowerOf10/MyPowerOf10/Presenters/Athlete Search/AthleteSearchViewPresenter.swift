@@ -51,15 +51,15 @@ final class AthleteSearchViewPresenter {
   }
   
   func athleteSurnameDidChange(to value: String) {
-    athleteSurname = value
+    athleteSurname = value.trimmingCharacters(in: .whitespaces)
   }
   
   func athleteFirstNameDidChange(to value: String) {
-    athleteFirstName = value
+    athleteFirstName = value.trimmingCharacters(in: .whitespaces)
   }
   
   func athleteClubDidChange(to value: String) {
-    athleteClub = value
+    athleteClub = value.trimmingCharacters(in: .whitespaces)
   }
   
   // MARK: - Private

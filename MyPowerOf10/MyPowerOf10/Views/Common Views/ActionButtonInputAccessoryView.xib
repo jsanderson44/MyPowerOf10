@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Action Button Input Accessory View" customClass="ActionButtonInputAccessoryView" customModule="MyPowerOf10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-XI-Nlr">
+                    <rect key="frame" x="163" y="19" width="48" height="30"/>
+                    <state key="normal" title="Search"/>
+                    <connections>
+                        <action selector="didTapActionButton" destination="iN0-l3-epB" eventType="touchUpInside" id="O8C-GV-u3C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pg2-XI-Nlr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cC6-Nf-vKV"/>
+                <constraint firstItem="pg2-XI-Nlr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="spc-rh-1gA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="pg2-XI-Nlr" id="4qE-aL-kzc"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="28"/>
+        </view>
+    </objects>
+</document>

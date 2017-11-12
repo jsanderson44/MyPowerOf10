@@ -29,27 +29,27 @@ final class SearchTextField: UITextField {
   }
   
   private func styleText() {
-    font = .systemFont(ofSize: 18)
-    textColor = .darkGray // TODO Custom colors
-//    tintColor = .darkGray // TODO Custom colors
+    font = .systemFont(ofSize: 24)
+    textColor = .potDarkGray
+    tintColor = .potLightGray
   }
   
   private func styleBorder() {
     borderStyle = .none
     layer.backgroundColor = UIColor.white.cgColor
     layer.masksToBounds = false
-    layer.shadowColor = UIColor.darkGray.cgColor
+    layer.shadowColor = UIColor.potDarkGray.cgColor
     layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
     layer.shadowOpacity = 1.0
     layer.shadowRadius = 0.0
   }
   
   private func styleKeyboard() {
-//    autocorrectionType = .no
+    autocorrectionType = .no
   }
   
   private func stylePlaceholderText(placeholder: String) {
-    let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
+    let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24)]
     let placeholderString = NSAttributedString(string: placeholder, attributes: attributes)
     attributedPlaceholder = placeholderString
   }
@@ -57,13 +57,17 @@ final class SearchTextField: UITextField {
   // MARK: - Override functions
   @discardableResult
   public override func becomeFirstResponder() -> Bool {
-//    layer.borderColor = UIColor.blue.cgColor // TODO custom color
+    layer.shadowColor = UIColor.potRed.cgColor
+    layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+    layer.shadowOpacity = 2.0
     return super.becomeFirstResponder()
   }
   
   @discardableResult
   public override func resignFirstResponder() -> Bool {
-//    layer.borderColor = UIColor.darkGray.cgColor // TODO custom color
+    layer.shadowColor = UIColor.potDarkGray.cgColor
+    layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+    layer.shadowOpacity = 1.0
     return super.resignFirstResponder()
   }
 }

@@ -50,12 +50,29 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     presenter.delegate = self
     title = "Athlete Search"
     configureTextFields()
+    setupAccessoryView()
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    athleteSurnameTextField.becomeFirstResponder()
+  }
+  
+  // MARK: - Private function
   
   private func configureTextFields() {
     athleteSurnameTextField.update(withPlaceholder: "Surname", delegate: self)
     athleteFirstNameTextField.update(withPlaceholder: "First Name", delegate: self)
     athleteClubTextField.update(withPlaceholder: "Club", delegate: self)
+  }
+  
+  private func setupAccessoryView() {
+    let accessoryView = ActionButtonInputAccessoryView.loadFromNib()
+    accessoryView.update(actionButtonTitle: "Search", delegate: self)
+    athleteSurnameTextField.inputAccessoryView = accessoryView
+    athleteFirstNameTextField.inputAccessoryView = accessoryView
+    athleteClubTextField.inputAccessoryView = accessoryView
   }
   
   private func updatePresenter(withValue value: String, forTextField textField: UITextField) {
@@ -66,12 +83,6 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     } else {
       presenter.athleteClubDidChange(to: value)
     }
-  }
-  
-  // MARK: - Outlets
-  
-  @IBAction private func didTapSearch() {
-    presenter.performSearch()
   }
   
   // MARK: Keyboard adjusting
@@ -117,5 +128,14 @@ extension AthleteSearchViewController: UITextFieldDelegate {
       return true
     }
     return false
+  }
+}
+
+// MARK: - ActionButtonInputAccessoryViewDelegate
+
+extension AthleteSearchViewController: ActionButtonInputAccessoryViewDelegate {
+  
+  func actionButtonInputAccessoryDidTapActionButton(_ actionButtonInputAccessoryView: ActionButtonInputAccessoryView) {
+    presenter.performSearch()
   }
 }

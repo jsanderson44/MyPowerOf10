@@ -24,6 +24,10 @@
 		91590C5B1FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C581FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift */; };
 		91590C601FB8B8F100707A47 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C5E1FB8B8F100707A47 /* SearchTextField.swift */; };
 		91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */; };
+		91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */; };
+		91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C661FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift */; };
+		91590C691FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */; };
+		91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -64,6 +68,10 @@
 		91590C581FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchResultsViewPresenter.swift; sourceTree = "<group>"; };
 		91590C5E1FB8B8F100707A47 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustableViewController.swift; sourceTree = "<group>"; };
+		91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppTheme.swift"; sourceTree = "<group>"; };
+		91590C661FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonInputAccessoryView.swift; sourceTree = "<group>"; };
+		91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonInputAccessoryView.xib; sourceTree = "<group>"; };
+		91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -125,6 +133,8 @@
 			children = (
 				91499D811FAF8E570086134E /* String+Additions.swift */,
 				91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */,
+				91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */,
+				91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				91590C5E1FB8B8F100707A47 /* SearchTextField.swift */,
+				91590C661FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift */,
+				91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */,
 			);
 			path = "Common Views";
 			sourceTree = "<group>";
@@ -400,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91590C691FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib in Resources */,
 				91590C4B1FB79F7600707A47 /* AthleteSearchViewController.xib in Resources */,
 				91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */,
 				91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */,
@@ -530,11 +543,14 @@
 			files = (
 				91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */,
 				91590C4F1FB7A0F500707A47 /* MyPoTRouter.swift in Sources */,
+				91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */,
+				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
 				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
 				91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */,
 				91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */,
 				91590C5B1FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift in Sources */,
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
+				91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
