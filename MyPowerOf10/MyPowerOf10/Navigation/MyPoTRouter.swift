@@ -12,7 +12,12 @@ final class MyPoTRouter: UINavigationController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    style()
     populateViewControllers()
+  }
+  
+  private func style() {
+    navigationBar.prefersLargeTitles = true
   }
   
   private func populateViewControllers() {

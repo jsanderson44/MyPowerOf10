@@ -13,7 +13,7 @@ protocol AthleteSearchViewControllerDelegate: class {
 }
 
 /// Handles the user interface for the Athlete Search functionality
-final class AthleteSearchViewController: UIViewController {
+final class AthleteSearchViewController: UIViewController, KeyboardAdjustableViewController {
   
   // MARK: Internal
   
@@ -24,9 +24,10 @@ final class AthleteSearchViewController: UIViewController {
   private let presenter: AthleteSearchViewPresenter
   private let textFieldCharacterLimit = 30
   
-  @IBOutlet private var athleteSurnameTextField: UITextField!
-  @IBOutlet private var athleteFirstNameTextField: UITextField!
-  @IBOutlet private var athleteClubTextField: UITextField!
+  @IBOutlet private var scrollView: UIScrollView!
+  @IBOutlet private var athleteSurnameTextField: SearchTextField!
+  @IBOutlet private var athleteFirstNameTextField: SearchTextField!
+  @IBOutlet private var athleteClubTextField: SearchTextField!
   
   // MARK: - Initialiers -
   
@@ -34,6 +35,7 @@ final class AthleteSearchViewController: UIViewController {
     self.presenter = presenter
     self.delegate = delegate
     super.init(nibName: String(describing: AthleteSearchViewController.self), bundle: .main)
+    observeKeyboardHeightChange(with: #selector(keyboardFrameWillChange))
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -47,18 +49,13 @@ final class AthleteSearchViewController: UIViewController {
     
     presenter.delegate = self
     title = "Athlete Search"
-    athleteSurnameTextField.becomeFirstResponder()
+    configureTextFields()
   }
   
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    
-    // TODO - Remove this?
-    [athleteSurnameTextField, athleteFirstNameTextField, athleteClubTextField].forEach { (textField) in
-      guard let textField = textField else { return }
-      textField.text = ""
-      updatePresenter(withValue: "", forTextField: textField)
-    }
+  private func configureTextFields() {
+    athleteSurnameTextField.update(withPlaceholder: "Surname", delegate: self)
+    athleteFirstNameTextField.update(withPlaceholder: "First Name", delegate: self)
+    athleteClubTextField.update(withPlaceholder: "Club", delegate: self)
   }
   
   private func updatePresenter(withValue value: String, forTextField textField: UITextField) {
@@ -75,6 +72,13 @@ final class AthleteSearchViewController: UIViewController {
   
   @IBAction private func didTapSearch() {
     presenter.performSearch()
+  }
+  
+  // MARK: Keyboard adjusting
+  
+  @objc private func keyboardFrameWillChange(_ notification: Notification) {
+    let height = keyboardHeight(for: notification)
+    scrollView.contentInset.bottom = height
   }
   
 }

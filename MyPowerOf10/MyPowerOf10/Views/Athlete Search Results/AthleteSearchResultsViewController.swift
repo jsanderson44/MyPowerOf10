@@ -44,7 +44,7 @@ final class AthleteSearchResultsViewController: UIViewController {
     super.viewDidLoad()
     
     presenter.delegate = self
-    title = "Athlete Search Results"
+    title = "Search Results"
     presenter.requestResults()
   }
   
