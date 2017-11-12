@@ -18,7 +18,7 @@ final class ActionButtonInputAccessoryView: UIInputView {
   
   private weak var delegate: ActionButtonInputAccessoryViewDelegate?
   
-  @IBOutlet private var actionButton: UIButton!
+  @IBOutlet private var actionButton: RoundedCornerActionButton!
   
   // MARK: - Override functions
   
@@ -36,9 +36,13 @@ final class ActionButtonInputAccessoryView: UIInputView {
 
 extension ActionButtonInputAccessoryView {
   
-  public func update(actionButtonTitle: String, delegate: ActionButtonInputAccessoryViewDelegate) {
+  func update(actionButtonTitle: String, delegate: ActionButtonInputAccessoryViewDelegate) {
     self.delegate = delegate
     actionButton.setTitle(actionButtonTitle, for: .normal)
+  }
+  
+  func updateStateOfActionButton(isEnabled: Bool) {
+    actionButton.isEnabled = isEnabled
   }
   
 }

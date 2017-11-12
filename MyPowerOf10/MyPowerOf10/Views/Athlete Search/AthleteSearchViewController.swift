@@ -23,6 +23,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   
   private let presenter: AthleteSearchViewPresenter
   private let textFieldCharacterLimit = 30
+  private var accessoryView = ActionButtonInputAccessoryView.loadFromNib()
   
   @IBOutlet private var scrollView: UIScrollView!
   @IBOutlet private var athleteSurnameTextField: SearchTextField!
@@ -68,8 +69,8 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   }
   
   private func setupAccessoryView() {
-    let accessoryView = ActionButtonInputAccessoryView.loadFromNib()
     accessoryView.update(actionButtonTitle: "Search", delegate: self)
+    accessoryView.updateStateOfActionButton(isEnabled: false)
     athleteSurnameTextField.inputAccessoryView = accessoryView
     athleteFirstNameTextField.inputAccessoryView = accessoryView
     athleteClubTextField.inputAccessoryView = accessoryView
@@ -107,7 +108,7 @@ extension AthleteSearchViewController: AthleteSearchViewPresenterDelegate {
   }
   
   func updateSearchButton(isEnabled: Bool) {
-    // Update state of search button
+    accessoryView.updateStateOfActionButton(isEnabled: isEnabled)
   }
   
   func didRecieveResults(athletes: [AthleteResult]) {

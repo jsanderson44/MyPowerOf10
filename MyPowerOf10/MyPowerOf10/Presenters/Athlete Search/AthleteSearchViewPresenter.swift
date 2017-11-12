@@ -32,6 +32,9 @@ final class AthleteSearchViewPresenter {
   private var athleteSurname: String = ""
   private var athleteFirstName: String = ""
   private var athleteClub: String = ""
+  private var shouldEnableSearchButton: Bool {
+    return (athleteSurname != "") || (athleteFirstName != "") || (athleteClub != "")
+  }
   
   // MARK: - Initialiers -
   
@@ -52,14 +55,17 @@ final class AthleteSearchViewPresenter {
   
   func athleteSurnameDidChange(to value: String) {
     athleteSurname = value.trimmingCharacters(in: .whitespaces)
+    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   func athleteFirstNameDidChange(to value: String) {
     athleteFirstName = value.trimmingCharacters(in: .whitespaces)
+    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   func athleteClubDidChange(to value: String) {
     athleteClub = value.trimmingCharacters(in: .whitespaces)
+    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   // MARK: - Private
