@@ -32,7 +32,7 @@ final class AthleteSearchViewPresenter {
   private var athleteSurname: String = ""
   private var athleteFirstName: String = ""
   private var athleteClub: String = ""
-  private var shouldEnableSearchButton: Bool {
+  var shouldEnableSearchButton: Bool {
     return (athleteSurname != "") || (athleteFirstName != "") || (athleteClub != "")
   }
   
@@ -44,10 +44,9 @@ final class AthleteSearchViewPresenter {
   
   // MARK: - Internal
   
-  func performSearch() {
+  func performSearch(service: SubmitAthleteSearchResourceService = SubmitAthleteSearchResourceService()) {
     delegate?.updateLoadingState(isLoading: true)
     let resource = SubmitAthleteSearchResource(firstname: athleteFirstName, surname: athleteSurname, club: athleteClub)
-    let service = SubmitAthleteSearchResourceService()
     let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { (_, result) in
       self.delegate?.updateLoadingState(isLoading: false)
       self.handleAthleteSearchResult(result)

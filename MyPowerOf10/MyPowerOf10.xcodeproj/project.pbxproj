@@ -29,6 +29,8 @@
 		91590C691FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */; };
 		91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */; };
 		91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */; };
+		91590C6F1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */; };
+		91590C721FBA454500707A47 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C711FBA454500707A47 /* MockURLSession.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -37,7 +39,6 @@
 		91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D402581FAF42E70032ED26 /* AppDelegate.swift */; };
 		91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D4025F1FAF42E70032ED26 /* Assets.xcassets */; };
 		91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D402611FAF42E70032ED26 /* LaunchScreen.storyboard */; };
-		91D4026E1FAF42E70032ED26 /* MyPowerOf10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4026D1FAF42E70032ED26 /* MyPowerOf10Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonInputAccessoryView.xib; sourceTree = "<group>"; };
 		91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
 		91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerActionButton.swift; sourceTree = "<group>"; };
+		91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchViewPresenterTests.swift; sourceTree = "<group>"; };
+		91590C711FBA454500707A47 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -85,7 +88,6 @@
 		91D402621FAF42E70032ED26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91D402641FAF42E70032ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D402691FAF42E70032ED26 /* MyPowerOf10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPowerOf10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91D4026D1FAF42E70032ED26 /* MyPowerOf10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPowerOf10Tests.swift; sourceTree = "<group>"; };
 		91D4026F1FAF42E70032ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF562A3277F8F180EB66D8D8 /* Pods-MyPowerOf10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +241,14 @@
 			path = "Common Views";
 			sourceTree = "<group>";
 		};
+		91590C701FBA453600707A47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91590C711FBA454500707A47 /* MockURLSession.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		916F3FDE1FAF462B00D36B2D /* HTML Parsers */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,9 +318,10 @@
 		91D4026C1FAF42E70032ED26 /* MyPowerOf10Tests */ = {
 			isa = PBXGroup;
 			children = (
+				91590C701FBA453600707A47 /* Helpers */,
 				91A4FCA61FAF489800D8493D /* HTML Parsers */,
-				91D4026D1FAF42E70032ED26 /* MyPowerOf10Tests.swift */,
 				91D4026F1FAF42E70032ED26 /* Info.plist */,
+				91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */,
 			);
 			path = MyPowerOf10Tests;
 			sourceTree = "<group>";
@@ -569,9 +580,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91590C721FBA454500707A47 /* MockURLSession.swift in Sources */,
 				91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */,
+				91590C6F1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift in Sources */,
 				91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */,
-				91D4026E1FAF42E70032ED26 /* MyPowerOf10Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
