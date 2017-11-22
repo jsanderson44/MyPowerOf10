@@ -17,6 +17,22 @@ final class MyPoTRouter: UINavigationController {
   }
   
   private func style() {
+//    let backgroundView = GradientView()
+//    backgroundView.updateWith(topColor: .white, bottomColor: .potLightGray)
+//    backgroundView.translatesAutoresizingMaskIntoConstraints = false
+//    view.addSubview(backgroundView)
+//    NSLayoutConstraint.activate([
+//      backgroundView.topAnchor.constraint(equalTo: view.topAnchor),
+//      backgroundView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//      backgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//      backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+//      ])
+//    view.sendSubview(toBack: backgroundView)
+    
+    navigationBar.setBackgroundImage(UIImage(), for: .default)
+    navigationBar.shadowImage = UIImage()
+    navigationBar.isTranslucent = true
+    navigationBar.tintColor = .potRed
     navigationBar.prefersLargeTitles = true
     navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
     navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]

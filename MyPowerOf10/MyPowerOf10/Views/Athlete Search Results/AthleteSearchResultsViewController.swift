@@ -22,7 +22,7 @@ final class AthleteSearchResultsViewController: UIViewController {
   // MARK: Private
   
   private let presenter: AthleteSearchResultsViewPresenter
-  private var athleteResults: [AthleteResult]?
+  private var athleteResults: [AthleteResult] = []
   
   @IBOutlet private var tableView: UITableView!
   
@@ -45,7 +45,21 @@ final class AthleteSearchResultsViewController: UIViewController {
     
     presenter.delegate = self
     title = "Search Results"
+    removeBackButtonTitle()
+    setupTableView()
     presenter.requestResults()
+  }
+  
+  // MARK: - Private functions
+  
+  private func setupTableView() {
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 100
+    registerCells()
+  }
+  
+  private func registerCells() {
+    tableView.register(UINib(nibName: "AthleteSearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: AthleteSearchResultTableViewCell.reuseID)
   }
   
 }
@@ -56,7 +70,6 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterD
   
   func updateWithResults(results: [AthleteResult]) {
     athleteResults = results
-    tableView.reloadData()
   }
 }
 
@@ -64,21 +77,16 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterD
 
 extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
   
-  func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
-  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    guard let results = athleteResults else { return 0 }
-    return results.count
+    return athleteResults.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let athleteResults = athleteResults else {
-      return UITableViewCell()
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: AthleteSearchResultTableViewCell.reuseID) as? AthleteSearchResultTableViewCell else {
+      fatalError("Could not dequeue cell")
     }
-    let cell = UITableViewCell()
-    cell.textLabel?.text = athleteResults[indexPath.row].firstName + " " + athleteResults[indexPath.row].surname + ", " + athleteResults[indexPath.row].clubs.first!
+    let athlete = athleteResults[indexPath.row]
+    cell.update(with: athlete)
     return cell
   }
   

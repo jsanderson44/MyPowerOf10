@@ -51,6 +51,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     
     presenter.delegate = self
     title = "Athlete Search"
+    removeBackButtonTitle()
     configureTextFields()
     setupAccessoryView()
   }

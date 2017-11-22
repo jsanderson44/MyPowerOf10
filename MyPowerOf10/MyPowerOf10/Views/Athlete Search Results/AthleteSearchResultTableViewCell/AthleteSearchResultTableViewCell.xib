@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AthleteSearchResultTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="AthleteSearchResultTableViewCell" customModule="MyPowerOf10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-Xd-YCe">
+                        <rect key="frame" x="8" y="4" width="304" height="91.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Sanderson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-TO-Wr9">
+                                <rect key="frame" x="12" y="8" width="160" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-OX-k3t">
+                                <rect key="frame" x="240" y="8" width="52" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guildford &amp; Godalming AC Guildford &amp; Godalming AC" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJp-Ez-chD">
+                                <rect key="frame" x="12" y="40.5" width="280" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B9q-OX-k3t" secondAttribute="trailing" constant="12" id="6b8-9i-MiJ"/>
+                            <constraint firstItem="LiP-TO-Wr9" firstAttribute="leading" secondItem="xoS-Xd-YCe" secondAttribute="leading" constant="12" id="Ma4-IC-nSG"/>
+                            <constraint firstItem="B9q-OX-k3t" firstAttribute="top" secondItem="xoS-Xd-YCe" secondAttribute="top" constant="8" id="b8r-V0-RJm"/>
+                            <constraint firstItem="xJp-Ez-chD" firstAttribute="top" secondItem="LiP-TO-Wr9" secondAttribute="bottom" constant="6" id="dkv-Pn-9Vm"/>
+                            <constraint firstItem="xJp-Ez-chD" firstAttribute="trailing" secondItem="B9q-OX-k3t" secondAttribute="trailing" id="fqQ-QN-ffZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xJp-Ez-chD" secondAttribute="bottom" constant="8" id="hrC-p5-Bov"/>
+                            <constraint firstItem="xJp-Ez-chD" firstAttribute="leading" secondItem="LiP-TO-Wr9" secondAttribute="leading" id="j2Z-GP-cf9"/>
+                            <constraint firstItem="LiP-TO-Wr9" firstAttribute="top" secondItem="xoS-Xd-YCe" secondAttribute="top" constant="8" id="uDa-HR-QG6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xoS-Xd-YCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4BD-wz-viA"/>
+                    <constraint firstAttribute="bottom" secondItem="xoS-Xd-YCe" secondAttribute="bottom" constant="4" id="DSU-zw-TGB"/>
+                    <constraint firstItem="xoS-Xd-YCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="OLk-Do-6XB"/>
+                    <constraint firstAttribute="trailing" secondItem="xoS-Xd-YCe" secondAttribute="trailing" constant="8" id="o6p-lH-9od"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="athleteAgeGroupLabel" destination="B9q-OX-k3t" id="Gnx-eo-BU7"/>
+                <outlet property="athleteClubLabel" destination="xJp-Ez-chD" id="H0m-ar-rbC"/>
+                <outlet property="athleteNameLabel" destination="LiP-TO-Wr9" id="NL3-D6-T6c"/>
+                <outlet property="containerView" destination="xoS-Xd-YCe" id="udv-ie-nSq"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="82"/>
+        </tableViewCell>
+    </objects>
+</document>

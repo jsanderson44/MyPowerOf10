@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		6A66FDD0FD1E7024421163FE /* Pods_MyPowerOf10Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */; };
 		8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
+		9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A5921FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift */; };
+		9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9145A5931FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib */; };
+		9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A5961FC625C4000C6EC8 /* GradientView.swift */; };
+		9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A5981FC62B6F000C6EC8 /* UIViewController+Additions.swift */; };
+		9145A59B1FC62F23000C6EC8 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A59A1FC62F23000C6EC8 /* UIView+Shadow.swift */; };
 		91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D7E1FAF8DEB0086134E /* AthleteResult.swift */; };
 		91499D821FAF8E570086134E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D811FAF8E570086134E /* String+Additions.swift */; };
 		91499D851FB105660086134E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91499D841FB105660086134E /* Config.swift */; };
@@ -55,6 +60,11 @@
 		2B9A26B7E92130898935AA16 /* Pods-MyPowerOf10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.debug.xcconfig"; sourceTree = "<group>"; };
 		2FE05CB57D473338CB361414 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
 		5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9145A5921FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		9145A5931FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteSearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		9145A5961FC625C4000C6EC8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9145A5981FC62B6F000C6EC8 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		9145A59A1FC62F23000C6EC8 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		91499D7E1FAF8DEB0086134E /* AthleteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteResult.swift; sourceTree = "<group>"; };
 		91499D811FAF8E570086134E /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		91499D841FB105660086134E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -123,6 +133,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9145A5911FC61AC0000C6EC8 /* AthleteSearchResultTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9145A5921FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift */,
+				9145A5931FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib */,
+			);
+			path = AthleteSearchResultTableViewCell;
+			sourceTree = "<group>";
+		};
 		91499D7D1FAF8DDB0086134E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +158,8 @@
 				91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */,
 				91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */,
 				91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */,
+				9145A5981FC62B6F000C6EC8 /* UIViewController+Additions.swift */,
+				9145A59A1FC62F23000C6EC8 /* UIView+Shadow.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -216,6 +237,7 @@
 		91590C551FB7B01900707A47 /* Athlete Search Results */ = {
 			isa = PBXGroup;
 			children = (
+				9145A5911FC61AC0000C6EC8 /* AthleteSearchResultTableViewCell */,
 				91590C561FB7B03B00707A47 /* AthleteSearchResultsViewController.swift */,
 				91590C571FB7B03B00707A47 /* AthleteSearchResultsViewController.xib */,
 			);
@@ -237,6 +259,7 @@
 				91590C661FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift */,
 				91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */,
 				91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */,
+				9145A5961FC625C4000C6EC8 /* GradientView.swift */,
 			);
 			path = "Common Views";
 			sourceTree = "<group>";
@@ -431,6 +454,7 @@
 				91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */,
 				91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */,
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
+				9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */,
 				91590C5A1FB7B03B00707A47 /* AthleteSearchResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,17 +581,21 @@
 			files = (
 				91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */,
 				91590C4F1FB7A0F500707A47 /* MyPoTRouter.swift in Sources */,
+				9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */,
 				91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */,
+				9145A59B1FC62F23000C6EC8 /* UIView+Shadow.swift in Sources */,
 				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
 				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
 				91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */,
 				91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */,
+				9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */,
 				91590C5B1FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift in Sources */,
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
 				91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
+				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
 				91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */,
 				91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */,
 				91499D8B1FB107E40086134E /* SubmitAthleteSearchResource.swift in Sources */,
