@@ -68,6 +68,17 @@ final class AthleteSearchResultsViewController: UIViewController {
 
 extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterDelegate {
   
+  func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool) {
+    guard let cell = tableView.cellForRow(at: indexPath) as? AthleteSearchResultTableViewCell else { return }
+    if isLoading {
+      cell.startLoading()
+      tableView.isUserInteractionEnabled = false
+    } else {
+      cell.stopLoading()
+      tableView.isUserInteractionEnabled = true
+    }
+  }
+  
   func updateWithResults(results: [AthleteResult]) {
     athleteResults = results
   }
@@ -90,4 +101,7 @@ extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDa
     return cell
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    presenter.didSelectCell(at: indexPath)
+  }
 }

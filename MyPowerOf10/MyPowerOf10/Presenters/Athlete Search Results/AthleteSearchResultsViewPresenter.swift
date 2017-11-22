@@ -10,6 +10,7 @@ import Foundation
 
 protocol AthleteSearchResultsViewPresenterDelegate: class {
   func updateWithResults(results: [AthleteResult])
+  func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
 }
 
 /// Handles the presentation of the Athlete Search results
@@ -35,6 +36,11 @@ final class AthleteSearchResultsViewPresenter {
   
   func requestResults() {
     delegate?.updateWithResults(results: athleteResults)
+  }
+  
+  func didSelectCell(at indexPath: IndexPath) {
+    //TODO: Make request
+    delegate?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
   }
   
 }

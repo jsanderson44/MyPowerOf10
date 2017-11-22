@@ -51,13 +51,18 @@
                             <constraint firstItem="LiP-TO-Wr9" firstAttribute="top" secondItem="xoS-Xd-YCe" secondAttribute="top" constant="8" id="uDa-HR-QG6"/>
                         </constraints>
                     </view>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="upu-2z-H66">
+                        <rect key="frame" x="150" y="39" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="xoS-Xd-YCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4BD-wz-viA"/>
                     <constraint firstAttribute="bottom" secondItem="xoS-Xd-YCe" secondAttribute="bottom" constant="4" id="DSU-zw-TGB"/>
                     <constraint firstItem="xoS-Xd-YCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="OLk-Do-6XB"/>
+                    <constraint firstItem="upu-2z-H66" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eBn-vc-N2H"/>
                     <constraint firstAttribute="trailing" secondItem="xoS-Xd-YCe" secondAttribute="trailing" constant="8" id="o6p-lH-9od"/>
+                    <constraint firstItem="upu-2z-H66" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rFs-0O-3sM"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,6 +71,7 @@
                 <outlet property="athleteClubLabel" destination="xJp-Ez-chD" id="H0m-ar-rbC"/>
                 <outlet property="athleteNameLabel" destination="LiP-TO-Wr9" id="NL3-D6-T6c"/>
                 <outlet property="containerView" destination="xoS-Xd-YCe" id="udv-ie-nSq"/>
+                <outlet property="loadingView" destination="upu-2z-H66" id="cil-jU-r2x"/>
             </connections>
             <point key="canvasLocation" x="34" y="82"/>
         </tableViewCell>
