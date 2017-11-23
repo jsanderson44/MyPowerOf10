@@ -19,6 +19,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   @IBOutlet private var athleteClubLabel: UILabel!
   @IBOutlet private var athleteAgeGroupLabel: UILabel!
   @IBOutlet private var loadingView: UIActivityIndicatorView!
+  @IBOutlet private var topConstraint: NSLayoutConstraint!
   
   // MARK: View lifecycle
   
@@ -42,7 +43,8 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   // MARK: Public functions
   
-  func update(with athlete: AthleteResult) {
+  func update(with athlete: AthleteResult, isFirstCell: Bool) {
+    topConstraint.constant = isFirstCell ? 24 : 4
     athleteNameLabel.text = athlete.firstName + " " + athlete.surname
     athleteClubLabel.text = athlete.clubs.joined(separator: "\n")
     athleteAgeGroupLabel.text = athlete.ageGroup

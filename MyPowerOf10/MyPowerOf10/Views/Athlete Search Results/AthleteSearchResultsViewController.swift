@@ -102,7 +102,8 @@ extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDa
       fatalError("Could not dequeue cell")
     }
     let athlete = athleteResults[indexPath.row]
-    cell.update(with: athlete)
+    let isFirstCell = indexPath.row == 0
+    cell.update(with: athlete, isFirstCell: isFirstCell)
     return cell
   }
   

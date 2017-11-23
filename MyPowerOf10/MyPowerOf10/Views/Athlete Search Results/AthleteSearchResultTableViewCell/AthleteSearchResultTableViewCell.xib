@@ -72,6 +72,7 @@
                 <outlet property="athleteNameLabel" destination="LiP-TO-Wr9" id="NL3-D6-T6c"/>
                 <outlet property="containerView" destination="xoS-Xd-YCe" id="udv-ie-nSq"/>
                 <outlet property="loadingView" destination="upu-2z-H66" id="cil-jU-r2x"/>
+                <outlet property="topConstraint" destination="OLk-Do-6XB" id="WLo-3N-5bI"/>
             </connections>
             <point key="canvasLocation" x="34" y="82"/>
         </tableViewCell>

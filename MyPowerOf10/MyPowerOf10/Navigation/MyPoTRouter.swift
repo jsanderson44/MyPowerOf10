@@ -20,6 +20,7 @@ final class MyPoTRouter: UINavigationController {
     navigationBar.setBackgroundImage(UIImage(), for: .default)
     navigationBar.shadowImage = UIImage()
     navigationBar.isTranslucent = true
+    navigationBar.backgroundColor = .white
     navigationBar.tintColor = .potRed
     navigationBar.prefersLargeTitles = true
     navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
