@@ -9,7 +9,7 @@
 import XCTest
 @testable import MyPowerOf10
 
-private class MockView: AthleteSearchViewPresenterDelegate {
+private class MockView: AthleteSearchPresenterView {
   
   var onUpdateLoadingState: ((Bool) -> (Void))?
   var onShowError: (() -> (Void))?
@@ -44,7 +44,7 @@ class AthleteSearchViewPresenterTests: XCTestCase {
 
   func test_loadingStates_whenSearchTapped() {
     let mockView = MockView()
-    testPresenter.delegate = mockView
+    testPresenter.view = mockView
     var callCount = 0
     let wait = expectation(description: "wait")
     
@@ -75,7 +75,7 @@ class AthleteSearchViewPresenterTests: XCTestCase {
   
   func test_searchButtonEnabled_whenHasAthleteSurname() {
     let mockView = MockView()
-    testPresenter.delegate = mockView
+    testPresenter.view = mockView
     
     mockView.onUpdateSearchButton = { (state) in
       XCTAssertEqual(state, true)
@@ -86,7 +86,7 @@ class AthleteSearchViewPresenterTests: XCTestCase {
   
   func test_searchButtonEnabled_whenHasAthleteFirstName() {
     let mockView = MockView()
-    testPresenter.delegate = mockView
+    testPresenter.view = mockView
     
     mockView.onUpdateSearchButton = { (state) in
       XCTAssertEqual(state, true)
@@ -97,7 +97,7 @@ class AthleteSearchViewPresenterTests: XCTestCase {
   
   func test_searchButtonEnabled_whenHasAthleteClub() {
     let mockView = MockView()
-    testPresenter.delegate = mockView
+    testPresenter.view = mockView
     
     mockView.onUpdateSearchButton = { (state) in
       XCTAssertEqual(state, true)
