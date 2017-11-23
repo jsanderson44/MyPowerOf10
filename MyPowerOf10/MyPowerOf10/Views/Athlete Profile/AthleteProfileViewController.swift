@@ -18,6 +18,7 @@ final class AthleteProfileViewController: UIViewController {
   // MARK: Outlets
   
   @IBOutlet private var toggleContainerView: UIView!
+  @IBOutlet private var detailContainerView: UIView!
 	
 	// MARK: Internal
 	
@@ -27,6 +28,7 @@ final class AthleteProfileViewController: UIViewController {
 	
 	private let presenter: AthleteProfilePresenter
   private let toggleView = AthleteProfileToggleView.loadFromNib()
+  private let informationView = AthleteProfileInformationView.loadFromNib()
 	
 	// MARK: - Initialiers -
 	
@@ -46,6 +48,7 @@ final class AthleteProfileViewController: UIViewController {
 		super.viewDidLoad()
 		presenter.view = self
     configureToggleView()
+    configureDetailView()
     presenter.requestProfile()
 	}
   
@@ -54,6 +57,7 @@ final class AthleteProfileViewController: UIViewController {
   private func configureToggleView() {
     toggleContainerView.addSubview(toggleView)
     toggleView.translatesAutoresizingMaskIntoConstraints = false
+    toggleView.delegate = self
     
     NSLayoutConstraint.activate([
       toggleView.topAnchor.constraint(equalTo: toggleContainerView.topAnchor),
@@ -62,7 +66,21 @@ final class AthleteProfileViewController: UIViewController {
       toggleView.trailingAnchor.constraint(equalTo: toggleContainerView.trailingAnchor)
       ])
   }
-	
+  
+  private func configureDetailView() {
+    [informationView].forEach { (view) in //TODO add PB view
+      detailContainerView.addSubview(view)
+      view.translatesAutoresizingMaskIntoConstraints = false
+      
+      NSLayoutConstraint.activate([
+        view.topAnchor.constraint(equalTo: detailContainerView.topAnchor),
+        view.bottomAnchor.constraint(equalTo: detailContainerView.bottomAnchor),
+        view.leadingAnchor.constraint(equalTo: detailContainerView.leadingAnchor),
+        view.trailingAnchor.constraint(equalTo: detailContainerView.trailingAnchor)
+        ])
+    }
+  }
+  
 }
 
 // MARK: AthleteProfilePresenterView
@@ -71,5 +89,19 @@ extension AthleteProfileViewController: AthleteProfilePresenterView {
 	
   func updateWith(athleteProfile: AthleteProfile) {
     title = athleteProfile.name
+    informationView.update(with: athleteProfile)
+  }
+}
+
+// MARK: AthleteProfiletoggleViewDelegate
+
+extension AthleteProfileViewController: AthleteProfileToggleViewDelegate {
+  
+  func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
+    informationView.isHidden = false
+  }
+  
+  func athleteProfileToggleViewDidTapRightToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
+    informationView.isHidden = true
   }
 }

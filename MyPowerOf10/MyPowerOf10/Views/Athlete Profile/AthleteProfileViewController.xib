@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AthleteProfileViewController" customModule="MyPowerOf10" customModuleProvider="target">
             <connections>
+                <outlet property="detailContainerView" destination="eYF-ky-fqb" id="3VH-ce-YyM"/>
                 <outlet property="toggleContainerView" destination="rLY-Ls-YiM" id="ASr-Eo-4ES"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,10 +25,21 @@
                     <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-1f-US0" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-ky-fqb">
+                                    <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" placeholder="YES" id="cGM-51-9qd"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="200" id="QJc-Pf-5Hf"/>
+                                <constraint firstAttribute="bottom" secondItem="eYF-ky-fqb" secondAttribute="bottom" id="k66-DK-dAh"/>
+                                <constraint firstAttribute="trailing" secondItem="eYF-ky-fqb" secondAttribute="trailing" id="ogl-RX-ENh"/>
+                                <constraint firstItem="eYF-ky-fqb" firstAttribute="leading" secondItem="jBU-1f-US0" secondAttribute="leading" id="pWp-XL-cOF"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -55,6 +67,7 @@
                 <constraint firstItem="PCQ-ha-HQA" firstAttribute="top" secondItem="rLY-Ls-YiM" secondAttribute="top" id="LEz-DC-8wu"/>
                 <constraint firstItem="rLY-Ls-YiM" firstAttribute="leading" secondItem="hOc-AM-jJ2" secondAttribute="leading" id="WHw-37-KT8"/>
                 <constraint firstItem="rLY-Ls-YiM" firstAttribute="top" secondItem="hOc-AM-jJ2" secondAttribute="top" constant="12" id="ZyC-qw-2IC"/>
+                <constraint firstItem="eYF-ky-fqb" firstAttribute="top" secondItem="rLY-Ls-YiM" secondAttribute="bottom" id="bC2-vh-4t6"/>
                 <constraint firstItem="PCQ-ha-HQA" firstAttribute="leading" secondItem="hOc-AM-jJ2" secondAttribute="leading" id="etd-cG-mM4"/>
                 <constraint firstItem="hOc-AM-jJ2" firstAttribute="bottom" secondItem="PCQ-ha-HQA" secondAttribute="bottom" id="va7-4o-rsV"/>
             </constraints>

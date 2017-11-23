@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol AthleteProfileToggleViewDelegate: class {
+  func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView)
+  func athleteProfileToggleViewDidTapRightToggle(_ athleteProfileToggleView: AthleteProfileToggleView)
+}
+
 final class AthleteProfileToggleView: UIView {
   
   // MARK: Outlets
@@ -27,6 +32,10 @@ final class AthleteProfileToggleView: UIView {
   private let deselectedHeight: CGFloat = 2.0
   private let selectedTintColor = UIColor.potRed
   private let deselectedTintColor = UIColor.potLightGray
+  
+  // MARK: Internal
+  
+  weak var delegate: AthleteProfileToggleViewDelegate?
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -67,6 +76,7 @@ final class AthleteProfileToggleView: UIView {
     rightLabel.font = deselectedFont
     rightSelectionViewHeightConstraint.constant = deselectedHeight
     rightSelectionView.backgroundColor = deselectedTintColor
+    delegate?.athleteProfileToggleViewDidTapLeftToggle(self)
   }
   
   @objc private func didTapRightButton() {
@@ -77,6 +87,7 @@ final class AthleteProfileToggleView: UIView {
     leftLabel.font = deselectedFont
     leftSelectionViewHeightConstraint.constant = deselectedHeight
     leftSelectionView.backgroundColor = deselectedTintColor
+    delegate?.athleteProfileToggleViewDidTapRightToggle(self)
   }
   
 }
