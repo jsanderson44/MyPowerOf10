@@ -36,6 +36,10 @@
 		91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */; };
 		91590C6F1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */; };
 		91590C721FBA454500707A47 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C711FBA454500707A47 /* MockURLSession.swift */; };
+		917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728AC1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift */; };
+		917728AF1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917728AD1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib */; };
+		917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728B11FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift */; };
+		917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */; };
 		91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */; };
 		91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */; };
 		91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */; };
@@ -98,6 +102,10 @@
 		91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerActionButton.swift; sourceTree = "<group>"; };
 		91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchViewPresenterTests.swift; sourceTree = "<group>"; };
 		91590C711FBA454500707A47 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		917728AC1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfileBestPerformancesView.swift; sourceTree = "<group>"; };
+		917728AD1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteProfileBestPerformancesView.xib; sourceTree = "<group>"; };
+		917728B11FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPerformancesTableViewCell.swift; sourceTree = "<group>"; };
+		917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestPerformancesTableViewCell.xib; sourceTree = "<group>"; };
 		91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAthleteProfileResource.swift; sourceTree = "<group>"; };
 		91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfileHTMLParser.swift; sourceTree = "<group>"; };
 		91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfile.swift; sourceTree = "<group>"; };
@@ -284,9 +292,29 @@
 			path = "HTML Parsers";
 			sourceTree = "<group>";
 		};
+		917728AB1FC7618800E6FD8C /* AthleteProfileBestPerformancesView */ = {
+			isa = PBXGroup;
+			children = (
+				917728B01FC763F700E6FD8C /* BestPerformancesCell */,
+				917728AC1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift */,
+				917728AD1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib */,
+			);
+			path = AthleteProfileBestPerformancesView;
+			sourceTree = "<group>";
+		};
+		917728B01FC763F700E6FD8C /* BestPerformancesCell */ = {
+			isa = PBXGroup;
+			children = (
+				917728B11FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift */,
+				917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */,
+			);
+			path = BestPerformancesCell;
+			sourceTree = "<group>";
+		};
 		91784FBC1FC6FAFF006ADC28 /* Athlete Profile */ = {
 			isa = PBXGroup;
 			children = (
+				917728AB1FC7618800E6FD8C /* AthleteProfileBestPerformancesView */,
 				917DBC4D1FC7239700E02C2B /* AthleteProfileInformationView */,
 				919837541FC70887007E2BA9 /* AthleteProfileToggleView */,
 				91784FBD1FC6FB32006ADC28 /* AthleteProfileViewController.swift */,
@@ -485,10 +513,12 @@
 				919837581FC708A6007E2BA9 /* AthleteProfileToggleView.xib in Resources */,
 				91784FC11FC6FB32006ADC28 /* AthleteProfileViewController.xib in Resources */,
 				91590C691FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib in Resources */,
+				917728AF1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib in Resources */,
 				917DBC511FC723B300E02C2B /* AthleteProfileInformationView.xib in Resources */,
 				91590C4B1FB79F7600707A47 /* AthleteSearchViewController.xib in Resources */,
 				91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */,
 				91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */,
+				917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */,
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
 				9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */,
 				91590C5A1FB7B03B00707A47 /* AthleteSearchResultsViewController.xib in Resources */,
@@ -635,8 +665,10 @@
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
 				91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
+				917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
+				917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */,
 				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
 				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
 				91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */,
@@ -800,7 +832,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JohnSanderson.MyPowerOf10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "128b1f5c-3fb2-4770-a9c1-7fb42d1e4899";
+				PROVISIONING_PROFILE = "6f30626a-207b-4110-aaf0-7e57a851f025";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -819,7 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JohnSanderson.MyPowerOf10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "128b1f5c-3fb2-4770-a9c1-7fb42d1e4899";
+				PROVISIONING_PROFILE = "6f30626a-207b-4110-aaf0-7e57a851f025";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development Profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

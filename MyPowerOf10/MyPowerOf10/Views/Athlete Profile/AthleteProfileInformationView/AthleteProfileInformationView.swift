@@ -12,7 +12,20 @@ final class AthleteProfileInformationView: UIView {
   
   // MARK: Outlets
   
+  @IBOutlet private var clubTitleLabel: UILabel!
   @IBOutlet private var clubLabel: UILabel!
+  @IBOutlet private var genderTitleLabel: UILabel!
+  @IBOutlet private var genderLabel: UILabel!
+  @IBOutlet private var ageGroupTitleLabel: UILabel!
+  @IBOutlet private var ageGroupLabel: UILabel!
+  @IBOutlet private var coachTitleLabel: UILabel!
+  @IBOutlet private var coachLabel: UILabel!
+  @IBOutlet private var countyTitleLabel: UILabel!
+  @IBOutlet private var countyLabel: UILabel!
+  @IBOutlet private var regionTitleLabel: UILabel!
+  @IBOutlet private var regionLabel: UILabel!
+  @IBOutlet private var nationTitleLabel: UILabel!
+  @IBOutlet private var nationLabel: UILabel!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -31,6 +44,12 @@ final class AthleteProfileInformationView: UIView {
 extension AthleteProfileInformationView {
   
   func update(with profile: AthleteProfile) {
-    clubLabel.text = profile.club
+    clubLabel.text = profile.club.replacingOccurrences(of: "/", with: "\n")
+    coachLabel.text = profile.coach
+    genderLabel.text = profile.gender.rawValue
+    ageGroupLabel.text = profile.ageGroup
+    countyLabel.text = profile.county
+    regionLabel.text = profile.region
+    nationLabel.text = profile.nation
   }
 }

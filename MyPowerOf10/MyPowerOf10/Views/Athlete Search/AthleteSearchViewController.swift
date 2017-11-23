@@ -54,11 +54,6 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     removeBackButtonTitle()
     configureTextFields()
     setupAccessoryView()
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    
     athleteSurnameTextField.becomeFirstResponder()
   }
   

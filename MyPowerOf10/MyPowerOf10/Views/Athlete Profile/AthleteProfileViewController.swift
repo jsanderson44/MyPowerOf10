@@ -29,6 +29,7 @@ final class AthleteProfileViewController: UIViewController {
 	private let presenter: AthleteProfilePresenter
   private let toggleView = AthleteProfileToggleView.loadFromNib()
   private let informationView = AthleteProfileInformationView.loadFromNib()
+  private let bestPerformancesView = AthleteProfileBestPerformancesView.loadFromNib()
 	
 	// MARK: - Initialiers -
 	
@@ -68,7 +69,7 @@ final class AthleteProfileViewController: UIViewController {
   }
   
   private func configureDetailView() {
-    [informationView].forEach { (view) in //TODO add PB view
+    [informationView, bestPerformancesView].forEach { (view) in
       detailContainerView.addSubview(view)
       view.translatesAutoresizingMaskIntoConstraints = false
       
@@ -79,6 +80,8 @@ final class AthleteProfileViewController: UIViewController {
         view.trailingAnchor.constraint(equalTo: detailContainerView.trailingAnchor)
         ])
     }
+    
+    bestPerformancesView.isHidden = true
   }
   
 }
@@ -90,6 +93,7 @@ extension AthleteProfileViewController: AthleteProfilePresenterView {
   func updateWith(athleteProfile: AthleteProfile) {
     title = athleteProfile.name
     informationView.update(with: athleteProfile)
+    bestPerformancesView.update(with: athleteProfile.bestPerformances)
   }
 }
 
@@ -99,9 +103,11 @@ extension AthleteProfileViewController: AthleteProfileToggleViewDelegate {
   
   func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
     informationView.isHidden = false
+    bestPerformancesView.isHidden = true
   }
   
   func athleteProfileToggleViewDidTapRightToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
+    bestPerformancesView.isHidden = false
     informationView.isHidden = true
   }
 }
