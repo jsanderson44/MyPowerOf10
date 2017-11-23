@@ -17,7 +17,8 @@ struct AthleteSearchHTMLParser {
         let document = try HTML(html: htmlData, encoding: .utf8)
         self.document = document
     }
-    
+  
+  //TODO - Move trimming to here
     func athletesFromSearchResults() -> [AthleteResult] {
         let athletes: [AthleteResult] = document.css("#cphBody_dgAthletes tr").flatMap { (athlete) in
             guard let profileHTML = athlete.css("a[href]").first?.toHTML,

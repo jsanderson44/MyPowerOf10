@@ -36,6 +36,9 @@
 		91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */; };
 		91590C6F1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */; };
 		91590C721FBA454500707A47 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C711FBA454500707A47 /* MockURLSession.swift */; };
+		91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */; };
+		91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */; };
+		91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -87,6 +90,9 @@
 		91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerActionButton.swift; sourceTree = "<group>"; };
 		91590C6E1FBA410800707A47 /* AthleteSearchViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchViewPresenterTests.swift; sourceTree = "<group>"; };
 		91590C711FBA454500707A47 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAthleteProfileResource.swift; sourceTree = "<group>"; };
+		91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfileHTMLParser.swift; sourceTree = "<group>"; };
+		91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfile.swift; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 			children = (
 				91499D891FB107A30086134E /* Resources */,
 				91499D7E1FAF8DEB0086134E /* AthleteResult.swift */,
+				91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				91499D8A1FB107E40086134E /* SubmitAthleteSearchResource.swift */,
+				91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -276,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				91A4FCAE1FAF598700D8493D /* AthleteSearchHTMLParser.swift */,
+				91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */,
 			);
 			path = "HTML Parsers";
 			sourceTree = "<group>";
@@ -582,6 +591,8 @@
 				91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */,
 				91590C4F1FB7A0F500707A47 /* MyPoTRouter.swift in Sources */,
 				9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */,
+				91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */,
+				91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */,
 				91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */,
 				9145A59B1FC62F23000C6EC8 /* UIView+Shadow.swift in Sources */,
 				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
@@ -595,6 +606,7 @@
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
+				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
 				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
 				91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */,
 				91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */,

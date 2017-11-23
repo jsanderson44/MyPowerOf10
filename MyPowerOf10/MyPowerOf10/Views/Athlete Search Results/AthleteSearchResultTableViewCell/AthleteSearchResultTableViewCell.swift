@@ -50,7 +50,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   func startLoading() {
     loadingView.startAnimating()
-    UIView.animate(withDuration: 0.3) {
+    UIView.animate(withDuration: 0.1) {
       self.containerView.alpha = 0.3
       self.containerView.layer.borderColor = UIColor.potRed.cgColor
     }
@@ -58,7 +58,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   func stopLoading() {
     loadingView.stopAnimating()
-    UIView.animate(withDuration: 0.3) {
+    UIView.animate(withDuration: 0.1) {
       self.containerView.alpha = 1.0
       self.containerView.layer.borderColor = UIColor.potDarkGray.cgColor
     }

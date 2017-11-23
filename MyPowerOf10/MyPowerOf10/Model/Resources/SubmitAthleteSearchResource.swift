@@ -35,7 +35,7 @@ struct SubmitAthleteSearchResource: NetworkResourceType, DataResourceType {
         url = Config.baseURL.appendingPathComponent("athletes/athleteslookup.aspx")
     }
     
-    func model(from data: Data) throws -> [AthleteResult] {
+    func model(from data: Data) throws -> Model {
         let parser = try AthleteSearchHTMLParser(htmlData: data)
         return parser.athletesFromSearchResults()
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AthleteSearchResultsViewControllerDelegate: class {
-  // TODO: Add delegate requirements
+  func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthleteProfile profile: AthleteProfile)
 }
 
 /// Handles the user interface for the Athlete Search results
@@ -82,6 +82,11 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterD
   func updateWithResults(results: [AthleteResult]) {
     athleteResults = results
   }
+  
+  func didRecieveAthleteProfile(profile: AthleteProfile) {
+    delegate?.athleteSearchResultsViewController(self, didReceiveAthleteProfile: profile)
+  }
+  
 }
 
 // MARK: - UITableViewDelegate + UITableViewDataSource

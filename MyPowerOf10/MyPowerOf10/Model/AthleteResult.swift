@@ -39,11 +39,11 @@ struct AthleteResult {
 extension AthleteResult {
     // TODO Safe array
     init(components: [String]) {
-        firstName = components[2].cleaned
-        surname = components[3].cleaned
-        ageGroup = components[4].cleaned
-        gender = Gender(parsedValue: components[7].cleaned)
-        clubs = components[8].cleaned.components(separatedBy: "/")
+        firstName = components[2].cleaned.removeTags.removeAmpersand()
+        surname = components[3].cleaned.removeTags.removeAmpersand()
+        ageGroup = components[4].cleaned.removeTags.removeAmpersand()
+        gender = Gender(parsedValue: components[7].cleaned.removeTags.removeAmpersand())
+        clubs = components[8].cleaned.removeTags.removeAmpersand().components(separatedBy: "/")
         athleteID = components.last?.digitsOnly
     }
 }
