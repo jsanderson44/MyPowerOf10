@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,17 +82,17 @@
 		3F1411C185E0A21DC428199130C5C2DE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Sources/TABResourceLoader/Concrete types/Result.swift"; sourceTree = "<group>"; };
 		3FFCE1F3A55C8957C82B7FBE3D27A8B1 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
 		434DCDB8BE45820E40D90A95200CB8DC /* JSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONArrayResourceType.swift"; sourceTree = "<group>"; };
-		43E8A90222F8C58AF81C8F5622C7D871 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
+		43E8A90222F8C58AF81C8F5622C7D871 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
 		4822327CB223D1483D532AAEE659CA0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48BE3513AAB96D8449A4E46B85F38AAD /* Pods-MyPowerOf10Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPowerOf10Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E556DDA100F2CA1D8828B9378D07CD8 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10Tests.framework; path = "Pods-MyPowerOf10Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E556DDA100F2CA1D8828B9378D07CD8 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554696615CC785EFBF18974ED6FDC1F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BE2C941E55B389E7E0D79622D7A59A1 /* BaseAsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAsynchronousOperation.swift; path = Sources/TABResourceLoader/Operations/BaseAsynchronousOperation.swift; sourceTree = "<group>"; };
-		5C2AC6133DFEA48DD4CECB190D1A7A45 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TABResourceLoader.framework; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2AC6133DFEA48DD4CECB190D1A7A45 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3FE94DE0C2F3941FFB1724DABA8CEA /* JSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDecodableResourceType.swift"; sourceTree = "<group>"; };
 		5E8DFC00A698EF317785920061308D52 /* JSONParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsingError.swift; path = "Sources/TABResourceLoader/Concrete types/JSONParsingError.swift"; sourceTree = "<group>"; };
 		5F2506CAE79CFCE567B537E2E86BDEE3 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
-		606131F91E7345A46871003E059C1AC8 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10.framework; path = "Pods-MyPowerOf10.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		606131F91E7345A46871003E059C1AC8 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E653B3ED3E07FF11923FFEB8B5DC2C /* NetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/NetworkDataResourceService.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		67D74EF18B0559253132F12910361B13 /* NetworkPropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkPropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		74A8329D72A78E1AD9C904D764620A1B /* Pods-MyPowerOf10Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		76AC89BC01982F6EA31970A4DEABF206 /* NetworkJSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONArrayResourceType.swift"; sourceTree = "<group>"; };
 		7CBAE8C1AF52B82C3113F8398BBC1E5B /* Pods-MyPowerOf10Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10Tests-dummy.m"; sourceTree = "<group>"; };
-		7E8F5B4C22DA2D90F03B14BCE836EA11 /* Pods-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
+		7E8F5B4C22DA2D90F03B14BCE836EA11 /* Pods-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
 		7F14F7CE333B0B2CB5818B8382C07FC7 /* PropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/PropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
 		8023CE05053CFDA6D8962B7D99BD82F4 /* Pods-MyPowerOf10-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-resources.sh"; sourceTree = "<group>"; };
 		8A3B06D7EA7F286B798639FC7AEBA4AB /* NSThread+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSThread+Additions.swift"; path = "Sources/TABResourceLoader/Extensions/NSThread+Additions.swift"; sourceTree = "<group>"; };
@@ -110,12 +110,12 @@
 		8FE618AE00A95B893E23EA34493D82CD /* GlobalFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = "Sources/TABResourceLoader/Helper functions/GlobalFunctions.swift"; sourceTree = "<group>"; };
 		91888529EF16BF9C5DA80302CA11CDC6 /* NetworkJSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
 		91D5D0D17D45FC9B66692A1F3EE104AC /* DataResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/DataResourceType.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		960C0C13145A5484831E18D3005BFBD8 /* TABResourceLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABResourceLoader-dummy.m"; sourceTree = "<group>"; };
 		981F98B212C87ABDFF5884C989116153 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
-		9E236A49BC0478C86963388C6917F337 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E236A49BC0478C86963388C6917F337 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BB0A652E86AE4214A4B2BEA70D2659 /* ResourceServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceServiceType.swift; path = Sources/TABResourceLoader/Protocols/ResourceServiceType.swift; sourceTree = "<group>"; };
-		A300C796588C6F6E0A112203049067EF /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kanna.modulemap; sourceTree = "<group>"; };
+		A300C796588C6F6E0A112203049067EF /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
 		A3BAF80C2946410B176005BC69C3C534 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
 		B2EBA235A9BCEDB1E8B49FBB1B465626 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
 		B316D3CFB1F7A213426A1073CD58AB84 /* URLSessionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionType.swift; path = Sources/TABResourceLoader/Services/URLSessionType.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		B811220C8177839F6949BA9B2C01CB95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8C49EA787117B123FF715B721EE3238 /* TABResourceLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABResourceLoader.xcconfig; sourceTree = "<group>"; };
 		BA0131E03D72099AE108B5CABF0203CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C01511804525B2ECB7C118D9A75B6D59 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
+		C01511804525B2ECB7C118D9A75B6D59 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
 		C43E125CB906426E6209E4CDF81E4D84 /* Pods-MyPowerOf10-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10-dummy.m"; sourceTree = "<group>"; };
 		C92E2AA5E609B6B5411BDDD885C9D40C /* JSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
 		C9631600617F7E0DBF9A54001E3047FC /* TABResourceLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-umbrella.h"; sourceTree = "<group>"; };
@@ -260,7 +260,6 @@
 				DCDA72D23B262029E7F16DFA070820BD /* libxmlParserOption.swift */,
 				ED7FDD29CB4AD526482B2CEF364A6E22 /* Support Files */,
 			);
-			name = Kanna;
 			path = Kanna;
 			sourceTree = "<group>";
 		};
@@ -342,7 +341,6 @@
 				B316D3CFB1F7A213426A1073CD58AB84 /* URLSessionType.swift */,
 				0F8EEE4A11D51435D70CC02DDA3E57A8 /* Support Files */,
 			);
-			name = TABResourceLoader;
 			path = TABResourceLoader;
 			sourceTree = "<group>";
 		};
@@ -462,7 +460,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -649,6 +647,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
