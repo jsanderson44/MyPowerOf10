@@ -22,8 +22,10 @@ final class MyPoTRouter: UINavigationController {
 //    navigationBar.isTranslucent = true
 //    navigationBar.backgroundColor = .white
     navigationBar.tintColor = .potRed
-    navigationBar.prefersLargeTitles = true
-    navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
+    if #available(iOS 11.0, *) {
+      navigationBar.prefersLargeTitles = true
+      navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
+    }
     navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
   }
   
