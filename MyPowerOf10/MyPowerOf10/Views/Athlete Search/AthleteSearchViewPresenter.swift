@@ -9,7 +9,7 @@
 import Foundation
 import TABResourceLoader
 
-protocol AthleteSearchViewPresenterDelegate: class {
+protocol AthleteSearchPresenterView: class {
   func updateLoadingState(isLoading: Bool)
   func showError()
   func updateSearchButton(isEnabled: Bool)
@@ -24,7 +24,7 @@ final class AthleteSearchViewPresenter {
   
   // MARK: Internal
   
-  weak var delegate: AthleteSearchViewPresenterDelegate?
+  weak var view: AthleteSearchPresenterView?
   
   // MARK: Private
   
@@ -45,10 +45,10 @@ final class AthleteSearchViewPresenter {
   // MARK: - Internal
   
   func performSearch(service: SubmitAthleteSearchResourceService = SubmitAthleteSearchResourceService()) {
-    delegate?.updateLoadingState(isLoading: true)
+    view?.updateLoadingState(isLoading: true)
     let resource = SubmitAthleteSearchResource(firstname: athleteFirstName, surname: athleteSurname, club: athleteClub)
     let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { (_, result) in
-      self.delegate?.updateLoadingState(isLoading: false)
+      self.view?.updateLoadingState(isLoading: false)
       self.handleAthleteSearchResult(result)
     }
     queue.addOperation(athleteSearchOperation)
@@ -56,17 +56,17 @@ final class AthleteSearchViewPresenter {
   
   func athleteSurnameDidChange(to value: String) {
     athleteSurname = value.trimmingCharacters(in: .whitespaces)
-    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
+    view?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   func athleteFirstNameDidChange(to value: String) {
     athleteFirstName = value.trimmingCharacters(in: .whitespaces)
-    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
+    view?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   func athleteClubDidChange(to value: String) {
     athleteClub = value.trimmingCharacters(in: .whitespaces)
-    delegate?.updateSearchButton(isEnabled: shouldEnableSearchButton)
+    view?.updateSearchButton(isEnabled: shouldEnableSearchButton)
   }
   
   // MARK: - Private
@@ -77,7 +77,7 @@ final class AthleteSearchViewPresenter {
       print("FAILLLLL")
       // TODO Error state
     case .success(let athletes, _):
-      delegate?.didRecieveResults(athletes: athletes)
+      view?.didRecieveResults(athletes: athletes)
     }
   }
     

@@ -9,7 +9,7 @@
 import Foundation
 import TABResourceLoader
 
-protocol AthleteSearchResultsViewPresenterDelegate: class {
+protocol AthleteSearchResultsPresenterView: class {
   func updateWithResults(results: [AthleteResult])
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
   func didRecieveAthleteProfile(profile: AthleteProfile)
@@ -23,7 +23,7 @@ final class AthleteSearchResultsViewPresenter {
   
   // MARK: Internal
   
-  weak var delegate: AthleteSearchResultsViewPresenterDelegate?
+  weak var view: AthleteSearchResultsPresenterView?
   
   // MARK: Private
   
@@ -40,15 +40,15 @@ final class AthleteSearchResultsViewPresenter {
   // MARK: - Internal
   
   func requestResults() {
-    delegate?.updateWithResults(results: athleteResults)
+    view?.updateWithResults(results: athleteResults)
   }
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
-    delegate?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
+    view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
     guard let athleteID = athleteResults[indexPath.row].athleteID else { return }
     let resource = RequestAthleteProfileResource(athleteID: athleteID)
     let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
-      self.delegate?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+      self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
       self.handleRequestAthleteProfileRequest(result)
     }
     queue.addOperation(athleteSearchOperation)
@@ -62,7 +62,7 @@ final class AthleteSearchResultsViewPresenter {
       print("FAILLLLL")
     // TODO Error state
     case .success(let profile, _):
-      delegate?.didRecieveAthleteProfile(profile: profile)
+      view?.didRecieveAthleteProfile(profile: profile)
     }
   }
   

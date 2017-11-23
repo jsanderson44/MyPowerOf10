@@ -49,7 +49,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    presenter.delegate = self
+    presenter.view = self
     title = "Athlete Search"
     removeBackButtonTitle()
     configureTextFields()
@@ -105,9 +105,9 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   
 }
 
-// MARK: - AthleteSearchViewPresenterDelegate
+// MARK: - AthleteSearchPresenterView
 
-extension AthleteSearchViewController: AthleteSearchViewPresenterDelegate {
+extension AthleteSearchViewController: AthleteSearchPresenterView {
   
   func updateLoadingState(isLoading: Bool) {
     accessoryView.isLoading = isLoading

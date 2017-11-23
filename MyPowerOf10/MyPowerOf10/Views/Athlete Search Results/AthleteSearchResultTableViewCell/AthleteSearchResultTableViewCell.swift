@@ -32,7 +32,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   private func setup() {
     containerView.backgroundColor = .white
-    containerView.layer.cornerRadius = 4.0
+    containerView.layer.cornerRadius = 8.0
     containerView.layer.borderColor = UIColor.potDarkGray.cgColor
     containerView.layer.borderWidth = 2.0
     containerView.applyShadow()

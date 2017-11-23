@@ -60,9 +60,9 @@
                     <constraint firstItem="xoS-Xd-YCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4BD-wz-viA"/>
                     <constraint firstAttribute="bottom" secondItem="xoS-Xd-YCe" secondAttribute="bottom" constant="4" id="DSU-zw-TGB"/>
                     <constraint firstItem="xoS-Xd-YCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="OLk-Do-6XB"/>
-                    <constraint firstItem="upu-2z-H66" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eBn-vc-N2H"/>
+                    <constraint firstItem="upu-2z-H66" firstAttribute="centerX" secondItem="xoS-Xd-YCe" secondAttribute="centerX" id="UoI-QK-PLg"/>
+                    <constraint firstItem="upu-2z-H66" firstAttribute="centerY" secondItem="xoS-Xd-YCe" secondAttribute="centerY" id="bkN-zo-A13"/>
                     <constraint firstAttribute="trailing" secondItem="xoS-Xd-YCe" secondAttribute="trailing" constant="8" id="o6p-lH-9od"/>
-                    <constraint firstItem="upu-2z-H66" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rFs-0O-3sM"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

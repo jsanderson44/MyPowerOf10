@@ -43,7 +43,7 @@ final class AthleteSearchResultsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    presenter.delegate = self
+    presenter.view = self
     title = "Search Results"
     removeBackButtonTitle()
     setupTableView()
@@ -64,9 +64,9 @@ final class AthleteSearchResultsViewController: UIViewController {
   
 }
 
-// MARK: - AthleteSearchViewPresenterDelegate
+// MARK: - AthleteSearchPresenterView
 
-extension AthleteSearchResultsViewController: AthleteSearchResultsViewPresenterDelegate {
+extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView {
   
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool) {
     guard let cell = tableView.cellForRow(at: indexPath) as? AthleteSearchResultTableViewCell else { return }

@@ -51,6 +51,14 @@ extension MyPoTRouter: AthleteSearchViewControllerDelegate {
 extension MyPoTRouter: AthleteSearchResultsViewControllerDelegate {
   
   func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthleteProfile profile: AthleteProfile) {
-    print(profile)
+    let presenter = AthleteProfilePresenter(athleteProfile: profile)
+    let viewController = AthleteProfileViewController(delegate: self, presenter: presenter)
+    pushViewController(viewController, animated: true)
   }
+}
+
+// MARK: - AthleteProfileViewControllerDelegate
+
+extension MyPoTRouter: AthleteProfileViewControllerDelegate {
+  
 }
