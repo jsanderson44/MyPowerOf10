@@ -12,30 +12,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AthleteProfileToggleView" customModule="MyPowerOf10" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-Ye-D9O">
-                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="62"/>
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u26-r3-Ls2">
-                    <rect key="frame" x="0.0" y="62" width="187.5" height="2"/>
+                    <rect key="frame" x="0.0" y="48" width="187.5" height="2"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="aM0-ug-wXI"/>
                     </constraints>
                 </view>
                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Performances" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-6H-v5C">
-                    <rect key="frame" x="187" y="0.0" width="187.5" height="64"/>
+                    <rect key="frame" x="187" y="0.0" width="187.5" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXF-Fn-oLM">
-                    <rect key="frame" x="187.5" y="62" width="187.5" height="2"/>
+                    <rect key="frame" x="187.5" y="48" width="187.5" height="2"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="Qyi-If-OlI"/>
@@ -68,7 +68,7 @@
                 <outlet property="rightSelectionView" destination="iXF-Fn-oLM" id="Qbh-VS-qWR"/>
                 <outlet property="rightSelectionViewHeightConstraint" destination="Qyi-If-OlI" id="zeD-rx-XZb"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="354"/>
+            <point key="canvasLocation" x="33.5" y="361"/>
         </view>
     </objects>
 </document>

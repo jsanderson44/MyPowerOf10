@@ -25,10 +25,10 @@
                     <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-1f-US0" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-ky-fqb">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                    <rect key="frame" x="0.0" y="50" width="375" height="200"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" placeholder="YES" id="cGM-51-9qd"/>
@@ -50,10 +50,10 @@
                     </constraints>
                 </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLY-Ls-YiM">
-                    <rect key="frame" x="0.0" y="76" width="375" height="64"/>
+                    <rect key="frame" x="0.0" y="76" width="375" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="wdW-VB-xei"/>
+                        <constraint firstAttribute="height" constant="50" id="wdW-VB-xei"/>
                     </constraints>
                 </view>
             </subviews>
