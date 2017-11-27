@@ -11,7 +11,7 @@ import TABResourceLoader
 
 protocol AthleteSearchPresenterView: class {
   func updateLoadingState(isLoading: Bool)
-  func showError()
+  func updateErrorState(isVisible: Bool)
   func updateSearchButton(isEnabled: Bool)
   func didRecieveResults(athletes: [AthleteResult])
 }
@@ -46,6 +46,7 @@ final class AthleteSearchViewPresenter {
   
   func performSearch(service: SubmitAthleteSearchResourceService = SubmitAthleteSearchResourceService()) {
     view?.updateLoadingState(isLoading: true)
+    view?.updateErrorState(isVisible: false)
     let resource = SubmitAthleteSearchResource(firstname: athleteFirstName, surname: athleteSurname, club: athleteClub)
     let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { (_, result) in
       self.view?.updateLoadingState(isLoading: false)
@@ -74,8 +75,7 @@ final class AthleteSearchViewPresenter {
   private func handleAthleteSearchResult(_ result: NetworkResponse<SubmitAthleteSearchResource.Model>) {
     switch result {
     case .failure:
-      print("FAILLLLL")
-      // TODO Error state
+      view?.updateErrorState(isVisible: true)
     case .success(let athletes, _):
       view?.didRecieveResults(athletes: athletes)
     }

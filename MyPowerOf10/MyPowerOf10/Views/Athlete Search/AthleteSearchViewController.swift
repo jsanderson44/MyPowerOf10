@@ -31,6 +31,9 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   @IBOutlet private var athleteFirstNameTextField: SearchTextField!
   @IBOutlet private var athleteClubTextField: SearchTextField!
   
+  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
+  @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
+  
   // MARK: - Initialiers -
   
   init(delegate: AthleteSearchViewControllerDelegate, presenter: AthleteSearchViewPresenter) {
@@ -111,8 +114,13 @@ extension AthleteSearchViewController: AthleteSearchPresenterView {
     }
   }
   
-  func showError() {
-    // Show error
+  func updateErrorState(isVisible: Bool) {
+    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    contentTopConstraint.constant = constraintConstant
+    errorViewHeightConstraint.constant = constraintConstant
+    UIView.animate(withDuration: 0.23) {
+      self.view.layoutIfNeeded()
+    }
   }
   
   func updateSearchButton(isEnabled: Bool) {
