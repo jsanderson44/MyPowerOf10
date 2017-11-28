@@ -27,7 +27,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-XT-Cfn" userLabel="Error View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-XT-Cfn" userLabel="Error View" customClass="CollapsableErrorView" customModule="MyPowerOf10" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="64" width="414" height="0.0"/>
                     <color key="backgroundColor" red="0.98683500290000004" green="0.16938440499999999" blue="0.029627867039999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>

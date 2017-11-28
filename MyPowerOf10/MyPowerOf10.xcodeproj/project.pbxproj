@@ -59,6 +59,7 @@
 		91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D402581FAF42E70032ED26 /* AppDelegate.swift */; };
 		91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D4025F1FAF42E70032ED26 /* Assets.xcassets */; };
 		91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D402611FAF42E70032ED26 /* LaunchScreen.storyboard */; };
+		91D7F4D51FCD6261008F4A7B /* CollapsableErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7F4D41FCD6261008F4A7B /* CollapsableErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		91D402641FAF42E70032ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D402691FAF42E70032ED26 /* MyPowerOf10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPowerOf10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D4026F1FAF42E70032ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D7F4D41FCD6261008F4A7B /* CollapsableErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableErrorView.swift; sourceTree = "<group>"; };
 		EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF562A3277F8F180EB66D8D8 /* Pods-MyPowerOf10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F373C3368A4E4C86BA30CC19 /* Pods-MyPowerOf10Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				91590C671FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib */,
 				91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */,
 				9145A5961FC625C4000C6EC8 /* GradientView.swift */,
+				91D7F4D41FCD6261008F4A7B /* CollapsableErrorView.swift */,
 			);
 			path = "Common Views";
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
+				91D7F4D51FCD6261008F4A7B /* CollapsableErrorView.swift in Sources */,
 				917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */,
 				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
 				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
