@@ -8,6 +8,7 @@ target 'MyPowerOf10' do
   # Pods for MyPowerOf10
   pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna.git', :branch => 'feature/v4.0.0'
   pod 'TABResourceLoader', '~> 7.0.0'
+	pod 'InteractiveSideMenu', '~> 2.1'
 
   target 'MyPowerOf10Tests' do
     inherit! :search_paths

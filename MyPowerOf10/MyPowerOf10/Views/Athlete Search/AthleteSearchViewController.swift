@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
 protocol AthleteSearchViewControllerDelegate: class {
   func athleteSearchViewController(_ controller: AthleteSearchViewController, didReceiveAthleteSearchResults athleteResults: [AthleteResult])
@@ -58,6 +59,15 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     configureTextFields()
     setupAccessoryView()
     athleteSurnameTextField.becomeFirstResponder()
+    
+    let rightButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(didTapMenu))
+    navigationItem.rightBarButtonItem = rightButton
+  }
+  
+  @objc private func didTapMenu() {
+    if let navigationViewController = self.navigationController as? SideMenuItemContent {
+      navigationViewController.showSideMenu()
+    }
   }
   
   // MARK: - Private function

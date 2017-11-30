@@ -56,6 +56,8 @@
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
 		91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAE1FAF598700D8493D /* AthleteSearchHTMLParser.swift */; };
 		91A4FCB11FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */; };
+		91C0F7741FD0513D008EC475 /* HostMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0F7721FD0513D008EC475 /* HostMenuViewController.swift */; };
+		91C0F7771FD056B7008EC475 /* TestMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C0F7761FD056B7008EC475 /* TestMenuVC.xib */; };
 		91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D402581FAF42E70032ED26 /* AppDelegate.swift */; };
 		91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D4025F1FAF42E70032ED26 /* Assets.xcassets */; };
 		91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D402611FAF42E70032ED26 /* LaunchScreen.storyboard */; };
@@ -123,6 +125,8 @@
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
 		91A4FCAE1FAF598700D8493D /* AthleteSearchHTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParser.swift; sourceTree = "<group>"; };
 		91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListMultiAthletes.html; sourceTree = "<group>"; };
+		91C0F7721FD0513D008EC475 /* HostMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostMenuViewController.swift; sourceTree = "<group>"; };
+		91C0F7761FD056B7008EC475 /* TestMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestMenuVC.xib; sourceTree = "<group>"; };
 		91D402551FAF42E70032ED26 /* MyPowerOf10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPowerOf10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D402581FAF42E70032ED26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91D4025F1FAF42E70032ED26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				91590C4E1FB7A0F500707A47 /* MyPoTRouter.swift */,
+				91C0F7721FD0513D008EC475 /* HostMenuViewController.swift */,
+				91C0F7761FD056B7008EC475 /* TestMenuVC.xib */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 				917DBC511FC723B300E02C2B /* AthleteProfileInformationView.xib in Resources */,
 				91590C4B1FB79F7600707A47 /* AthleteSearchViewController.xib in Resources */,
 				91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */,
+				91C0F7771FD056B7008EC475 /* TestMenuVC.xib in Resources */,
 				91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */,
 				917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */,
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
@@ -555,7 +562,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2D95BE3AA4D207853FB77BBE /* [CP] Check Pods Manifest.lock */ = {
@@ -573,7 +580,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		66540541F42F178D54A792D0 /* [CP] Copy Pods Resources */ = {
@@ -659,6 +666,7 @@
 				91784FC21FC6FB32006ADC28 /* AthleteProfilePresenter.swift in Sources */,
 				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
 				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
+				91C0F7741FD0513D008EC475 /* HostMenuViewController.swift in Sources */,
 				91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */,
 				91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */,
 				9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */,
