@@ -13,12 +13,15 @@ final class CollapsableErrorView: UIView {
   private lazy var label: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+    label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     label.textColor = .white
     label.numberOfLines = 0
     label.lineBreakMode = .byWordWrapping
     label.textAlignment = .center
-    label.text = "Sorry, something went wrong! Please try again."
+    label.text = """
+    Sorry, something went wrong!
+    Please try again.
+    """
     return label
   }()
   

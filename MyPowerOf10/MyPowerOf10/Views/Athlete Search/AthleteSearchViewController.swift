@@ -57,7 +57,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     removeBackButtonTitle()
     configureTextFields()
     setupAccessoryView()
-    athleteSurnameTextField.becomeFirstResponder()
+    setupGestureRecogniser()
   }
   
   // MARK: - Private function
@@ -83,6 +83,17 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
       presenter.athleteFirstNameDidChange(to: value)
     } else {
       presenter.athleteClubDidChange(to: value)
+    }
+  }
+  
+  private func setupGestureRecogniser() {
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(resignFirstResponders))
+    view.addGestureRecognizer(tapGesture)
+  }
+  
+  @objc private func resignFirstResponders() {
+    [athleteSurnameTextField, athleteFirstNameTextField, athleteClubTextField].forEach {
+      $0?.resignFirstResponder()
     }
   }
   

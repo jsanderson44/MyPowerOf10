@@ -8,13 +8,28 @@
 
 import UIKit
 
-final class BaseViewController: UIViewController {
+final class BaseViewController: UITabBarController {
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    let router = MyPoTRouter()
-    present(router, animated: false)
+    tabBar.tintColor = .potRed
+    configureViewControllers()
+  }
+  
+  // MARK: Private functions
+  
+  private func configureViewControllers() {
+    let athleteSearchRouter = MyPoTRouter()
+    athleteSearchRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+    
+    let newTestViewController = UIViewController()
+    newTestViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+    
+    let testViewController = UIViewController()
+    testViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+    
+    viewControllers = [athleteSearchRouter, newTestViewController, testViewController]
   }
   
 }

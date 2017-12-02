@@ -18,6 +18,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   @IBOutlet private var athleteNameLabel: UILabel!
   @IBOutlet private var athleteClubLabel: UILabel!
   @IBOutlet private var athleteAgeGroupLabel: UILabel!
+  @IBOutlet private var athleteGenderImageView: UIImageView!
   @IBOutlet private var loadingView: UIActivityIndicatorView!
   @IBOutlet private var topConstraint: NSLayoutConstraint!
   
@@ -33,9 +34,10 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   private func setup() {
     containerView.backgroundColor = .white
     containerView.layer.cornerRadius = 8.0
-    containerView.layer.borderColor = UIColor.potDarkGray.cgColor
+    containerView.layer.borderColor = UIColor.potRed.cgColor
     containerView.layer.borderWidth = 2.0
     containerView.applyShadow()
+    athleteGenderImageView.tintColor = .potDarkGray
     [athleteNameLabel, athleteClubLabel, athleteAgeGroupLabel].forEach {
       $0?.textColor = .potDarkGray
     }
@@ -48,13 +50,17 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
     athleteNameLabel.text = athlete.firstName + " " + athlete.surname
     athleteClubLabel.text = athlete.clubs.joined(separator: "\n")
     athleteAgeGroupLabel.text = athlete.ageGroup
+    
+    let genderImageName = athlete.gender == .male ? "male" : "female"
+    let genderImage = UIImage(named: genderImageName)
+    athleteGenderImageView.image = genderImage
   }
   
   func startLoading() {
     loadingView.startAnimating()
     UIView.animate(withDuration: 0.1) {
       self.containerView.alpha = 0.3
-      self.containerView.layer.borderColor = UIColor.potRed.cgColor
+      self.containerView.layer.borderColor = UIColor.potDarkGray.cgColor
     }
   }
   
@@ -62,7 +68,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
     loadingView.stopAnimating()
     UIView.animate(withDuration: 0.1) {
       self.containerView.alpha = 1.0
-      self.containerView.layer.borderColor = UIColor.potDarkGray.cgColor
+      self.containerView.layer.borderColor = UIColor.potRed.cgColor
     }
   }
   

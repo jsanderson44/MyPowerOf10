@@ -4,55 +4,67 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AthleteSearchResultTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="AthleteSearchResultTableViewCell" customModule="MyPowerOf10" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AthleteSearchResultTableViewCell" rowHeight="130" id="KGk-i7-Jjw" customClass="AthleteSearchResultTableViewCell" customModule="MyPowerOf10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-Xd-YCe">
-                        <rect key="frame" x="8" y="4" width="304" height="91.5"/>
+                        <rect key="frame" x="8" y="4" width="304" height="121.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Sanderson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-TO-Wr9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="John Sanderson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-TO-Wr9">
                                 <rect key="frame" x="12" y="8" width="160" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-OX-k3t">
-                                <rect key="frame" x="240" y="8" width="52" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guildford &amp; Godalming AC Guildford &amp; Godalming AC" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJp-Ez-chD">
-                                <rect key="frame" x="12" y="40.5" width="280" height="43"/>
+                                <rect key="frame" x="12" y="68" width="280" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Senior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-OX-k3t">
+                                <rect key="frame" x="12" y="40.5" width="52" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-Cl-XVX">
+                                <rect key="frame" x="260" y="8" width="32" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="941-3C-XFJ"/>
+                                    <constraint firstAttribute="width" constant="32" id="yuN-uO-o3y"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="B9q-OX-k3t" secondAttribute="trailing" constant="12" id="6b8-9i-MiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="fpT-Cl-XVX" secondAttribute="trailing" constant="12" id="1Mh-PD-dKZ"/>
+                            <constraint firstItem="fpT-Cl-XVX" firstAttribute="top" secondItem="LiP-TO-Wr9" secondAttribute="top" id="4eC-6f-ZNQ"/>
+                            <constraint firstItem="fpT-Cl-XVX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B9q-OX-k3t" secondAttribute="trailing" constant="12" id="DTB-FI-gV6"/>
+                            <constraint firstAttribute="trailing" secondItem="xJp-Ez-chD" secondAttribute="trailing" constant="12" id="Hid-VF-CJb"/>
+                            <constraint firstItem="xJp-Ez-chD" firstAttribute="top" secondItem="B9q-OX-k3t" secondAttribute="bottom" constant="6" id="L7z-JG-eYQ"/>
                             <constraint firstItem="LiP-TO-Wr9" firstAttribute="leading" secondItem="xoS-Xd-YCe" secondAttribute="leading" constant="12" id="Ma4-IC-nSG"/>
-                            <constraint firstItem="B9q-OX-k3t" firstAttribute="top" secondItem="xoS-Xd-YCe" secondAttribute="top" constant="8" id="b8r-V0-RJm"/>
-                            <constraint firstItem="xJp-Ez-chD" firstAttribute="top" secondItem="LiP-TO-Wr9" secondAttribute="bottom" constant="6" id="dkv-Pn-9Vm"/>
-                            <constraint firstItem="xJp-Ez-chD" firstAttribute="trailing" secondItem="B9q-OX-k3t" secondAttribute="trailing" id="fqQ-QN-ffZ"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xJp-Ez-chD" secondAttribute="bottom" constant="8" id="hrC-p5-Bov"/>
                             <constraint firstItem="xJp-Ez-chD" firstAttribute="leading" secondItem="LiP-TO-Wr9" secondAttribute="leading" id="j2Z-GP-cf9"/>
+                            <constraint firstItem="fpT-Cl-XVX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LiP-TO-Wr9" secondAttribute="trailing" constant="12" id="odP-yZ-Qs1"/>
+                            <constraint firstItem="B9q-OX-k3t" firstAttribute="top" secondItem="LiP-TO-Wr9" secondAttribute="bottom" constant="6" id="ool-QB-ckJ"/>
+                            <constraint firstItem="B9q-OX-k3t" firstAttribute="leading" secondItem="LiP-TO-Wr9" secondAttribute="leading" id="sUO-vV-ysy"/>
                             <constraint firstItem="LiP-TO-Wr9" firstAttribute="top" secondItem="xoS-Xd-YCe" secondAttribute="top" constant="8" id="uDa-HR-QG6"/>
                         </constraints>
                     </view>
                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="upu-2z-H66">
-                        <rect key="frame" x="150" y="39" width="20" height="20"/>
+                        <rect key="frame" x="150" y="54" width="20" height="20"/>
                     </activityIndicatorView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,12 +81,16 @@
             <connections>
                 <outlet property="athleteAgeGroupLabel" destination="B9q-OX-k3t" id="Gnx-eo-BU7"/>
                 <outlet property="athleteClubLabel" destination="xJp-Ez-chD" id="H0m-ar-rbC"/>
+                <outlet property="athleteGenderImageView" destination="fpT-Cl-XVX" id="LDA-RX-qyC"/>
                 <outlet property="athleteNameLabel" destination="LiP-TO-Wr9" id="NL3-D6-T6c"/>
                 <outlet property="containerView" destination="xoS-Xd-YCe" id="udv-ie-nSq"/>
                 <outlet property="loadingView" destination="upu-2z-H66" id="cil-jU-r2x"/>
                 <outlet property="topConstraint" destination="OLk-Do-6XB" id="WLo-3N-5bI"/>
             </connections>
-            <point key="canvasLocation" x="34" y="82"/>
+            <point key="canvasLocation" x="34" y="97"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="male" width="137" height="152"/>
+    </resources>
 </document>

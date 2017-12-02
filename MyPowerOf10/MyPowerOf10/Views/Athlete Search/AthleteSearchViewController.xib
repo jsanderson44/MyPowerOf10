@@ -38,7 +38,7 @@
                     <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-R3-wiR" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTJ-2a-8GS" customClass="SearchTextField" customModule="MyPowerOf10" customModuleProvider="target">
                                     <rect key="frame" x="32" y="32" width="350" height="44"/>
@@ -74,7 +74,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="bJj-Nl-f3p" firstAttribute="height" secondItem="DTJ-2a-8GS" secondAttribute="height" id="3gh-bo-NBA"/>
-                                <constraint firstAttribute="bottom" secondItem="OcY-zs-IGV" secondAttribute="bottom" constant="32" id="6Gb-18-NvL"/>
+                                <constraint firstAttribute="bottom" secondItem="OcY-zs-IGV" secondAttribute="bottom" id="6Gb-18-NvL"/>
                                 <constraint firstAttribute="trailing" secondItem="OcY-zs-IGV" secondAttribute="trailing" constant="32" id="E5g-Ii-KcP"/>
                                 <constraint firstItem="OcY-zs-IGV" firstAttribute="leading" secondItem="0KT-R3-wiR" secondAttribute="leading" constant="32" id="LZR-xf-Q4b"/>
                                 <constraint firstItem="DTJ-2a-8GS" firstAttribute="top" secondItem="0KT-R3-wiR" secondAttribute="top" constant="32" id="M6h-ok-7zk"/>
