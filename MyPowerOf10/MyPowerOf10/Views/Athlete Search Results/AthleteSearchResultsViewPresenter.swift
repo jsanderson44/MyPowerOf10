@@ -12,7 +12,7 @@ import TABResourceLoader
 protocol AthleteSearchResultsPresenterView: class {
   func updateWithResults(results: [AthleteResult])
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
-  func didRecieveAthleteProfile(profile: AthleteProfile)
+  func didRecieveAthlete(athlete: Athlete)
 }
 
 /// Handles the presentation of the Athlete Search results
@@ -45,8 +45,8 @@ final class AthleteSearchResultsViewPresenter {
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
     view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
-    guard let athleteID = athleteResults[indexPath.row].athleteID else { return }
-    let resource = RequestAthleteProfileResource(athleteID: athleteID)
+    let athleteResult = athleteResults[indexPath.row]
+    let resource = RequestAthleteProfileResource(athleteResult: athleteResult)
     let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
       self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
       self.handleRequestAthleteProfileRequest(result)
@@ -61,8 +61,8 @@ final class AthleteSearchResultsViewPresenter {
     case .failure:
       print("FAILLLLL")
     // TODO Error state
-    case .success(let profile, _):
-      view?.didRecieveAthleteProfile(profile: profile)
+    case .success(let athlete, _):
+      view?.didRecieveAthlete(athlete: athlete)
     }
   }
   

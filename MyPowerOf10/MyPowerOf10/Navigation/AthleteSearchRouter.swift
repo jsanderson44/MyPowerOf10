@@ -1,5 +1,5 @@
 //
-//  MyPoTRouter.swift
+//  AthleteSearchRouter.swift
 //  MyPowerOf10
 //
 //  Created by John Sanderson on 11/11/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MyPoTRouter: UINavigationController {
+final class AthleteSearchRouter: UINavigationController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,7 +35,7 @@ final class MyPoTRouter: UINavigationController {
 
 // MARK: - AthleteSearchViewControllerDelegate
 
-extension MyPoTRouter: AthleteSearchViewControllerDelegate {
+extension AthleteSearchRouter: AthleteSearchViewControllerDelegate {
   
   func athleteSearchViewController(_ controller: AthleteSearchViewController, didReceiveAthleteSearchResults athleteResults: [AthleteResult]) {
     let presenter = AthleteSearchResultsViewPresenter(athleteResults: athleteResults)
@@ -46,10 +46,10 @@ extension MyPoTRouter: AthleteSearchViewControllerDelegate {
 
 // MARK: - AthleteSearchResultsViewControllerDelegate
 
-extension MyPoTRouter: AthleteSearchResultsViewControllerDelegate {
+extension AthleteSearchRouter: AthleteSearchResultsViewControllerDelegate {
   
-  func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthleteProfile profile: AthleteProfile) {
-    let presenter = AthleteProfilePresenter(athleteProfile: profile)
+  func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthlete athlete: Athlete) {
+    let presenter = AthleteProfilePresenter(athlete: athlete)
     let viewController = AthleteProfileViewController(delegate: self, presenter: presenter)
     pushViewController(viewController, animated: true)
   }
@@ -57,6 +57,6 @@ extension MyPoTRouter: AthleteSearchResultsViewControllerDelegate {
 
 // MARK: - AthleteProfileViewControllerDelegate
 
-extension MyPoTRouter: AthleteProfileViewControllerDelegate {
+extension AthleteSearchRouter: AthleteProfileViewControllerDelegate {
   
 }

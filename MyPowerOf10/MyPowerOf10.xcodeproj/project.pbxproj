@@ -21,7 +21,7 @@
 		91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C471FB79F7600707A47 /* AthleteSearchViewController.swift */; };
 		91590C4B1FB79F7600707A47 /* AthleteSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91590C481FB79F7600707A47 /* AthleteSearchViewController.xib */; };
 		91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C491FB79F7600707A47 /* AthleteSearchViewPresenter.swift */; };
-		91590C4F1FB7A0F500707A47 /* MyPoTRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C4E1FB7A0F500707A47 /* MyPoTRouter.swift */; };
+		91590C4F1FB7A0F500707A47 /* AthleteSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C4E1FB7A0F500707A47 /* AthleteSearchRouter.swift */; };
 		91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C511FB7A41900707A47 /* BaseViewController.swift */; };
 		91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91590C521FB7A41900707A47 /* BaseViewController.xib */; };
 		91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590C561FB7B03B00707A47 /* AthleteSearchResultsViewController.swift */; };
@@ -40,6 +40,9 @@
 		917728AF1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917728AD1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib */; };
 		917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728B11FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift */; };
 		917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */; };
+		917728B61FD9E0E000E6FD8C /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728B51FD9E0E000E6FD8C /* Athlete.swift */; };
+		917728B91FD9E4A400E6FD8C /* DataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728B81FD9E4A400E6FD8C /* DataStoreType.swift */; };
+		917728BB1FD9E4AE00E6FD8C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917728BA1FD9E4AE00E6FD8C /* DataStore.swift */; };
 		91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */; };
 		91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */; };
 		91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */; };
@@ -88,7 +91,7 @@
 		91590C471FB79F7600707A47 /* AthleteSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchViewController.swift; sourceTree = "<group>"; };
 		91590C481FB79F7600707A47 /* AthleteSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteSearchViewController.xib; sourceTree = "<group>"; };
 		91590C491FB79F7600707A47 /* AthleteSearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchViewPresenter.swift; sourceTree = "<group>"; };
-		91590C4E1FB7A0F500707A47 /* MyPoTRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPoTRouter.swift; sourceTree = "<group>"; };
+		91590C4E1FB7A0F500707A47 /* AthleteSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchRouter.swift; sourceTree = "<group>"; };
 		91590C511FB7A41900707A47 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		91590C521FB7A41900707A47 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		91590C561FB7B03B00707A47 /* AthleteSearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchResultsViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +110,9 @@
 		917728AD1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteProfileBestPerformancesView.xib; sourceTree = "<group>"; };
 		917728B11FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPerformancesTableViewCell.swift; sourceTree = "<group>"; };
 		917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestPerformancesTableViewCell.xib; sourceTree = "<group>"; };
+		917728B51FD9E0E000E6FD8C /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		917728B81FD9E4A400E6FD8C /* DataStoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreType.swift; sourceTree = "<group>"; };
+		917728BA1FD9E4AE00E6FD8C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAthleteProfileResource.swift; sourceTree = "<group>"; };
 		91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfileHTMLParser.swift; sourceTree = "<group>"; };
 		91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfile.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 				91499D891FB107A30086134E /* Resources */,
 				91499D7E1FAF8DEB0086134E /* AthleteResult.swift */,
 				91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */,
+				917728B51FD9E0E000E6FD8C /* Athlete.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		91499D801FAF8E480086134E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				917728B71FD9E49400E6FD8C /* DataStore */,
 				91499D811FAF8E570086134E /* String+Additions.swift */,
 				91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */,
 				91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */,
@@ -230,7 +238,7 @@
 		91590C451FB79C2B00707A47 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				91590C4E1FB7A0F500707A47 /* MyPoTRouter.swift */,
+				91590C4E1FB7A0F500707A47 /* AthleteSearchRouter.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -312,6 +320,15 @@
 				917728B21FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib */,
 			);
 			path = BestPerformancesCell;
+			sourceTree = "<group>";
+		};
+		917728B71FD9E49400E6FD8C /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				917728B81FD9E4A400E6FD8C /* DataStoreType.swift */,
+				917728BA1FD9E4AE00E6FD8C /* DataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 		91784FBC1FC6FAFF006ADC28 /* Athlete Profile */ = {
@@ -649,7 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */,
-				91590C4F1FB7A0F500707A47 /* MyPoTRouter.swift in Sources */,
+				91590C4F1FB7A0F500707A47 /* AthleteSearchRouter.swift in Sources */,
 				9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */,
 				91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */,
 				91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */,
@@ -660,6 +677,7 @@
 				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
 				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
 				91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */,
+				917728B91FD9E4A400E6FD8C /* DataStoreType.swift in Sources */,
 				91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */,
 				9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */,
 				91784FC01FC6FB32006ADC28 /* AthleteProfileViewController.swift in Sources */,
@@ -672,6 +690,7 @@
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
 				91D7F4D51FCD6261008F4A7B /* CollapsableErrorView.swift in Sources */,
+				917728BB1FD9E4AE00E6FD8C /* DataStore.swift in Sources */,
 				917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */,
 				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
 				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
@@ -679,6 +698,7 @@
 				91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */,
 				91499D8B1FB107E40086134E /* SubmitAthleteSearchResource.swift in Sources */,
 				91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */,
+				917728B61FD9E0E000E6FD8C /* Athlete.swift in Sources */,
 				91590C601FB8B8F100707A47 /* SearchTextField.swift in Sources */,
 				917DBC501FC723B300E02C2B /* AthleteProfileInformationView.swift in Sources */,
 			);

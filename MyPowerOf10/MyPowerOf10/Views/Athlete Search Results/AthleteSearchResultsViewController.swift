@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AthleteSearchResultsViewControllerDelegate: class {
-  func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthleteProfile profile: AthleteProfile)
+  func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthlete athlete: Athlete)
 }
 
 /// Handles the user interface for the Athlete Search results
@@ -83,8 +83,8 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView 
     athleteResults = results
   }
   
-  func didRecieveAthleteProfile(profile: AthleteProfile) {
-    delegate?.athleteSearchResultsViewController(self, didReceiveAthleteProfile: profile)
+  func didRecieveAthlete(athlete: Athlete) {
+    delegate?.athleteSearchResultsViewController(self, didReceiveAthlete: athlete)
   }
   
 }
