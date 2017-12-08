@@ -18,7 +18,8 @@ final class AthleteProfileViewController: UIViewController {
   // MARK: Outlets
   
   @IBOutlet private var toggleContainerView: UIView!
-  @IBOutlet private var detailContainerView: UIView!
+  @IBOutlet private var athleteInformationContainerView: UIView!
+  @IBOutlet private var bestPerformancesContainerView: UIView!
 	
 	// MARK: Internal
 	
@@ -51,9 +52,9 @@ final class AthleteProfileViewController: UIViewController {
 		super.viewDidLoad()
 		presenter.view = self
     configureToggleView()
-    configureDetailView()
-    configureNavigationBar()
     presenter.requestProfile()
+    configureAthleteInformationView()
+    configureBestPerformancesView()
 	}
   
   // MARK: Private
@@ -71,20 +72,28 @@ final class AthleteProfileViewController: UIViewController {
       ])
   }
   
-  private func configureDetailView() {
-    [informationView, bestPerformancesView].forEach { (view) in
-      detailContainerView.addSubview(view)
-      view.translatesAutoresizingMaskIntoConstraints = false
-      
-      NSLayoutConstraint.activate([
-        view.topAnchor.constraint(equalTo: detailContainerView.topAnchor),
-        view.bottomAnchor.constraint(equalTo: detailContainerView.bottomAnchor),
-        view.leadingAnchor.constraint(equalTo: detailContainerView.leadingAnchor),
-        view.trailingAnchor.constraint(equalTo: detailContainerView.trailingAnchor)
-        ])
-    }
-    
-    bestPerformancesView.isHidden = true
+  private func configureAthleteInformationView() {
+    athleteInformationContainerView.addSubview(informationView)
+    informationView.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([ //TODO Pin helper
+      informationView.topAnchor.constraint(equalTo: athleteInformationContainerView.topAnchor),
+      informationView.bottomAnchor.constraint(equalTo: athleteInformationContainerView.bottomAnchor),
+      informationView.leadingAnchor.constraint(equalTo: athleteInformationContainerView.leadingAnchor),
+      informationView.trailingAnchor.constraint(equalTo: athleteInformationContainerView.trailingAnchor)
+      ])
+  }
+  
+  private func configureBestPerformancesView() {
+    bestPerformancesContainerView.addSubview(bestPerformancesView)
+    bestPerformancesView.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([ //TODO Pin helper
+      bestPerformancesContainerView.heightAnchor.constraint(equalToConstant: bestPerformancesView.contentHeight()),
+      bestPerformancesView.topAnchor.constraint(equalTo: bestPerformancesContainerView.topAnchor),
+      bestPerformancesView.bottomAnchor.constraint(equalTo: bestPerformancesContainerView.bottomAnchor),
+      bestPerformancesView.leadingAnchor.constraint(equalTo: bestPerformancesContainerView.leadingAnchor),
+      bestPerformancesView.trailingAnchor.constraint(equalTo: bestPerformancesContainerView.trailingAnchor)
+      ])
+    bestPerformancesContainerView.isHidden = true
   }
   
   private func configureNavigationBar() {
@@ -124,12 +133,12 @@ extension AthleteProfileViewController: AthleteProfilePresenterView {
 extension AthleteProfileViewController: AthleteProfileToggleViewDelegate {
   
   func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
-    informationView.isHidden = false
-    bestPerformancesView.isHidden = true
+    athleteInformationContainerView.isHidden = false
+    bestPerformancesContainerView.isHidden = true
   }
   
   func athleteProfileToggleViewDidTapRightToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
-    bestPerformancesView.isHidden = false
-    informationView.isHidden = true
+    bestPerformancesContainerView.isHidden = false
+    athleteInformationContainerView.isHidden = true
   }
 }
