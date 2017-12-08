@@ -12,7 +12,7 @@ import TABResourceLoader
 protocol AthleteSearchResultsPresenterView: class {
   func updateWithResults(results: [AthleteResult])
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
-  func didRecieveAthleteProfile(profile: AthleteProfile)
+  func didRecieveAthlete(athlete: Athlete)
 }
 
 /// Handles the presentation of the Athlete Search results
@@ -28,12 +28,14 @@ final class AthleteSearchResultsViewPresenter {
   // MARK: Private
   
   private let queue: OperationQueue
+  private let dataStore: DataStoreType
   private let athleteResults: [AthleteResult]
   
   // MARK: - Initialiers -
   
-  init(queue: OperationQueue = OperationQueue.main, athleteResults: [AthleteResult]) {
+  init(queue: OperationQueue = OperationQueue.main, dataStore: DataStoreType = DataStore(), athleteResults: [AthleteResult]) {
     self.queue = queue
+    self.dataStore = dataStore
     self.athleteResults = athleteResults
   }
   
@@ -45,24 +47,41 @@ final class AthleteSearchResultsViewPresenter {
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
     view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
-    guard let athleteID = athleteResults[indexPath.row].athleteID else { return }
-    let resource = RequestAthleteProfileResource(athleteID: athleteID)
-    let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
-      self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
-      self.handleRequestAthleteProfileRequest(result)
+    let athleteResult = athleteResults[indexPath.row]
+    if let savedAthlete = favouritedAthlete(athleteResult: athleteResult) {
+      view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+      view?.didRecieveAthlete(athlete: savedAthlete)
+    } else {
+      let resource = RequestAthleteProfileResource(athleteResult: athleteResult)
+      let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
+        self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+        self.handleRequestAthleteProfileRequest(result)
+      }
+      queue.addOperation(athleteSearchOperation)
     }
-    queue.addOperation(athleteSearchOperation)
   }
   
   // MARK: Private
+  
+  private func favouritedAthlete(athleteResult: AthleteResult) -> Athlete? {
+    guard let id = athleteResult.athleteID else {
+      return nil
+    }
+    do {
+      let savedAthlete = try dataStore.retrieveAthlete(forKey: id)
+      return savedAthlete
+    } catch {
+      return nil
+    }
+  }
   
   private func handleRequestAthleteProfileRequest(_ result: NetworkResponse<RequestAthleteProfileResource.Model>) {
     switch result {
     case .failure:
       print("FAILLLLL")
     // TODO Error state
-    case .success(let profile, _):
-      view?.didRecieveAthleteProfile(profile: profile)
+    case .success(let athlete, _):
+      view?.didRecieveAthlete(athlete: athlete)
     }
   }
   

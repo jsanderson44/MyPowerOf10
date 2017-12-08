@@ -30,6 +30,8 @@ final class AthleteProfileViewController: UIViewController {
   private let toggleView = AthleteProfileToggleView.loadFromNib()
   private let informationView = AthleteProfileInformationView.loadFromNib()
   private let bestPerformancesView = AthleteProfileBestPerformancesView.loadFromNib()
+  
+  private var isFavourited: Bool = false
 	
 	// MARK: - Initialiers -
 	
@@ -50,6 +52,7 @@ final class AthleteProfileViewController: UIViewController {
 		presenter.view = self
     configureToggleView()
     configureDetailView()
+    configureNavigationBar()
     presenter.requestProfile()
 	}
   
@@ -84,16 +87,35 @@ final class AthleteProfileViewController: UIViewController {
     bestPerformancesView.isHidden = true
   }
   
+  private func configureNavigationBar() {
+    let favouriteIconName = isFavourited ? "starIconFilled" : "starIcon"
+    let favouritedImage = UIImage(named: favouriteIconName)
+    let favouritedBarButtonIcon = UIBarButtonItem(image: favouritedImage, style: .plain, target: self, action: #selector(didTapFavouriteAthlete))
+    navigationItem.rightBarButtonItem = favouritedBarButtonIcon
+  }
+  
+  @objc private func didTapFavouriteAthlete() {
+    isFavourited = !isFavourited
+    configureNavigationBar()
+    if isFavourited {
+      presenter.favouriteAthlete()
+    } else {
+      presenter.unfavouriteAthlete()
+    }
+  }
+  
 }
 
 // MARK: AthleteProfilePresenterView
 
 extension AthleteProfileViewController: AthleteProfilePresenterView {
 	
-  func updateWith(athleteProfile: AthleteProfile) {
+  func updateWith(athleteProfile: AthleteProfile, isFavourited: Bool) {
     title = athleteProfile.name
+    self.isFavourited = isFavourited
     informationView.update(with: athleteProfile)
     bestPerformancesView.update(with: athleteProfile.bestPerformances)
+    configureNavigationBar()
   }
 }
 

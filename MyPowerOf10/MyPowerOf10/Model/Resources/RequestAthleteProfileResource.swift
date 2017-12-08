@@ -11,7 +11,7 @@ import TABResourceLoader
 
 struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
   
-  typealias Model = AthleteProfile
+  typealias Model = Athlete
   public let httpRequestMethod: HTTPMethod = .post
   var url: URL
   var queryItems: [URLQueryItem]? {
@@ -21,17 +21,23 @@ struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
     return queryItems
   }
   
-  private let athleteID: String
+  private let athleteResult: AthleteResult
+  private var athleteID: String {
+    guard let athleteID = athleteResult.athleteID else {
+      return ""
+    }
+    return athleteID
+  }
   
-  init(athleteID: String) {
-    self.athleteID = athleteID
+  init(athleteResult: AthleteResult) {
+    self.athleteResult = athleteResult
     url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
   }
   
   func model(from data: Data) throws -> Model {
     let parser = try AthleteProfileHTMLParser(htmlData: data)
     let profile = try parser.athleteProfile()
-    return profile
+    return Athlete(searchResult: athleteResult, profile: profile, isFavourited: false)
   }
   
 }

@@ -20,16 +20,13 @@ final class BaseViewController: UITabBarController {
   // MARK: Private functions
   
   private func configureViewControllers() {
-    let athleteSearchRouter = MyPoTRouter()
+    let athleteSearchRouter = AthleteSearchRouter()
     athleteSearchRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
     
-    let newTestViewController = UIViewController()
-    newTestViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+    let favouriteAthletesRouter = FavouriteAthletesRouter()
+    favouriteAthletesRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     
-    let testViewController = UIViewController()
-    testViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
-    
-    viewControllers = [athleteSearchRouter, newTestViewController, testViewController]
+    viewControllers = [athleteSearchRouter, favouriteAthletesRouter]
   }
   
 }

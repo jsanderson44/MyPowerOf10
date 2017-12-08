@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Performance {
+struct Performance: Codable {
   let event: String
   let result: String
 }
 
-struct AthleteProfile {
+struct AthleteProfile: Codable {
   let name: String
   let club: String
   let gender: Gender
