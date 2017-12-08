@@ -23,10 +23,10 @@ final class BaseViewController: UITabBarController {
     let athleteSearchRouter = AthleteSearchRouter()
     athleteSearchRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
     
-    let testViewController = UIViewController()
-    testViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+    let favouriteAthletesRouter = FavouriteAthletesRouter()
+    favouriteAthletesRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     
-    viewControllers = [athleteSearchRouter, testViewController]
+    viewControllers = [athleteSearchRouter, favouriteAthletesRouter]
   }
   
 }

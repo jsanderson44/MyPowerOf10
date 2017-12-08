@@ -28,10 +28,11 @@ final class AthleteSearchResultsViewController: UIViewController {
   
   // MARK: - Initialiers -
   
-  init(delegate: AthleteSearchResultsViewControllerDelegate, presenter: AthleteSearchResultsViewPresenter) {
+  init(delegate: AthleteSearchResultsViewControllerDelegate, presenter: AthleteSearchResultsViewPresenter, title: String) {
     self.presenter = presenter
     self.delegate = delegate
     super.init(nibName: String(describing: AthleteSearchResultsViewController.self), bundle: .main)
+    self.title = title
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -44,7 +45,6 @@ final class AthleteSearchResultsViewController: UIViewController {
     super.viewDidLoad()
     
     presenter.view = self
-    title = "Search Results"
     removeBackButtonTitle()
     setupTableView()
     presenter.requestResults()

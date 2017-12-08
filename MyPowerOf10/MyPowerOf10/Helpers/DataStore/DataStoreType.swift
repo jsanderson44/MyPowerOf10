@@ -26,6 +26,11 @@ protocol DataStoreType {
   /// - Returns: The associated string value (optional)
   func retrieveAthlete(forKey key: String) throws -> Athlete
   
+  /// Returns all saved athletes from the store.
+  ///
+  /// - Returns: An array of athletes.
+  func retrieveAllAthletes() -> [Athlete]
+  
   /// Removes the persisted value identified by
   /// the provided key from.
   ///

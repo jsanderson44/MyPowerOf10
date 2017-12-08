@@ -39,6 +39,22 @@ struct DataStore: DataStoreType {
     return athlete
   }
   
+  func retrieveAllAthletes() -> [Athlete] {
+    let jsonDecoder = JSONDecoder()
+    let jsonDictionary = store.dictionaryRepresentation()
+    var athletes: [Athlete] = []
+    do {
+      try jsonDictionary.forEach {
+        guard let data = $0.value as? Data else { return }
+        let athlete = try jsonDecoder.decode(Athlete.self, from: data)
+        athletes.append(athlete)
+      }
+    } catch {
+      return athletes
+    }
+    return athletes
+  }
+  
   func removeAthlete(forKey key: String) {
     store.removeObject(forKey: key)
   }

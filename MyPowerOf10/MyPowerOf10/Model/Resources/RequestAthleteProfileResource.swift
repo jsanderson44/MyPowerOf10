@@ -21,7 +21,6 @@ struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
     return queryItems
   }
   
-  private let dataStore: DataStoreType
   private let athleteResult: AthleteResult
   private var athleteID: String {
     guard let athleteID = athleteResult.athleteID else {
@@ -30,29 +29,15 @@ struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
     return athleteID
   }
   
-  init(athleteResult: AthleteResult, dataStore: DataStoreType = DataStore()) {
+  init(athleteResult: AthleteResult) {
     self.athleteResult = athleteResult
-    self.dataStore = dataStore
     url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
   }
   
   func model(from data: Data) throws -> Model {
     let parser = try AthleteProfileHTMLParser(htmlData: data)
     let profile = try parser.athleteProfile()
-    let isFavourited = isPreviouslySavedAndFavourited()
-    return Athlete(searchResult: athleteResult, profile: profile, isFavourited: isFavourited)
-  }
-  
-  private func isPreviouslySavedAndFavourited() -> Bool {
-    guard let id = athleteResult.athleteID else {
-      return false
-    }
-    do {
-      let savedAthlete = try dataStore.retrieveAthlete(forKey: id)
-      return savedAthlete.isFavourited
-    } catch {
-      return false
-    }
+    return Athlete(searchResult: athleteResult, profile: profile, isFavourited: false)
   }
   
 }

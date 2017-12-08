@@ -39,7 +39,7 @@ extension AthleteSearchRouter: AthleteSearchViewControllerDelegate {
   
   func athleteSearchViewController(_ controller: AthleteSearchViewController, didReceiveAthleteSearchResults athleteResults: [AthleteResult]) {
     let presenter = AthleteSearchResultsViewPresenter(athleteResults: athleteResults)
-    let viewController = AthleteSearchResultsViewController(delegate: self, presenter: presenter)
+    let viewController = AthleteSearchResultsViewController(delegate: self, presenter: presenter, title: "Search Results")
     pushViewController(viewController, animated: true)
   }
 }
