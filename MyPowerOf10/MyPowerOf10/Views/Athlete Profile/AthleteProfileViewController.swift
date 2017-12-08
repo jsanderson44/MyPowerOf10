@@ -18,6 +18,7 @@ final class AthleteProfileViewController: UIViewController {
   // MARK: Outlets
   
   @IBOutlet private var toggleContainerView: UIView!
+  @IBOutlet private var athleteInformationScrollView: UIView!
   @IBOutlet private var athleteInformationContainerView: UIView!
   @IBOutlet private var bestPerformancesContainerView: UIView!
 	
@@ -133,12 +134,12 @@ extension AthleteProfileViewController: AthleteProfilePresenterView {
 extension AthleteProfileViewController: AthleteProfileToggleViewDelegate {
   
   func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
-    athleteInformationContainerView.isHidden = false
+    athleteInformationScrollView.isHidden = false
     bestPerformancesContainerView.isHidden = true
   }
   
   func athleteProfileToggleViewDidTapRightToggle(_ athleteProfileToggleView: AthleteProfileToggleView) {
     bestPerformancesContainerView.isHidden = false
-    athleteInformationContainerView.isHidden = true
+    athleteInformationScrollView.isHidden = true
   }
 }
