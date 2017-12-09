@@ -15,7 +15,6 @@ enum Gender: String, Codable {
 }
 
 extension Gender {
-  
   init(parsedValue: String?) {
     guard let value = parsedValue else {
       self = .unknown
@@ -42,11 +41,11 @@ struct AthleteResult: Codable {
 
 extension AthleteResult {
   init(components: [String]) {
-    firstName = components[safe: 2]?.cleaned.removeTags.removeAmpersand() ?? "-"
-    surname = components[safe: 3]?.cleaned.removeTags.removeAmpersand() ?? "-"
-    ageGroup = components[safe: 4]?.cleaned.removeTags.removeAmpersand() ?? "-"
-    gender = Gender(parsedValue: components[safe: 7]?.cleaned.removeTags.removeAmpersand())
-    clubs = components[safe: 8]?.cleaned.removeTags.removeAmpersand().components(separatedBy: "/") ?? []
+    firstName = components[safe: 2].cleaned.removeTags.removeAmpersand()
+    surname = components[safe: 3].cleaned.removeTags.removeAmpersand()
+    ageGroup = components[safe: 4].cleaned.removeTags.removeAmpersand()
+    gender = Gender(parsedValue: components[safe: 7].cleaned.removeTags.removeAmpersand())
+    clubs = components[safe: 8].cleaned.removeTags.removeAmpersand().components(separatedBy: "/")
     athleteID = components.last?.digitsOnly
   }
 }

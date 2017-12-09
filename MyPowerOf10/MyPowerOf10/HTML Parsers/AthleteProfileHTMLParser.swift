@@ -31,13 +31,14 @@ struct AthleteProfileHTMLParser {
       return component
     }
     
-    let club = infoComponents[3]
-    guard let gender = Gender(rawValue: infoComponents[5]) else { throw AthleteProfileParsingError.couldNotParseAthlete }
-    let ageGroup = infoComponents[7]
-    let county = infoComponents[9]
-    let region = infoComponents[11]
-    let nation = infoComponents[13]
-    let coach = infoComponents[16]
+    let genderString = infoComponents[safe: 5]
+    let gender: Gender = Gender(rawValue: genderString) ?? .unknown
+    let club = infoComponents[safe: 3]
+    let ageGroup = infoComponents[safe: 7]
+    let county = infoComponents[safe: 9]
+    let region = infoComponents[safe: 11]
+    let nation = infoComponents[safe: 13]
+    let coach = infoComponents[safe: 16]
     
     var count = 0
     let bestPerformances: [Performance] = document.css("#cphBody_divBestPerformances .bestperformancesheader").flatMap { (eventElement) in
