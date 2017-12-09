@@ -24,11 +24,7 @@ class RoundedCornerActionButton: UIButton {
   
   // MARK: - Private properties
   
-  private lazy var loadingSpinner: UIActivityIndicatorView = {
-    let indicator = UIActivityIndicatorView()
-    indicator.translatesAutoresizingMaskIntoConstraints = false
-    return indicator
-  }()
+  private var loadingSpinner = UIActivityIndicatorView()
   
   // MARK: - Override properties
   public override var isEnabled: Bool {
@@ -50,7 +46,7 @@ class RoundedCornerActionButton: UIButton {
   
   // MARK: - Private functions
   private func style() {
-    layer.cornerRadius = 8.0 // TODO default corner radius
+    layer.cornerRadius = AppTheme.cornerRadius
     backgroundColor = .potRed
     styleTitleLabel(isLoading: false)
     layoutLoadingView()
@@ -65,9 +61,6 @@ class RoundedCornerActionButton: UIButton {
   private func layoutLoadingView() {
     addSubview(loadingSpinner)
     loadingSpinner.hidesWhenStopped = true
-    NSLayoutConstraint.activate([
-      loadingSpinner.centerXAnchor.constraint(equalTo: centerXAnchor),
-      loadingSpinner.centerYAnchor.constraint(equalTo: centerYAnchor)
-      ])
+    loadingSpinner.center(inView: self)
   }
 }

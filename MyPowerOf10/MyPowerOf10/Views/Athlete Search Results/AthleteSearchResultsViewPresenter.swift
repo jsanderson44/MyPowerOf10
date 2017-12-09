@@ -12,6 +12,7 @@ import TABResourceLoader
 protocol AthleteSearchResultsPresenterView: class {
   func updateWithResults(results: [AthleteResult])
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
+  func updateErrorState(isVisible: Bool)
   func didRecieveAthlete(athlete: Athlete)
 }
 
@@ -50,11 +51,13 @@ final class AthleteSearchResultsViewPresenter {
     let athleteResult = athleteResults[indexPath.row]
     if let savedAthlete = favouritedAthlete(athleteResult: athleteResult) {
       view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+      view?.updateErrorState(isVisible: false)
       view?.didRecieveAthlete(athlete: savedAthlete)
     } else {
       let resource = RequestAthleteProfileResource(athleteResult: athleteResult)
       let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
         self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+        self.view?.updateErrorState(isVisible: false)
         self.handleRequestAthleteProfileRequest(result)
       }
       queue.addOperation(athleteSearchOperation)
@@ -78,8 +81,7 @@ final class AthleteSearchResultsViewPresenter {
   private func handleRequestAthleteProfileRequest(_ result: NetworkResponse<RequestAthleteProfileResource.Model>) {
     switch result {
     case .failure:
-      print("FAILLLLL")
-    // TODO Error state
+      view?.updateErrorState(isVisible: true)
     case .success(let athlete, _):
       view?.didRecieveAthlete(athlete: athlete)
     }

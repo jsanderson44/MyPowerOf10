@@ -46,10 +46,10 @@ final class AthleteSearchViewPresenter {
   
   func performSearch(service: SubmitAthleteSearchResourceService = SubmitAthleteSearchResourceService()) {
     view?.updateLoadingState(isLoading: true)
-    view?.updateErrorState(isVisible: false)
     let resource = SubmitAthleteSearchResource(firstname: athleteFirstName, surname: athleteSurname, club: athleteClub)
     let athleteSearchOperation = SubmitAthleteSearchOperation(resource: resource, service: service) { (_, result) in
       self.view?.updateLoadingState(isLoading: false)
+      self.view?.updateErrorState(isVisible: false)
       self.handleAthleteSearchResult(result)
     }
     queue.addOperation(athleteSearchOperation)

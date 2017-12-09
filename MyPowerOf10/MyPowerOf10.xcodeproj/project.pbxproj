@@ -54,6 +54,10 @@
 		917DBC511FC723B300E02C2B /* AthleteProfileInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917DBC4F1FC723B300E02C2B /* AthleteProfileInformationView.xib */; };
 		919837571FC708A6007E2BA9 /* AthleteProfileToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919837551FC708A6007E2BA9 /* AthleteProfileToggleView.swift */; };
 		919837581FC708A6007E2BA9 /* AthleteProfileToggleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919837561FC708A6007E2BA9 /* AthleteProfileToggleView.xib */; };
+		919A6AB41FDBF8A30067C43C /* AppTheme+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AB31FDBF8A30067C43C /* AppTheme+Defaults.swift */; };
+		919A6AB61FDBF9D30067C43C /* UIView+Pinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AB51FDBF9D30067C43C /* UIView+Pinning.swift */; };
+		919A6ABA1FDBFD370067C43C /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AB91FDBFD370067C43C /* UIView+Animations.swift */; };
+		919A6ABE1FDC3C380067C43C /* XPathObject+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -125,6 +129,10 @@
 		917DBC4F1FC723B300E02C2B /* AthleteProfileInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteProfileInformationView.xib; sourceTree = "<group>"; };
 		919837551FC708A6007E2BA9 /* AthleteProfileToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfileToggleView.swift; sourceTree = "<group>"; };
 		919837561FC708A6007E2BA9 /* AthleteProfileToggleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteProfileToggleView.xib; sourceTree = "<group>"; };
+		919A6AB31FDBF8A30067C43C /* AppTheme+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppTheme+Defaults.swift"; sourceTree = "<group>"; };
+		919A6AB51FDBF9D30067C43C /* UIView+Pinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pinning.swift"; sourceTree = "<group>"; };
+		919A6AB91FDBFD370067C43C /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XPathObject+SafeSubscript.swift"; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -196,14 +204,14 @@
 		91499D801FAF8E480086134E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				919A6AB81FDBFD0E0067C43C /* AppTheme */,
+				919A6AB71FDBFCFC0067C43C /* UIView Helpers */,
 				917728B71FD9E49400E6FD8C /* DataStore */,
 				91499D811FAF8E570086134E /* String+Additions.swift */,
 				91590C621FB8C78100707A47 /* KeyboardAdjustableViewController.swift */,
-				91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */,
-				91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */,
-				9145A5981FC62B6F000C6EC8 /* UIViewController+Additions.swift */,
-				9145A59A1FC62F23000C6EC8 /* UIView+Shadow.swift */,
 				91784FBA1FC6EBEE006ADC28 /* Array+SafeSubscript.swift */,
+				919A6AB91FDBFD370067C43C /* UIView+Animations.swift */,
+				919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -363,6 +371,26 @@
 				919837561FC708A6007E2BA9 /* AthleteProfileToggleView.xib */,
 			);
 			path = AthleteProfileToggleView;
+			sourceTree = "<group>";
+		};
+		919A6AB71FDBFCFC0067C43C /* UIView Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91590C6A1FB8EE7B00707A47 /* UIView+NibLoading.swift */,
+				9145A5981FC62B6F000C6EC8 /* UIViewController+Additions.swift */,
+				9145A59A1FC62F23000C6EC8 /* UIView+Shadow.swift */,
+				919A6AB51FDBF9D30067C43C /* UIView+Pinning.swift */,
+			);
+			path = "UIView Helpers";
+			sourceTree = "<group>";
+		};
+		919A6AB81FDBFD0E0067C43C /* AppTheme */ = {
+			isa = PBXGroup;
+			children = (
+				91590C641FB8E40C00707A47 /* UIColor+AppTheme.swift */,
+				919A6AB31FDBF8A30067C43C /* AppTheme+Defaults.swift */,
+			);
+			path = AppTheme;
 			sourceTree = "<group>";
 		};
 		91A4FCA61FAF489800D8493D /* HTML Parsers */ = {
@@ -685,11 +713,13 @@
 				9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */,
 				91784FC01FC6FB32006ADC28 /* AthleteProfileViewController.swift in Sources */,
 				919837571FC708A6007E2BA9 /* AthleteProfileToggleView.swift in Sources */,
+				919A6ABA1FDBFD370067C43C /* UIView+Animations.swift in Sources */,
 				91590C5B1FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift in Sources */,
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
 				91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */,
+				919A6ABE1FDC3C380067C43C /* XPathObject+SafeSubscript.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
 				91D7F4D51FCD6261008F4A7B /* CollapsableErrorView.swift in Sources */,
@@ -697,6 +727,7 @@
 				917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */,
 				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
 				9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */,
+				919A6AB61FDBF9D30067C43C /* UIView+Pinning.swift in Sources */,
 				91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */,
 				91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */,
 				91FFFD211FDB3CE900FB67F8 /* FavouriteAthletesRouter.swift in Sources */,
@@ -705,6 +736,7 @@
 				917728B61FD9E0E000E6FD8C /* Athlete.swift in Sources */,
 				91590C601FB8B8F100707A47 /* SearchTextField.swift in Sources */,
 				917DBC501FC723B300E02C2B /* AthleteProfileInformationView.swift in Sources */,
+				919A6AB41FDBF8A30067C43C /* AppTheme+Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

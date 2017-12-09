@@ -16,8 +16,12 @@ enum Gender: String, Codable {
 
 extension Gender {
   
-  init(parsedValue: String) {
-    switch parsedValue {
+  init(parsedValue: String?) {
+    guard let value = parsedValue else {
+      self = .unknown
+      return
+    }
+    switch value {
     case "M": self = .male
     case "W": self = .female
     default: self = .unknown
@@ -37,13 +41,12 @@ struct AthleteResult: Codable {
 }
 
 extension AthleteResult {
-  // TODO Safe array
   init(components: [String]) {
-    firstName = components[2].cleaned.removeTags.removeAmpersand()
-    surname = components[3].cleaned.removeTags.removeAmpersand()
-    ageGroup = components[4].cleaned.removeTags.removeAmpersand()
-    gender = Gender(parsedValue: components[7].cleaned.removeTags.removeAmpersand())
-    clubs = components[8].cleaned.removeTags.removeAmpersand().components(separatedBy: "/")
+    firstName = components[safe: 2]?.cleaned.removeTags.removeAmpersand() ?? "-"
+    surname = components[safe: 3]?.cleaned.removeTags.removeAmpersand() ?? "-"
+    ageGroup = components[safe: 4]?.cleaned.removeTags.removeAmpersand() ?? "-"
+    gender = Gender(parsedValue: components[safe: 7]?.cleaned.removeTags.removeAmpersand())
+    clubs = components[safe: 8]?.cleaned.removeTags.removeAmpersand().components(separatedBy: "/") ?? []
     athleteID = components.last?.digitsOnly
   }
 }

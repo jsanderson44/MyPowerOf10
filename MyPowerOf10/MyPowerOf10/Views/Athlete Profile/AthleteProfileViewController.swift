@@ -62,38 +62,18 @@ final class AthleteProfileViewController: UIViewController {
   
   private func configureToggleView() {
     toggleContainerView.addSubview(toggleView)
-    toggleView.translatesAutoresizingMaskIntoConstraints = false
     toggleView.delegate = self
-    
-    NSLayoutConstraint.activate([
-      toggleView.topAnchor.constraint(equalTo: toggleContainerView.topAnchor),
-      toggleView.bottomAnchor.constraint(equalTo: toggleContainerView.bottomAnchor),
-      toggleView.leadingAnchor.constraint(equalTo: toggleContainerView.leadingAnchor),
-      toggleView.trailingAnchor.constraint(equalTo: toggleContainerView.trailingAnchor)
-      ])
+    toggleView.pin(toView: toggleContainerView)
   }
   
   private func configureAthleteInformationView() {
     athleteInformationContainerView.addSubview(informationView)
-    informationView.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([ //TODO Pin helper
-      informationView.topAnchor.constraint(equalTo: athleteInformationContainerView.topAnchor),
-      informationView.bottomAnchor.constraint(equalTo: athleteInformationContainerView.bottomAnchor),
-      informationView.leadingAnchor.constraint(equalTo: athleteInformationContainerView.leadingAnchor),
-      informationView.trailingAnchor.constraint(equalTo: athleteInformationContainerView.trailingAnchor)
-      ])
+    informationView.pin(toView: athleteInformationContainerView)
   }
   
   private func configureBestPerformancesView() {
     bestPerformancesContainerView.addSubview(bestPerformancesView)
-    bestPerformancesView.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([ //TODO Pin helper
-      bestPerformancesContainerView.heightAnchor.constraint(equalToConstant: bestPerformancesView.contentHeight()),
-      bestPerformancesView.topAnchor.constraint(equalTo: bestPerformancesContainerView.topAnchor),
-      bestPerformancesView.bottomAnchor.constraint(equalTo: bestPerformancesContainerView.bottomAnchor),
-      bestPerformancesView.leadingAnchor.constraint(equalTo: bestPerformancesContainerView.leadingAnchor),
-      bestPerformancesView.trailingAnchor.constraint(equalTo: bestPerformancesContainerView.trailingAnchor)
-      ])
+    bestPerformancesView.pin(toView: bestPerformancesContainerView)
     bestPerformancesContainerView.isHidden = true
   }
   

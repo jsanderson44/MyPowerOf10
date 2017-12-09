@@ -28,8 +28,8 @@ final class AthleteProfileToggleView: UIView {
   
   private let selectedFont = UIFont.systemFont(ofSize: 18, weight: .medium)
   private let deselectedFont = UIFont.systemFont(ofSize: 18, weight: .regular)
-  private let selectedHeight: CGFloat = 4.0
-  private let deselectedHeight: CGFloat = 2.0
+  private let selectedHeight: CGFloat = AppTheme.thickBorderWidth
+  private let deselectedHeight: CGFloat = AppTheme.mediumBorderWidth
   private let selectedTintColor = UIColor.potRed
   private let deselectedTintColor = UIColor.potLightGray
   

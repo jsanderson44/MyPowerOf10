@@ -52,14 +52,3 @@ struct AthleteProfileHTMLParser {
   }
   
 }
-
-// TODO Tidy this up
-private extension XPathObject {
-  
-  /// Safely attempts to retrieve an element at the provided index.
-  ///
-  /// - Parameter index: The index of the element to try and retrieve.
-  subscript(safe index: Int) -> XMLElement? {
-    return count-1 >= index ? self[index] : nil
-  }
-}

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AthleteSearchResultsViewController" customModule="MyPowerOf10" customModuleProvider="target">
             <connections>
+                <outlet property="contentTopConstraint" destination="5Bb-Bo-1z5" id="4r5-Bf-Nqk"/>
+                <outlet property="errorViewHeightConstraint" destination="xcw-bm-pGT" id="pdu-4E-nCY"/>
                 <outlet property="tableView" destination="Jco-Je-jbv" id="ae2-FY-q5y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,10 +31,20 @@
                         <outlet property="delegate" destination="-1" id="vBh-hN-LfV"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAZ-1h-pxn" userLabel="Error View" customClass="CollapsableErrorView" customModule="MyPowerOf10" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.98683500290000004" green="0.16938440499999999" blue="0.029627867039999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="xcw-bm-pGT"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Jco-Je-jbv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Bb-Bo-1z5"/>
+                <constraint firstItem="AFR-Zm-C3b" firstAttribute="trailing" secondItem="JAZ-1h-pxn" secondAttribute="trailing" id="SOS-T2-mTw"/>
+                <constraint firstItem="JAZ-1h-pxn" firstAttribute="leading" secondItem="AFR-Zm-C3b" secondAttribute="leading" id="UJE-rp-iCp"/>
+                <constraint firstItem="AFR-Zm-C3b" firstAttribute="top" secondItem="JAZ-1h-pxn" secondAttribute="top" id="Yfz-DV-ZfV"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="bottom" secondItem="Jco-Je-jbv" secondAttribute="bottom" id="dL5-fq-QtK"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="trailing" secondItem="Jco-Je-jbv" secondAttribute="trailing" id="j1q-dW-u1D"/>
                 <constraint firstItem="Jco-Je-jbv" firstAttribute="leading" secondItem="AFR-Zm-C3b" secondAttribute="leading" id="ohl-M6-FMh"/>

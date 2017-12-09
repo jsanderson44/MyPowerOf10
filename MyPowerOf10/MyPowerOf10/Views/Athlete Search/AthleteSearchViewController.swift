@@ -107,9 +107,9 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   // MARK: Scroll view adjusting
   
   private func animateScrollView(by offset: CGFloat) {
-    UIView.animate(withDuration: 0.23) {
+    UIView.shortAnimation(animations: {
       self.scrollView.contentOffset.y = offset
-    }
+    })
   }
   
 }
@@ -120,18 +120,18 @@ extension AthleteSearchViewController: AthleteSearchPresenterView {
   
   func updateLoadingState(isLoading: Bool) {
     accessoryView.isLoading = isLoading
-    UIView.animate(withDuration: 0.23) { //TODO Universal animation time
+    UIView.shortAnimation(animations: {
       self.contentView.alpha = isLoading ? 0.3 : 1.0
-    }
+    })
   }
   
   func updateErrorState(isVisible: Bool) {
     let constraintConstant: CGFloat = isVisible ? 48 : 0
     contentTopConstraint.constant = constraintConstant
     errorViewHeightConstraint.constant = constraintConstant
-    UIView.animate(withDuration: 0.23) {
+    UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()
-    }
+    })
   }
   
   func updateSearchButton(isEnabled: Bool) {
