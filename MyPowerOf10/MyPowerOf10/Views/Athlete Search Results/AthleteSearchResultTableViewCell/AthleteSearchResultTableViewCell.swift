@@ -33,9 +33,9 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   private func setup() {
     containerView.backgroundColor = .white
-    containerView.layer.cornerRadius = 8.0
+    containerView.layer.cornerRadius = AppTheme.cornerRadius
     containerView.layer.borderColor = UIColor.potRed.cgColor
-    containerView.layer.borderWidth = 2.0
+    containerView.layer.borderWidth = AppTheme.mediumBorderWidth
     containerView.applyShadow()
     athleteGenderImageView.tintColor = .potDarkGray
     [athleteNameLabel, athleteClubLabel, athleteAgeGroupLabel].forEach {
@@ -58,18 +58,18 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   func startLoading() {
     loadingView.startAnimating()
-    UIView.animate(withDuration: 0.1) {
+    UIView.reallyShortAnimation(animations: {
       self.containerView.alpha = 0.3
       self.containerView.layer.borderColor = UIColor.potDarkGray.cgColor
-    }
+    })
   }
   
   func stopLoading() {
     loadingView.stopAnimating()
-    UIView.animate(withDuration: 0.1) {
+    UIView.reallyShortAnimation(animations: {
       self.containerView.alpha = 1.0
       self.containerView.layer.borderColor = UIColor.potRed.cgColor
-    }
+    })
   }
   
 }

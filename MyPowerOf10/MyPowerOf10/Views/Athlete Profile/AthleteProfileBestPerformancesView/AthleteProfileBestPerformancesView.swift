@@ -28,7 +28,8 @@ final class AthleteProfileBestPerformancesView: UIView {
   // MARK: Private functions
   
   private func setup() {
-    tableView.rowHeight = 44
+    tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 24))
+    tableView.rowHeight = 48
     tableView.register(UINib(nibName: "BestPerformancesTableViewCell", bundle: nil), forCellReuseIdentifier: BestPerformancesTableViewCell.reuseID)
   }
   
@@ -39,6 +40,10 @@ extension AthleteProfileBestPerformancesView {
   func update(with performances: [Performance]) {
     self.performances = performances
     tableView.reloadData()
+  }
+  
+  func contentHeight() -> CGFloat {
+    return tableView.contentSize.height
   }
   
 }

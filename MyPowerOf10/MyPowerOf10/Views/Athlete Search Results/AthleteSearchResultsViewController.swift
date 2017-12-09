@@ -25,6 +25,8 @@ final class AthleteSearchResultsViewController: UIViewController {
   private var athleteResults: [AthleteResult] = []
   
   @IBOutlet private var tableView: UITableView!
+  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
+  @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
   
   // MARK: - Initialiers -
   
@@ -77,6 +79,15 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView 
       cell.stopLoading()
       tableView.isUserInteractionEnabled = true
     }
+  }
+  
+  func updateErrorState(isVisible: Bool) {
+    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    contentTopConstraint.constant = constraintConstant
+    errorViewHeightConstraint.constant = constraintConstant
+    UIView.shortAnimation(animations: {
+      self.view.layoutIfNeeded()
+    })
   }
   
   func updateWithResults(results: [AthleteResult]) {
