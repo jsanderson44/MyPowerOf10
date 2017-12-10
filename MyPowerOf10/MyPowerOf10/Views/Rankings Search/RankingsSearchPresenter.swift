@@ -36,17 +36,25 @@ final class RankingsSearchPresenter {
   
   // MARK: Internal
   
-  func fetchYears() {
+  func fetchRankingQueryItems() {
+    fetchYears()
+    fetchRegions()
+    fetchAgeGroups()
+  }
+  
+  // MARK: Private functions
+  
+  private func fetchYears() {
     let years = vendor.years()
     view?.presenterDidReceiveYears(years: years)
   }
   
-  func fetchRegions() {
+  private func fetchRegions() {
     let regions = vendor.rankingQueryItems(forPlist: .regions)
     view?.presenterDidReceiveRegions(regions: regions)
   }
   
-  func fetchAgeGroups() {
+  private func fetchAgeGroups() {
     let ageGroups = vendor.rankingQueryItems(forPlist: .ageGroups)
     view?.presenterDidReceiveAgeGroups(ageGroups: ageGroups)
   }

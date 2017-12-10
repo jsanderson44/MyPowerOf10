@@ -48,10 +48,9 @@ final class RankingsSearchViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+    title = "Top 50"
 		presenter.view = self
-    presenter.fetchYears()
-    presenter.fetchRegions()
-    presenter.fetchAgeGroups() // TODO combine into one fetch?
+    presenter.fetchRankingQueryItems()
     
     yearPickerContainerView.addSubview(yearPicker)
     yearPicker.pin(toView: yearPickerContainerView)
@@ -88,5 +87,10 @@ extension RankingsSearchViewController: DropdownPickerViewDelegate {
     UIView.reallyShortAnimation(animations: {
       self.view.layoutIfNeeded()
     })
+    
+//    [yearPicker, regionPicker, ageGroupPicker].forEach { (picker) in
+//      if picker == dropdownPickerView { return }
+//      picker.isSelected = false
+//    }
   }
 }

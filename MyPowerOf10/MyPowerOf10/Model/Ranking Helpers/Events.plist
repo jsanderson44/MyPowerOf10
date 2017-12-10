@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>seniorM</key>
+	<key>ALLM</key>
 	<array>
 		<dict>
 			<key>displayName</key>
@@ -185,7 +185,7 @@
 			<string>4x400</string>
 		</dict>
 	</array>
-	<key>under20M</key>
+	<key>U20M</key>
 	<array>
 		<dict>
 			<key>displayName</key>

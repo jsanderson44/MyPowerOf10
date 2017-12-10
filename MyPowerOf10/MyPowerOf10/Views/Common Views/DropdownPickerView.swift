@@ -22,7 +22,7 @@ final class DropdownPickerView: UIView {
     }
   }
   
-  // MARK: - Public properties
+  // MARK: - Private properties
   
   private var items: [RankingQueryItem] = []
   private var placeholder: String = ""
