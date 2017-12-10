@@ -90,37 +90,74 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
 // MARK: DropdownPickerViewDelegate
 
 extension RankingsSearchViewController: DropdownPickerViewDelegate {
-  //TODO REFACTOR!
-  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool) {
+  
+  func dropdownPickerViewDidRequestCollapse(_ dropdownPickerView: DropdownPickerView) {
     switch dropdownPickerView {
     case ageGroupPicker:
-      ageGroupPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-      yearPickerHeightConstraint.constant = collapsedHeight
-      yearPicker.isSelected = false
-      regionPickerHeightConstraint.constant = collapsedHeight
-      regionPicker.isSelected = false
+      ageGroupPickerHeightConstraint.constant = collapsedHeight
     case yearPicker:
-      yearPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-      ageGroupPickerHeightConstraint.constant = collapsedHeight
-      ageGroupPicker.isSelected = false
-      regionPickerHeightConstraint.constant = collapsedHeight
-      regionPicker.isSelected = false
+      yearPickerHeightConstraint.constant = collapsedHeight
     case regionPicker:
-      regionPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-      ageGroupPickerHeightConstraint.constant = collapsedHeight
-      ageGroupPicker.isSelected = false
-      yearPickerHeightConstraint.constant = collapsedHeight
-      yearPicker.isSelected = false
-    default:
-      yearPickerHeightConstraint.constant = collapsedHeight
-      yearPicker.isSelected = false
-      ageGroupPickerHeightConstraint.constant = collapsedHeight
-      ageGroupPicker.isSelected = false
       regionPickerHeightConstraint.constant = collapsedHeight
-      regionPicker.isSelected = false
+    default: break
     }
     UIView.reallyShortAnimation(animations: {
       self.view.layoutIfNeeded()
     })
   }
+  
+  func dropdownPickerViewDidRequestOpening(_ dropdownPickerView: DropdownPickerView) {
+    switch dropdownPickerView {
+    case ageGroupPicker:
+      yearPicker.isSelected = false
+      regionPicker.isSelected = false
+      ageGroupPickerHeightConstraint.constant = expandedHeight
+    case yearPicker:
+      ageGroupPicker.isSelected = false
+      regionPicker.isSelected = false
+      yearPickerHeightConstraint.constant = expandedHeight
+    case regionPicker:
+      yearPicker.isSelected = false
+      ageGroupPicker.isSelected = false
+      regionPickerHeightConstraint.constant = expandedHeight
+    default: break
+    }
+    UIView.reallyShortAnimation(animations: {
+      self.view.layoutIfNeeded()
+    })
+  }
+  
+//  //TODO REFACTOR!
+//  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool) {
+//    switch dropdownPickerView {
+//    case ageGroupPicker:
+//      ageGroupPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+//      yearPickerHeightConstraint.constant = collapsedHeight
+//      yearPicker.isSelected = false
+//      regionPickerHeightConstraint.constant = collapsedHeight
+//      regionPicker.isSelected = false
+//    case yearPicker:
+//      yearPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+//      ageGroupPickerHeightConstraint.constant = collapsedHeight
+//      ageGroupPicker.isSelected = false
+//      regionPickerHeightConstraint.constant = collapsedHeight
+//      regionPicker.isSelected = false
+//    case regionPicker:
+//      regionPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+//      ageGroupPickerHeightConstraint.constant = collapsedHeight
+//      ageGroupPicker.isSelected = false
+//      yearPickerHeightConstraint.constant = collapsedHeight
+//      yearPicker.isSelected = false
+//    default:
+//      yearPickerHeightConstraint.constant = collapsedHeight
+//      yearPicker.isSelected = false
+//      ageGroupPickerHeightConstraint.constant = collapsedHeight
+//      ageGroupPicker.isSelected = false
+//      regionPickerHeightConstraint.constant = collapsedHeight
+//      regionPicker.isSelected = false
+//    }
+//    UIView.reallyShortAnimation(animations: {
+//      self.view.layoutIfNeeded()
+//    })
+//  }
 }

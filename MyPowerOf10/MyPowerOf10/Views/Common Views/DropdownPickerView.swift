@@ -9,7 +9,8 @@
 import UIKit
 
 protocol DropdownPickerViewDelegate: class {
-  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool)
+  func dropdownPickerViewDidRequestCollapse(_ dropdownPickerView: DropdownPickerView)
+  func dropdownPickerViewDidRequestOpening(_ dropdownPickerView: DropdownPickerView)
 }
 
 final class DropdownPickerView: UIView {
@@ -18,7 +19,7 @@ final class DropdownPickerView: UIView {
   
   var isSelected: Bool = false {
     didSet {
-      updatedSelectedState()
+      updatedState()
     }
   }
   
@@ -62,18 +63,22 @@ final class DropdownPickerView: UIView {
     pickerView.layer.borderColor = UIColor.potLightGray.cgColor
   }
   
-  private func updatedSelectedState() {
+  private func updatedState() {
     separatorHeightConstraint.constant = isSelected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
     separatorView.backgroundColor = isSelected ? .potRed : .potLightGray
+    UIView.reallyShortAnimation(animations: {
+      self.pickerView.alpha = self.isSelected ? 1 : 0  //TODO - Sort animation. THis is O.K...
+    }, completion: { _ in
+      if self.isSelected {
+        self.delegate?.dropdownPickerViewDidRequestOpening(self)
+      } else {
+        self.delegate?.dropdownPickerViewDidRequestCollapse(self)
+      }
+    })
   }
   
   @IBAction private func didTapDropdownButton() {
     isSelected = !isSelected
-    UIView.reallyShortAnimation(animations: {
-      self.pickerView.alpha = self.isSelected ? 1 : 0  //TODO - Sort animation. THis is O.K...
-    }, completion: { _ in
-      self.delegate?.dropdownPickerViewDidToggleSelection(self, isSelected: self.isSelected)
-    })
   }
   
 }
