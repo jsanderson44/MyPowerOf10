@@ -25,6 +25,7 @@ final class DropdownPickerView: UIView {
   // MARK: - Public properties
   
   private var items: [RankingQueryItem] = []
+  private var placeholder: String = ""
   private weak var delegate: DropdownPickerViewDelegate?
   
   // MARK: - Outlets
@@ -86,10 +87,12 @@ final class DropdownPickerView: UIView {
 
 extension DropdownPickerView {
   
-  func configure(withItems items: [RankingQueryItem], delegate: DropdownPickerViewDelegate) {
+  func configure(withItems items: [RankingQueryItem], placeholder: String, delegate: DropdownPickerViewDelegate) {
     self.items = items
     self.delegate = delegate
-    dropdownButton.setTitle("Age Group: \(items.first?.displayName ?? "")", for: .normal)
+    self.placeholder = placeholder
+    let selectedItem = items.first?.displayName ?? ""
+    dropdownButton.setTitle("\(placeholder): \(selectedItem)", for: .normal)
   }
   
 }
@@ -112,6 +115,6 @@ extension DropdownPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
   //TODO figure out custom font
   
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    dropdownButton.setTitle("Age Group: \(items[row].displayName)", for: .normal)
+    dropdownButton.setTitle("\(placeholder): \(items[row].displayName)", for: .normal)
   }
 }

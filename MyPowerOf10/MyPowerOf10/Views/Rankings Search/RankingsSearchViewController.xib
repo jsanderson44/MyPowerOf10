@@ -13,8 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankingsSearchViewController" customModule="MyPowerOf10" customModuleProvider="target">
             <connections>
                 <outlet property="ageGroupPickerContainerView" destination="EJI-ld-pQC" id="ezY-tg-pRz"/>
-                <outlet property="secondDropdownButtonContainerView" destination="TL4-pe-tRi" id="hLl-Ha-22w"/>
+                <outlet property="regionPickerContainerView" destination="Q0U-n8-2KS" id="qq0-jd-udA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearPickerContainerView" destination="TL4-pe-tRi" id="hLl-Ha-22w"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,9 +37,19 @@
                         <constraint firstAttribute="height" constant="44" placeholder="YES" id="JA9-Dg-wKF"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-n8-2KS">
+                    <rect key="frame" x="32" y="410" width="311" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" placeholder="YES" id="VIT-qt-YTF"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Q0U-n8-2KS" firstAttribute="leading" secondItem="TL4-pe-tRi" secondAttribute="leading" id="E9Z-Bj-jed"/>
+                <constraint firstItem="Q0U-n8-2KS" firstAttribute="top" secondItem="TL4-pe-tRi" secondAttribute="bottom" constant="24" id="LeG-7D-O2c"/>
+                <constraint firstItem="Q0U-n8-2KS" firstAttribute="trailing" secondItem="TL4-pe-tRi" secondAttribute="trailing" id="Q7P-Za-BXE"/>
                 <constraint firstItem="TL4-pe-tRi" firstAttribute="top" secondItem="EJI-ld-pQC" secondAttribute="bottom" constant="24" id="VTm-gl-epe"/>
                 <constraint firstItem="V0c-JQ-1UH" firstAttribute="trailing" secondItem="EJI-ld-pQC" secondAttribute="trailing" constant="32" id="mEf-eb-30I"/>
                 <constraint firstItem="EJI-ld-pQC" firstAttribute="leading" secondItem="V0c-JQ-1UH" secondAttribute="leading" constant="32" id="rMt-SY-owj"/>

@@ -68,6 +68,7 @@
 		919A6AD21FDC94F90067C43C /* DropdownPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AD01FDC94F90067C43C /* DropdownPickerView.xib */; };
 		919A6AD41FDDCDEA0067C43C /* AgeGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */; };
 		919A6AD71FDDCF500067C43C /* RankingQueryItemsVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AD61FDDCF500067C43C /* RankingQueryItemsVendor.swift */; };
+		919A6AD91FDDDACC0067C43C /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AD81FDDDACC0067C43C /* Regions.plist */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -153,6 +154,7 @@
 		919A6AD01FDC94F90067C43C /* DropdownPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropdownPickerView.xib; sourceTree = "<group>"; };
 		919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AgeGroups.plist; sourceTree = "<group>"; };
 		919A6AD61FDDCF500067C43C /* RankingQueryItemsVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingQueryItemsVendor.swift; sourceTree = "<group>"; };
+		919A6AD81FDDDACC0067C43C /* Regions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Regions.plist; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 			children = (
 				919A6AC91FDC51490067C43C /* Events.plist */,
 				919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */,
+				919A6AD81FDDDACC0067C43C /* Regions.plist */,
 			);
 			path = "Ranking Helpers";
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
 				919A6AD21FDC94F90067C43C /* DropdownPickerView.xib in Resources */,
 				9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */,
+				919A6AD91FDDDACC0067C43C /* Regions.plist in Resources */,
 				91590C5A1FB7B03B00707A47 /* AthleteSearchResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

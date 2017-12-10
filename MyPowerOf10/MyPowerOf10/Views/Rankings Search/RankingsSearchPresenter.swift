@@ -9,6 +9,8 @@
 import Foundation
 
 protocol RankingsSearchPresenterView: class {
+  func presenterDidReceiveYears(years: [RankingQueryItem])
+  func presenterDidReceiveRegions(regions: [RankingQueryItem])
   func presenterDidReceiveAgeGroups(ageGroups: [RankingQueryItem])
 }
 
@@ -34,8 +36,18 @@ final class RankingsSearchPresenter {
   
   // MARK: Internal
   
+  func fetchYears() {
+    let years = vendor.years()
+    view?.presenterDidReceiveYears(years: years)
+  }
+  
+  func fetchRegions() {
+    let regions = vendor.rankingQueryItems(forPlist: .regions)
+    view?.presenterDidReceiveRegions(regions: regions)
+  }
+  
   func fetchAgeGroups() {
-    let ageGroups = vendor.rankingQueryItems(forRoot: .ageGroups)
+    let ageGroups = vendor.rankingQueryItems(forPlist: .ageGroups)
     view?.presenterDidReceiveAgeGroups(ageGroups: ageGroups)
   }
 	

@@ -17,8 +17,9 @@ final class RankingsSearchViewController: UIViewController {
   
   // MARK: Outlets
   
+  @IBOutlet private var yearPickerContainerView: UIView!
+  @IBOutlet private var regionPickerContainerView: UIView!
   @IBOutlet private var ageGroupPickerContainerView: UIView!
-  @IBOutlet private var secondDropdownButtonContainerView: UIView!
 	
 	// MARK: Internal
 	
@@ -27,8 +28,9 @@ final class RankingsSearchViewController: UIViewController {
 	// MARK: Private
 	
 	private let presenter: RankingsSearchPresenter
+  private let yearPicker = DropdownPickerView.loadFromNib()
+  private let regionPicker = DropdownPickerView.loadFromNib()
   private let ageGroupPicker = DropdownPickerView.loadFromNib()
-  private let secondDropdownPickerView = DropdownPickerView.loadFromNib()
 	
 	// MARK: - Initialiers -
 	
@@ -47,14 +49,18 @@ final class RankingsSearchViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		presenter.view = self
-    presenter.fetchAgeGroups()
+    presenter.fetchYears()
+    presenter.fetchRegions()
+    presenter.fetchAgeGroups() // TODO combine into one fetch?
+    
+    yearPickerContainerView.addSubview(yearPicker)
+    yearPicker.pin(toView: yearPickerContainerView)
+    
+    regionPickerContainerView.addSubview(regionPicker)
+    regionPicker.pin(toView: regionPickerContainerView)
     
     ageGroupPickerContainerView.addSubview(ageGroupPicker)
     ageGroupPicker.pin(toView: ageGroupPickerContainerView)
-    
-    secondDropdownButtonContainerView.addSubview(secondDropdownPickerView)
-    secondDropdownPickerView.pin(toView: secondDropdownButtonContainerView)
-//    secondDropdownPickerView.configure(withItems: ["2017", "2016"], delegate: self)
 	}
 	
 }
@@ -62,8 +68,16 @@ final class RankingsSearchViewController: UIViewController {
 // MARK: RankingsSearchPresenterView
 
 extension RankingsSearchViewController: RankingsSearchPresenterView {
+  func presenterDidReceiveYears(years: [RankingQueryItem]) {
+    yearPicker.configure(withItems: years, placeholder: "Year", delegate: self)
+  }
+  
+  func presenterDidReceiveRegions(regions: [RankingQueryItem]) {
+    regionPicker.configure(withItems: regions, placeholder: "Region/Nation", delegate: self)
+  }
+  
   func presenterDidReceiveAgeGroups(ageGroups: [RankingQueryItem]) {
-    ageGroupPicker.configure(withItems: ageGroups, delegate: self)
+    ageGroupPicker.configure(withItems: ageGroups, placeholder: "Age Group", delegate: self)
   }
 }
 

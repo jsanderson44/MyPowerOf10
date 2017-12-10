@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum RankingDictionaryType: String {
+enum RankingPlistType: String {
   case ageGroups = "AgeGroups"
+  case regions = "Regions"
 }
 
 struct RankingQueryItem: Decodable {
@@ -19,12 +20,23 @@ struct RankingQueryItem: Decodable {
 
 struct RankingQueryItemsVender {
   
-  func rankingQueryItems(forRoot rootDictionary: RankingDictionaryType) -> [RankingQueryItem] {
+  func rankingQueryItems(forPlist plist: RankingPlistType) -> [RankingQueryItem] {
     let decoder = PropertyListDecoder()
-    guard let plistURL = Bundle.main.url(forResource: rootDictionary.rawValue, withExtension: "plist"),
+    guard let plistURL = Bundle.main.url(forResource: plist.rawValue, withExtension: "plist"),
       let data = try? Data(contentsOf: plistURL),
       let events = try? decoder.decode(Array<RankingQueryItem>.self, from: data) else { return [] }
     return events
+  }
+  
+  func years() -> [RankingQueryItem] {
+    let currentYear = Calendar.current.component(.year, from: Date())
+    var years: [RankingQueryItem] = []
+    for year in 2006...currentYear {
+      years.append(RankingQueryItem(displayName: "\(year)", searchQuery: "\(year)"))
+    }
+    years.reverse()
+    years.append(RankingQueryItem(displayName: "All Time", searchQuery: "y"))
+    return years
   }
   
   func events(for ageGroup: String, andGender gender: Gender) -> [RankingQueryItem] {

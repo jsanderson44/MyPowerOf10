@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>displayName</key>
+		<string>UK</string>
+		<key>searchQuery</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>East</string>
+		<key>searchQuery</key>
+		<string>66</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>East Midlands</string>
+		<key>searchQuery</key>
+		<string>65</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>England</string>
+		<key>searchQuery</key>
+		<string>91</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>London</string>
+		<key>searchQuery</key>
+		<string>67</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>North East</string>
+		<key>searchQuery</key>
+		<string>61</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>N Ireland</string>
+		<key>searchQuery</key>
+		<string>94</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>North West</string>
+		<key>searchQuery</key>
+		<string>63</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>Scotland</string>
+		<key>searchQuery</key>
+		<string>92</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>South East</string>
+		<key>searchQuery</key>
+		<string>68</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>South West</string>
+		<key>searchQuery</key>
+		<string>69</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>Wales</string>
+		<key>searchQuery</key>
+		<string>93</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>West Midlands</string>
+		<key>searchQuery</key>
+		<string>64</string>
+	</dict>
+	<dict>
+		<key>displayName</key>
+		<string>Yorkshire</string>
+		<key>searchQuery</key>
+		<string>62</string>
+	</dict>
+</array>
+</plist>
