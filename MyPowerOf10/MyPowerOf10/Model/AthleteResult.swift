@@ -12,6 +12,15 @@ enum Gender: String, Codable {
   case male = "Male"
   case female = "Female"
   case unknown = "Unknown"
+  
+  var searchValue: String {
+    switch self {
+    case .female:
+      return "F"
+    default:
+      return "M"
+    }
+  }
 }
 
 extension Gender {

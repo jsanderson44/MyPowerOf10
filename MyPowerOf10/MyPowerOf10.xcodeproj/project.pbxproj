@@ -58,6 +58,16 @@
 		919A6AB61FDBF9D30067C43C /* UIView+Pinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AB51FDBF9D30067C43C /* UIView+Pinning.swift */; };
 		919A6ABA1FDBFD370067C43C /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AB91FDBFD370067C43C /* UIView+Animations.swift */; };
 		919A6ABE1FDC3C380067C43C /* XPathObject+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */; };
+		919A6AC31FDC4A840067C43C /* RankingsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AC01FDC4A840067C43C /* RankingsSearchViewController.swift */; };
+		919A6AC41FDC4A840067C43C /* RankingsSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AC11FDC4A840067C43C /* RankingsSearchViewController.xib */; };
+		919A6AC51FDC4A840067C43C /* RankingsSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AC21FDC4A840067C43C /* RankingsSearchPresenter.swift */; };
+		919A6AC71FDC4BB30067C43C /* RequestRankingsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AC61FDC4BB30067C43C /* RequestRankingsResource.swift */; };
+		919A6ACA1FDC51490067C43C /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AC91FDC51490067C43C /* Events.plist */; };
+		919A6ACC1FDC63BC0067C43C /* RankingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6ACB1FDC63BC0067C43C /* RankingsRouter.swift */; };
+		919A6AD11FDC94F90067C43C /* DropdownPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6ACF1FDC94F90067C43C /* DropdownPickerView.swift */; };
+		919A6AD21FDC94F90067C43C /* DropdownPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AD01FDC94F90067C43C /* DropdownPickerView.xib */; };
+		919A6AD41FDDCDEA0067C43C /* AgeGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */; };
+		919A6AD71FDDCF500067C43C /* RankingQueryItemsVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A6AD61FDDCF500067C43C /* RankingQueryItemsVendor.swift */; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -133,6 +143,16 @@
 		919A6AB51FDBF9D30067C43C /* UIView+Pinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pinning.swift"; sourceTree = "<group>"; };
 		919A6AB91FDBFD370067C43C /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XPathObject+SafeSubscript.swift"; sourceTree = "<group>"; };
+		919A6AC01FDC4A840067C43C /* RankingsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsSearchViewController.swift; sourceTree = "<group>"; };
+		919A6AC11FDC4A840067C43C /* RankingsSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingsSearchViewController.xib; sourceTree = "<group>"; };
+		919A6AC21FDC4A840067C43C /* RankingsSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsSearchPresenter.swift; sourceTree = "<group>"; };
+		919A6AC61FDC4BB30067C43C /* RequestRankingsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRankingsResource.swift; sourceTree = "<group>"; };
+		919A6AC91FDC51490067C43C /* Events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Events.plist; sourceTree = "<group>"; };
+		919A6ACB1FDC63BC0067C43C /* RankingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsRouter.swift; sourceTree = "<group>"; };
+		919A6ACF1FDC94F90067C43C /* DropdownPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownPickerView.swift; sourceTree = "<group>"; };
+		919A6AD01FDC94F90067C43C /* DropdownPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropdownPickerView.xib; sourceTree = "<group>"; };
+		919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AgeGroups.plist; sourceTree = "<group>"; };
+		919A6AD61FDDCF500067C43C /* RankingQueryItemsVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingQueryItemsVendor.swift; sourceTree = "<group>"; };
 		91A4FCA71FAF48F700D8493D /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AthleteSearchListOneAthlete.html; sourceTree = "<group>"; };
 		91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchHTMLParserTests.swift; sourceTree = "<group>"; };
@@ -193,6 +213,7 @@
 		91499D7D1FAF8DDB0086134E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				919A6AC81FDC511B0067C43C /* Ranking Helpers */,
 				91499D891FB107A30086134E /* Resources */,
 				91499D7E1FAF8DEB0086134E /* AthleteResult.swift */,
 				91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */,
@@ -229,6 +250,7 @@
 			children = (
 				91499D8A1FB107E40086134E /* SubmitAthleteSearchResource.swift */,
 				91784FB41FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift */,
+				919A6AC61FDC4BB30067C43C /* RequestRankingsResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -236,11 +258,12 @@
 		91590C441FB79C0F00707A47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				91590C5D1FB8B8C500707A47 /* Common Views */,
 				91590C501FB7A3FC00707A47 /* Base */,
+				91590C5D1FB8B8C500707A47 /* Common Views */,
 				91784FBC1FC6FAFF006ADC28 /* Athlete Profile */,
 				91590C461FB79F5900707A47 /* Athlete Search */,
 				91590C551FB7B01900707A47 /* Athlete Search Results */,
+				919A6ABF1FDC4A460067C43C /* Rankings Search */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +273,7 @@
 			children = (
 				91590C4E1FB7A0F500707A47 /* AthleteSearchRouter.swift */,
 				91FFFD201FDB3CE900FB67F8 /* FavouriteAthletesRouter.swift */,
+				919A6ACB1FDC63BC0067C43C /* RankingsRouter.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -293,6 +317,8 @@
 				91590C6C1FB8F15E00707A47 /* RoundedCornerActionButton.swift */,
 				9145A5961FC625C4000C6EC8 /* GradientView.swift */,
 				91D7F4D41FCD6261008F4A7B /* CollapsableErrorView.swift */,
+				919A6ACF1FDC94F90067C43C /* DropdownPickerView.swift */,
+				919A6AD01FDC94F90067C43C /* DropdownPickerView.xib */,
 			);
 			path = "Common Views";
 			sourceTree = "<group>";
@@ -391,6 +417,34 @@
 				919A6AB31FDBF8A30067C43C /* AppTheme+Defaults.swift */,
 			);
 			path = AppTheme;
+			sourceTree = "<group>";
+		};
+		919A6ABF1FDC4A460067C43C /* Rankings Search */ = {
+			isa = PBXGroup;
+			children = (
+				919A6AD51FDDCF3F0067C43C /* RankingQueryItemsVendor */,
+				919A6AC01FDC4A840067C43C /* RankingsSearchViewController.swift */,
+				919A6AC11FDC4A840067C43C /* RankingsSearchViewController.xib */,
+				919A6AC21FDC4A840067C43C /* RankingsSearchPresenter.swift */,
+			);
+			path = "Rankings Search";
+			sourceTree = "<group>";
+		};
+		919A6AC81FDC511B0067C43C /* Ranking Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				919A6AC91FDC51490067C43C /* Events.plist */,
+				919A6AD31FDDCDEA0067C43C /* AgeGroups.plist */,
+			);
+			path = "Ranking Helpers";
+			sourceTree = "<group>";
+		};
+		919A6AD51FDDCF3F0067C43C /* RankingQueryItemsVendor */ = {
+			isa = PBXGroup;
+			children = (
+				919A6AD61FDDCF500067C43C /* RankingQueryItemsVendor.swift */,
+			);
+			path = RankingQueryItemsVendor;
 			sourceTree = "<group>";
 		};
 		91A4FCA61FAF489800D8493D /* HTML Parsers */ = {
@@ -562,15 +616,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				919837581FC708A6007E2BA9 /* AthleteProfileToggleView.xib in Resources */,
+				919A6ACA1FDC51490067C43C /* Events.plist in Resources */,
 				91784FC11FC6FB32006ADC28 /* AthleteProfileViewController.xib in Resources */,
 				91590C691FB8EC4B00707A47 /* ActionButtonInputAccessoryView.xib in Resources */,
 				917728AF1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.xib in Resources */,
 				917DBC511FC723B300E02C2B /* AthleteProfileInformationView.xib in Resources */,
+				919A6AD41FDDCDEA0067C43C /* AgeGroups.plist in Resources */,
 				91590C4B1FB79F7600707A47 /* AthleteSearchViewController.xib in Resources */,
 				91590C541FB7A41900707A47 /* BaseViewController.xib in Resources */,
 				91D402631FAF42E70032ED26 /* LaunchScreen.storyboard in Resources */,
 				917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */,
+				919A6AC41FDC4A840067C43C /* RankingsSearchViewController.xib in Resources */,
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
+				919A6AD21FDC94F90067C43C /* DropdownPickerView.xib in Resources */,
 				9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */,
 				91590C5A1FB7B03B00707A47 /* AthleteSearchResultsViewController.xib in Resources */,
 			);
@@ -702,6 +760,7 @@
 				91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */,
 				91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */,
 				91590C6B1FB8EE7B00707A47 /* UIView+NibLoading.swift in Sources */,
+				919A6AC71FDC4BB30067C43C /* RequestRankingsResource.swift in Sources */,
 				91784FBB1FC6EBEE006ADC28 /* Array+SafeSubscript.swift in Sources */,
 				9145A59B1FC62F23000C6EC8 /* UIView+Shadow.swift in Sources */,
 				91784FC21FC6FB32006ADC28 /* AthleteProfilePresenter.swift in Sources */,
@@ -717,8 +776,10 @@
 				91590C5B1FB7B03B00707A47 /* AthleteSearchResultsViewPresenter.swift in Sources */,
 				91499D821FAF8E570086134E /* String+Additions.swift in Sources */,
 				91590C681FB8EC4B00707A47 /* ActionButtonInputAccessoryView.swift in Sources */,
+				919A6AD71FDDCF500067C43C /* RankingQueryItemsVendor.swift in Sources */,
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */,
+				919A6AD11FDC94F90067C43C /* DropdownPickerView.swift in Sources */,
 				919A6ABE1FDC3C380067C43C /* XPathObject+SafeSubscript.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
@@ -731,9 +792,12 @@
 				91590C4A1FB79F7600707A47 /* AthleteSearchViewController.swift in Sources */,
 				91590C4C1FB79F7600707A47 /* AthleteSearchViewPresenter.swift in Sources */,
 				91FFFD211FDB3CE900FB67F8 /* FavouriteAthletesRouter.swift in Sources */,
+				919A6AC31FDC4A840067C43C /* RankingsSearchViewController.swift in Sources */,
 				91499D8B1FB107E40086134E /* SubmitAthleteSearchResource.swift in Sources */,
+				919A6AC51FDC4A840067C43C /* RankingsSearchPresenter.swift in Sources */,
 				91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */,
 				917728B61FD9E0E000E6FD8C /* Athlete.swift in Sources */,
+				919A6ACC1FDC63BC0067C43C /* RankingsRouter.swift in Sources */,
 				91590C601FB8B8F100707A47 /* SearchTextField.swift in Sources */,
 				917DBC501FC723B300E02C2B /* AthleteProfileInformationView.swift in Sources */,
 				919A6AB41FDBF8A30067C43C /* AppTheme+Defaults.swift in Sources */,

@@ -26,7 +26,10 @@ final class BaseViewController: UITabBarController {
     let favouriteAthletesRouter = FavouriteAthletesRouter()
     favouriteAthletesRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     
-    viewControllers = [athleteSearchRouter, favouriteAthletesRouter]
+    let rankingsRouter = RankingsRouter()
+    rankingsRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1) //TODO custom item
+    
+    viewControllers = [athleteSearchRouter, rankingsRouter, favouriteAthletesRouter]
   }
   
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DropdownPickerView" customModule="MyPowerOf10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxD-zc-LDW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ryG-Pm-r6W"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapDropdownButton" destination="iN0-l3-epB" eventType="touchUpInside" id="rwG-9j-jQa"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-be-gtR">
+                    <rect key="frame" x="0.0" y="43" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="999" constant="120" id="Id2-Xn-Moh"/>
+                        <constraint firstAttribute="height" id="r4S-4J-cvI"/>
+                    </constraints>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z18-xQ-j63">
+                    <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.020532956710000001" alpha="0.47661790780000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6Gv-EW-1J2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dS6-be-gtR" secondAttribute="trailing" id="2W0-xL-g4j"/>
+                <constraint firstAttribute="bottom" secondItem="dS6-be-gtR" secondAttribute="bottom" id="P6f-7j-5Ou"/>
+                <constraint firstAttribute="trailing" secondItem="TxD-zc-LDW" secondAttribute="trailing" id="QQE-uK-C4n"/>
+                <constraint firstAttribute="trailing" secondItem="z18-xQ-j63" secondAttribute="trailing" id="SoL-b2-oM5"/>
+                <constraint firstItem="TxD-zc-LDW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SpH-2K-hFh"/>
+                <constraint firstItem="TxD-zc-LDW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="djX-9W-NIt"/>
+                <constraint firstItem="z18-xQ-j63" firstAttribute="bottom" secondItem="TxD-zc-LDW" secondAttribute="bottom" id="s7A-6s-V7r"/>
+                <constraint firstItem="dS6-be-gtR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vAS-Is-tA6"/>
+                <constraint firstItem="z18-xQ-j63" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xmD-cG-PeD"/>
+                <constraint firstItem="dS6-be-gtR" firstAttribute="top" secondItem="z18-xQ-j63" secondAttribute="top" id="zTA-yI-kI2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dropdownButton" destination="TxD-zc-LDW" id="1DZ-gv-TEL"/>
+                <outlet property="pickerView" destination="dS6-be-gtR" id="grN-Bh-RIh"/>
+                <outlet property="pickerViewOpenHeightConstraint" destination="Id2-Xn-Moh" id="UIG-6D-nrI"/>
+                <outlet property="pickerViewZeroHeightConstraint" destination="r4S-4J-cvI" id="sUN-3H-fbJ"/>
+                <outlet property="separatorHeightConstraint" destination="6Gv-EW-1J2" id="77T-5Z-YfI"/>
+                <outlet property="separatorView" destination="z18-xQ-j63" id="0lt-Qw-YpV"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="-185"/>
+        </view>
+    </objects>
+</document>
