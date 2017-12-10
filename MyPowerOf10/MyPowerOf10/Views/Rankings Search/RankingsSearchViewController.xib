@@ -13,9 +13,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankingsSearchViewController" customModule="MyPowerOf10" customModuleProvider="target">
             <connections>
                 <outlet property="ageGroupPickerContainerView" destination="EJI-ld-pQC" id="ezY-tg-pRz"/>
+                <outlet property="ageGroupPickerHeightConstraint" destination="UGB-V3-GQS" id="vTY-G7-rym"/>
                 <outlet property="regionPickerContainerView" destination="Q0U-n8-2KS" id="qq0-jd-udA"/>
+                <outlet property="regionPickerHeightConstraint" destination="VIT-qt-YTF" id="mNr-tm-rgF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yearPickerContainerView" destination="TL4-pe-tRi" id="hLl-Ha-22w"/>
+                <outlet property="yearPickerHeightConstraint" destination="JA9-Dg-wKF" id="hu1-UK-vhr"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,25 +32,25 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZG-Zh-NqE" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJI-ld-pQC">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJI-ld-pQC">
                                     <rect key="frame" x="32" y="32" width="311" height="44"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="44" placeholder="YES" id="UGB-V3-GQS"/>
+                                        <constraint firstAttribute="height" constant="44" id="UGB-V3-GQS"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TL4-pe-tRi">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TL4-pe-tRi">
                                     <rect key="frame" x="32" y="108" width="311" height="44"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="44" placeholder="YES" id="JA9-Dg-wKF"/>
+                                        <constraint firstAttribute="height" constant="44" id="JA9-Dg-wKF"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-n8-2KS">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-n8-2KS">
                                     <rect key="frame" x="32" y="184" width="311" height="44"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="44" placeholder="YES" id="VIT-qt-YTF"/>
+                                        <constraint firstAttribute="height" constant="44" id="VIT-qt-YTF"/>
                                     </constraints>
                                 </view>
                             </subviews>

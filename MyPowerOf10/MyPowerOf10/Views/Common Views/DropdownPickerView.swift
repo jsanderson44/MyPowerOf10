@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DropdownPickerViewDelegate: class {
-  func dropdownPickerViewDidRequestLayoutOfParent(_ dropdownPickerView: DropdownPickerView)
+  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool)
 }
 
 final class DropdownPickerView: UIView {
@@ -33,10 +33,7 @@ final class DropdownPickerView: UIView {
   @IBOutlet private var dropdownButton: UIButton!
   @IBOutlet private var separatorView: UIView!
   @IBOutlet private var pickerView: UIPickerView!
-  
   @IBOutlet private var separatorHeightConstraint: NSLayoutConstraint!
-  @IBOutlet private var pickerViewZeroHeightConstraint: NSLayoutConstraint!
-  @IBOutlet private var pickerViewOpenHeightConstraint: NSLayoutConstraint!
   
   // MARK: - Override functions
   
@@ -49,7 +46,6 @@ final class DropdownPickerView: UIView {
   
   private func setup() {
     isSelected = false
-    
     configureButton()
     configurePickerView()
   }
@@ -69,18 +65,15 @@ final class DropdownPickerView: UIView {
   private func updatedSelectedState() {
     separatorHeightConstraint.constant = isSelected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
     separatorView.backgroundColor = isSelected ? .potRed : .potLightGray
-    
-    UIView.reallyShortAnimation(animations: {
-      self.pickerView.alpha = self.isSelected ? 1 : 0  //TODO - Sort animation. THis is O.K...
-    }, completion: { _ in
-      self.pickerViewZeroHeightConstraint.isActive = !self.isSelected
-      self.pickerViewOpenHeightConstraint.isActive = self.isSelected
-      self.delegate?.dropdownPickerViewDidRequestLayoutOfParent(self)
-    })
   }
   
   @IBAction private func didTapDropdownButton() {
     isSelected = !isSelected
+    UIView.reallyShortAnimation(animations: {
+      self.pickerView.alpha = self.isSelected ? 1 : 0  //TODO - Sort animation. THis is O.K...
+    }, completion: { _ in
+      self.delegate?.dropdownPickerViewDidToggleSelection(self, isSelected: self.isSelected)
+    })
   }
   
 }

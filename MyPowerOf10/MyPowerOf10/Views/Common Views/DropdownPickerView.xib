@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DropdownPickerView" customModule="MyPowerOf10" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxD-zc-LDW">
@@ -29,11 +29,10 @@
                     </connections>
                 </button>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-be-gtR">
-                    <rect key="frame" x="0.0" y="43" width="375" height="0.0"/>
+                    <rect key="frame" x="0.0" y="43" width="375" height="120"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" priority="999" constant="120" id="Id2-Xn-Moh"/>
-                        <constraint firstAttribute="height" id="r4S-4J-cvI"/>
+                        <constraint firstAttribute="height" constant="120" id="r4S-4J-cvI"/>
                     </constraints>
                 </pickerView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z18-xQ-j63">
@@ -61,8 +60,6 @@
             <connections>
                 <outlet property="dropdownButton" destination="TxD-zc-LDW" id="1DZ-gv-TEL"/>
                 <outlet property="pickerView" destination="dS6-be-gtR" id="grN-Bh-RIh"/>
-                <outlet property="pickerViewOpenHeightConstraint" destination="Id2-Xn-Moh" id="UIG-6D-nrI"/>
-                <outlet property="pickerViewZeroHeightConstraint" destination="r4S-4J-cvI" id="sUN-3H-fbJ"/>
                 <outlet property="separatorHeightConstraint" destination="6Gv-EW-1J2" id="77T-5Z-YfI"/>
                 <outlet property="separatorView" destination="z18-xQ-j63" id="0lt-Qw-YpV"/>
             </connections>

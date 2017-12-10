@@ -20,6 +20,10 @@ final class RankingsSearchViewController: UIViewController {
   @IBOutlet private var yearPickerContainerView: UIView!
   @IBOutlet private var regionPickerContainerView: UIView!
   @IBOutlet private var ageGroupPickerContainerView: UIView!
+  
+  @IBOutlet private var yearPickerHeightConstraint: NSLayoutConstraint!
+  @IBOutlet private var regionPickerHeightConstraint: NSLayoutConstraint!
+  @IBOutlet private var ageGroupPickerHeightConstraint: NSLayoutConstraint!
 	
 	// MARK: Internal
 	
@@ -31,6 +35,9 @@ final class RankingsSearchViewController: UIViewController {
   private let yearPicker = DropdownPickerView.loadFromNib()
   private let regionPicker = DropdownPickerView.loadFromNib()
   private let ageGroupPicker = DropdownPickerView.loadFromNib()
+  
+  private let collapsedHeight: CGFloat = 44
+  private let expandedHeight: CGFloat = 164
 	
 	// MARK: - Initialiers -
 	
@@ -83,14 +90,37 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
 // MARK: DropdownPickerViewDelegate
 
 extension RankingsSearchViewController: DropdownPickerViewDelegate {
-  func dropdownPickerViewDidRequestLayoutOfParent(_ dropdownPickerView: DropdownPickerView) {
+  //TODO REFACTOR!
+  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool) {
+    switch dropdownPickerView {
+    case ageGroupPicker:
+      ageGroupPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+      yearPickerHeightConstraint.constant = collapsedHeight
+      yearPicker.isSelected = false
+      regionPickerHeightConstraint.constant = collapsedHeight
+      regionPicker.isSelected = false
+    case yearPicker:
+      yearPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+      ageGroupPickerHeightConstraint.constant = collapsedHeight
+      ageGroupPicker.isSelected = false
+      regionPickerHeightConstraint.constant = collapsedHeight
+      regionPicker.isSelected = false
+    case regionPicker:
+      regionPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
+      ageGroupPickerHeightConstraint.constant = collapsedHeight
+      ageGroupPicker.isSelected = false
+      yearPickerHeightConstraint.constant = collapsedHeight
+      yearPicker.isSelected = false
+    default:
+      yearPickerHeightConstraint.constant = collapsedHeight
+      yearPicker.isSelected = false
+      ageGroupPickerHeightConstraint.constant = collapsedHeight
+      ageGroupPicker.isSelected = false
+      regionPickerHeightConstraint.constant = collapsedHeight
+      regionPicker.isSelected = false
+    }
     UIView.reallyShortAnimation(animations: {
       self.view.layoutIfNeeded()
     })
-    
-//    [yearPicker, regionPicker, ageGroupPicker].forEach { (picker) in
-//      if picker == dropdownPickerView { return }
-//      picker.isSelected = false
-//    }
   }
 }
