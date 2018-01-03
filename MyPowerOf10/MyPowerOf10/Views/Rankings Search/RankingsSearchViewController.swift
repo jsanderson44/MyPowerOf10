@@ -9,7 +9,7 @@
 import UIKit
 
 protocol RankingsSearchViewControllerDelegate: class {
-	// TODO: Add delegate requirements
+	func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking])
 }
 
 /// Handles the user interface for the Rankings Search functionality
@@ -17,13 +17,23 @@ final class RankingsSearchViewController: UIViewController {
   
   // MARK: Outlets
   
+  @IBOutlet private var contentView: UIView!
   @IBOutlet private var yearPickerContainerView: UIView!
   @IBOutlet private var regionPickerContainerView: UIView!
   @IBOutlet private var ageGroupPickerContainerView: UIView!
+  @IBOutlet private var eventsPickerContainerView: UIView!
+  @IBOutlet private var genderSegmentControl: UISegmentedControl!
+  @IBOutlet private var searchActionButton: RoundedCornerActionButton!
+  @IBOutlet private var errorView: CollapsableErrorView!
+  @IBOutlet private var scrollView: UIScrollView!
   
   @IBOutlet private var yearPickerHeightConstraint: NSLayoutConstraint!
   @IBOutlet private var regionPickerHeightConstraint: NSLayoutConstraint!
   @IBOutlet private var ageGroupPickerHeightConstraint: NSLayoutConstraint!
+  @IBOutlet private var eventsPickerHeightConstraint: NSLayoutConstraint!
+  
+  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
+  @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
 	
 	// MARK: Internal
 	
@@ -35,9 +45,13 @@ final class RankingsSearchViewController: UIViewController {
   private let yearPicker = DropdownPickerView.loadFromNib()
   private let regionPicker = DropdownPickerView.loadFromNib()
   private let ageGroupPicker = DropdownPickerView.loadFromNib()
+  private let eventsPicker = DropdownPickerView.loadFromNib()
   
   private let collapsedHeight: CGFloat = 44
-  private let expandedHeight: CGFloat = 164
+  private let expandedHeight: CGFloat = 144
+  
+  private typealias PickerPair = (picker: DropdownPickerView, associatedConstraint: NSLayoutConstraint)
+  private var pickerPairs: [PickerPair] = []
 	
 	// MARK: - Initialiers -
 	
@@ -56,18 +70,53 @@ final class RankingsSearchViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
     title = "Top 50"
+    removeBackButtonTitle()
 		presenter.view = self
     presenter.fetchRankingQueryItems()
-    
-    yearPickerContainerView.addSubview(yearPicker)
-    yearPicker.pin(toView: yearPickerContainerView)
-    
-    regionPickerContainerView.addSubview(regionPicker)
-    regionPicker.pin(toView: regionPickerContainerView)
-    
-    ageGroupPickerContainerView.addSubview(ageGroupPicker)
-    ageGroupPicker.pin(toView: ageGroupPickerContainerView)
+    setupPickerControl(picker: yearPicker, containerView: yearPickerContainerView, constraint: yearPickerHeightConstraint)
+    setupPickerControl(picker: regionPicker, containerView: regionPickerContainerView, constraint: regionPickerHeightConstraint)
+    setupPickerControl(picker: ageGroupPicker, containerView: ageGroupPickerContainerView, constraint: ageGroupPickerHeightConstraint)
+    setupPickerControl(picker: eventsPicker, containerView: eventsPickerContainerView, constraint: eventsPickerHeightConstraint)
+    genderSegmentControl.tintColor = .potRed
+    view.bringSubview(toFront: errorView)
 	}
+  
+  // MARK: - Private functions
+  
+  private func setupPickerControl(picker: DropdownPickerView, containerView: UIView, constraint: NSLayoutConstraint) {
+    containerView.addSubview(picker)
+    picker.pin(toView: containerView)
+    let pickerPair: PickerPair = (picker, constraint)
+    pickerPairs.append(pickerPair)
+  }
+  
+  // MARK: IBActions
+  
+  @IBAction private func genderDidChange(_ sender: UISegmentedControl) {
+    pickerPairs.forEach { pickerPair in
+      pickerPair.picker.updatedSelectedState(selected: false, completion: {
+        pickerPair.associatedConstraint.constant = self.collapsedHeight
+        UIView.reallyShortAnimation(animations: {
+          self.view.layoutIfNeeded()
+        })
+      })
+    }
+    let genderString = sender.selectedSegmentIndex == 0 ? "Male" : "Female"
+    guard let gender = Gender(rawValue: genderString) else { return }
+    presenter.selectedGender = gender
+  }
+  
+  @IBAction private func didTapSearch() {
+    presenter.requestRanking()
+  }
+  
+  // MARK: Scroll view adjusting
+  
+  private func animateScrollView(by offset: CGFloat) {
+    UIView.shortAnimation(animations: {
+      self.scrollView.contentOffset.y = offset
+    })
+  }
 	
 }
 
@@ -85,79 +134,65 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
   func presenterDidReceiveAgeGroups(ageGroups: [RankingQueryItem]) {
     ageGroupPicker.configure(withItems: ageGroups, placeholder: "Age Group", delegate: self)
   }
+  
+  func presenterDidRecieveEvents(events: [RankingQueryItem]) {
+    eventsPicker.configure(withItems: events, placeholder: "Event", delegate: self)
+  }
+  
+  func updateSearchButton(isEnabled: Bool) {
+    searchActionButton.isEnabled = isEnabled
+  }
+  
+  func updateLoadingState(isLoading: Bool) {
+    searchActionButton.isLoading = isLoading
+    UIView.shortAnimation(animations: {
+      self.contentView.alpha = isLoading ? 0.3 : 1.0
+    })
+  }
+  
+  func updateErrorState(isVisible: Bool) {
+    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    contentTopConstraint.constant = constraintConstant
+    errorViewHeightConstraint.constant = constraintConstant
+    UIView.shortAnimation(animations: {
+      self.view.layoutIfNeeded()
+    })
+  }
+  
+  func didRecieveRankings(rankings: [Ranking]) {
+    delegate?.rankingsSearchViewController(self, didReceiveRankings: rankings)
+  }
 }
 
 // MARK: DropdownPickerViewDelegate
 
 extension RankingsSearchViewController: DropdownPickerViewDelegate {
   
-  func dropdownPickerViewDidRequestCollapse(_ dropdownPickerView: DropdownPickerView) {
+  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingQueryItem) {
     switch dropdownPickerView {
-    case ageGroupPicker:
-      ageGroupPickerHeightConstraint.constant = collapsedHeight
-    case yearPicker:
-      yearPickerHeightConstraint.constant = collapsedHeight
-    case regionPicker:
-      regionPickerHeightConstraint.constant = collapsedHeight
-    default: break
+    case ageGroupPicker: presenter.selectedAgeGroup = rankingQueryItem
+    case yearPicker: presenter.selectedYear = rankingQueryItem
+    case regionPicker: presenter.selectedRegion = rankingQueryItem
+    case eventsPicker: presenter.selectedEvent = rankingQueryItem
+    default: return
     }
-    UIView.reallyShortAnimation(animations: {
-      self.view.layoutIfNeeded()
-    })
   }
   
-  func dropdownPickerViewDidRequestOpening(_ dropdownPickerView: DropdownPickerView) {
-    switch dropdownPickerView {
-    case ageGroupPicker:
-      yearPicker.isSelected = false
-      regionPicker.isSelected = false
-      ageGroupPickerHeightConstraint.constant = expandedHeight
-    case yearPicker:
-      ageGroupPicker.isSelected = false
-      regionPicker.isSelected = false
-      yearPickerHeightConstraint.constant = expandedHeight
-    case regionPicker:
-      yearPicker.isSelected = false
-      ageGroupPicker.isSelected = false
-      regionPickerHeightConstraint.constant = expandedHeight
-    default: break
+  func dropdownPickerViewDidRequestStateChange(_ dropdownPickerView: DropdownPickerView, selected: Bool) {
+    pickerPairs.forEach { pickerPair in
+      let isTappedPicker = pickerPair.picker == dropdownPickerView
+      let shouldSetSelected = isTappedPicker ? selected : false
+      pickerPair.picker.updatedSelectedState(selected: shouldSetSelected, completion: {
+        pickerPair.associatedConstraint.constant = shouldSetSelected ? self.expandedHeight : self.collapsedHeight
+        UIView.reallyShortAnimation(animations: {
+          self.view.layoutIfNeeded()
+        })
+      })
     }
-    UIView.reallyShortAnimation(animations: {
-      self.view.layoutIfNeeded()
-    })
+    
+    let offset = scrollView.contentSize.height - scrollView.bounds.size.height
+    guard dropdownPickerView == eventsPicker,
+      offset > 0 else { return }
+    animateScrollView(by: offset)
   }
-  
-//  //TODO REFACTOR!
-//  func dropdownPickerViewDidToggleSelection(_ dropdownPickerView: DropdownPickerView, isSelected: Bool) {
-//    switch dropdownPickerView {
-//    case ageGroupPicker:
-//      ageGroupPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-//      yearPickerHeightConstraint.constant = collapsedHeight
-//      yearPicker.isSelected = false
-//      regionPickerHeightConstraint.constant = collapsedHeight
-//      regionPicker.isSelected = false
-//    case yearPicker:
-//      yearPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-//      ageGroupPickerHeightConstraint.constant = collapsedHeight
-//      ageGroupPicker.isSelected = false
-//      regionPickerHeightConstraint.constant = collapsedHeight
-//      regionPicker.isSelected = false
-//    case regionPicker:
-//      regionPickerHeightConstraint.constant = isSelected ? expandedHeight : collapsedHeight
-//      ageGroupPickerHeightConstraint.constant = collapsedHeight
-//      ageGroupPicker.isSelected = false
-//      yearPickerHeightConstraint.constant = collapsedHeight
-//      yearPicker.isSelected = false
-//    default:
-//      yearPickerHeightConstraint.constant = collapsedHeight
-//      yearPicker.isSelected = false
-//      ageGroupPickerHeightConstraint.constant = collapsedHeight
-//      ageGroupPicker.isSelected = false
-//      regionPickerHeightConstraint.constant = collapsedHeight
-//      regionPicker.isSelected = false
-//    }
-//    UIView.reallyShortAnimation(animations: {
-//      self.view.layoutIfNeeded()
-//    })
-//  }
 }

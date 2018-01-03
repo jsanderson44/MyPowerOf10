@@ -16,15 +16,6 @@ final class AthleteSearchRouter: UINavigationController {
     populateViewControllers()
   }
   
-  private func style() {
-    navigationBar.tintColor = .potRed
-    if #available(iOS 11.0, *) {
-      navigationBar.prefersLargeTitles = true
-      navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
-    }
-    navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
-  }
-  
   private func populateViewControllers() {
     let athleteSearchPresenter = AthleteSearchViewPresenter()
     let athleteSearchViewController = AthleteSearchViewController(delegate: self, presenter: athleteSearchPresenter)

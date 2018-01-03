@@ -27,7 +27,7 @@ final class BaseViewController: UITabBarController {
     favouriteAthletesRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     
     let rankingsRouter = RankingsRouter()
-    rankingsRouter.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1) //TODO custom item
+    rankingsRouter.tabBarItem = UITabBarItem(title: "Top 50", image: UIImage(named: "top50"), tag: 2)
     
     viewControllers = [athleteSearchRouter, rankingsRouter, favouriteAthletesRouter]
   }

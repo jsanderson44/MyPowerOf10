@@ -9,40 +9,53 @@
 import Foundation
 import TABResourceLoader
 
+struct RankingSearchRequest {
+  let year: RankingQueryItem
+  let region: RankingQueryItem
+  let gender: Gender
+  let ageGroup: RankingQueryItem
+  let event: RankingQueryItem
+}
+
 struct RequestRankingsResource: NetworkResourceType, DataResourceType {
   
-  typealias Model = [String] //TODO Ranking model
+  typealias Model = [Ranking]
   public let httpRequestMethod: HTTPMethod = .post
   var url: URL
-  var queryItems: [URLQueryItem]? {
-    let queryItems = [
-      URLQueryItem(name: "event", value: event),
-      URLQueryItem(name: "agegroup", value: ageGroup),
-      URLQueryItem(name: "sex", value: gender.searchValue),
-      URLQueryItem(name: "year", value: year),
-      URLQueryItem(name: "alltime", value: year), //TODO
-      URLQueryItem(name: "areaid", value: event)
-      ]
-    return queryItems
+  var queryItems: [URLQueryItem]?
+  
+  private let rankingSearchRequest: RankingSearchRequest
+  private var baseQueryItems: [URLQueryItem] {
+    return [
+    URLQueryItem(name: "event", value: rankingSearchRequest.event.searchQuery),
+    URLQueryItem(name: "agegroup", value: rankingSearchRequest.ageGroup.searchQuery),
+    URLQueryItem(name: "sex", value: rankingSearchRequest.gender.searchValue),
+    URLQueryItem(name: yearQuery, value: rankingSearchRequest.year.searchQuery)
+    ]
+  }
+  private var yearQuery: String {
+    return rankingSearchRequest.year.searchQuery == "y" ? "alltime" : "year"
   }
   
-  private let year: String
-  private let region: String
-  private let gender: Gender
-  private let ageGroup: String
-  private let event: String
-  
-  init(year: String, region: String, gender: Gender, ageGroup: String, event: String) {
-    self.year = year
-    self.region = region
-    self.gender = gender
-    self.ageGroup = ageGroup
-    self.event = event
+  init(rankingSearchRequest: RankingSearchRequest) {
+    self.rankingSearchRequest = rankingSearchRequest
     url = Config.baseURL.appendingPathComponent("rankings/rankinglist.aspx")
+    queryItems = baseQueryItems
+    
+    if rankingSearchRequest.ageGroup.displayName == "Disability" {
+      let disabilityQueryItem = URLQueryItem(name: "class", value: "all")
+      queryItems?.append(disabilityQueryItem)
+    }
+    
+    if rankingSearchRequest.region.searchQuery != "0" {
+      let regionQueryItem = URLQueryItem(name: "areaid", value: rankingSearchRequest.region.searchQuery)
+      queryItems?.append(regionQueryItem)
+    }
   }
   
   func model(from data: Data) throws -> Model {
-    return []
+    let parser = try RankingsSearchHTMLParser(htmlData: data)
+    return parser.rankings()
   }
   
 }

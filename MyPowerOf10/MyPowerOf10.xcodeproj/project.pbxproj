@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		6A66FDD0FD1E7024421163FE /* Pods_MyPowerOf10Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */; };
 		8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
+		912C64D81FF1A2D000CD9797 /* RankingsSearchHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64D71FF1A2D000CD9797 /* RankingsSearchHTMLParser.swift */; };
+		912C64DB1FF6A9DD00CD9797 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64DA1FF6A9DD00CD9797 /* FileLoader.swift */; };
+		912C64DE1FF6AA8000CD9797 /* Rankings.html in Resources */ = {isa = PBXBuildFile; fileRef = 912C64DD1FF6AA8000CD9797 /* Rankings.html */; };
+		912C64E31FFA697000CD9797 /* RankingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64E01FFA697000CD9797 /* RankingResultsViewController.swift */; };
+		912C64E41FFA697000CD9797 /* RankingResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912C64E11FFA697000CD9797 /* RankingResultsViewController.xib */; };
+		912C64E51FFA697000CD9797 /* RankingResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64E21FFA697000CD9797 /* RankingResultsPresenter.swift */; };
+		912C64E91FFA6A0900CD9797 /* RankingResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64E71FFA6A0800CD9797 /* RankingResultTableViewCell.swift */; };
+		912C64EA1FFA6A0900CD9797 /* RankingResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912C64E81FFA6A0800CD9797 /* RankingResultTableViewCell.xib */; };
+		912C64EC1FFBBD6E00CD9797 /* UINavigationController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64EB1FFBBD6E00CD9797 /* UINavigationController+Additions.swift */; };
+		912C64EE1FFC3B5C00CD9797 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64ED1FFC3B5C00CD9797 /* Ranking.swift */; };
 		9145A5941FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A5921FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift */; };
 		9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9145A5931FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib */; };
 		9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145A5961FC625C4000C6EC8 /* GradientView.swift */; };
@@ -95,6 +105,16 @@
 		2B9A26B7E92130898935AA16 /* Pods-MyPowerOf10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.debug.xcconfig"; sourceTree = "<group>"; };
 		2FE05CB57D473338CB361414 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
 		5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C64D71FF1A2D000CD9797 /* RankingsSearchHTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsSearchHTMLParser.swift; sourceTree = "<group>"; };
+		912C64DA1FF6A9DD00CD9797 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		912C64DD1FF6AA8000CD9797 /* Rankings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Rankings.html; sourceTree = "<group>"; };
+		912C64E01FFA697000CD9797 /* RankingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingResultsViewController.swift; sourceTree = "<group>"; };
+		912C64E11FFA697000CD9797 /* RankingResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingResultsViewController.xib; sourceTree = "<group>"; };
+		912C64E21FFA697000CD9797 /* RankingResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingResultsPresenter.swift; sourceTree = "<group>"; };
+		912C64E71FFA6A0800CD9797 /* RankingResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingResultTableViewCell.swift; sourceTree = "<group>"; };
+		912C64E81FFA6A0800CD9797 /* RankingResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingResultTableViewCell.xib; sourceTree = "<group>"; };
+		912C64EB1FFBBD6E00CD9797 /* UINavigationController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Additions.swift"; sourceTree = "<group>"; };
+		912C64ED1FFC3B5C00CD9797 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		9145A5921FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteSearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		9145A5931FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AthleteSearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		9145A5961FC625C4000C6EC8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -203,6 +223,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		912C64D91FF6A9C700CD9797 /* Offline Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				912C64DC1FF6AA7400CD9797 /* Offline Files */,
+				912C64DA1FF6A9DD00CD9797 /* FileLoader.swift */,
+			);
+			path = "Offline Helpers";
+			sourceTree = "<group>";
+		};
+		912C64DC1FF6AA7400CD9797 /* Offline Files */ = {
+			isa = PBXGroup;
+			children = (
+				912C64DD1FF6AA8000CD9797 /* Rankings.html */,
+			);
+			path = "Offline Files";
+			sourceTree = "<group>";
+		};
+		912C64DF1FFA693000CD9797 /* Ranking Results */ = {
+			isa = PBXGroup;
+			children = (
+				912C64E61FFA6A0800CD9797 /* RankingResultCell */,
+				912C64E01FFA697000CD9797 /* RankingResultsViewController.swift */,
+				912C64E11FFA697000CD9797 /* RankingResultsViewController.xib */,
+				912C64E21FFA697000CD9797 /* RankingResultsPresenter.swift */,
+			);
+			path = "Ranking Results";
+			sourceTree = "<group>";
+		};
+		912C64E61FFA6A0800CD9797 /* RankingResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				912C64E71FFA6A0800CD9797 /* RankingResultTableViewCell.swift */,
+				912C64E81FFA6A0800CD9797 /* RankingResultTableViewCell.xib */,
+			);
+			path = RankingResultCell;
+			sourceTree = "<group>";
+		};
 		9145A5911FC61AC0000C6EC8 /* AthleteSearchResultTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +277,7 @@
 				91499D7E1FAF8DEB0086134E /* AthleteResult.swift */,
 				91784FB81FC6CFE5006ADC28 /* AthleteProfile.swift */,
 				917728B51FD9E0E000E6FD8C /* Athlete.swift */,
+				912C64ED1FFC3B5C00CD9797 /* Ranking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +285,7 @@
 		91499D801FAF8E480086134E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				912C64D91FF6A9C700CD9797 /* Offline Helpers */,
 				919A6AB81FDBFD0E0067C43C /* AppTheme */,
 				919A6AB71FDBFCFC0067C43C /* UIView Helpers */,
 				917728B71FD9E49400E6FD8C /* DataStore */,
@@ -235,6 +294,7 @@
 				91784FBA1FC6EBEE006ADC28 /* Array+SafeSubscript.swift */,
 				919A6AB91FDBFD370067C43C /* UIView+Animations.swift */,
 				919A6ABD1FDC3C380067C43C /* XPathObject+SafeSubscript.swift */,
+				912C64EB1FFBBD6E00CD9797 /* UINavigationController+Additions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -266,6 +326,7 @@
 				91590C461FB79F5900707A47 /* Athlete Search */,
 				91590C551FB7B01900707A47 /* Athlete Search Results */,
 				919A6ABF1FDC4A460067C43C /* Rankings Search */,
+				912C64DF1FFA693000CD9797 /* Ranking Results */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +399,7 @@
 			children = (
 				91A4FCAE1FAF598700D8493D /* AthleteSearchHTMLParser.swift */,
 				91784FB61FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift */,
+				912C64D71FF1A2D000CD9797 /* RankingsSearchHTMLParser.swift */,
 			);
 			path = "HTML Parsers";
 			sourceTree = "<group>";
@@ -618,6 +680,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912C64EA1FFA6A0900CD9797 /* RankingResultTableViewCell.xib in Resources */,
 				919837581FC708A6007E2BA9 /* AthleteProfileToggleView.xib in Resources */,
 				919A6ACA1FDC51490067C43C /* Events.plist in Resources */,
 				91784FC11FC6FB32006ADC28 /* AthleteProfileViewController.xib in Resources */,
@@ -631,10 +694,12 @@
 				917728B41FC7641A00E6FD8C /* BestPerformancesTableViewCell.xib in Resources */,
 				919A6AC41FDC4A840067C43C /* RankingsSearchViewController.xib in Resources */,
 				91D402601FAF42E70032ED26 /* Assets.xcassets in Resources */,
+				912C64DE1FF6AA8000CD9797 /* Rankings.html in Resources */,
 				919A6AD21FDC94F90067C43C /* DropdownPickerView.xib in Resources */,
 				9145A5951FC61AF9000C6EC8 /* AthleteSearchResultTableViewCell.xib in Resources */,
 				919A6AD91FDDDACC0067C43C /* Regions.plist in Resources */,
 				91590C5A1FB7B03B00707A47 /* AthleteSearchResultsViewController.xib in Resources */,
+				912C64E41FFA697000CD9797 /* RankingResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,7 +824,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91590C631FB8C78100707A47 /* KeyboardAdjustableViewController.swift in Sources */,
+				912C64E51FFA697000CD9797 /* RankingResultsPresenter.swift in Sources */,
 				91590C4F1FB7A0F500707A47 /* AthleteSearchRouter.swift in Sources */,
+				912C64DB1FF6A9DD00CD9797 /* FileLoader.swift in Sources */,
 				9145A5971FC625C4000C6EC8 /* GradientView.swift in Sources */,
 				91784FB71FC6CADA006ADC28 /* AthleteProfileHTMLParser.swift in Sources */,
 				91784FB91FC6CFE5006ADC28 /* AthleteProfile.swift in Sources */,
@@ -771,6 +838,7 @@
 				91590C651FB8E40C00707A47 /* UIColor+AppTheme.swift in Sources */,
 				91499D7F1FAF8DEB0086134E /* AthleteResult.swift in Sources */,
 				91590C531FB7A41900707A47 /* BaseViewController.swift in Sources */,
+				912C64EC1FFBBD6E00CD9797 /* UINavigationController+Additions.swift in Sources */,
 				917728B91FD9E4A400E6FD8C /* DataStoreType.swift in Sources */,
 				91590C591FB7B03B00707A47 /* AthleteSearchResultsViewController.swift in Sources */,
 				9145A5991FC62B6F000C6EC8 /* UIViewController+Additions.swift in Sources */,
@@ -784,10 +852,12 @@
 				91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */,
 				917728B31FC7641A00E6FD8C /* BestPerformancesTableViewCell.swift in Sources */,
 				919A6AD11FDC94F90067C43C /* DropdownPickerView.swift in Sources */,
+				912C64E91FFA6A0900CD9797 /* RankingResultTableViewCell.swift in Sources */,
 				919A6ABE1FDC3C380067C43C /* XPathObject+SafeSubscript.swift in Sources */,
 				91A4FCAF1FAF598700D8493D /* AthleteSearchHTMLParser.swift in Sources */,
 				91499D851FB105660086134E /* Config.swift in Sources */,
 				91D7F4D51FCD6261008F4A7B /* CollapsableErrorView.swift in Sources */,
+				912C64EE1FFC3B5C00CD9797 /* Ranking.swift in Sources */,
 				917728BB1FD9E4AE00E6FD8C /* DataStore.swift in Sources */,
 				917728AE1FC7622F00E6FD8C /* AthleteProfileBestPerformancesView.swift in Sources */,
 				91784FB51FC6C5FA006ADC28 /* RequestAthleteProfileResource.swift in Sources */,
@@ -801,9 +871,11 @@
 				919A6AC51FDC4A840067C43C /* RankingsSearchPresenter.swift in Sources */,
 				91590C6D1FB8F15E00707A47 /* RoundedCornerActionButton.swift in Sources */,
 				917728B61FD9E0E000E6FD8C /* Athlete.swift in Sources */,
+				912C64E31FFA697000CD9797 /* RankingResultsViewController.swift in Sources */,
 				919A6ACC1FDC63BC0067C43C /* RankingsRouter.swift in Sources */,
 				91590C601FB8B8F100707A47 /* SearchTextField.swift in Sources */,
 				917DBC501FC723B300E02C2B /* AthleteProfileInformationView.swift in Sources */,
+				912C64D81FF1A2D000CD9797 /* RankingsSearchHTMLParser.swift in Sources */,
 				919A6AB41FDBF8A30067C43C /* AppTheme+Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

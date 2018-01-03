@@ -27,15 +27,6 @@ final class RankingsRouter: UINavigationController {
     populateViewControllers()
   }
   
-  private func style() { //TODO - move this to global function
-    navigationBar.tintColor = .potRed
-    if #available(iOS 11.0, *) {
-      navigationBar.prefersLargeTitles = true
-      navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
-    }
-    navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
-  }
-  
   private func populateViewControllers() {
     let rankingsSearchPresenter = RankingsSearchPresenter()
     let rankingsSearchViewController = RankingsSearchViewController(delegate: self, presenter: rankingsSearchPresenter)
@@ -47,5 +38,27 @@ final class RankingsRouter: UINavigationController {
 // MARK: - RankingsSearchViewControllerDelegate
 
 extension RankingsRouter: RankingsSearchViewControllerDelegate {
+  
+  func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking]) {
+    let presenter = RankingResultsPresenter(rankings: rankings)
+    let viewController = RankingResultsViewController(delegate: self, presenter: presenter)
+    pushViewController(viewController, animated: true)
+  }
+}
+
+// MARK: - RankingResultsViewControllerDelegate
+
+extension RankingsRouter: RankingResultsViewControllerDelegate {
+  
+  func rankingResultsViewController(_: RankingResultsViewController, didReceiveAthlete athlete: Athlete) {
+    let presenter = AthleteProfilePresenter(athlete: athlete)
+    let viewController = AthleteProfileViewController(delegate: self, presenter: presenter)
+    pushViewController(viewController, animated: true)
+  }
+}
+
+// MARK: - AthleteProfileViewControllerDelegate
+
+extension RankingsRouter: AthleteProfileViewControllerDelegate {
   
 }

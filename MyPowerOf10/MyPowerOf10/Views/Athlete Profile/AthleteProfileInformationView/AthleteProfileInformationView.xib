@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -119,6 +120,7 @@
                 <constraint firstItem="vul-gr-Que" firstAttribute="leading" secondItem="OsS-YG-isR" secondAttribute="leading" id="Jfr-WK-Nkq"/>
                 <constraint firstItem="t5O-nB-WnT" firstAttribute="top" secondItem="5TT-23-0GT" secondAttribute="bottom" constant="18" id="MFA-eo-23u"/>
                 <constraint firstItem="vul-gr-Que" firstAttribute="trailing" secondItem="OsS-YG-isR" secondAttribute="trailing" id="NLa-xR-L1o"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TdI-Cl-YHc" secondAttribute="bottom" constant="24" id="P8S-Ck-1DY"/>
                 <constraint firstItem="KbI-iO-AQZ" firstAttribute="leading" secondItem="t5O-nB-WnT" secondAttribute="leading" id="QqM-qS-gwC"/>
                 <constraint firstItem="vul-gr-Que" firstAttribute="top" secondItem="mpc-3x-nQ1" secondAttribute="bottom" constant="18" id="TQG-Wn-qGa"/>
                 <constraint firstItem="mpc-3x-nQ1" firstAttribute="leading" secondItem="OsS-YG-isR" secondAttribute="leading" id="VhL-ZA-AjA"/>

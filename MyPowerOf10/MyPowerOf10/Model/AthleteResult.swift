@@ -16,7 +16,7 @@ enum Gender: String, Codable {
   var searchValue: String {
     switch self {
     case .female:
-      return "F"
+      return "W"
     default:
       return "M"
     }
@@ -37,6 +37,7 @@ extension Gender {
   }
 }
 
+//TODO Rename?
 struct AthleteResult: Codable {
   
   let firstName: String

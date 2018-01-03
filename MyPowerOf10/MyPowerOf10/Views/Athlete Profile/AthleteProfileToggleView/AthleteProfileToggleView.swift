@@ -3,7 +3,7 @@
 //  MyPowerOf10
 //
 //  Created by John Sanderson on 23/11/2017.
-//Copyright © 2017 JohnSanderson. All rights reserved.
+//  Copyright © 2017 JohnSanderson. All rights reserved.
 //
 
 import UIKit
@@ -26,8 +26,8 @@ final class AthleteProfileToggleView: UIView {
   
   // MARK: Private
   
-  private let selectedFont = UIFont.systemFont(ofSize: 18, weight: .medium)
-  private let deselectedFont = UIFont.systemFont(ofSize: 18, weight: .regular)
+  private let selectedFont = UIFont.systemFont(ofSize: 16, weight: .medium)
+  private let deselectedFont = UIFont.systemFont(ofSize: 16, weight: .regular)
   private let selectedHeight: CGFloat = AppTheme.thickBorderWidth
   private let deselectedHeight: CGFloat = AppTheme.mediumBorderWidth
   private let selectedTintColor = UIColor.potRed

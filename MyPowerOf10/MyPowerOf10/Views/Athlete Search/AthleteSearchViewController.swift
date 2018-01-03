@@ -51,7 +51,6 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     presenter.view = self
     title = "Athlete Search"
     removeBackButtonTitle()

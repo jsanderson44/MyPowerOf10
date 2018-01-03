@@ -39,8 +39,9 @@ struct RankingQueryItemsVender {
     return years
   }
   
-  func events(for ageGroup: String, andGender gender: Gender) -> [RankingQueryItem] {
-    let eventsDictionaryQuery = ageGroup + gender.searchValue
+  func events(forAgeGroup ageGroup: RankingQueryItem?, andGender gender: Gender) -> [RankingQueryItem] {
+    guard let ageGroupQuery = ageGroup?.displayName else { return [] }
+    let eventsDictionaryQuery = ageGroupQuery + gender.searchValue
     let decoder = PropertyListDecoder()
     guard let eventsPlistURL = Bundle.main.url(forResource: "Events", withExtension: "plist"),
       let data = try? Data(contentsOf: eventsPlistURL),

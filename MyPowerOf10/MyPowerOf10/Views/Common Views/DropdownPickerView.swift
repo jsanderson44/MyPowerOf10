@@ -9,19 +9,15 @@
 import UIKit
 
 protocol DropdownPickerViewDelegate: class {
-  func dropdownPickerViewDidRequestCollapse(_ dropdownPickerView: DropdownPickerView)
-  func dropdownPickerViewDidRequestOpening(_ dropdownPickerView: DropdownPickerView)
+  func dropdownPickerViewDidRequestStateChange(_ dropdownPickerView: DropdownPickerView, selected: Bool)
+  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingQueryItem)
 }
 
 final class DropdownPickerView: UIView {
   
   // MARK: - Public properties
   
-  var isSelected: Bool = false {
-    didSet {
-      updatedState()
-    }
-  }
+  var isSelected: Bool = false
   
   // MARK: - Private properties
   
@@ -46,14 +42,16 @@ final class DropdownPickerView: UIView {
   // MARK: - Private functions
   
   private func setup() {
-    isSelected = false
-    configureButton()
     configurePickerView()
+    updatedSelectedState(selected: false)
   }
   
-  private func configureButton() {
-    dropdownButton.titleLabel?.font = .systemFont(ofSize: 18)
-    dropdownButton.setTitleColor(.potDarkGray, for: .normal)
+  private func configureButtonTitle(selectedItem: String) {
+    let placeholderAttributedString = NSAttributedString(string: "\(placeholder): ", attributes: [.foregroundColor : UIColor.potLightGray])
+    let selectedItemAttributedString = NSAttributedString(string: "\(selectedItem)", attributes: [.foregroundColor : UIColor.potDarkGray])
+    let mutableAttributedTitle = NSMutableAttributedString(attributedString: placeholderAttributedString)
+    mutableAttributedTitle.append(selectedItemAttributedString)
+    dropdownButton.setAttributedTitle(mutableAttributedTitle, for: .normal)
   }
   
   private func configurePickerView() {
@@ -63,22 +61,8 @@ final class DropdownPickerView: UIView {
     pickerView.layer.borderColor = UIColor.potLightGray.cgColor
   }
   
-  private func updatedState() {
-    separatorHeightConstraint.constant = isSelected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
-    separatorView.backgroundColor = isSelected ? .potRed : .potLightGray
-    UIView.reallyShortAnimation(animations: {
-      self.pickerView.alpha = self.isSelected ? 1 : 0  //TODO - Sort animation. THis is O.K...
-    }, completion: { _ in
-      if self.isSelected {
-        self.delegate?.dropdownPickerViewDidRequestOpening(self)
-      } else {
-        self.delegate?.dropdownPickerViewDidRequestCollapse(self)
-      }
-    })
-  }
-  
   @IBAction private func didTapDropdownButton() {
-    isSelected = !isSelected
+    delegate?.dropdownPickerViewDidRequestStateChange(self, selected: !isSelected)
   }
   
 }
@@ -90,7 +74,18 @@ extension DropdownPickerView {
     self.delegate = delegate
     self.placeholder = placeholder
     let selectedItem = items.first?.displayName ?? ""
-    dropdownButton.setTitle("\(placeholder): \(selectedItem)", for: .normal)
+    configureButtonTitle(selectedItem: selectedItem)
+  }
+  
+  func updatedSelectedState(selected: Bool, completion: (() -> ())? = nil) {
+    isSelected = selected
+    separatorHeightConstraint.constant = selected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
+    separatorView.backgroundColor = selected ? .potRed : .potLightGray
+    UIView.reallyShortAnimation(animations: {
+      self.pickerView.alpha = selected ? 1 : 0
+    }, completion: { _ in
+      completion?()
+    })
   }
   
 }
@@ -106,13 +101,18 @@ extension DropdownPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     return items.count
   }
   
-  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return items[row].displayName
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    configureButtonTitle(selectedItem: items[row].displayName)
+    delegate?.dropdownPickerView(self, didChangeSelectRankingQueryItem: items[row])
   }
   
-  //TODO figure out custom font
-  
-  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    dropdownButton.setTitle("\(placeholder): \(items[row].displayName)", for: .normal)
+  func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    let pickerLabel = (view as? UILabel) ?? UILabel()
+    let titleString = items[row].displayName
+    let title = NSAttributedString(string: titleString, attributes: [.foregroundColor : UIColor.potDarkGray, .font : UIFont.systemFont(ofSize: 20)])
+    pickerLabel.attributedText = title
+    pickerLabel.textAlignment = .center
+    return pickerLabel
+    
   }
 }

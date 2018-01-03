@@ -22,15 +22,18 @@ struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
   }
   
   private let athleteResult: AthleteResult
-  private var athleteID: String {
-    guard let athleteID = athleteResult.athleteID else {
-      return ""
-    }
-    return athleteID
-  }
+  private let athleteID: String
   
   init(athleteResult: AthleteResult) {
     self.athleteResult = athleteResult
+    self.athleteID = athleteResult.athleteID ?? ""
+    url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
+  }
+  
+  init(ranking: Ranking) {
+    //TODO - this needs to change
+    self.athleteResult = AthleteResult(firstName: ranking.athleteName, surname: "", ageGroup: ranking.ageGroup, gender: Gender.unknown, clubs: [ranking.club], athleteID: ranking.athleteID)
+    self.athleteID = ranking.athleteID
     url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
   }
   

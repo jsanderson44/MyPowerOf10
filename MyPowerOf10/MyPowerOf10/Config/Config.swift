@@ -9,7 +9,9 @@
 import Foundation
 
 struct Config {
-    
-    static let baseURL = URL(string: "http://www.powerof10.info")!
-    
+  
+  static let baseURL = URL(string: "http://www.powerof10.info")!
+  
+  static let isOfflineMode: Bool = false //TODO: Nicer way to do this?
+  
 }
