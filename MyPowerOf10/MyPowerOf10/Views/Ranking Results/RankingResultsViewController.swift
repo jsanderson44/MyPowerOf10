@@ -48,8 +48,23 @@ final class RankingResultsViewController: UIViewController {
     presenter.view = self
     setup()
     removeBackButtonTitle()
+    addLogoItemToNavigationBar()
     presenter.requestRankings()
 	}
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    if #available(iOS 11.0, *) {
+      navigationController?.navigationBar.prefersLargeTitles = false
+    }
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    if #available(iOS 11.0, *) {
+      navigationController?.navigationBar.prefersLargeTitles = true
+    }
+  }
   
   // MARK: Private functions
   
@@ -65,8 +80,9 @@ final class RankingResultsViewController: UIViewController {
 
 extension RankingResultsViewController: RankingResultsPresenterView {
 	
-  func presenterDidReceiveRankings(rankings: [Ranking]) {
+  func presenterDidReceiveRankings(rankings: [Ranking], requestDisplayString: String) {
     self.rankings = rankings
+    configureMultilineNavigationTitle(title: "Top 50", subtitle: requestDisplayString)
     tableView.reloadData()
   }
   

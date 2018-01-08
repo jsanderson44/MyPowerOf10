@@ -48,6 +48,7 @@ class RoundedCornerActionButton: UIButton {
   private func style() {
     layer.cornerRadius = AppTheme.cornerRadius
     backgroundColor = .potRed
+    applyShadow()
     styleTitleLabel(isLoading: false)
     layoutLoadingView()
   }

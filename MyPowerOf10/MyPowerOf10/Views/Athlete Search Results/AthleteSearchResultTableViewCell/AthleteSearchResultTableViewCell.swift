@@ -32,7 +32,7 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   // MARK: Private functions
   
   private func setup() {
-    containerView.backgroundColor = .white
+    containerView.backgroundColor = .potBackgroundGray
     containerView.layer.cornerRadius = AppTheme.cornerRadius
     containerView.layer.borderColor = UIColor.potRed.cgColor
     containerView.layer.borderWidth = AppTheme.mediumBorderWidth

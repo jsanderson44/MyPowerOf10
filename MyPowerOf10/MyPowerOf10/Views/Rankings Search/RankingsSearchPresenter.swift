@@ -19,7 +19,7 @@ protocol RankingsSearchPresenterView: class {
   func updateSearchButton(isEnabled: Bool)
   func updateErrorState(isVisible: Bool)
   
-  func didRecieveRankings(rankings: [Ranking])
+  func didRecieveRankings(rankings: [Ranking], request: RankingSearchRequest)
 }
 
 /// Handles the presentation of the Rankings Search functionality
@@ -83,23 +83,23 @@ final class RankingsSearchPresenter {
   }
   
   func requestRanking(service: RequestRankingsResourceService = RequestRankingsResourceService()) {
-    
-    if Config.isOfflineMode {
-      let data = FileLoader.dataFrom(filename: "Rankings", fileType: "html")
-      let parser = try! RankingsSearchHTMLParser(htmlData: data)
-      let rankings = parser.rankings()
-      handleRequestRankingsResult(.success(rankings, HTTPURLResponse()))
-      return
-    }
-    
     guard let year = selectedYear, let region = selectedRegion, let ageGroup = selectedAgeGroup, let event = selectedEvent else { return }
     view?.updateLoadingState(isLoading: true)
     let rankingSearchRequest = RankingSearchRequest(year: year, region: region, gender: selectedGender, ageGroup: ageGroup, event: event)
+    
+    if Config.isOfflineMode {
+      let data = FileLoader.dataFrom(filename: "Rankings", fileType: "html")
+      let parser = try! RankingsSearchHTMLParser(htmlData: data, isDisabilitySearch: rankingSearchRequest.ageGroup.displayName == "Disability")
+      let rankings = parser.rankings()
+      handleRequestRankingsResult(.success(rankings, HTTPURLResponse()), rankingRequest: rankingSearchRequest)
+      return
+    }
+    
     let resource = RequestRankingsResource(rankingSearchRequest: rankingSearchRequest)
     let requestRankingsOperation = RequestRankingsOperation(resource: resource, service: service) { (_, result) in
       self.view?.updateErrorState(isVisible: false)
       self.view?.updateLoadingState(isLoading: false)
-      self.handleRequestRankingsResult(result)
+      self.handleRequestRankingsResult(result, rankingRequest: rankingSearchRequest)
     }
     queue.addOperation(requestRankingsOperation)
   }
@@ -141,7 +141,7 @@ final class RankingsSearchPresenter {
     view?.presenterDidReceiveAgeGroups(ageGroups: ageGroups)
   }
   
-  private func handleRequestRankingsResult(_ result: NetworkResponse<RequestRankingsResource.Model>) {
+  private func handleRequestRankingsResult(_ result: NetworkResponse<RequestRankingsResource.Model>, rankingRequest: RankingSearchRequest) {
     switch result {
     case .failure:
       view?.updateErrorState(isVisible: true)
@@ -152,7 +152,7 @@ final class RankingsSearchPresenter {
         for index in 0...finalIndex {
           top50.append(rankings[index])
         }
-        view?.didRecieveRankings(rankings: top50) // TODO - no rankings
+        view?.didRecieveRankings(rankings: top50, request: rankingRequest) // TODO - no rankings
       }
     }
   }

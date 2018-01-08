@@ -18,6 +18,7 @@ struct AthleteProfile: Codable {
   let club: String
   let gender: Gender
   let ageGroup: String
+  let paralympicClass: String?
   let county: String
   let region: String
   let nation: String

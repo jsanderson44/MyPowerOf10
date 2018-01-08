@@ -54,7 +54,7 @@ struct RequestRankingsResource: NetworkResourceType, DataResourceType {
   }
   
   func model(from data: Data) throws -> Model {
-    let parser = try RankingsSearchHTMLParser(htmlData: data)
+    let parser = try RankingsSearchHTMLParser(htmlData: data, isDisabilitySearch: rankingSearchRequest.ageGroup.displayName == "Disability")
     return parser.rankings()
   }
   

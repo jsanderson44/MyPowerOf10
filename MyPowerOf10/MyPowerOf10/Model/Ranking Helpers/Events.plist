@@ -6,61 +6,61 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000</string>
+			<string>5000m</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000</string>
+			<string>10000m</string>
 			<key>searchQuery</key>
 			<string>10000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000SC</string>
+			<string>3000m SC</string>
 			<key>searchQuery</key>
 			<string>3000SC</string>
 		</dict>
@@ -84,19 +84,19 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60H</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>110 Hurdles</string>
+			<string>110m Hurdles</string>
 			<key>searchQuery</key>
 			<string>110H</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Hurdles</string>
+			<string>400m Hurdles</string>
 			<key>searchQuery</key>
 			<string>400H</string>
 		</dict>
@@ -174,13 +174,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x400</string>
+			<string>4x400m</string>
 			<key>searchQuery</key>
 			<string>4x400</string>
 		</dict>
@@ -189,73 +189,73 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000</string>
+			<string>5000m</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>2000SC</string>
+			<string>2000m SC</string>
 			<key>searchQuery</key>
 			<string>2000SC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU20M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>110 Hurdles</string>
+			<string>110m Hurdles</string>
 			<key>searchQuery</key>
 			<string>110HU20M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Hurdles</string>
+			<string>400m Hurdles</string>
 			<key>searchQuery</key>
 			<string>400H</string>
 		</dict>
@@ -321,13 +321,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x400</string>
+			<string>4x400m</string>
 			<key>searchQuery</key>
 			<string>4x400</string>
 		</dict>
@@ -336,67 +336,67 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500SC</string>
+			<string>1500m SC</string>
 			<key>searchQuery</key>
 			<string>1500SC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU17M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 Hurdles</string>
+			<string>100m Hurdles</string>
 			<key>searchQuery</key>
 			<string>100HU17M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Hurdles</string>
+			<string>400m Hurdles</string>
 			<key>searchQuery</key>
 			<string>400HU17M</string>
 		</dict>
@@ -468,13 +468,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x400</string>
+			<string>4x400m</string>
 			<key>searchQuery</key>
 			<string>4x400</string>
 		</dict>
@@ -483,55 +483,55 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU15M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>80 Hurdles</string>
+			<string>80m Hurdles</string>
 			<key>searchQuery</key>
 			<string>80HU15M</string>
 		</dict>
@@ -597,13 +597,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x300</string>
+			<string>4x300m</string>
 			<key>searchQuery</key>
 			<string>4x300</string>
 		</dict>
@@ -612,49 +612,49 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU13M</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>75 Hurdles</string>
+			<string>75m Hurdles</string>
 			<key>searchQuery</key>
 			<string>75HU13M</string>
 		</dict>
@@ -702,7 +702,7 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
@@ -711,91 +711,91 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60 Run</string>
+			<string>60m Run</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 Run</string>
+			<string>100m Run</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 WC</string>
+			<string>100m WC</string>
 			<key>searchQuery</key>
 			<string>100WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200 Run</string>
+			<string>200m Run</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200 WC</string>
+			<string>200m WC</string>
 			<key>searchQuery</key>
 			<string>200WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Run</string>
+			<string>400m Run</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 WC</string>
+			<string>400m WC</string>
 			<key>searchQuery</key>
 			<string>400WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800 Run</string>
+			<string>800m Run</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800 WC</string>
+			<string>800m WC</string>
 			<key>searchQuery</key>
 			<string>800WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500 Run</string>
+			<string>1500m Run</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500 WC</string>
+			<string>1500m WC</string>
 			<key>searchQuery</key>
 			<string>1500WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000 Run</string>
+			<string>5000m Run</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000 WC</string>
+			<string>5000m WC</string>
 			<key>searchQuery</key>
 			<string>5000WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000 Run</string>
+			<string>10000m Run</string>
 			<key>searchQuery</key>
 			<string>10000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000 WC</string>
+			<string>10000m WC</string>
 			<key>searchQuery</key>
 			<string>10000WC</string>
 		</dict>
@@ -858,67 +858,67 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000</string>
+			<string>5000m</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000</string>
+			<string>10000m</string>
 			<key>searchQuery</key>
 			<string>10000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>2000SCW</string>
+			<string>2000m SC</string>
 			<key>searchQuery</key>
 			<string>2000SCW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000SCW</string>
+			<string>3000m SC</string>
 			<key>searchQuery</key>
 			<string>3000SCW</string>
 		</dict>
@@ -942,19 +942,19 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 Hurdles</string>
+			<string>100m Hurdles</string>
 			<key>searchQuery</key>
 			<string>100HW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Hurdles</string>
+			<string>400m Hurdles</string>
 			<key>searchQuery</key>
 			<string>400HW</string>
 		</dict>
@@ -1026,13 +1026,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x400</string>
+			<string>4x400m</string>
 			<key>searchQuery</key>
 			<string>4x400</string>
 		</dict>
@@ -1041,73 +1041,73 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400</string>
+			<string>400m</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000</string>
+			<string>5000m</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500SC</string>
+			<string>1500m SC</string>
 			<key>searchQuery</key>
 			<string>1500SCW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 Hurdles</string>
+			<string>100m Hurdles</string>
 			<key>searchQuery</key>
 			<string>100HW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Hurdles</string>
+			<string>400m Hurdles</string>
 			<key>searchQuery</key>
 			<string>400HW</string>
 		</dict>
@@ -1173,13 +1173,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x400</string>
+			<string>4x400m</string>
 			<key>searchQuery</key>
 			<string>4x400</string>
 		</dict>
@@ -1188,67 +1188,67 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>300</string>
+			<string>300m</string>
 			<key>searchQuery</key>
 			<string>300</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500SC</string>
+			<string>1500m SC</string>
 			<key>searchQuery</key>
 			<string>1500SCW</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU17W</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>80 Hurdles</string>
+			<string>80m Hurdles</string>
 			<key>searchQuery</key>
 			<string>80HU17W</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>300 Hurdles</string>
+			<string>300m Hurdles</string>
 			<key>searchQuery</key>
 			<string>300HW</string>
 		</dict>
@@ -1314,13 +1314,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x300</string>
+			<string>4x300m</string>
 			<key>searchQuery</key>
 			<string>4x300</string>
 		</dict>
@@ -1329,55 +1329,55 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>300</string>
+			<string>300m</string>
 			<key>searchQuery</key>
 			<string>300</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>3000</string>
+			<string>3000m</string>
 			<key>searchQuery</key>
 			<string>3000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU15W</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>75 Hurdles</string>
+			<string>75m Hurdles</string>
 			<key>searchQuery</key>
 			<string>75HU15W</string>
 		</dict>
@@ -1443,13 +1443,13 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x300</string>
+			<string>4x300m</string>
 			<key>searchQuery</key>
 			<string>4x300</string>
 		</dict>
@@ -1458,67 +1458,67 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60</string>
+			<string>60m</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>75</string>
+			<string>75m</string>
 			<key>searchQuery</key>
 			<string>75</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100</string>
+			<string>100m</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>150</string>
+			<string>150m</string>
 			<key>searchQuery</key>
 			<string>150</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200</string>
+			<string>200m</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>600</string>
+			<string>600m</string>
 			<key>searchQuery</key>
 			<string>600</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800</string>
+			<string>800m</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1200</string>
+			<string>1200m</string>
 			<key>searchQuery</key>
 			<string>1200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500</string>
+			<string>1500m</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>60 Hurdles</string>
+			<string>60m Hurdles</string>
 			<key>searchQuery</key>
 			<string>60HU13W</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>70 Hurdles</string>
+			<string>70m Hurdles</string>
 			<key>searchQuery</key>
 			<string>70HU15W</string>
 		</dict>
@@ -1566,7 +1566,7 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>4x100</string>
+			<string>4x100m</string>
 			<key>searchQuery</key>
 			<string>4x100</string>
 		</dict>
@@ -1575,91 +1575,91 @@
 	<array>
 		<dict>
 			<key>displayName</key>
-			<string>60 Run</string>
+			<string>60m Run</string>
 			<key>searchQuery</key>
 			<string>60</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 Run</string>
+			<string>100m Run</string>
 			<key>searchQuery</key>
 			<string>100</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>100 WC</string>
+			<string>100m WC</string>
 			<key>searchQuery</key>
 			<string>100WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200 Run</string>
+			<string>200m Run</string>
 			<key>searchQuery</key>
 			<string>200</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>200 WC</string>
+			<string>200m WC</string>
 			<key>searchQuery</key>
 			<string>200WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 Run</string>
+			<string>400m Run</string>
 			<key>searchQuery</key>
 			<string>400</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>400 WC</string>
+			<string>400m WC</string>
 			<key>searchQuery</key>
 			<string>400WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800 Run</string>
+			<string>800m Run</string>
 			<key>searchQuery</key>
 			<string>800</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>800 WC</string>
+			<string>800m WC</string>
 			<key>searchQuery</key>
 			<string>800WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500 Run</string>
+			<string>1500m Run</string>
 			<key>searchQuery</key>
 			<string>1500</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>1500 WC</string>
+			<string>1500m WC</string>
 			<key>searchQuery</key>
 			<string>1500WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000 Run</string>
+			<string>5000m Run</string>
 			<key>searchQuery</key>
 			<string>5000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>5000 WC</string>
+			<string>5000m WC</string>
 			<key>searchQuery</key>
 			<string>5000WC</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000 Run</string>
+			<string>10000m Run</string>
 			<key>searchQuery</key>
 			<string>10000</string>
 		</dict>
 		<dict>
 			<key>displayName</key>
-			<string>10000 WC</string>
+			<string>10000m WC</string>
 			<key>searchQuery</key>
 			<string>10000WC</string>
 		</dict>

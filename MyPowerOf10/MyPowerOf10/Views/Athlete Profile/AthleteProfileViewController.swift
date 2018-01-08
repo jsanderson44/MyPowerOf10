@@ -52,6 +52,8 @@ final class AthleteProfileViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		presenter.view = self
+    removeBackButtonTitle()
+    addLogoItemToNavigationBar()
     configureToggleView()
     presenter.requestProfile()
     configureAthleteInformationView()

@@ -10,17 +10,6 @@ import UIKit
 
 final class FavouriteAthletesRouter: UINavigationController {
   
-  private let dataStore: DataStoreType
-  
-  init(dataStore: DataStoreType = DataStore()) {
-    self.dataStore = dataStore
-    super.init(nibName: nil, bundle: nil)
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     style()
@@ -28,12 +17,7 @@ final class FavouriteAthletesRouter: UINavigationController {
   }
   
   private func populateViewControllers() {
-    let athletes = dataStore.retrieveAllAthletes()
-    var athleteResults: [AthleteResult] = []
-    athletes.forEach {
-      athleteResults.append($0.searchResult)
-    }
-    let athleteSearchResultsPresenter = AthleteSearchResultsViewPresenter(athleteResults: athleteResults)
+    let athleteSearchResultsPresenter = AthleteSearchResultsViewPresenter(athleteResults: [], context: .favorites)
     let athleteSearchResultsViewController = AthleteSearchResultsViewController(delegate: self, presenter: athleteSearchResultsPresenter, title: "Favourites")
     viewControllers = [athleteSearchResultsViewController]
   }

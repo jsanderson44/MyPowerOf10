@@ -39,8 +39,8 @@ final class RankingsRouter: UINavigationController {
 
 extension RankingsRouter: RankingsSearchViewControllerDelegate {
   
-  func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking]) {
-    let presenter = RankingResultsPresenter(rankings: rankings)
+  func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking], fromRequest request: RankingSearchRequest) {
+    let presenter = RankingResultsPresenter(rankings: rankings, request: request)
     let viewController = RankingResultsViewController(delegate: self, presenter: presenter)
     pushViewController(viewController, animated: true)
   }

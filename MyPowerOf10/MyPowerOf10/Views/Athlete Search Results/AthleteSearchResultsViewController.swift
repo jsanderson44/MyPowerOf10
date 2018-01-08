@@ -25,6 +25,7 @@ final class AthleteSearchResultsViewController: UIViewController {
   private var athleteResults: [AthleteResult] = []
   
   @IBOutlet private var tableView: UITableView!
+  @IBOutlet private var noResutsLabel: UILabel!
   @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
   @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
   
@@ -47,8 +48,14 @@ final class AthleteSearchResultsViewController: UIViewController {
     super.viewDidLoad()
     
     presenter.view = self
+    noResutsLabel.textColor = .potDarkGray
     removeBackButtonTitle()
+    addLogoItemToNavigationBar()
     setupTableView()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     presenter.requestResults()
   }
   
@@ -91,7 +98,16 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView 
   }
   
   func updateWithResults(results: [AthleteResult]) {
+    noResutsLabel.isHidden = true
+    tableView.isHidden = false
     athleteResults = results
+    tableView.reloadData()
+  }
+  
+  func updateWithNoResultsMessage(message: String) {
+    noResutsLabel.isHidden = false
+    tableView.isHidden = true
+    noResutsLabel.text = message
   }
   
   func didRecieveAthlete(athlete: Athlete) {

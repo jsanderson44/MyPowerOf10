@@ -16,25 +16,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Club" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsS-YG-isR">
-                    <rect key="frame" x="24" y="87" width="327" height="19.5"/>
+                    <rect key="frame" x="24" y="87" width="33.5" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guildford &amp; Godalming" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpc-3x-nQ1">
-                    <rect key="frame" x="24" y="111" width="327" height="21"/>
+                    <rect key="frame" x="24" y="111" width="188" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lead Coach" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vul-gr-Que">
-                    <rect key="frame" x="24" y="150" width="327" height="20"/>
+                    <rect key="frame" x="24" y="150" width="328" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alli Crossman" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TT-23-0GT">
-                    <rect key="frame" x="24" y="174" width="327" height="22"/>
+                    <rect key="frame" x="24" y="174" width="328" height="22"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -63,6 +63,18 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqj-Ja-WpI">
+                    <rect key="frame" x="312" y="87" width="39.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T37" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yA-UQ-4Ir">
+                    <rect key="frame" x="319" y="110.5" width="32.5" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="County" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5O-nB-WnT">
                     <rect key="frame" x="24" y="214" width="52.5" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -76,25 +88,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdc-er-oxZ">
-                    <rect key="frame" x="300.5" y="214" width="50" height="20"/>
+                    <rect key="frame" x="301.5" y="214" width="50" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South East" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn0-6f-xX2">
-                    <rect key="frame" x="260.5" y="238" width="90" height="22"/>
+                    <rect key="frame" x="261.5" y="238" width="90" height="22"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nation" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-wt-RDe">
-                    <rect key="frame" x="24" y="278" width="326.5" height="20"/>
+                    <rect key="frame" x="24" y="278" width="327.5" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="England" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdI-Cl-YHc">
-                    <rect key="frame" x="24" y="302" width="326.5" height="22"/>
+                    <rect key="frame" x="24" y="302" width="327.5" height="22"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -105,21 +117,21 @@
                 <constraint firstItem="5TT-23-0GT" firstAttribute="leading" secondItem="vul-gr-Que" secondAttribute="leading" id="0uZ-4P-a5Q"/>
                 <constraint firstItem="OsS-YG-isR" firstAttribute="leading" secondItem="EJG-YL-pKB" secondAttribute="leading" id="1jP-NF-tUX"/>
                 <constraint firstItem="CrG-uL-JI4" firstAttribute="trailing" secondItem="Aj3-3u-p4F" secondAttribute="trailing" id="1ys-Rv-WyL"/>
-                <constraint firstItem="OsS-YG-isR" firstAttribute="trailing" secondItem="Aj3-3u-p4F" secondAttribute="trailing" id="3yL-jY-zBy"/>
                 <constraint firstItem="OsS-YG-isR" firstAttribute="top" secondItem="Ihw-mK-Olg" secondAttribute="bottom" constant="18" id="54a-1o-Y3X"/>
-                <constraint firstItem="mpc-3x-nQ1" firstAttribute="trailing" secondItem="OsS-YG-isR" secondAttribute="trailing" id="5NJ-Pi-yo3"/>
                 <constraint firstItem="EJG-YL-pKB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="7kY-ok-NPo"/>
+                <constraint firstItem="Vqj-Ja-WpI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OsS-YG-isR" secondAttribute="trailing" constant="24" id="8Ky-if-vE4"/>
                 <constraint firstItem="Vdc-er-oxZ" firstAttribute="top" secondItem="t5O-nB-WnT" secondAttribute="top" id="8PN-Hc-YOS"/>
                 <constraint firstItem="5TT-23-0GT" firstAttribute="trailing" secondItem="vul-gr-Que" secondAttribute="trailing" id="9FS-2f-6bH"/>
                 <constraint firstItem="TdI-Cl-YHc" firstAttribute="trailing" secondItem="5R4-wt-RDe" secondAttribute="trailing" id="A0w-Kn-HpF"/>
+                <constraint firstItem="0yA-UQ-4Ir" firstAttribute="trailing" secondItem="Vqj-Ja-WpI" secondAttribute="trailing" id="C3E-3e-yJD"/>
                 <constraint firstItem="KbI-iO-AQZ" firstAttribute="top" secondItem="t5O-nB-WnT" secondAttribute="bottom" constant="4" id="DyW-xb-3cF"/>
                 <constraint firstItem="gn0-6f-xX2" firstAttribute="trailing" secondItem="Vdc-er-oxZ" secondAttribute="trailing" id="E2g-BT-kcz"/>
+                <constraint firstItem="Vdc-er-oxZ" firstAttribute="trailing" secondItem="Vqj-Ja-WpI" secondAttribute="trailing" id="Ecz-gS-peO"/>
                 <constraint firstAttribute="trailing" secondItem="Aj3-3u-p4F" secondAttribute="trailing" constant="24" id="FH5-HJ-aNc"/>
                 <constraint firstItem="Ihw-mK-Olg" firstAttribute="top" secondItem="EJG-YL-pKB" secondAttribute="bottom" constant="4" id="HSE-5P-WhC"/>
                 <constraint firstItem="gn0-6f-xX2" firstAttribute="top" secondItem="Vdc-er-oxZ" secondAttribute="bottom" constant="4" id="IqI-n0-uT4"/>
                 <constraint firstItem="vul-gr-Que" firstAttribute="leading" secondItem="OsS-YG-isR" secondAttribute="leading" id="Jfr-WK-Nkq"/>
                 <constraint firstItem="t5O-nB-WnT" firstAttribute="top" secondItem="5TT-23-0GT" secondAttribute="bottom" constant="18" id="MFA-eo-23u"/>
-                <constraint firstItem="vul-gr-Que" firstAttribute="trailing" secondItem="OsS-YG-isR" secondAttribute="trailing" id="NLa-xR-L1o"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TdI-Cl-YHc" secondAttribute="bottom" constant="24" id="P8S-Ck-1DY"/>
                 <constraint firstItem="KbI-iO-AQZ" firstAttribute="leading" secondItem="t5O-nB-WnT" secondAttribute="leading" id="QqM-qS-gwC"/>
                 <constraint firstItem="vul-gr-Que" firstAttribute="top" secondItem="mpc-3x-nQ1" secondAttribute="bottom" constant="18" id="TQG-Wn-qGa"/>
@@ -133,18 +145,24 @@
                 <constraint firstItem="CrG-uL-JI4" firstAttribute="top" secondItem="Aj3-3u-p4F" secondAttribute="bottom" constant="4" id="dRF-vn-ZBs"/>
                 <constraint firstItem="gn0-6f-xX2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KbI-iO-AQZ" secondAttribute="trailing" constant="24" id="eh8-hY-u7U"/>
                 <constraint firstItem="TdI-Cl-YHc" firstAttribute="leading" secondItem="5R4-wt-RDe" secondAttribute="leading" id="hOj-Xv-wkw"/>
+                <constraint firstItem="Vqj-Ja-WpI" firstAttribute="top" secondItem="CrG-uL-JI4" secondAttribute="bottom" constant="18" id="iWc-qA-ZHu"/>
                 <constraint firstItem="5R4-wt-RDe" firstAttribute="leading" secondItem="t5O-nB-WnT" secondAttribute="leading" id="lkd-hz-eJy"/>
                 <constraint firstItem="Ihw-mK-Olg" firstAttribute="leading" secondItem="EJG-YL-pKB" secondAttribute="leading" id="nTK-lg-2Dm"/>
                 <constraint firstItem="mpc-3x-nQ1" firstAttribute="top" secondItem="OsS-YG-isR" secondAttribute="bottom" constant="4" id="qIc-H5-xGO"/>
                 <constraint firstItem="CrG-uL-JI4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ihw-mK-Olg" secondAttribute="trailing" constant="24" id="qfz-EE-QGh"/>
+                <constraint firstItem="Vqj-Ja-WpI" firstAttribute="trailing" secondItem="Aj3-3u-p4F" secondAttribute="trailing" id="sbB-0W-bl6"/>
                 <constraint firstItem="Aj3-3u-p4F" firstAttribute="top" secondItem="EJG-YL-pKB" secondAttribute="top" id="tng-WT-k5c"/>
                 <constraint firstItem="5TT-23-0GT" firstAttribute="top" secondItem="vul-gr-Que" secondAttribute="bottom" constant="4" id="ufy-g8-l8p"/>
                 <constraint firstItem="5R4-wt-RDe" firstAttribute="top" secondItem="KbI-iO-AQZ" secondAttribute="bottom" constant="18" id="vDB-qN-Eb1"/>
                 <constraint firstItem="Vdc-er-oxZ" firstAttribute="trailing" secondItem="vul-gr-Que" secondAttribute="trailing" id="wwn-uo-OVE"/>
+                <constraint firstItem="0yA-UQ-4Ir" firstAttribute="top" secondItem="Vqj-Ja-WpI" secondAttribute="bottom" constant="4" id="xaR-BU-wUs"/>
+                <constraint firstItem="0yA-UQ-4Ir" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mpc-3x-nQ1" secondAttribute="trailing" constant="24" id="xgz-vF-eEN"/>
             </constraints>
             <connections>
                 <outlet property="ageGroupLabel" destination="CrG-uL-JI4" id="czR-wO-5VB"/>
                 <outlet property="ageGroupTitleLabel" destination="Aj3-3u-p4F" id="Eve-HA-zj9"/>
+                <outlet property="classLabel" destination="0yA-UQ-4Ir" id="aHw-u7-lvn"/>
+                <outlet property="classTitleLabel" destination="Vqj-Ja-WpI" id="jsy-bB-hYE"/>
                 <outlet property="clubLabel" destination="mpc-3x-nQ1" id="BHT-Aa-9my"/>
                 <outlet property="clubTitleLabel" destination="OsS-YG-isR" id="NKP-Xh-hSE"/>
                 <outlet property="coachLabel" destination="5TT-23-0GT" id="neU-MC-W7v"/>

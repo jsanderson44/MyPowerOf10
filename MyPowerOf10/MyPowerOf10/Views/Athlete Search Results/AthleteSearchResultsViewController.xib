@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="contentTopConstraint" destination="5Bb-Bo-1z5" id="4r5-Bf-Nqk"/>
                 <outlet property="errorViewHeightConstraint" destination="xcw-bm-pGT" id="pdu-4E-nCY"/>
+                <outlet property="noResutsLabel" destination="Dfo-67-cfj" id="Yaz-Hl-QfF"/>
                 <outlet property="tableView" destination="Jco-Je-jbv" id="ae2-FY-q5y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,6 +24,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, no results." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-67-cfj">
+                    <rect key="frame" x="24" y="352.5" width="327" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jco-Je-jbv">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,11 +49,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Jco-Je-jbv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Bb-Bo-1z5"/>
+                <constraint firstItem="Dfo-67-cfj" firstAttribute="centerY" secondItem="AFR-Zm-C3b" secondAttribute="centerY" id="Bp5-N6-z5r"/>
+                <constraint firstItem="Dfo-67-cfj" firstAttribute="centerX" secondItem="AFR-Zm-C3b" secondAttribute="centerX" id="L0e-b1-K3r"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="trailing" secondItem="JAZ-1h-pxn" secondAttribute="trailing" id="SOS-T2-mTw"/>
                 <constraint firstItem="JAZ-1h-pxn" firstAttribute="leading" secondItem="AFR-Zm-C3b" secondAttribute="leading" id="UJE-rp-iCp"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="top" secondItem="JAZ-1h-pxn" secondAttribute="top" id="Yfz-DV-ZfV"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="bottom" secondItem="Jco-Je-jbv" secondAttribute="bottom" id="dL5-fq-QtK"/>
+                <constraint firstItem="Dfo-67-cfj" firstAttribute="leading" secondItem="AFR-Zm-C3b" secondAttribute="leading" constant="24" id="gWv-pD-jCH"/>
                 <constraint firstItem="AFR-Zm-C3b" firstAttribute="trailing" secondItem="Jco-Je-jbv" secondAttribute="trailing" id="j1q-dW-u1D"/>
+                <constraint firstItem="AFR-Zm-C3b" firstAttribute="trailing" secondItem="Dfo-67-cfj" secondAttribute="trailing" constant="24" id="nxQ-Dv-ezJ"/>
                 <constraint firstItem="Jco-Je-jbv" firstAttribute="leading" secondItem="AFR-Zm-C3b" secondAttribute="leading" id="ohl-M6-FMh"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

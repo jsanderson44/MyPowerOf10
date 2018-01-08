@@ -10,7 +10,7 @@ import Foundation
 import TABResourceLoader
 
 protocol RankingResultsPresenterView: class {
-  func presenterDidReceiveRankings(rankings: [Ranking])
+  func presenterDidReceiveRankings(rankings: [Ranking], requestDisplayString: String)
   func presenterDidRecieveAthlete(athlete: Athlete)
   
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
@@ -30,20 +30,24 @@ final class RankingResultsPresenter {
 	
 	private let queue: OperationQueue
   private let rankings: [Ranking]
+  private let request: RankingSearchRequest
   private let dataStore: DataStoreType
 	
 	// MARK: - Initialiers -
 	
-  init(queue: OperationQueue = OperationQueue(), rankings: [Ranking], dataStore: DataStoreType = DataStore()) {
+  init(queue: OperationQueue = OperationQueue(), rankings: [Ranking], request: RankingSearchRequest, dataStore: DataStoreType = DataStore()) {
 		self.queue = queue
     self.rankings = rankings
+    self.request = request
     self.dataStore = dataStore
 	}
   
   // MARK: - Internal
   
   func requestRankings() {
-    view?.presenterDidReceiveRankings(rankings: rankings)
+    let regionString = request.region.displayName == "UK" ? "" : "\(request.region.displayName) "
+    let requestDisplayString = "\(request.year.displayName) \(regionString)\(request.ageGroup.displayName) \(request.gender.rawValue) \(request.event.displayName)"
+    view?.presenterDidReceiveRankings(rankings: rankings, requestDisplayString: requestDisplayString)
   }
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {

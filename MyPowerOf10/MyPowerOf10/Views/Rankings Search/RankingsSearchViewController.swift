@@ -9,7 +9,7 @@
 import UIKit
 
 protocol RankingsSearchViewControllerDelegate: class {
-	func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking])
+  func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking], fromRequest request: RankingSearchRequest)
 }
 
 /// Handles the user interface for the Rankings Search functionality
@@ -71,6 +71,7 @@ final class RankingsSearchViewController: UIViewController {
 		super.viewDidLoad()
     title = "Top 50"
     removeBackButtonTitle()
+    addLogoItemToNavigationBar()
 		presenter.view = self
     presenter.fetchRankingQueryItems()
     setupPickerControl(picker: yearPicker, containerView: yearPickerContainerView, constraint: yearPickerHeightConstraint)
@@ -78,6 +79,7 @@ final class RankingsSearchViewController: UIViewController {
     setupPickerControl(picker: ageGroupPicker, containerView: ageGroupPickerContainerView, constraint: ageGroupPickerHeightConstraint)
     setupPickerControl(picker: eventsPicker, containerView: eventsPickerContainerView, constraint: eventsPickerHeightConstraint)
     genderSegmentControl.tintColor = .potRed
+    genderSegmentControl.applyShadow()
     view.bringSubview(toFront: errorView)
 	}
   
@@ -86,6 +88,7 @@ final class RankingsSearchViewController: UIViewController {
   private func setupPickerControl(picker: DropdownPickerView, containerView: UIView, constraint: NSLayoutConstraint) {
     containerView.addSubview(picker)
     picker.pin(toView: containerView)
+    containerView.applyShadow()
     let pickerPair: PickerPair = (picker, constraint)
     pickerPairs.append(pickerPair)
   }
@@ -108,6 +111,7 @@ final class RankingsSearchViewController: UIViewController {
   
   @IBAction private func didTapSearch() {
     presenter.requestRanking()
+    updateErrorState(isVisible: false)
   }
   
   // MARK: Scroll view adjusting
@@ -159,8 +163,8 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
     })
   }
   
-  func didRecieveRankings(rankings: [Ranking]) {
-    delegate?.rankingsSearchViewController(self, didReceiveRankings: rankings)
+  func didRecieveRankings(rankings: [Ranking], request: RankingSearchRequest) {
+    delegate?.rankingsSearchViewController(self, didReceiveRankings: rankings, fromRequest: request)
   }
 }
 
@@ -190,9 +194,11 @@ extension RankingsSearchViewController: DropdownPickerViewDelegate {
       })
     }
     
-    let offset = scrollView.contentSize.height - scrollView.bounds.size.height
+    let offset = (scrollView.contentSize.height + 100) - scrollView.bounds.size.height
     guard dropdownPickerView == eventsPicker,
-      offset > 0 else { return }
-    animateScrollView(by: offset)
+      offset > 0,
+      (scrollView.contentSize.height + 100) > (view.bounds.height - 98),
+      selected == true else { return }
+    animateScrollView(by: offset) //TODO
   }
 }

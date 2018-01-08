@@ -9,8 +9,14 @@
 import Foundation
 import TABResourceLoader
 
+enum AthleteListContext {
+  case searchResults
+  case favorites
+}
+
 protocol AthleteSearchResultsPresenterView: class {
   func updateWithResults(results: [AthleteResult])
+  func updateWithNoResultsMessage(message: String)
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
   func updateErrorState(isVisible: Bool)
   func didRecieveAthlete(athlete: Athlete)
@@ -30,20 +36,35 @@ final class AthleteSearchResultsViewPresenter {
   
   private let queue: OperationQueue
   private let dataStore: DataStoreType
-  private let athleteResults: [AthleteResult]
+  private let context: AthleteListContext
+  private var athleteResults: [AthleteResult]
   
   // MARK: - Initialiers -
   
-  init(queue: OperationQueue = OperationQueue.main, dataStore: DataStoreType = DataStore(), athleteResults: [AthleteResult]) {
+  init(queue: OperationQueue = OperationQueue.main, dataStore: DataStoreType = DataStore(), athleteResults: [AthleteResult] = [], context: AthleteListContext) {
     self.queue = queue
     self.dataStore = dataStore
+    self.context = context
     self.athleteResults = athleteResults
   }
   
   // MARK: - Internal
   
   func requestResults() {
-    view?.updateWithResults(results: athleteResults)
+    if context == .favorites {
+      athleteResults = []
+      let athletes = dataStore.retrieveAllAthletes()
+      athletes.forEach {
+        athleteResults.append($0.searchResult)
+      }
+    }
+    
+    if athleteResults.count > 0 {
+      view?.updateWithResults(results: athleteResults)
+    } else {
+      let noResultsMessage = context == .searchResults ? "Sorry, no results.\n\nPlease try another search." : "No favourites.\n\nTo favourite an athlete tap the star in the top right of their profile."
+      view?.updateWithNoResultsMessage(message: noResultsMessage)
+    }
   }
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {

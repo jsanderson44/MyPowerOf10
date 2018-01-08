@@ -11,6 +11,8 @@ import UIKit
 /// Rounded action button with optional loading state
 final class SearchTextField: UITextField {
   
+  private var padding = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 12)
+  
   // MARK: - Initialisers
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -27,6 +29,8 @@ final class SearchTextField: UITextField {
     styleText()
     styleBorder()
     styleKeyboard()
+    applyShadow()
+    backgroundColor = .potBackgroundGray
   }
   
   private func styleText() {
@@ -37,12 +41,9 @@ final class SearchTextField: UITextField {
   
   private func styleBorder() {
     borderStyle = .none
-    layer.backgroundColor = UIColor.white.cgColor
-    layer.masksToBounds = false
-    layer.shadowColor = UIColor.potLightGray.cgColor
-    layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-    layer.shadowOpacity = 1.0
-    layer.shadowRadius = 0.0
+    layer.borderColor = UIColor.potLightGray.cgColor
+    layer.borderWidth = 1.0
+    layer.cornerRadius = AppTheme.cornerRadius
   }
   
   private func styleKeyboard() {
@@ -57,19 +58,29 @@ final class SearchTextField: UITextField {
   }
   
   // MARK: - Override functions
+  override public func textRect(forBounds bounds: CGRect) -> CGRect {
+    return UIEdgeInsetsInsetRect(bounds, padding)
+  }
+  
+  override public func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    return UIEdgeInsetsInsetRect(bounds, padding)
+  }
+  
+  override public func editingRect(forBounds bounds: CGRect) -> CGRect {
+    return UIEdgeInsetsInsetRect(bounds, padding)
+  }
+  
   @discardableResult
   public override func becomeFirstResponder() -> Bool {
-    layer.shadowColor = UIColor.potRed.cgColor
-    layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-    layer.shadowOpacity = 2.0
+    layer.borderColor = UIColor.potRed.cgColor
+    layer.borderWidth = 2.0
     return super.becomeFirstResponder()
   }
   
   @discardableResult
   public override func resignFirstResponder() -> Bool {
-    layer.shadowColor = UIColor.potLightGray.cgColor
-    layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-    layer.shadowOpacity = 1.0
+    layer.borderColor = UIColor.potLightGray.cgColor
+    layer.borderWidth = 1.0
     return super.resignFirstResponder()
   }
 }

@@ -18,6 +18,8 @@ final class AthleteProfileInformationView: UIView {
   @IBOutlet private var genderLabel: UILabel!
   @IBOutlet private var ageGroupTitleLabel: UILabel!
   @IBOutlet private var ageGroupLabel: UILabel!
+  @IBOutlet private var classTitleLabel: UILabel!
+  @IBOutlet private var classLabel: UILabel!
   @IBOutlet private var coachTitleLabel: UILabel!
   @IBOutlet private var coachLabel: UILabel!
   @IBOutlet private var countyTitleLabel: UILabel!
@@ -51,5 +53,11 @@ extension AthleteProfileInformationView {
     countyLabel.text = profile.county
     regionLabel.text = profile.region
     nationLabel.text = profile.nation
+    guard let paralympicClass = profile.paralympicClass else {
+      classLabel.isHidden = true
+      classTitleLabel.isHidden = true
+      return
+    }
+    classLabel.text = paralympicClass
   }
 }

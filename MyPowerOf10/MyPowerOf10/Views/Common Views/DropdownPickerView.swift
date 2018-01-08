@@ -28,9 +28,7 @@ final class DropdownPickerView: UIView {
   // MARK: - Outlets
   
   @IBOutlet private var dropdownButton: UIButton!
-  @IBOutlet private var separatorView: UIView!
   @IBOutlet private var pickerView: UIPickerView!
-  @IBOutlet private var separatorHeightConstraint: NSLayoutConstraint!
   
   // MARK: - Override functions
   
@@ -42,6 +40,8 @@ final class DropdownPickerView: UIView {
   // MARK: - Private functions
   
   private func setup() {
+    layer.cornerRadius = AppTheme.cornerRadius
+    dropdownButton.backgroundColor = .potBackgroundGray
     configurePickerView()
     updatedSelectedState(selected: false)
   }
@@ -73,14 +73,15 @@ extension DropdownPickerView {
     self.items = items
     self.delegate = delegate
     self.placeholder = placeholder
+    pickerView.selectRow(0, inComponent: 0, animated: false)
     let selectedItem = items.first?.displayName ?? ""
     configureButtonTitle(selectedItem: selectedItem)
   }
   
   func updatedSelectedState(selected: Bool, completion: (() -> ())? = nil) {
     isSelected = selected
-    separatorHeightConstraint.constant = selected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
-    separatorView.backgroundColor = selected ? .potRed : .potLightGray
+    layer.borderWidth = selected ? AppTheme.mediumBorderWidth : AppTheme.thinBorderWidth
+    layer.borderColor = selected ? UIColor.potRed.cgColor : UIColor.potLightGray.cgColor
     UIView.reallyShortAnimation(animations: {
       self.pickerView.alpha = selected ? 1 : 0
     }, completion: { _ in

@@ -35,10 +35,18 @@ struct AthleteProfileHTMLParser {
     let gender: Gender = Gender(rawValue: genderString) ?? .unknown
     let club = infoComponents[safe: 3]
     let ageGroup = infoComponents[safe: 7]
-    let county = infoComponents[safe: 9]
-    let region = infoComponents[safe: 11]
-    let nation = infoComponents[safe: 13]
-    let coach = infoComponents[safe: 16]
+    
+    var paralympicClass: String? = nil
+    var countyIndex = 9
+    if infoComponents[8] == "Class:" {
+      paralympicClass = infoComponents[safe: 9]
+      countyIndex = 11
+    }
+    
+    let county = infoComponents[safe: countyIndex]
+    let region = infoComponents[safe: countyIndex+2]
+    let nation = infoComponents[safe: countyIndex+4]
+    let coach = infoComponents[safe: countyIndex+7]
     
     var count = 0
     let bestPerformances: [Performance] = document.css("#cphBody_divBestPerformances .bestperformancesheader").flatMap { (eventElement) in
@@ -49,7 +57,7 @@ struct AthleteProfileHTMLParser {
       return Performance(event: event, result: result)
     }
     
-    return AthleteProfile(name: name, club: club, gender: gender, ageGroup: ageGroup, county: county, region: region, nation: nation, coach: coach, bestPerformances: bestPerformances)
+    return AthleteProfile(name: name, club: club, gender: gender, ageGroup: ageGroup, paralympicClass: paralympicClass, county: county, region: region, nation: nation, coach: coach, bestPerformances: bestPerformances)
   }
   
 }

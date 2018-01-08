@@ -54,6 +54,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     presenter.view = self
     title = "Athlete Search"
     removeBackButtonTitle()
+    addLogoItemToNavigationBar()
     configureTextFields()
     setupAccessoryView()
     setupGestureRecogniser()
@@ -176,5 +177,6 @@ extension AthleteSearchViewController: ActionButtonInputAccessoryViewDelegate {
   
   func actionButtonInputAccessoryDidTapActionButton(_ actionButtonInputAccessoryView: ActionButtonInputAccessoryView) {
     presenter.performSearch()
+    updateErrorState(isVisible: false)
   }
 }
