@@ -3,150 +3,185 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E55B17B922B62E4F8C1E71D33171A1 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728F30471690022AFEB3D43870E5DDFF /* ResourceType.swift */; };
-		04B5080724C263C2D6F5C2B439C5D48F /* Pods-MyPowerOf10-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC33B5C78EF0FC24C76332029AA9ECA /* Pods-MyPowerOf10-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07F91955A6A7F99E5E884DF45BAF93A5 /* NetworkJSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91888529EF16BF9C5DA80302CA11CDC6 /* NetworkJSONDictionaryResourceType.swift */; };
-		08700CBB713B443AFA394EFD6B74E402 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E55EFF5F1CB22E5814D8CE368208EC /* libxmlHTMLNode.swift */; };
-		10470AF2AAC4B234417D0BE4728FF378 /* DataResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D0D17D45FC9B66692A1F3EE104AC /* DataResourceType.swift */; };
-		17BAF06C41751C0FEDCC0AADCD0DB094 /* PropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F14F7CE333B0B2CB5818B8382C07FC7 /* PropertyListDecodableResourceType.swift */; };
-		2855691307B44E88003BB54083C3D0ED /* TABResourceLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9631600617F7E0DBF9A54001E3047FC /* TABResourceLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 981F98B212C87ABDFF5884C989116153 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32BB2EB1C7E14394C17C51EF39BEA312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		373ED83AE4DC8587285FB0D56D596282 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1411C185E0A21DC428199130C5C2DE /* Result.swift */; };
-		3C9EAA981DD490527815CBA1C3190F83 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE618AE00A95B893E23EA34493D82CD /* GlobalFunctions.swift */; };
-		3DB400D8B8AADDF43E1439E3441E814B /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1FED94BCFA5ACE83CADF1744AFA1 /* Kanna-dummy.m */; };
-		4054659237494862A11FAE605DA468EF /* NetworkResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25073F80AFB18C7229AF1204DCA5F6D4 /* NetworkResourceType.swift */; };
-		436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F2506CAE79CFCE567B537E2E86BDEE3 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5411496B18A950A098A704280206A65E /* BaseAsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2C941E55B389E7E0D79622D7A59A1 /* BaseAsynchronousOperation.swift */; };
-		564E6B6960719CFF256950F6B120B978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		02A76B285DF6204F14214F7E8C63CC21 /* NetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */; };
+		08700CBB713B443AFA394EFD6B74E402 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */; };
+		1564BEF93E81EE249CAEFA98F3EC4A83 /* NetworkResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */; };
+		1A7D524E659C34F1DEEC8CA674A8970A /* ResourceServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */; };
+		1F3810BB2ED410E115AE60D4A6F44BB1 /* JSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */; };
+		2A65AB10EA4D46F775D3F0DA36E2B415 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */; };
+		2AF5B39CA82D18505DA2CF2E16AC9A1E /* NetworkPropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */; };
+		2AF824AB930EC8A9E6684A1EC8E27377 /* ImageResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */; };
+		305EF3C10327C02091CA3DD91840D489 /* JSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */; };
+		322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F7E90693A1A011383DA6491562D821 /* NetworkJSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */; };
+		3DB400D8B8AADDF43E1439E3441E814B /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */; };
+		43084C7BA14EE2911E8B2DE9D8CA52EA /* Pods-MyPowerOf10-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC33B5C78EF0FC24C76332029AA9ECA /* Pods-MyPowerOf10-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C08D5215F16BDAEB2A392602DE57E48 /* TABResourceLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */; };
+		50E6500E7B1C185FF7872BE7C1436BDC /* DataResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */; };
 		5C74719B28157408541D39455E909812 /* Pods-MyPowerOf10Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAE8C1AF52B82C3113F8398BBC1E5B /* Pods-MyPowerOf10Tests-dummy.m */; };
-		634F01C0D06986FD15F647234ADA7CBC /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49CDA7D706186B4ECA41679B69F9F1 /* Kanna.swift */; };
-		691B481028B7E857BC28997A804F0DF3 /* Pods-MyPowerOf10-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E125CB906426E6209E4CDF81E4D84 /* Pods-MyPowerOf10-dummy.m */; };
+		601D752BB82B5D45CB1D2A40C6C87F7B /* NetworkServiceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */; };
+		634F01C0D06986FD15F647234ADA7CBC /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */; };
+		675ACD009EDDA28BF8D30AB70024B8E0 /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */; };
+		6997AB8940EE921531BCAC29EF1CC805 /* NetworkImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */; };
 		6ADDB372030582054CAE4F5CF6431613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6AEDB73F9C418CE8B97825C309A7906D /* NetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E653B3ED3E07FF11923FFEB8B5DC2C /* NetworkDataResourceService.swift */; };
-		6D1D27075F823A7A611DFF29D1F91016 /* JSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2AA5E609B6B5411BDDD885C9D40C /* JSONDictionaryResourceType.swift */; };
-		781A4D12CC4A83EA4705C6029254B012 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBA235A9BCEDB1E8B49FBB1B465626 /* libxmlHTMLDocument.swift */; };
-		7983B904540275412442F1D5A39C4EA4 /* ResourceServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BB0A652E86AE4214A4B2BEA70D2659 /* ResourceServiceType.swift */; };
-		7F2420144F00E0B1970FD46DDD7AD211 /* NetworkPropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D74EF18B0559253132F12910361B13 /* NetworkPropertyListDecodableResourceType.swift */; };
-		943A14ADDFB10AB2094CABF3FD32965F /* GenericNetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CC307A75243525A17057410D57320B /* GenericNetworkDataResourceService.swift */; };
-		A03DB4896D5B0941D9812470A184D3C6 /* JSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FE94DE0C2F3941FFB1724DABA8CEA /* JSONDecodableResourceType.swift */; };
+		6D3F9211CEAEE78A3EF7C05F2C8BCE81 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */; };
+		747BD8C8C3AECE2D0A36774FB918F18C /* TABResourceLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781A4D12CC4A83EA4705C6029254B012 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */; };
+		7D987D1267ABA6378BFE38A413BD9A44 /* NSThread+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */; };
+		7FEA33D58286A89D6A7D5C19A9DE84E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		816F941AF75C1C6ABF21E51331589937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8403D6DC0788C951C12B994608F7F57F /* Pods-MyPowerOf10-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E125CB906426E6209E4CDF81E4D84 /* Pods-MyPowerOf10-dummy.m */; };
+		9724C4168DE1542EB8ABB50B89AF254D /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */; };
+		98D244DA6677C123F36CFB05535CB662 /* PropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */; };
+		A03F0A3C55246836F588A7EC48EAEECD /* BaseAsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */; };
 		A5C4B1B18B1FFC0F614C89FCBC900FF3 /* Pods-MyPowerOf10Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B006BDE6ABFF95B087A4CF5911B5450 /* Pods-MyPowerOf10Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC6FF97DB4505F45A57D25B108C4A539 /* ImageResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0EB530132E8450BA66F36C00A2D6D /* ImageResourceType.swift */; };
-		AD766A6632FCB71BC4EF6FB9988A36A1 /* NetworkJSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC89BC01982F6EA31970A4DEABF206 /* NetworkJSONArrayResourceType.swift */; };
+		A81C34F3CCC66453E21E20A7CA87DD9D /* NetworkJSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */; };
+		A9E1F68324383D12BE67D1516DAC68B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AF4AA421337C377F36B54545135C450F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AF863C36D259D89189A0BDF54912C76E /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD862F8554D89663A999E0E2D8525F /* CSS.swift */; };
-		B56FD7467312BE67CBC2D826102519AB /* NetworkImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C037B1F04CBDDB0D1FC4096BA9CE47 /* NetworkImageResource.swift */; };
-		C75F189E1657D09974AE6E915769F3E2 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1982D3B9A0BEC51D293272A5C347BD /* NetworkResponseHandler.swift */; };
-		CAFEC0BD86470D7C4262FE7B030FE714 /* TABResourceLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 960C0C13145A5484831E18D3005BFBD8 /* TABResourceLoader-dummy.m */; };
-		CE5CB13CC786B900C95EACD2A276D24C /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316D3CFB1F7A213426A1073CD58AB84 /* URLSessionType.swift */; };
-		D6072569F1F9CE138CF50B35BD1437DD /* ResourceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EDB177DA923747D4DB6E974195CC4 /* ResourceOperation.swift */; };
-		DBB48D4BCABAF38111808255F76A0486 /* NSThread+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B06D7EA7F286B798639FC7AEBA4AB /* NSThread+Additions.swift */; };
-		DD21614FA47FB28B77689B014ACC9F0F /* JSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DCDB8BE45820E40D90A95200CB8DC /* JSONArrayResourceType.swift */; };
-		E6569FF4A3456D6DB6786D5AA4955510 /* NetworkJSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FE3C16EA6276C9035A40E6F4077611 /* NetworkJSONDecodableResourceType.swift */; };
-		E84D7309ADDCEF1DC730D5B7BAF9A80C /* JSONParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DFC00A698EF317785920061308D52 /* JSONParsingError.swift */; };
-		F365F3255AC6AD9AD2444A65120DA434 /* NetworkServiceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48792A7462B62E44EA6667EB1039231 /* NetworkServiceActivity.swift */; };
-		FD87F8764674EFAAF3AABCA2552E5127 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDA72D23B262029E7F16DFA070820BD /* libxmlParserOption.swift */; };
+		AF863C36D259D89189A0BDF54912C76E /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */; };
+		B4873EABDE5D96673663384C1EFABD5E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3741311A04ED61E0A805B48754CFAB6A /* Result.swift */; };
+		BCB96E5041024EF2032516033A9067CA /* JSONParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */; };
+		C6C8ECCB4D0F53DE7B926B00A4D5678F /* ResourceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */; };
+		C947A80CD63327B14D754AAB4335BFF3 /* HapticGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */; };
+		CBA02E3B6758E525014B7299E8F1E379 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */; };
+		D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8A8D4402276CA1C18873CD0C594F1EB /* GenericNetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */; };
+		ECE81647DC3D49A44C507B94886A9018 /* JSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */; };
+		FA3ED7026BB38615B612511514600171 /* NetworkJSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */; };
+		FD87F8764674EFAAF3AABCA2552E5127 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		28B639C92B2199B267A658A8329BDFAA /* PBXContainerItemProxy */ = {
+		0775AF310729A20ADC1CAA457844E2C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
 			remoteInfo = Kanna;
 		};
-		95B8E1F1E471FB86878A541BDBA6261E /* PBXContainerItemProxy */ = {
+		323ABAE37446A61A654C0273D41C3336 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EE3782D952298E28E6A394905A617E05;
+			remoteGlobalIDString = ADEF9D39441057203023056F7B95656D;
+			remoteInfo = HapticGenerator;
+		};
+		34A84F6E56361FAD85D61CA98D41A3A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A24C484CBA30264D3E1776E2FB9A1F4;
 			remoteInfo = TABResourceLoader;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E55EFF5F1CB22E5814D8CE368208EC /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/PropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		07A56BB3C6462666AB12D13737F1D906 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
+		0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
 		1110370EEE54BB5B13D5F0B92C83FD64 /* Pods-MyPowerOf10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10Tests.release.xcconfig"; sourceTree = "<group>"; };
 		12482D172D47CE202F5C5E2A68B23D01 /* Pods-MyPowerOf10-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-frameworks.sh"; sourceTree = "<group>"; };
+		13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOperation.swift; path = Sources/TABResourceLoader/Operations/ResourceOperation.swift; sourceTree = "<group>"; };
 		1B656495F8C19A4B47516CBD9B461943 /* Pods-MyPowerOf10Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPowerOf10Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DCD862F8554D89663A999E0E2D8525F /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
-		25073F80AFB18C7229AF1204DCA5F6D4 /* NetworkResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkResourceType.swift"; sourceTree = "<group>"; };
+		1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkImageResource.swift; path = "Sources/TABResourceLoader/Concrete types/Resources/NetworkImageResource.swift"; sourceTree = "<group>"; };
+		1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
+		2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/NetworkDataResourceService.swift; sourceTree = "<group>"; };
 		2DC33B5C78EF0FC24C76332029AA9ECA /* Pods-MyPowerOf10-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPowerOf10-umbrella.h"; sourceTree = "<group>"; };
+		32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsingError.swift; path = "Sources/TABResourceLoader/Concrete types/JSONParsingError.swift"; sourceTree = "<group>"; };
+		33CABD5636041E606FC089D44957A126 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10Tests.framework; path = "Pods-MyPowerOf10Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3741311A04ED61E0A805B48754CFAB6A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Sources/TABResourceLoader/Concrete types/Result.swift"; sourceTree = "<group>"; };
 		3B006BDE6ABFF95B087A4CF5911B5450 /* Pods-MyPowerOf10Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPowerOf10Tests-umbrella.h"; sourceTree = "<group>"; };
-		3CB2E49B20A0E4C3E79C675B7AD1F9DB /* TABResourceLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-prefix.pch"; sourceTree = "<group>"; };
-		3F1411C185E0A21DC428199130C5C2DE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Sources/TABResourceLoader/Concrete types/Result.swift"; sourceTree = "<group>"; };
+		3E7922CC7EB3930DBE81F9C8D1DFB6CF /* HapticGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HapticGenerator.modulemap; sourceTree = "<group>"; };
 		3FFCE1F3A55C8957C82B7FBE3D27A8B1 /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
-		434DCDB8BE45820E40D90A95200CB8DC /* JSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONArrayResourceType.swift"; sourceTree = "<group>"; };
-		43E8A90222F8C58AF81C8F5622C7D871 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
-		4822327CB223D1483D532AAEE659CA0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
 		48BE3513AAB96D8449A4E46B85F38AAD /* Pods-MyPowerOf10Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPowerOf10Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E556DDA100F2CA1D8828B9378D07CD8 /* Pods_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		554696615CC785EFBF18974ED6FDC1F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BE2C941E55B389E7E0D79622D7A59A1 /* BaseAsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAsynchronousOperation.swift; path = Sources/TABResourceLoader/Operations/BaseAsynchronousOperation.swift; sourceTree = "<group>"; };
-		5C2AC6133DFEA48DD4CECB190D1A7A45 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C3FE94DE0C2F3941FFB1724DABA8CEA /* JSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDecodableResourceType.swift"; sourceTree = "<group>"; };
-		5E8DFC00A698EF317785920061308D52 /* JSONParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsingError.swift; path = "Sources/TABResourceLoader/Concrete types/JSONParsingError.swift"; sourceTree = "<group>"; };
-		5F2506CAE79CFCE567B537E2E86BDEE3 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
-		606131F91E7345A46871003E059C1AC8 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61E653B3ED3E07FF11923FFEB8B5DC2C /* NetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/NetworkDataResourceService.swift; sourceTree = "<group>"; };
+		498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		525F86B1A0945A864DC3ACE6198EDD63 /* HapticGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HapticGenerator.framework; path = HapticGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-umbrella.h"; sourceTree = "<group>"; };
+		59BE1130F94AA2C95A87F7283F8249F7 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONArrayResourceType.swift"; sourceTree = "<group>"; };
+		5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABResourceLoader.xcconfig; sourceTree = "<group>"; };
+		60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkServiceActivity.swift; path = Sources/TABResourceLoader/Services/NetworkServiceActivity.swift; sourceTree = "<group>"; };
+		61C6956BD7F74225FC19BAA680B356A3 /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10.framework; path = "Pods-MyPowerOf10.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67D74EF18B0559253132F12910361B13 /* NetworkPropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkPropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
 		6859B1B286728060D995BBC0B6BA4674 /* Pods-MyPowerOf10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10.debug.xcconfig"; sourceTree = "<group>"; };
-		69CEEDA6074B32D27CAAA20BE5EA6F50 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
-		728F30471690022AFEB3D43870E5DDFF /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ResourceType.swift"; sourceTree = "<group>"; };
+		69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ImageResourceType.swift"; sourceTree = "<group>"; };
+		6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDecodableResourceType.swift"; sourceTree = "<group>"; };
+		6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkPropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABResourceLoader-dummy.m"; sourceTree = "<group>"; };
 		74A8329D72A78E1AD9C904D764620A1B /* Pods-MyPowerOf10Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		76AC89BC01982F6EA31970A4DEABF206 /* NetworkJSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONArrayResourceType.swift"; sourceTree = "<group>"; };
+		7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-umbrella.h"; sourceTree = "<group>"; };
+		76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceServiceType.swift; path = Sources/TABResourceLoader/Protocols/ResourceServiceType.swift; sourceTree = "<group>"; };
+		7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
 		7CBAE8C1AF52B82C3113F8398BBC1E5B /* Pods-MyPowerOf10Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10Tests-dummy.m"; sourceTree = "<group>"; };
-		7E8F5B4C22DA2D90F03B14BCE836EA11 /* Pods-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
-		7F14F7CE333B0B2CB5818B8382C07FC7 /* PropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/PropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		7E8F5B4C22DA2D90F03B14BCE836EA11 /* Pods-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
 		8023CE05053CFDA6D8962B7D99BD82F4 /* Pods-MyPowerOf10-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-resources.sh"; sourceTree = "<group>"; };
-		8A3B06D7EA7F286B798639FC7AEBA4AB /* NSThread+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSThread+Additions.swift"; path = "Sources/TABResourceLoader/Extensions/NSThread+Additions.swift"; sourceTree = "<group>"; };
-		8A6EDB177DA923747D4DB6E974195CC4 /* ResourceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOperation.swift; path = Sources/TABResourceLoader/Operations/ResourceOperation.swift; sourceTree = "<group>"; };
-		8FE618AE00A95B893E23EA34493D82CD /* GlobalFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = "Sources/TABResourceLoader/Helper functions/GlobalFunctions.swift"; sourceTree = "<group>"; };
-		91888529EF16BF9C5DA80302CA11CDC6 /* NetworkJSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
-		91D5D0D17D45FC9B66692A1F3EE104AC /* DataResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/DataResourceType.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		960C0C13145A5484831E18D3005BFBD8 /* TABResourceLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABResourceLoader-dummy.m"; sourceTree = "<group>"; };
-		981F98B212C87ABDFF5884C989116153 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
-		9E236A49BC0478C86963388C6917F337 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0BB0A652E86AE4214A4B2BEA70D2659 /* ResourceServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceServiceType.swift; path = Sources/TABResourceLoader/Protocols/ResourceServiceType.swift; sourceTree = "<group>"; };
-		A300C796588C6F6E0A112203049067EF /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
-		A3BAF80C2946410B176005BC69C3C534 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
-		B2EBA235A9BCEDB1E8B49FBB1B465626 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
-		B316D3CFB1F7A213426A1073CD58AB84 /* URLSessionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionType.swift; path = Sources/TABResourceLoader/Services/URLSessionType.swift; sourceTree = "<group>"; };
-		B3C037B1F04CBDDB0D1FC4096BA9CE47 /* NetworkImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkImageResource.swift; path = "Sources/TABResourceLoader/Concrete types/Resources/NetworkImageResource.swift"; sourceTree = "<group>"; };
+		9159F54079B588FB11D845D4778E4C9F /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kanna.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONArrayResourceType.swift"; sourceTree = "<group>"; };
+		A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = "Sources/TABResourceLoader/Helper functions/GlobalFunctions.swift"; sourceTree = "<group>"; };
+		A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ResourceType.swift"; sourceTree = "<group>"; };
+		A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticGenerator-dummy.m"; sourceTree = "<group>"; };
+		A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+		AD48A61670B97F04AAAB82FE1F47BACF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSThread+Additions.swift"; path = "Sources/TABResourceLoader/Extensions/NSThread+Additions.swift"; sourceTree = "<group>"; };
 		B811220C8177839F6949BA9B2C01CB95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8C49EA787117B123FF715B721EE3238 /* TABResourceLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABResourceLoader.xcconfig; sourceTree = "<group>"; };
 		BA0131E03D72099AE108B5CABF0203CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C01511804525B2ECB7C118D9A75B6D59 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
+		BBA25C7542E7333E3C92D824983C7D9B /* HapticGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-prefix.pch"; sourceTree = "<group>"; };
+		BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericNetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/GenericNetworkDataResourceService.swift; sourceTree = "<group>"; };
+		BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionType.swift; path = Sources/TABResourceLoader/Services/URLSessionType.swift; sourceTree = "<group>"; };
+		C01511804525B2ECB7C118D9A75B6D59 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
+		C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/DataResourceType.swift"; sourceTree = "<group>"; };
 		C43E125CB906426E6209E4CDF81E4D84 /* Pods-MyPowerOf10-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10-dummy.m"; sourceTree = "<group>"; };
-		C92E2AA5E609B6B5411BDDD885C9D40C /* JSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
-		C9631600617F7E0DBF9A54001E3047FC /* TABResourceLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-umbrella.h"; sourceTree = "<group>"; };
+		C80E36BD1829DC5C2DBC6B56A2C6F481 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDecodableResourceType.swift"; sourceTree = "<group>"; };
 		CCF6AE0A2757519D704B309E9C30E737 /* Pods-MyPowerOf10-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPowerOf10-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
+		D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponseHandler.swift; path = Sources/TABResourceLoader/Services/NetworkResponseHandler.swift; sourceTree = "<group>"; };
 		DA10A49ED8239A4EFF0E53BDA93A5073 /* Pods-MyPowerOf10Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10Tests-resources.sh"; sourceTree = "<group>"; };
-		DCDA72D23B262029E7F16DFA070820BD /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		DE49CDA7D706186B4ECA41679B69F9F1 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
+		DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
+		DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
+		DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkResourceType.swift"; sourceTree = "<group>"; };
 		E39D37036540A74F4468BDB4191FFCDC /* Pods-MyPowerOf10Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E4C0EB530132E8450BA66F36C00A2D6D /* ImageResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ImageResourceType.swift"; sourceTree = "<group>"; };
-		E8CC307A75243525A17057410D57320B /* GenericNetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericNetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/GenericNetworkDataResourceService.swift; sourceTree = "<group>"; };
-		EBDA1FED94BCFA5ACE83CADF1744AFA1 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
-		EE1982D3B9A0BEC51D293272A5C347BD /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponseHandler.swift; path = Sources/TABResourceLoader/Services/NetworkResponseHandler.swift; sourceTree = "<group>"; };
-		F1FE3C16EA6276C9035A40E6F4077611 /* NetworkJSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDecodableResourceType.swift"; sourceTree = "<group>"; };
+		E9F258FE944F3716A8AB6DF991D0AB1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.xcconfig; sourceTree = "<group>"; };
 		F3ABECDC89667EE344F9751A8FEC75FB /* Pods-MyPowerOf10-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPowerOf10-acknowledgements.plist"; sourceTree = "<group>"; };
-		F48792A7462B62E44EA6667EB1039231 /* NetworkServiceActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkServiceActivity.swift; path = Sources/TABResourceLoader/Services/NetworkServiceActivity.swift; sourceTree = "<group>"; };
+		F3DEA720B102E7BB497CB3884004D479 /* TABResourceLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-prefix.pch"; sourceTree = "<group>"; };
+		F7CF2F235F7AEB0B56AB6116FED74B35 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		F9CC4F08C27C5ED2A99F6111880FB1E4 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TABResourceLoader.framework; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAsynchronousOperation.swift; path = Sources/TABResourceLoader/Operations/BaseAsynchronousOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75C111D9630E04CF4BEC85388BCA5C8F /* Frameworks */ = {
+		011A8678FF9EBA8AB33DEFF6654D7D66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BB2EB1C7E14394C17C51EF39BEA312 /* Foundation.framework in Frameworks */,
+				816F941AF75C1C6ABF21E51331589937 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979E503CC04BD2496BFE128FB50F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FEA33D58286A89D6A7D5C19A9DE84E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D2C77E9F898D615AC1B44392DDC4F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E1F68324383D12BE67D1516DAC68B3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,29 +201,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFF00529CC5E77B78D7C5E5AE304DA78 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				564E6B6960719CFF256950F6B120B978 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8EEE4A11D51435D70CC02DDA3E57A8 /* Support Files */ = {
+		0DA99192EF1984E35D21651268EB1C9D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4822327CB223D1483D532AAEE659CA0B /* Info.plist */,
-				43E8A90222F8C58AF81C8F5622C7D871 /* TABResourceLoader.modulemap */,
-				B8C49EA787117B123FF715B721EE3238 /* TABResourceLoader.xcconfig */,
-				960C0C13145A5484831E18D3005BFBD8 /* TABResourceLoader-dummy.m */,
-				3CB2E49B20A0E4C3E79C675B7AD1F9DB /* TABResourceLoader-prefix.pch */,
-				C9631600617F7E0DBF9A54001E3047FC /* TABResourceLoader-umbrella.h */,
+				3E7922CC7EB3930DBE81F9C8D1DFB6CF /* HapticGenerator.modulemap */,
+				F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */,
+				A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */,
+				BBA25C7542E7333E3C92D824983C7D9B /* HapticGenerator-prefix.pch */,
+				7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */,
+				E9F258FE944F3716A8AB6DF991D0AB1D /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TABResourceLoader";
+			path = "../Target Support Files/HapticGenerator";
 			sourceTree = "<group>";
 		};
 		0FDCBC07022BFF418CCC35941A7DBF99 /* Pods-MyPowerOf10Tests */ = {
@@ -209,15 +236,48 @@
 			path = "Target Support Files/Pods-MyPowerOf10Tests";
 			sourceTree = "<group>";
 		};
-		66A751CBF7814E3DB20E641C688C197F /* Products */ = {
+		4AA8843555CF193669BE36879BAB392E /* HapticGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				9E236A49BC0478C86963388C6917F337 /* Kanna.framework */,
-				606131F91E7345A46871003E059C1AC8 /* Pods_MyPowerOf10.framework */,
-				4E556DDA100F2CA1D8828B9378D07CD8 /* Pods_MyPowerOf10Tests.framework */,
-				5C2AC6133DFEA48DD4CECB190D1A7A45 /* TABResourceLoader.framework */,
+				D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */,
+				0DA99192EF1984E35D21651268EB1C9D /* Support Files */,
 			);
-			name = Products;
+			name = HapticGenerator;
+			path = HapticGenerator;
+			sourceTree = "<group>";
+		};
+		78510A005AAD11A3E7779EFD9E8AD3C9 /* TABResourceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */,
+				C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */,
+				BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */,
+				A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */,
+				69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */,
+				5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */,
+				6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */,
+				1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */,
+				32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */,
+				2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */,
+				1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */,
+				A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */,
+				C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */,
+				DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */,
+				7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */,
+				DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */,
+				D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */,
+				60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */,
+				B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */,
+				06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */,
+				13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */,
+				76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */,
+				A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */,
+				3741311A04ED61E0A805B48754CFAB6A /* Result.swift */,
+				BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */,
+				BBEB6BA6232EC20658F87A251C83D8ED /* Support Files */,
+			);
+			name = TABResourceLoader;
+			path = TABResourceLoader;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -225,10 +285,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F29A0CAFDAD4F477118E31CA77C8176D /* Pods */,
-				66A751CBF7814E3DB20E641C688C197F /* Products */,
+				89B756C7447209095CC72D46C0577C3D /* Pods */,
+				E98EBE99349DE311EDE438B13C613319 /* Products */,
 				D740F5DB619AEBBF8D12B09EDBEEE197 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		89B756C7447209095CC72D46C0577C3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AA8843555CF193669BE36879BAB392E /* HapticGenerator */,
+				EA076E3D8DB3548F84291018435BC9C5 /* Kanna */,
+				78510A005AAD11A3E7779EFD9E8AD3C9 /* TABResourceLoader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9079215FA5DB5B956E3BDB30922356A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C80E36BD1829DC5C2DBC6B56A2C6F481 /* Info.plist */,
+				9159F54079B588FB11D845D4778E4C9F /* Kanna.modulemap */,
+				7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */,
+				0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */,
+				F7CF2F235F7AEB0B56AB6116FED74B35 /* Kanna-prefix.pch */,
+				6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
 			sourceTree = "<group>";
 		};
 		9E45D2B9A2E4D1422F77F091DFE50758 /* Pods-MyPowerOf10 */ = {
@@ -249,18 +333,18 @@
 			path = "Target Support Files/Pods-MyPowerOf10";
 			sourceTree = "<group>";
 		};
-		A86BA3A833D8DBAFF7CF0BE16C4BF598 /* Kanna */ = {
+		BBEB6BA6232EC20658F87A251C83D8ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1DCD862F8554D89663A999E0E2D8525F /* CSS.swift */,
-				5F2506CAE79CFCE567B537E2E86BDEE3 /* Kanna.h */,
-				DE49CDA7D706186B4ECA41679B69F9F1 /* Kanna.swift */,
-				B2EBA235A9BCEDB1E8B49FBB1B465626 /* libxmlHTMLDocument.swift */,
-				00E55EFF5F1CB22E5814D8CE368208EC /* libxmlHTMLNode.swift */,
-				DCDA72D23B262029E7F16DFA070820BD /* libxmlParserOption.swift */,
-				ED7FDD29CB4AD526482B2CEF364A6E22 /* Support Files */,
+				AD48A61670B97F04AAAB82FE1F47BACF /* Info.plist */,
+				07A56BB3C6462666AB12D13737F1D906 /* TABResourceLoader.modulemap */,
+				5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */,
+				72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */,
+				F3DEA720B102E7BB497CB3884004D479 /* TABResourceLoader-prefix.pch */,
+				57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */,
 			);
-			path = Kanna;
+			name = "Support Files";
+			path = "../Target Support Files/TABResourceLoader";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -288,81 +372,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ED7FDD29CB4AD526482B2CEF364A6E22 /* Support Files */ = {
+		E98EBE99349DE311EDE438B13C613319 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				554696615CC785EFBF18974ED6FDC1F1 /* Info.plist */,
-				A300C796588C6F6E0A112203049067EF /* Kanna.modulemap */,
-				69CEEDA6074B32D27CAAA20BE5EA6F50 /* Kanna.xcconfig */,
-				EBDA1FED94BCFA5ACE83CADF1744AFA1 /* Kanna-dummy.m */,
-				A3BAF80C2946410B176005BC69C3C534 /* Kanna-prefix.pch */,
-				981F98B212C87ABDFF5884C989116153 /* Kanna-umbrella.h */,
+				525F86B1A0945A864DC3ACE6198EDD63 /* HapticGenerator.framework */,
+				59BE1130F94AA2C95A87F7283F8249F7 /* Kanna.framework */,
+				61C6956BD7F74225FC19BAA680B356A3 /* Pods_MyPowerOf10.framework */,
+				33CABD5636041E606FC089D44957A126 /* Pods_MyPowerOf10Tests.framework */,
+				F9CC4F08C27C5ED2A99F6111880FB1E4 /* TABResourceLoader.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Kanna";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F29A0CAFDAD4F477118E31CA77C8176D /* Pods */ = {
+		EA076E3D8DB3548F84291018435BC9C5 /* Kanna */ = {
 			isa = PBXGroup;
 			children = (
-				A86BA3A833D8DBAFF7CF0BE16C4BF598 /* Kanna */,
-				FD67D4D40CA9FB588741F2AC43D48743 /* TABResourceLoader */,
+				684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */,
+				A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */,
+				DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */,
+				D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */,
+				498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */,
+				424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */,
+				9079215FA5DB5B956E3BDB30922356A1 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FD67D4D40CA9FB588741F2AC43D48743 /* TABResourceLoader */ = {
-			isa = PBXGroup;
-			children = (
-				5BE2C941E55B389E7E0D79622D7A59A1 /* BaseAsynchronousOperation.swift */,
-				91D5D0D17D45FC9B66692A1F3EE104AC /* DataResourceType.swift */,
-				E8CC307A75243525A17057410D57320B /* GenericNetworkDataResourceService.swift */,
-				8FE618AE00A95B893E23EA34493D82CD /* GlobalFunctions.swift */,
-				E4C0EB530132E8450BA66F36C00A2D6D /* ImageResourceType.swift */,
-				434DCDB8BE45820E40D90A95200CB8DC /* JSONArrayResourceType.swift */,
-				5C3FE94DE0C2F3941FFB1724DABA8CEA /* JSONDecodableResourceType.swift */,
-				C92E2AA5E609B6B5411BDDD885C9D40C /* JSONDictionaryResourceType.swift */,
-				5E8DFC00A698EF317785920061308D52 /* JSONParsingError.swift */,
-				61E653B3ED3E07FF11923FFEB8B5DC2C /* NetworkDataResourceService.swift */,
-				B3C037B1F04CBDDB0D1FC4096BA9CE47 /* NetworkImageResource.swift */,
-				76AC89BC01982F6EA31970A4DEABF206 /* NetworkJSONArrayResourceType.swift */,
-				F1FE3C16EA6276C9035A40E6F4077611 /* NetworkJSONDecodableResourceType.swift */,
-				91888529EF16BF9C5DA80302CA11CDC6 /* NetworkJSONDictionaryResourceType.swift */,
-				67D74EF18B0559253132F12910361B13 /* NetworkPropertyListDecodableResourceType.swift */,
-				25073F80AFB18C7229AF1204DCA5F6D4 /* NetworkResourceType.swift */,
-				EE1982D3B9A0BEC51D293272A5C347BD /* NetworkResponseHandler.swift */,
-				F48792A7462B62E44EA6667EB1039231 /* NetworkServiceActivity.swift */,
-				8A3B06D7EA7F286B798639FC7AEBA4AB /* NSThread+Additions.swift */,
-				7F14F7CE333B0B2CB5818B8382C07FC7 /* PropertyListDecodableResourceType.swift */,
-				8A6EDB177DA923747D4DB6E974195CC4 /* ResourceOperation.swift */,
-				A0BB0A652E86AE4214A4B2BEA70D2659 /* ResourceServiceType.swift */,
-				728F30471690022AFEB3D43870E5DDFF /* ResourceType.swift */,
-				3F1411C185E0A21DC428199130C5C2DE /* Result.swift */,
-				B316D3CFB1F7A213426A1073CD58AB84 /* URLSessionType.swift */,
-				0F8EEE4A11D51435D70CC02DDA3E57A8 /* Support Files */,
-			);
-			path = TABResourceLoader;
+			name = Kanna;
+			path = Kanna;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		096FA403B836DCCD11DE9C7333950052 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04B5080724C263C2D6F5C2B439C5D48F /* Pods-MyPowerOf10-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29C9A8EC4BE4CA1536DE78A43B306111 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2855691307B44E88003BB54083C3D0ED /* TABResourceLoader-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A00713380361EB78BC9D5E4756B77FF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +416,30 @@
 			files = (
 				322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */,
 				436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97BF9111156217DC369567C22B9FA23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747BD8C8C3AECE2D0A36774FB918F18C /* TABResourceLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E35764C931DFB9FA5DAC8F22485904A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECB5968AB1244DC2C651C44DCEE6437 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43084C7BA14EE2911E8B2DE9D8CA52EA /* Pods-MyPowerOf10-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +460,27 @@
 			);
 			name = "Pods-MyPowerOf10Tests";
 			productName = "Pods-MyPowerOf10Tests";
-			productReference = 4E556DDA100F2CA1D8828B9378D07CD8 /* Pods_MyPowerOf10Tests.framework */;
+			productReference = 33CABD5636041E606FC089D44957A126 /* Pods_MyPowerOf10Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1045282FFFD4B5D8814E4E9B0CD19ADD /* Pods-MyPowerOf10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280B52FD0CBCA3A1FF2A219A090525E3 /* Build configuration list for PBXNativeTarget "Pods-MyPowerOf10" */;
+			buildPhases = (
+				FECDB0340C9555F1DC1EF0706CBA20BD /* Sources */,
+				5D2C77E9F898D615AC1B44392DDC4F60 /* Frameworks */,
+				FECB5968AB1244DC2C651C44DCEE6437 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043006763C258B3561616A2D57F62FE8 /* PBXTargetDependency */,
+				559836AF980ED5EE55F16C186F7985B6 /* PBXTargetDependency */,
+				E41BEAEAC34924A75AC9011E117D88FF /* PBXTargetDependency */,
+			);
+			name = "Pods-MyPowerOf10";
+			productName = "Pods-MyPowerOf10";
+			productReference = 61C6956BD7F74225FC19BAA680B356A3 /* Pods_MyPowerOf10.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */ = {
@@ -414,35 +497,16 @@
 			);
 			name = Kanna;
 			productName = Kanna;
-			productReference = 9E236A49BC0478C86963388C6917F337 /* Kanna.framework */;
+			productReference = 59BE1130F94AA2C95A87F7283F8249F7 /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4F37FC38039B21C6566443459C9DAED2 /* Pods-MyPowerOf10 */ = {
+		5A24C484CBA30264D3E1776E2FB9A1F4 /* TABResourceLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA121DCED58A43F5196557A3C1538E5B /* Build configuration list for PBXNativeTarget "Pods-MyPowerOf10" */;
+			buildConfigurationList = 812A67B8F675C35B6472395206ABEAAD /* Build configuration list for PBXNativeTarget "TABResourceLoader" */;
 			buildPhases = (
-				B7BA3AC1C359DE75D59263CF1061B5F1 /* Sources */,
-				CFF00529CC5E77B78D7C5E5AE304DA78 /* Frameworks */,
-				096FA403B836DCCD11DE9C7333950052 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				10D17FDB440CD2FD3D1BA944D4751334 /* PBXTargetDependency */,
-				BBE69F35FFE9DE7C2C3B9776922D94EB /* PBXTargetDependency */,
-			);
-			name = "Pods-MyPowerOf10";
-			productName = "Pods-MyPowerOf10";
-			productReference = 606131F91E7345A46871003E059C1AC8 /* Pods_MyPowerOf10.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EE3782D952298E28E6A394905A617E05 /* TABResourceLoader */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCE773806C84F6576154C7B5754716FC /* Build configuration list for PBXNativeTarget "TABResourceLoader" */;
-			buildPhases = (
-				B9E9E1832DB64F028AC82903B56DF91D /* Sources */,
-				75C111D9630E04CF4BEC85388BCA5C8F /* Frameworks */,
-				29C9A8EC4BE4CA1536DE78A43B306111 /* Headers */,
+				D450A357DD7EE3BD4EB5688429F00C9E /* Sources */,
+				011A8678FF9EBA8AB33DEFF6654D7D66 /* Frameworks */,
+				D97BF9111156217DC369567C22B9FA23 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -450,7 +514,24 @@
 			);
 			name = TABResourceLoader;
 			productName = TABResourceLoader;
-			productReference = 5C2AC6133DFEA48DD4CECB190D1A7A45 /* TABResourceLoader.framework */;
+			productReference = F9CC4F08C27C5ED2A99F6111880FB1E4 /* TABResourceLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADEF9D39441057203023056F7B95656D /* HapticGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA1F08525ED369BFDD4574377295732 /* Build configuration list for PBXNativeTarget "HapticGenerator" */;
+			buildPhases = (
+				B981C52E49B091CB15B2765B59E39062 /* Sources */,
+				28979E503CC04BD2496BFE128FB50F35 /* Frameworks */,
+				E35764C931DFB9FA5DAC8F22485904A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapticGenerator;
+			productName = HapticGenerator;
+			productReference = 525F86B1A0945A864DC3ACE6198EDD63 /* HapticGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -460,7 +541,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -470,14 +551,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 66A751CBF7814E3DB20E641C688C197F /* Products */;
+			productRefGroup = E98EBE99349DE311EDE438B13C613319 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				ADEF9D39441057203023056F7B95656D /* HapticGenerator */,
 				4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */,
-				4F37FC38039B21C6566443459C9DAED2 /* Pods-MyPowerOf10 */,
+				1045282FFFD4B5D8814E4E9B0CD19ADD /* Pods-MyPowerOf10 */,
 				00020B065C475A1DF07B3FD9DE5EEAA8 /* Pods-MyPowerOf10Tests */,
-				EE3782D952298E28E6A394905A617E05 /* TABResourceLoader */,
+				5A24C484CBA30264D3E1776E2FB9A1F4 /* TABResourceLoader */,
 			);
 		};
 /* End PBXProject section */
@@ -504,68 +586,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7BA3AC1C359DE75D59263CF1061B5F1 /* Sources */ = {
+		B981C52E49B091CB15B2765B59E39062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691B481028B7E857BC28997A804F0DF3 /* Pods-MyPowerOf10-dummy.m in Sources */,
+				C947A80CD63327B14D754AAB4335BFF3 /* HapticGenerator-dummy.m in Sources */,
+				9724C4168DE1542EB8ABB50B89AF254D /* HapticGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9E9E1832DB64F028AC82903B56DF91D /* Sources */ = {
+		D450A357DD7EE3BD4EB5688429F00C9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5411496B18A950A098A704280206A65E /* BaseAsynchronousOperation.swift in Sources */,
-				10470AF2AAC4B234417D0BE4728FF378 /* DataResourceType.swift in Sources */,
-				943A14ADDFB10AB2094CABF3FD32965F /* GenericNetworkDataResourceService.swift in Sources */,
-				3C9EAA981DD490527815CBA1C3190F83 /* GlobalFunctions.swift in Sources */,
-				AC6FF97DB4505F45A57D25B108C4A539 /* ImageResourceType.swift in Sources */,
-				DD21614FA47FB28B77689B014ACC9F0F /* JSONArrayResourceType.swift in Sources */,
-				A03DB4896D5B0941D9812470A184D3C6 /* JSONDecodableResourceType.swift in Sources */,
-				6D1D27075F823A7A611DFF29D1F91016 /* JSONDictionaryResourceType.swift in Sources */,
-				E84D7309ADDCEF1DC730D5B7BAF9A80C /* JSONParsingError.swift in Sources */,
-				6AEDB73F9C418CE8B97825C309A7906D /* NetworkDataResourceService.swift in Sources */,
-				B56FD7467312BE67CBC2D826102519AB /* NetworkImageResource.swift in Sources */,
-				AD766A6632FCB71BC4EF6FB9988A36A1 /* NetworkJSONArrayResourceType.swift in Sources */,
-				E6569FF4A3456D6DB6786D5AA4955510 /* NetworkJSONDecodableResourceType.swift in Sources */,
-				07F91955A6A7F99E5E884DF45BAF93A5 /* NetworkJSONDictionaryResourceType.swift in Sources */,
-				7F2420144F00E0B1970FD46DDD7AD211 /* NetworkPropertyListDecodableResourceType.swift in Sources */,
-				4054659237494862A11FAE605DA468EF /* NetworkResourceType.swift in Sources */,
-				C75F189E1657D09974AE6E915769F3E2 /* NetworkResponseHandler.swift in Sources */,
-				F365F3255AC6AD9AD2444A65120DA434 /* NetworkServiceActivity.swift in Sources */,
-				DBB48D4BCABAF38111808255F76A0486 /* NSThread+Additions.swift in Sources */,
-				17BAF06C41751C0FEDCC0AADCD0DB094 /* PropertyListDecodableResourceType.swift in Sources */,
-				D6072569F1F9CE138CF50B35BD1437DD /* ResourceOperation.swift in Sources */,
-				7983B904540275412442F1D5A39C4EA4 /* ResourceServiceType.swift in Sources */,
-				02E55B17B922B62E4F8C1E71D33171A1 /* ResourceType.swift in Sources */,
-				373ED83AE4DC8587285FB0D56D596282 /* Result.swift in Sources */,
-				CAFEC0BD86470D7C4262FE7B030FE714 /* TABResourceLoader-dummy.m in Sources */,
-				CE5CB13CC786B900C95EACD2A276D24C /* URLSessionType.swift in Sources */,
+				A03F0A3C55246836F588A7EC48EAEECD /* BaseAsynchronousOperation.swift in Sources */,
+				50E6500E7B1C185FF7872BE7C1436BDC /* DataResourceType.swift in Sources */,
+				D8A8D4402276CA1C18873CD0C594F1EB /* GenericNetworkDataResourceService.swift in Sources */,
+				CBA02E3B6758E525014B7299E8F1E379 /* GlobalFunctions.swift in Sources */,
+				2AF824AB930EC8A9E6684A1EC8E27377 /* ImageResourceType.swift in Sources */,
+				ECE81647DC3D49A44C507B94886A9018 /* JSONArrayResourceType.swift in Sources */,
+				1F3810BB2ED410E115AE60D4A6F44BB1 /* JSONDecodableResourceType.swift in Sources */,
+				305EF3C10327C02091CA3DD91840D489 /* JSONDictionaryResourceType.swift in Sources */,
+				BCB96E5041024EF2032516033A9067CA /* JSONParsingError.swift in Sources */,
+				02A76B285DF6204F14214F7E8C63CC21 /* NetworkDataResourceService.swift in Sources */,
+				6997AB8940EE921531BCAC29EF1CC805 /* NetworkImageResource.swift in Sources */,
+				33F7E90693A1A011383DA6491562D821 /* NetworkJSONArrayResourceType.swift in Sources */,
+				A81C34F3CCC66453E21E20A7CA87DD9D /* NetworkJSONDecodableResourceType.swift in Sources */,
+				FA3ED7026BB38615B612511514600171 /* NetworkJSONDictionaryResourceType.swift in Sources */,
+				2AF5B39CA82D18505DA2CF2E16AC9A1E /* NetworkPropertyListDecodableResourceType.swift in Sources */,
+				1564BEF93E81EE249CAEFA98F3EC4A83 /* NetworkResourceType.swift in Sources */,
+				6D3F9211CEAEE78A3EF7C05F2C8BCE81 /* NetworkResponseHandler.swift in Sources */,
+				601D752BB82B5D45CB1D2A40C6C87F7B /* NetworkServiceActivity.swift in Sources */,
+				7D987D1267ABA6378BFE38A413BD9A44 /* NSThread+Additions.swift in Sources */,
+				98D244DA6677C123F36CFB05535CB662 /* PropertyListDecodableResourceType.swift in Sources */,
+				C6C8ECCB4D0F53DE7B926B00A4D5678F /* ResourceOperation.swift in Sources */,
+				1A7D524E659C34F1DEEC8CA674A8970A /* ResourceServiceType.swift in Sources */,
+				2A65AB10EA4D46F775D3F0DA36E2B415 /* ResourceType.swift in Sources */,
+				B4873EABDE5D96673663384C1EFABD5E /* Result.swift in Sources */,
+				4C08D5215F16BDAEB2A392602DE57E48 /* TABResourceLoader-dummy.m in Sources */,
+				675ACD009EDDA28BF8D30AB70024B8E0 /* URLSessionType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECDB0340C9555F1DC1EF0706CBA20BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403D6DC0788C951C12B994608F7F57F /* Pods-MyPowerOf10-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		10D17FDB440CD2FD3D1BA944D4751334 /* PBXTargetDependency */ = {
+		043006763C258B3561616A2D57F62FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HapticGenerator;
+			target = ADEF9D39441057203023056F7B95656D /* HapticGenerator */;
+			targetProxy = 323ABAE37446A61A654C0273D41C3336 /* PBXContainerItemProxy */;
+		};
+		559836AF980ED5EE55F16C186F7985B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
 			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
-			targetProxy = 28B639C92B2199B267A658A8329BDFAA /* PBXContainerItemProxy */;
+			targetProxy = 0775AF310729A20ADC1CAA457844E2C4 /* PBXContainerItemProxy */;
 		};
-		BBE69F35FFE9DE7C2C3B9776922D94EB /* PBXTargetDependency */ = {
+		E41BEAEAC34924A75AC9011E117D88FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TABResourceLoader;
-			target = EE3782D952298E28E6A394905A617E05 /* TABResourceLoader */;
-			targetProxy = 95B8E1F1E471FB86878A541BDBA6261E /* PBXContainerItemProxy */;
+			target = 5A24C484CBA30264D3E1776E2FB9A1F4 /* TABResourceLoader */;
+			targetProxy = 34A84F6E56361FAD85D61CA98D41A3A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EA202881B326C0F450D4E5FDBB05710 /* Release */ = {
+		3772109D31575DB9A4D97A7F3338A787 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1110370EEE54BB5B13D5F0B92C83FD64 /* Pods-MyPowerOf10Tests.release.xcconfig */;
+			baseConfigurationReference = 5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -576,19 +673,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TABResourceLoader/TABResourceLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TABResourceLoader/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MyPowerOf10Tests;
+				MODULEMAP_FILE = "Target Support Files/TABResourceLoader/TABResourceLoader.modulemap";
+				PRODUCT_NAME = TABResourceLoader;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -596,65 +692,9 @@
 			};
 			name = Release;
 		};
-		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+		3A55627496D797E4E7A8FE93FA18D906 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		1A632462349C6FF5C6AFA44F2A1085DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A8329D72A78E1AD9C904D764620A1B /* Pods-MyPowerOf10Tests.debug.xcconfig */;
+			baseConfigurationReference = F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -665,26 +705,59 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HapticGenerator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MyPowerOf10Tests;
+				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
+				PRODUCT_NAME = HapticGenerator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+		7686752F78FF5A463DF8CB1B1ACE77DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFCE1F3A55C8957C82B7FBE3D27A8B1 /* Pods-MyPowerOf10.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MyPowerOf10;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -733,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,167 +817,7 @@
 			};
 			name = Debug;
 		};
-		69620591D10CF2EB7548D2B9FB6FEBC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8C49EA787117B123FF715B721EE3238 /* TABResourceLoader.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TABResourceLoader/TABResourceLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TABResourceLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TABResourceLoader/TABResourceLoader.modulemap";
-				PRODUCT_NAME = TABResourceLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E0438DF285285FC7E3DDCDD30FE89ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FFCE1F3A55C8957C82B7FBE3D27A8B1 /* Pods-MyPowerOf10.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MyPowerOf10;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C175C51567111D27FDEBCC66B916F912 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69CEEDA6074B32D27CAAA20BE5EA6F50 /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				PRODUCT_NAME = Kanna;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3225DDB3734A894C1B9DA19AD23B89E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8C49EA787117B123FF715B721EE3238 /* TABResourceLoader.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TABResourceLoader/TABResourceLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TABResourceLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TABResourceLoader/TABResourceLoader.modulemap";
-				PRODUCT_NAME = TABResourceLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E67717162D7A2FAC518613C30BFA742D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69CEEDA6074B32D27CAAA20BE5EA6F50 /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				PRODUCT_NAME = Kanna;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F087AE053A22BA837B736C10C15F23CE /* Debug */ = {
+		884116921D90B062DC13B3EFD82CDB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6859B1B286728060D995BBC0B6BA4674 /* Pods-MyPowerOf10.debug.xcconfig */;
 			buildSettings = {
@@ -919,7 +832,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10/Pods-MyPowerOf10.modulemap";
@@ -938,6 +851,252 @@
 			};
 			name = Debug;
 		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AC5F06A51415C5F830250E10B4659B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HapticGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
+				PRODUCT_NAME = HapticGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B35DC064AB483B85392612B83C14EF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A8329D72A78E1AD9C904D764620A1B /* Pods-MyPowerOf10Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MyPowerOf10Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C12683CC45DCE699A84179CA4A3382FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TABResourceLoader/TABResourceLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TABResourceLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TABResourceLoader/TABResourceLoader.modulemap";
+				PRODUCT_NAME = TABResourceLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C175C51567111D27FDEBCC66B916F912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1CB40633590F224D2E91EC9DE6C0170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1110370EEE54BB5B13D5F0B92C83FD64 /* Pods-MyPowerOf10Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPowerOf10Tests/Pods-MyPowerOf10Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MyPowerOf10Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E67717162D7A2FAC518613C30BFA742D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -950,11 +1109,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		280B52FD0CBCA3A1FF2A219A090525E3 /* Build configuration list for PBXNativeTarget "Pods-MyPowerOf10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884116921D90B062DC13B3EFD82CDB5B /* Debug */,
+				7686752F78FF5A463DF8CB1B1ACE77DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
-				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812A67B8F675C35B6472395206ABEAAD /* Build configuration list for PBXNativeTarget "TABResourceLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12683CC45DCE699A84179CA4A3382FB /* Debug */,
+				3772109D31575DB9A4D97A7F3338A787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA1F08525ED369BFDD4574377295732 /* Build configuration list for PBXNativeTarget "HapticGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A55627496D797E4E7A8FE93FA18D906 /* Debug */,
+				AC5F06A51415C5F830250E10B4659B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -962,26 +1148,8 @@
 		B88143F1D28B4B3663204CDA89D9E784 /* Build configuration list for PBXNativeTarget "Pods-MyPowerOf10Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A632462349C6FF5C6AFA44F2A1085DC /* Debug */,
-				0EA202881B326C0F450D4E5FDBB05710 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA121DCED58A43F5196557A3C1538E5B /* Build configuration list for PBXNativeTarget "Pods-MyPowerOf10" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F087AE053A22BA837B736C10C15F23CE /* Debug */,
-				9E0438DF285285FC7E3DDCDD30FE89ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCE773806C84F6576154C7B5754716FC /* Build configuration list for PBXNativeTarget "TABResourceLoader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3225DDB3734A894C1B9DA19AD23B89E /* Debug */,
-				69620591D10CF2EB7548D2B9FB6FEBC3 /* Release */,
+				B35DC064AB483B85392612B83C14EF08 /* Debug */,
+				C1CB40633590F224D2E91EC9DE6C0170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
