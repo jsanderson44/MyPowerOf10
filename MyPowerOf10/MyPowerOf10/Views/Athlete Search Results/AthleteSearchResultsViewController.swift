@@ -26,8 +26,8 @@ final class AthleteSearchResultsViewController: UIViewController {
   
   @IBOutlet private var tableView: UITableView!
   @IBOutlet private var noResutsLabel: UILabel!
-  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
   @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
+  @IBOutlet private var errorViewTopConstraint: NSLayoutConstraint!
   
   // MARK: - Initialiers -
   
@@ -70,7 +70,6 @@ final class AthleteSearchResultsViewController: UIViewController {
   private func registerCells() {
     tableView.register(UINib(nibName: "AthleteSearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: AthleteSearchResultTableViewCell.reuseID)
   }
-  
 }
 
 // MARK: - AthleteSearchPresenterView
@@ -90,10 +89,10 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView 
   
   func updateErrorState(isVisible: Bool) {
     let constraintConstant: CGFloat = isVisible ? 48 : 0
-    contentTopConstraint.constant = constraintConstant
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()
+//      self.tableView.reloadData() //TODO Tidy this up
     })
   }
   
@@ -130,11 +129,20 @@ extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDa
     }
     let athlete = athleteResults[indexPath.row]
     let isFirstCell = indexPath.row == 0
-    cell.update(with: athlete, isFirstCell: isFirstCell)
+    let isErrorPresented = errorViewHeightConstraint.constant == 48 //TODO - pull these into constants
+    cell.update(with: athlete, isFirstCell: isFirstCell, isErrorPresented: isErrorPresented)
     return cell
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     presenter.didSelectCell(at: indexPath)
+  }
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if scrollView.contentOffset.y < -64 {
+      errorViewTopConstraint.constant = -scrollView.contentOffset.y
+    } else {
+      errorViewTopConstraint.constant = 64
+    }
   }
 }

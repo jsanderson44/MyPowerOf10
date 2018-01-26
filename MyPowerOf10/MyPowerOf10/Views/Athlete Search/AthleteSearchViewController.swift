@@ -30,8 +30,6 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
   @IBOutlet private var athleteSurnameTextField: SearchTextField!
   @IBOutlet private var athleteFirstNameTextField: SearchTextField!
   @IBOutlet private var athleteClubTextField: SearchTextField!
-  
-  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
   @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
   
   // MARK: - Initialiers -
@@ -57,6 +55,7 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     addLogoItemToNavigationBar()
     configureTextFields()
     setupAccessoryView()
+    setupScrollView()
     setupGestureRecogniser()
   }
   
@@ -74,6 +73,12 @@ final class AthleteSearchViewController: UIViewController, KeyboardAdjustableVie
     athleteSurnameTextField.inputAccessoryView = accessoryView
     athleteFirstNameTextField.inputAccessoryView = accessoryView
     athleteClubTextField.inputAccessoryView = accessoryView
+  }
+  
+  private func setupScrollView() {
+    if #available(iOS 11.0, *) {
+      scrollView.contentInsetAdjustmentBehavior = .never
+    }
   }
   
   private func updatePresenter(withValue value: String, forTextField textField: UITextField) {
@@ -127,7 +132,6 @@ extension AthleteSearchViewController: AthleteSearchPresenterView {
   
   func updateErrorState(isVisible: Bool) {
     let constraintConstant: CGFloat = isVisible ? 48 : 0
-    contentTopConstraint.constant = constraintConstant
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()
@@ -164,7 +168,7 @@ extension AthleteSearchViewController: UITextFieldDelegate {
   }
   
   func textFieldDidBeginEditing(_ textField: UITextField) {
-    let offset = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.bounds.size.height
+    let offset = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.bounds.size.height + errorViewHeightConstraint.constant
     guard textField == athleteFirstNameTextField,
       offset > 0 else { return }
     animateScrollView(by: offset)

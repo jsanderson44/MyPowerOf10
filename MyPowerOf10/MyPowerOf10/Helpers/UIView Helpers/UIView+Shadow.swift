@@ -18,8 +18,8 @@ public struct Shadow {
   
   public init(color: UIColor = .black,
               offset: CGSize = CGSize(width: 0, height: 0),
-              radius: CGFloat = 4,
-              opacity: Float = 0.06) {
+              radius: CGFloat = 12,
+              opacity: Float = 0.15) {
     self.color = color
     self.offset = offset
     self.radius = radius

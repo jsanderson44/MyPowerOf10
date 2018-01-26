@@ -15,6 +15,7 @@ extension UINavigationController {
     if #available(iOS 11.0, *) {
       navigationBar.prefersLargeTitles = true
       navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
+      navigationItem.largeTitleDisplayMode = .always
     }
     navigationBar.titleTextAttributes = [.foregroundColor: UIColor.potDarkGray]
   }

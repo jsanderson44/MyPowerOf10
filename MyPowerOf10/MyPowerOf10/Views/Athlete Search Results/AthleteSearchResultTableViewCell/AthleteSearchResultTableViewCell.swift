@@ -45,8 +45,8 @@ final class AthleteSearchResultTableViewCell: UITableViewCell {
   
   // MARK: Public functions
   
-  func update(with athlete: AthleteResult, isFirstCell: Bool) {
-    topConstraint.constant = isFirstCell ? 24 : 4
+  func update(with athlete: AthleteResult, isFirstCell: Bool, isErrorPresented: Bool) {
+    topConstraint.constant = isFirstCell ? (isErrorPresented ? 72 : 24) : 4
     athleteNameLabel.text = athlete.firstName + " " + athlete.surname
     athleteClubLabel.text = athlete.clubs.joined(separator: "\n")
     athleteAgeGroupLabel.text = athlete.ageGroup

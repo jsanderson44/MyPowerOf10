@@ -31,8 +31,6 @@ final class RankingsSearchViewController: UIViewController {
   @IBOutlet private var regionPickerHeightConstraint: NSLayoutConstraint!
   @IBOutlet private var ageGroupPickerHeightConstraint: NSLayoutConstraint!
   @IBOutlet private var eventsPickerHeightConstraint: NSLayoutConstraint!
-  
-  @IBOutlet private var contentTopConstraint: NSLayoutConstraint!
   @IBOutlet private var errorViewHeightConstraint: NSLayoutConstraint!
 	
 	// MARK: Internal
@@ -80,6 +78,7 @@ final class RankingsSearchViewController: UIViewController {
     setupPickerControl(picker: eventsPicker, containerView: eventsPickerContainerView, constraint: eventsPickerHeightConstraint)
     genderSegmentControl.tintColor = .potRed
     genderSegmentControl.applyShadow()
+    setupScrollView()
     view.bringSubview(toFront: errorView)
 	}
   
@@ -91,6 +90,12 @@ final class RankingsSearchViewController: UIViewController {
     containerView.applyShadow()
     let pickerPair: PickerPair = (picker, constraint)
     pickerPairs.append(pickerPair)
+  }
+  
+  private func setupScrollView() {
+    if #available(iOS 11.0, *) {
+      scrollView.contentInsetAdjustmentBehavior = .never
+    }
   }
   
   // MARK: IBActions
@@ -156,7 +161,6 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
   
   func updateErrorState(isVisible: Bool) {
     let constraintConstant: CGFloat = isVisible ? 48 : 0
-    contentTopConstraint.constant = constraintConstant
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()

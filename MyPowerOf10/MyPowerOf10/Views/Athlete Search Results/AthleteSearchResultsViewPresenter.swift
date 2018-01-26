@@ -8,6 +8,7 @@
 
 import Foundation
 import TABResourceLoader
+import HapticGenerator
 
 enum AthleteListContext {
   case searchResults
@@ -69,10 +70,11 @@ final class AthleteSearchResultsViewPresenter {
   
   func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
     view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
+    view?.updateErrorState(isVisible: false)
     let athleteResult = athleteResults[indexPath.row]
     if let savedAthlete = favouritedAthlete(athleteResult: athleteResult) {
+      HapticGenerator.success.generateHaptic()
       view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
-      view?.updateErrorState(isVisible: false)
       view?.didRecieveAthlete(athlete: savedAthlete)
     } else {
       let resource = RequestAthleteProfileResource(athleteResult: athleteResult)
@@ -102,8 +104,10 @@ final class AthleteSearchResultsViewPresenter {
   private func handleRequestAthleteProfileRequest(_ result: NetworkResponse<RequestAthleteProfileResource.Model>) {
     switch result {
     case .failure:
+      HapticGenerator.error.generateHaptic()
       view?.updateErrorState(isVisible: true)
     case .success(let athlete, _):
+      HapticGenerator.success.generateHaptic()
       view?.didRecieveAthlete(athlete: athlete)
     }
   }

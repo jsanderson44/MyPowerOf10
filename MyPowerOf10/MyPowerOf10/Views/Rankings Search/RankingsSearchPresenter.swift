@@ -8,6 +8,7 @@
 
 import Foundation
 import TABResourceLoader
+import HapticGenerator
 
 protocol RankingsSearchPresenterView: class {
   func presenterDidReceiveYears(years: [RankingQueryItem])
@@ -144,6 +145,7 @@ final class RankingsSearchPresenter {
   private func handleRequestRankingsResult(_ result: NetworkResponse<RequestRankingsResource.Model>, rankingRequest: RankingSearchRequest) {
     switch result {
     case .failure:
+      HapticGenerator.error.generateHaptic()
       view?.updateErrorState(isVisible: true)
     case .success(let rankings, _):
       if rankings.count > 0 {
@@ -152,6 +154,7 @@ final class RankingsSearchPresenter {
         for index in 0...finalIndex {
           top50.append(rankings[index])
         }
+        HapticGenerator.success.generateHaptic()
         view?.didRecieveRankings(rankings: top50, request: rankingRequest) // TODO - no rankings
       }
     }
