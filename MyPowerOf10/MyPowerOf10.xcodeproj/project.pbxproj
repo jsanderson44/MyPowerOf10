@@ -54,6 +54,14 @@
 		91A2C974205D74EF008019F1 /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFB205D748B00FE8159 /* Events.plist */; };
 		91A2C975205D74EF008019F1 /* AgeGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFC205D748B00FE8159 /* AgeGroups.plist */; };
 		91A2C976205D74EF008019F1 /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFD205D748B00FE8159 /* Regions.plist */; };
+		91A2C977205D76C8008019F1 /* Po10UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EF8205D6EFC00FE8159 /* Po10UI.framework */; };
+		91A2C978205D76C8008019F1 /* Po10UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EF8205D6EFC00FE8159 /* Po10UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91A2C979205D76C8008019F1 /* FoundationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EA3205D663D00FE8159 /* FoundationExtension.framework */; };
+		91A2C97A205D76C8008019F1 /* FoundationExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EA3205D663D00FE8159 /* FoundationExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91A2C97B205D76C8008019F1 /* Po10Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17E55205D5FEF00FE8159 /* Po10Model.framework */; };
+		91A2C97C205D76C8008019F1 /* Po10Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17E55205D5FEF00FE8159 /* Po10Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91A2C97D205D76C8008019F1 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
+		91A2C97E205D76C8008019F1 /* Pods_MyPowerOf10.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91A4FCA81FAF48F700D8493D /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCA71FAF48F700D8493D /* FileLoader.swift */; };
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
@@ -79,6 +87,23 @@
 			remoteInfo = MyPowerOf10;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91A2C97F205D76C8008019F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91A2C97E205D76C8008019F1 /* Pods_MyPowerOf10.framework in Embed Frameworks */,
+				91A2C97C205D76C8008019F1 /* Po10Model.framework in Embed Frameworks */,
+				91A2C978205D76C8008019F1 /* Po10UI.framework in Embed Frameworks */,
+				91A2C97A205D76C8008019F1 /* FoundationExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11D4CC3B3981194B4A1EADFB /* Pods-MyPowerOf10-MyPowerOf10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPowerOf10-MyPowerOf10Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPowerOf10-MyPowerOf10Tests/Pods-MyPowerOf10-MyPowerOf10Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,10 +182,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A2C97B205D76C8008019F1 /* Po10Model.framework in Frameworks */,
 				91C17EF7205D6EFC00FE8159 /* Po10UI.framework in Frameworks */,
 				91C17EA2205D663D00FE8159 /* FoundationExtension.framework in Frameworks */,
 				91C17E54205D5FEF00FE8159 /* Po10Model.framework in Frameworks */,
+				91A2C97D205D76C8008019F1 /* Pods_MyPowerOf10.framework in Frameworks */,
+				91A2C979205D76C8008019F1 /* FoundationExtension.framework in Frameworks */,
 				8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */,
+				91A2C977205D76C8008019F1 /* Po10UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +510,7 @@
 				91D402531FAF42E70032ED26 /* Resources */,
 				9ED2F0E507C39688DA1DDEBD /* [CP] Embed Pods Frameworks */,
 				66540541F42F178D54A792D0 /* [CP] Copy Pods Resources */,
+				91A2C97F205D76C8008019F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
