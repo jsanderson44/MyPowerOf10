@@ -29,7 +29,7 @@ final class SearchTextField: UITextField {
     styleText()
     styleBorder()
     styleKeyboard()
-    applyShadow()
+//    applyShadow()
     backgroundColor = .potBackgroundGray
   }
   

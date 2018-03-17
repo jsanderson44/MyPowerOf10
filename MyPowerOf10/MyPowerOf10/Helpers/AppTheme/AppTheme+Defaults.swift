@@ -18,4 +18,6 @@ struct AppTheme {
   
   static let thickBorderWidth: CGFloat = 4.0
   
+  static let errorViewPresentedHeight: CGFloat = 48.0
+  
 }

@@ -131,7 +131,7 @@ extension AthleteSearchViewController: AthleteSearchPresenterView {
   }
   
   func updateErrorState(isVisible: Bool) {
-    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    let constraintConstant: CGFloat = isVisible ? AppTheme.errorViewPresentedHeight : 0
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()

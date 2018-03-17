@@ -88,7 +88,7 @@ extension AthleteSearchResultsViewController: AthleteSearchResultsPresenterView 
   }
   
   func updateErrorState(isVisible: Bool) {
-    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    let constraintConstant: CGFloat = isVisible ? AppTheme.errorViewPresentedHeight : 0
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()
@@ -129,7 +129,7 @@ extension AthleteSearchResultsViewController: UITableViewDelegate, UITableViewDa
     }
     let athlete = athleteResults[indexPath.row]
     let isFirstCell = indexPath.row == 0
-    let isErrorPresented = errorViewHeightConstraint.constant == 48 //TODO - pull these into constants
+    let isErrorPresented = errorViewHeightConstraint.constant == AppTheme.errorViewPresentedHeight
     cell.update(with: athlete, isFirstCell: isFirstCell, isErrorPresented: isErrorPresented)
     return cell
   }

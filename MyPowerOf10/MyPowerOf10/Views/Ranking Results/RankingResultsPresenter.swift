@@ -13,7 +13,6 @@ import HapticGenerator
 protocol RankingResultsPresenterView: class {
   func presenterDidReceiveRankings(rankings: [Ranking], requestDisplayString: String)
   func presenterDidRecieveAthlete(athlete: Athlete)
-  
   func updateLoadingState(forCellAtIndexPath indexPath: IndexPath, isLoading: Bool)
 }
 
@@ -36,7 +35,7 @@ final class RankingResultsPresenter {
 	
 	// MARK: - Initialiers -
 	
-  init(queue: OperationQueue = OperationQueue(), rankings: [Ranking], request: RankingSearchRequest, dataStore: DataStoreType = DataStore()) {
+  init(queue: OperationQueue = PoTQueue.sharedQueue, rankings: [Ranking], request: RankingSearchRequest, dataStore: DataStoreType = DataStore()) {
 		self.queue = queue
     self.rankings = rankings
     self.request = request
@@ -51,34 +50,36 @@ final class RankingResultsPresenter {
     view?.presenterDidReceiveRankings(rankings: rankings, requestDisplayString: requestDisplayString)
   }
   
-  func didSelectCell(at indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
+  func didSelectCell(at indexPath: IndexPath) {
     view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: true)
-//    TODO Make ranking model contain athlete
     let ranking = rankings[indexPath.row]
     if let savedAthlete = favouritedAthlete(ranking: ranking) {
       view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
-//      view?.updateErrorState(isVisible: false)
-      view?.presenterDidRecieveAthlete(athlete: savedAthlete)
+      handleProfile(for: savedAthlete)
     } else {
-      let resource = RequestAthleteProfileResource(ranking: ranking)
-      let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
-        self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
-//        self.view?.updateErrorState(isVisible: false)
-        self.handleRequestAthleteProfileRequest(result)
-      }
-      queue.addOperation(athleteSearchOperation)
+      requestAthleteProfile(with: ranking.athleteID, indexPath: indexPath)
     }
   }
 	
   // MARK: - Private functions
   
   private func favouritedAthlete(ranking: Ranking) -> Athlete? {
-    do {
-      let savedAthlete = try dataStore.retrieveAthlete(forKey: ranking.athleteID)
-      return savedAthlete
-    } catch {
-      return nil
+    return try? dataStore.retrieveAthlete(forKey: ranking.athleteID)
+  }
+  
+  private func handleProfile(for savedAthlete: Athlete) {
+    //      view?.updateErrorState(isVisible: false)
+    view?.presenterDidRecieveAthlete(athlete: savedAthlete)
+  }
+  
+  private func requestAthleteProfile(with athleteID: String, indexPath: IndexPath, service: RequestAthleteProfileResourceService = RequestAthleteProfileResourceService()) {
+    let resource = RequestAthleteProfileResource(athleteID: athleteID)
+    let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
+      self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
+      //        self.view?.updateErrorState(isVisible: false)
+      self.handleRequestAthleteProfileRequest(result)
     }
+    queue.addOperation(athleteSearchOperation)
   }
   
   private func handleRequestAthleteProfileRequest(_ result: NetworkResponse<RequestAthleteProfileResource.Model>) {

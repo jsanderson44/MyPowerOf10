@@ -45,7 +45,7 @@ final class AthleteProfileInformationView: UIView {
 
 extension AthleteProfileInformationView {
   
-  func update(with profile: AthleteProfile) {
+  func update(with profile: Athlete) {
     clubLabel.text = profile.club.replacingOccurrences(of: "/", with: "\n")
     coachLabel.text = profile.coach
     genderLabel.text = profile.gender.rawValue

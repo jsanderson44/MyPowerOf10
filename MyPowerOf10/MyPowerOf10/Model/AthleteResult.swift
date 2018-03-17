@@ -59,3 +59,14 @@ extension AthleteResult {
     athleteID = components.last?.digitsOnly
   }
 }
+
+extension AthleteResult {
+  init(athlete: Athlete) {
+    firstName = athlete.name
+    surname = ""
+    ageGroup = athlete.ageGroup
+    gender = athlete.gender
+    clubs = [athlete.club]
+    athleteID = athlete.athleteID
+  }
+}

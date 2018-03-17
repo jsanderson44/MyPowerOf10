@@ -9,7 +9,7 @@
 import Foundation
 
 protocol AthleteProfilePresenterView: class {
-  func updateWith(athleteProfile: AthleteProfile, isFavourited: Bool)
+  func updateWith(athlete: Athlete)
 }
 
 /// Handles the presentation of an Athlete Profile
@@ -27,7 +27,7 @@ final class AthleteProfilePresenter {
 	
 	// MARK: - Initialiers -
 	
-  init(athlete: Athlete, queue: OperationQueue = OperationQueue.main, dataStore: DataStoreType = DataStore()) {
+  init(athlete: Athlete, queue: OperationQueue = PoTQueue.sharedQueue, dataStore: DataStoreType = DataStore()) {
     self.athlete = athlete
 		self.queue = queue
     self.dataStore = dataStore
@@ -36,27 +36,17 @@ final class AthleteProfilePresenter {
   // MARK: Internal
   
   func requestProfile() {
-    view?.updateWith(athleteProfile: athlete.profile, isFavourited: athlete.isFavourited)
+    view?.updateWith(athlete: athlete)
   }
   
   func favouriteAthlete() {
-    guard let id = athlete.searchResult.athleteID else {
-      return
-      //TODO Handle not being able to save
-    }
-    do {
-      athlete.didToggleFavouriteState(isFavourited: true)
-      try dataStore.storeAthlete(athlete, forKey: id)
-    } catch { }
+    athlete.didToggleFavouriteState(isFavourited: true)
+    try? dataStore.storeAthlete(athlete, forKey: athlete.athleteID)
   }
   
   func unfavouriteAthlete() {
-    guard let id = athlete.searchResult.athleteID else {
-      return
-      //TODO Handle not being able to remove
-    }
     athlete.didToggleFavouriteState(isFavourited: false)
-    dataStore.removeAthlete(forKey: id)
+    dataStore.removeAthlete(forKey: athlete.athleteID)
   }
 	
 }

@@ -76,6 +76,7 @@ extension DropdownPickerView {
     pickerView.selectRow(0, inComponent: 0, animated: false)
     let selectedItem = items.first?.displayName ?? ""
     configureButtonTitle(selectedItem: selectedItem)
+    pickerView.reloadAllComponents()
   }
   
   func updatedSelectedState(selected: Bool, completion: (() -> ())? = nil) {

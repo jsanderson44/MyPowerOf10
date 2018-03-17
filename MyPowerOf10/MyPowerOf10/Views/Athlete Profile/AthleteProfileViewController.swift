@@ -102,11 +102,11 @@ final class AthleteProfileViewController: UIViewController {
 
 extension AthleteProfileViewController: AthleteProfilePresenterView {
 	
-  func updateWith(athleteProfile: AthleteProfile, isFavourited: Bool) {
-    title = athleteProfile.name
-    self.isFavourited = isFavourited
-    informationView.update(with: athleteProfile)
-    bestPerformancesView.update(with: athleteProfile.bestPerformances)
+  func updateWith(athlete: Athlete) {
+    title = athlete.name
+    self.isFavourited = athlete.isFavourited
+    informationView.update(with: athlete)
+    bestPerformancesView.update(with: athlete.bestPerformances)
     configureNavigationBar()
   }
 }

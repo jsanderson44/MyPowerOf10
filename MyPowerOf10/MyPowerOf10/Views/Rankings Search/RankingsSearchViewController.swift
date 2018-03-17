@@ -87,7 +87,7 @@ final class RankingsSearchViewController: UIViewController {
   private func setupPickerControl(picker: DropdownPickerView, containerView: UIView, constraint: NSLayoutConstraint) {
     containerView.addSubview(picker)
     picker.pin(toView: containerView)
-    containerView.applyShadow()
+//    containerView.applyShadow()
     let pickerPair: PickerPair = (picker, constraint)
     pickerPairs.append(pickerPair)
   }
@@ -160,7 +160,7 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
   }
   
   func updateErrorState(isVisible: Bool) {
-    let constraintConstant: CGFloat = isVisible ? 48 : 0
+    let constraintConstant: CGFloat = isVisible ? AppTheme.errorViewPresentedHeight : 0
     errorViewHeightConstraint.constant = constraintConstant
     UIView.shortAnimation(animations: {
       self.view.layoutIfNeeded()

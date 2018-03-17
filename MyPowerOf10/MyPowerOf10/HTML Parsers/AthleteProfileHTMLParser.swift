@@ -16,14 +16,16 @@ enum AthleteProfileParsingError: Error {
 struct AthleteProfileHTMLParser {
   
   let document: HTMLDocument
+  private let athleteID: String
   
-  init(htmlData: Data) throws {
+  init(htmlData: Data, athleteID: String) throws {
     let document = try HTML(html: htmlData, encoding: .utf8)
     self.document = document
+    self.athleteID = athleteID
   }
   
   //TODO refactor
-  func athleteProfile() throws -> AthleteProfile {
+  func athleteProfile() throws -> Athlete {
     guard let name: String = document.css(".athleteprofilesubheader h2").first?.text?.cleaned else { throw AthleteProfileParsingError.couldNotParseAthlete }
     
     let infoComponents: [String] = document.css("#cphBody_pnlAthleteDetails td").flatMap { (details) in
@@ -57,7 +59,7 @@ struct AthleteProfileHTMLParser {
       return Performance(event: event, result: result)
     }
     
-    return AthleteProfile(name: name, club: club, gender: gender, ageGroup: ageGroup, paralympicClass: paralympicClass, county: county, region: region, nation: nation, coach: coach, bestPerformances: bestPerformances)
+    return Athlete(athleteID: athleteID, name: name, club: club, gender: gender, ageGroup: ageGroup, paralympicClass: paralympicClass, county: county, region: region, nation: nation, coach: coach, bestPerformances: bestPerformances, isFavourited: false)
   }
   
 }

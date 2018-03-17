@@ -70,7 +70,7 @@ final class RankingsSearchPresenter {
   
   // MARK: - Initialiers -
   
-  init(queue: OperationQueue = OperationQueue.main, vendor: RankingQueryItemsVender = RankingQueryItemsVender()) {
+  init(queue: OperationQueue = PoTQueue.sharedQueue, vendor: RankingQueryItemsVender = RankingQueryItemsVender()) {
     self.queue = queue
     self.vendor = vendor
   }

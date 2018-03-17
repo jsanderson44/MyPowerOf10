@@ -39,7 +39,7 @@ final class AthleteSearchViewPresenter {
   
   // MARK: - Initialiers -
   
-  init(queue: OperationQueue = OperationQueue.main) {
+  init(queue: OperationQueue = PoTQueue.sharedQueue) {
     self.queue = queue
   }
   

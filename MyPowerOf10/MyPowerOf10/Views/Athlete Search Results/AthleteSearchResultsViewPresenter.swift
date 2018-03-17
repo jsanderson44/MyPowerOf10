@@ -42,7 +42,7 @@ final class AthleteSearchResultsViewPresenter {
   
   // MARK: - Initialiers -
   
-  init(queue: OperationQueue = OperationQueue.main, dataStore: DataStoreType = DataStore(), athleteResults: [AthleteResult] = [], context: AthleteListContext) {
+  init(queue: OperationQueue = PoTQueue.sharedQueue, dataStore: DataStoreType = DataStore(), athleteResults: [AthleteResult] = [], context: AthleteListContext) {
     self.queue = queue
     self.dataStore = dataStore
     self.context = context
@@ -51,12 +51,12 @@ final class AthleteSearchResultsViewPresenter {
   
   // MARK: - Internal
   
-  func requestResults() {
+  func requestResults() { //TODO refactor this
     if context == .favorites {
       athleteResults = []
-      let athletes = dataStore.retrieveAllAthletes()
-      athletes.forEach {
-        athleteResults.append($0.searchResult)
+      dataStore.retrieveAllAthletes().forEach { athlete in
+        let athleteResult = AthleteResult(athlete: athlete)
+        athleteResults.append(athleteResult)
       }
     }
     
@@ -77,7 +77,7 @@ final class AthleteSearchResultsViewPresenter {
       view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
       view?.didRecieveAthlete(athlete: savedAthlete)
     } else {
-      let resource = RequestAthleteProfileResource(athleteResult: athleteResult)
+      let resource = RequestAthleteProfileResource(athleteID: athleteResult.athleteID)
       let athleteSearchOperation = RequestAthleteProfileOperation(resource: resource, service: service) { (_, result) in
         self.view?.updateLoadingState(forCellAtIndexPath: indexPath, isLoading: false)
         self.view?.updateErrorState(isVisible: false)

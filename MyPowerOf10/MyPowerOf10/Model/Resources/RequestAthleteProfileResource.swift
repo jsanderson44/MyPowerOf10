@@ -21,26 +21,17 @@ struct RequestAthleteProfileResource: NetworkResourceType, DataResourceType {
     return queryItems
   }
   
-  private let athleteResult: AthleteResult
   private let athleteID: String
   
-  init(athleteResult: AthleteResult) {
-    self.athleteResult = athleteResult
-    self.athleteID = athleteResult.athleteID ?? ""
-    url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
-  }
-  
-  init(ranking: Ranking) {
-    //TODO - this needs to change
-    self.athleteResult = AthleteResult(firstName: ranking.athleteName, surname: "", ageGroup: ranking.ageGroup, gender: Gender.unknown, clubs: [ranking.club], athleteID: ranking.athleteID)
-    self.athleteID = ranking.athleteID
+  init(athleteID: String?) {
+    self.athleteID = athleteID ?? ""
     url = Config.baseURL.appendingPathComponent("athletes/profile.aspx")
   }
   
   func model(from data: Data) throws -> Model {
-    let parser = try AthleteProfileHTMLParser(htmlData: data)
+    let parser = try AthleteProfileHTMLParser(htmlData: data, athleteID: athleteID)
     let profile = try parser.athleteProfile()
-    return Athlete(searchResult: athleteResult, profile: profile, isFavourited: false)
+    return profile
   }
   
 }
