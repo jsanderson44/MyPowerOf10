@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIColor {
   
-  public static let potRed = UIColor(red: 214.0 / 255.0, green: 18.0 / 255.0, blue: 18.0 / 255.0, alpha: 1.0)
+  public static let potRed = UIColor(red: 176.0 / 255.0, green: 0.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0)
   
   public static let potDarkGray = UIColor(red: 50.0 / 255.0, green: 50.0 / 255.0, blue: 50.0 / 255.0, alpha: 1.0)
   
