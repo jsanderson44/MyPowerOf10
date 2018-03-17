@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Po10Model
+import Po10UI
 
 protocol AthleteSearchResultsViewControllerDelegate: class {
   func athleteSearchResultsViewController(_ controller: AthleteSearchResultsViewController, didReceiveAthlete athlete: Athlete)

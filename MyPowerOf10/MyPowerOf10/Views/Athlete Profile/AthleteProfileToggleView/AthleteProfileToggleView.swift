@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Po10UI
 
 protocol AthleteProfileToggleViewDelegate: class {
   func athleteProfileToggleViewDidTapLeftToggle(_ athleteProfileToggleView: AthleteProfileToggleView)

@@ -1,0 +1,6 @@
+framework module Pods_Po10Model_Po10ModelTests {
+  umbrella header "Pods-Po10Model-Po10ModelTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,6 +5,15 @@
       location = "group:MyPowerOf10.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Po10Model/Po10Model.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Po10UI/Po10UI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FoundationExtension/FoundationExtension.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

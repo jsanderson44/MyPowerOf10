@@ -9,6 +9,7 @@
 import Foundation
 import TABResourceLoader
 import HapticGenerator
+import Po10Model
 
 protocol AthleteSearchPresenterView: class {
   func updateLoadingState(isLoading: Bool)
@@ -76,10 +77,10 @@ final class AthleteSearchViewPresenter {
   private func handleAthleteSearchResult(_ result: NetworkResponse<SubmitAthleteSearchResource.Model>) {
     switch result {
     case .failure:
-      HapticGenerator.error.generateHaptic()
+      Haptic.error.generate()
       view?.updateErrorState(isVisible: true)
     case .success(let athletes, _):
-      HapticGenerator.success.generateHaptic()
+      Haptic.success.generate()
       view?.didRecieveResults(athletes: athletes)
     }
   }

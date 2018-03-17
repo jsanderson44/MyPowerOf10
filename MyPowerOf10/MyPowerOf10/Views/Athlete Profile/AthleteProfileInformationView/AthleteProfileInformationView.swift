@@ -3,10 +3,11 @@
 //  MyPowerOf10
 //
 //  Created by John Sanderson on 23/11/2017.
-//Copyright © 2017 JohnSanderson. All rights reserved.
+//  Copyright © 2017 JohnSanderson. All rights reserved.
 //
 
 import UIKit
+import Po10Model
 
 final class AthleteProfileInformationView: UIView {
   

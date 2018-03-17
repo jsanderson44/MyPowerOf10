@@ -9,12 +9,13 @@
 import Foundation
 import TABResourceLoader
 import HapticGenerator
+import Po10Model
 
 protocol RankingsSearchPresenterView: class {
-  func presenterDidReceiveYears(years: [RankingQueryItem])
-  func presenterDidReceiveRegions(regions: [RankingQueryItem])
-  func presenterDidReceiveAgeGroups(ageGroups: [RankingQueryItem])
-  func presenterDidRecieveEvents(events: [RankingQueryItem])
+  func presenterDidReceiveYears(years: [RankingSearchRequest.RankingQueryItem])
+  func presenterDidReceiveRegions(regions: [RankingSearchRequest.RankingQueryItem])
+  func presenterDidReceiveAgeGroups(ageGroups: [RankingSearchRequest.RankingQueryItem])
+  func presenterDidRecieveEvents(events: [RankingSearchRequest.RankingQueryItem])
   
   func updateLoadingState(isLoading: Bool)
   func updateSearchButton(isEnabled: Bool)
@@ -46,23 +47,23 @@ final class RankingsSearchPresenter {
       fetchEventsFor(ageGroup: selectedAgeGroup, gender: selectedGender)
     }
   }
-  var selectedAgeGroup: RankingQueryItem? {
+  var selectedAgeGroup: RankingSearchRequest.RankingQueryItem? {
     didSet {
       updateActionButtonIfNeeded()
       fetchEventsFor(ageGroup: selectedAgeGroup, gender: selectedGender)
     }
   }
-  var selectedYear: RankingQueryItem? {
+  var selectedYear: RankingSearchRequest.RankingQueryItem? {
     didSet {
       updateActionButtonIfNeeded()
     }
   }
-  var selectedRegion: RankingQueryItem? {
+  var selectedRegion: RankingSearchRequest.RankingQueryItem? {
     didSet {
       updateActionButtonIfNeeded()
     }
   }
-  var selectedEvent: RankingQueryItem? {
+  var selectedEvent: RankingSearchRequest.RankingQueryItem? {
     didSet {
       updateActionButtonIfNeeded()
     }
@@ -88,14 +89,6 @@ final class RankingsSearchPresenter {
     view?.updateLoadingState(isLoading: true)
     let rankingSearchRequest = RankingSearchRequest(year: year, region: region, gender: selectedGender, ageGroup: ageGroup, event: event)
     
-    if Config.isOfflineMode {
-      let data = FileLoader.dataFrom(filename: "Rankings", fileType: "html")
-      let parser = try! RankingsSearchHTMLParser(htmlData: data, isDisabilitySearch: rankingSearchRequest.ageGroup.displayName == "Disability")
-      let rankings = parser.rankings()
-      handleRequestRankingsResult(.success(rankings, HTTPURLResponse()), rankingRequest: rankingSearchRequest)
-      return
-    }
-    
     let resource = RequestRankingsResource(rankingSearchRequest: rankingSearchRequest)
     let requestRankingsOperation = RequestRankingsOperation(resource: resource, service: service) { (_, result) in
       self.view?.updateErrorState(isVisible: false)
@@ -118,7 +111,7 @@ final class RankingsSearchPresenter {
     view?.updateSearchButton(isEnabled: true)
   }
   
-  private func fetchEventsFor(ageGroup: RankingQueryItem?, gender: Gender) {
+  private func fetchEventsFor(ageGroup: RankingSearchRequest.RankingQueryItem?, gender: Gender) {
     let events = vendor.events(forAgeGroup: ageGroup, andGender: gender)
     selectedEvent = events.first
     view?.presenterDidRecieveEvents(events: events)
@@ -145,7 +138,7 @@ final class RankingsSearchPresenter {
   private func handleRequestRankingsResult(_ result: NetworkResponse<RequestRankingsResource.Model>, rankingRequest: RankingSearchRequest) {
     switch result {
     case .failure:
-      HapticGenerator.error.generateHaptic()
+      Haptic.error.generate()
       view?.updateErrorState(isVisible: true)
     case .success(let rankings, _):
       if rankings.count > 0 {
@@ -154,7 +147,7 @@ final class RankingsSearchPresenter {
         for index in 0...finalIndex {
           top50.append(rankings[index])
         }
-        HapticGenerator.success.generateHaptic()
+        Haptic.success.generate()
         view?.didRecieveRankings(rankings: top50, request: rankingRequest) // TODO - no rankings
       }
     }

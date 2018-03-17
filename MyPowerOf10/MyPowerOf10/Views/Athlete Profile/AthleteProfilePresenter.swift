@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Po10Model
 
 protocol AthleteProfilePresenterView: class {
   func updateWith(athlete: Athlete)

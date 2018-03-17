@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Po10Model
+import Po10UI
 
 final class AthleteSearchResultTableViewCell: UITableViewCell {
 

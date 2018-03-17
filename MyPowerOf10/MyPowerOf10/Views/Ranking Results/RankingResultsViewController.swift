@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Po10Model
 
 protocol RankingResultsViewControllerDelegate: class {
   func rankingResultsViewController(_: RankingResultsViewController, didReceiveAthlete athlete: Athlete)

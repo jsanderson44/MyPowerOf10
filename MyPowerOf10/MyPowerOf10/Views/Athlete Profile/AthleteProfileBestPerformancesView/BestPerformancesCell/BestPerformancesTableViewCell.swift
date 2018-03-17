@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Po10Model
 
 final class BestPerformancesTableViewCell: UITableViewCell {
   

@@ -7,45 +7,41 @@
 //
 
 import Foundation
+import Po10Model
 
 enum RankingPlistType: String {
   case ageGroups = "AgeGroups"
   case regions = "Regions"
 }
 
-struct RankingQueryItem: Decodable {
-  let displayName: String
-  let searchQuery: String
-}
-
 struct RankingQueryItemsVender {
   
-  func rankingQueryItems(forPlist plist: RankingPlistType) -> [RankingQueryItem] {
+  func rankingQueryItems(forPlist plist: RankingPlistType) -> [RankingSearchRequest.RankingQueryItem] {
     let decoder = PropertyListDecoder()
     guard let plistURL = Bundle.main.url(forResource: plist.rawValue, withExtension: "plist"),
       let data = try? Data(contentsOf: plistURL),
-      let events = try? decoder.decode(Array<RankingQueryItem>.self, from: data) else { return [] }
+      let events = try? decoder.decode(Array<RankingSearchRequest.RankingQueryItem>.self, from: data) else { return [] }
     return events
   }
   
-  func years() -> [RankingQueryItem] {
+  func years() -> [RankingSearchRequest.RankingQueryItem] {
     let currentYear = Calendar.current.component(.year, from: Date())
-    var years: [RankingQueryItem] = []
+    var years: [RankingSearchRequest.RankingQueryItem] = []
     for year in 2006...currentYear {
-      years.append(RankingQueryItem(displayName: "\(year)", searchQuery: "\(year)"))
+      years.append(RankingSearchRequest.RankingQueryItem(displayName: "\(year)", searchQuery: "\(year)"))
     }
     years.reverse()
-    years.append(RankingQueryItem(displayName: "All Time", searchQuery: "y"))
+    years.append(RankingSearchRequest.RankingQueryItem(displayName: "All Time", searchQuery: "y"))
     return years
   }
   
-  func events(forAgeGroup ageGroup: RankingQueryItem?, andGender gender: Gender) -> [RankingQueryItem] {
+  func events(forAgeGroup ageGroup: RankingSearchRequest.RankingQueryItem?, andGender gender: Gender) -> [RankingSearchRequest.RankingQueryItem] {
     guard let ageGroupQuery = ageGroup?.displayName else { return [] }
     let eventsDictionaryQuery = ageGroupQuery + gender.searchValue
     let decoder = PropertyListDecoder()
     guard let eventsPlistURL = Bundle.main.url(forResource: "Events", withExtension: "plist"),
       let data = try? Data(contentsOf: eventsPlistURL),
-      let eventsDictionary = try? decoder.decode(Dictionary<String, [RankingQueryItem]>.self, from: data),
+      let eventsDictionary = try? decoder.decode(Dictionary<String, [RankingSearchRequest.RankingQueryItem]>.self, from: data),
       let events = eventsDictionary[eventsDictionaryQuery] else { return [] }
     return events
   }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Po10Model
+import Po10UI
 
 protocol AthleteProfileViewControllerDelegate: class {
 	// TODO: Add delegate requirements

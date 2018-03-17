@@ -1,18 +1,42 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+workspace 'MyPowerOf10'
+
+pod 'Kanna', '~> 4.0.0'
+pod 'TABResourceLoader', '~> 7.0.0'
+pod 'HapticGenerator'
 
 target 'MyPowerOf10' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for MyPowerOf10
-  pod 'Kanna', '~> 4.0.0'
-  pod 'TABResourceLoader', '~> 7.0.0'
-  pod 'HapticGenerator'
-
+  project 'MyPowerOf10'
   target 'MyPowerOf10Tests' do
-    inherit! :search_paths
-    # Pods for testing
   end
+end
 
+target 'Po10Model' do
+  project 'Po10Model/Po10Model'
+  target 'Po10ModelTests' do
+  end
+end
+
+target 'Po10UI' do
+  project 'Po10UI/Po10UI'
+  target 'Po10UITests' do
+  end
+end
+
+target 'FoundationExtension' do
+  project 'FoundationExtension/FoundationExtension'
+  target 'FoundationExtensionTests' do
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '4.0'
+      config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+    end
+  end
 end

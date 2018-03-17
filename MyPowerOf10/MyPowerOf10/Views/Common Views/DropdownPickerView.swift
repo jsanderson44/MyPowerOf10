@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Po10Model
+import Po10UI
 
 protocol DropdownPickerViewDelegate: class {
   func dropdownPickerViewDidRequestStateChange(_ dropdownPickerView: DropdownPickerView, selected: Bool)
-  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingQueryItem)
+  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingSearchRequest.RankingQueryItem)
 }
 
 final class DropdownPickerView: UIView {
@@ -21,7 +23,7 @@ final class DropdownPickerView: UIView {
   
   // MARK: - Private properties
   
-  private var items: [RankingQueryItem] = []
+  private var items: [RankingSearchRequest.RankingQueryItem] = []
   private var placeholder: String = ""
   private weak var delegate: DropdownPickerViewDelegate?
   
@@ -69,7 +71,7 @@ final class DropdownPickerView: UIView {
 
 extension DropdownPickerView {
   
-  func configure(withItems items: [RankingQueryItem], placeholder: String, delegate: DropdownPickerViewDelegate) {
+  func configure(withItems items: [RankingSearchRequest.RankingQueryItem], placeholder: String, delegate: DropdownPickerViewDelegate) {
     self.items = items
     self.delegate = delegate
     self.placeholder = placeholder

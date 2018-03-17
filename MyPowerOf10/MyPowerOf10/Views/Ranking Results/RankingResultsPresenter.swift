@@ -9,6 +9,7 @@
 import Foundation
 import TABResourceLoader
 import HapticGenerator
+import Po10Model
 
 protocol RankingResultsPresenterView: class {
   func presenterDidReceiveRankings(rankings: [Ranking], requestDisplayString: String)
@@ -85,10 +86,10 @@ final class RankingResultsPresenter {
   private func handleRequestAthleteProfileRequest(_ result: NetworkResponse<RequestAthleteProfileResource.Model>) {
     switch result {
     case .failure:
-      HapticGenerator.error.generateHaptic()
+      Haptic.error.generate()
 //      view?.updateErrorState(isVisible: true)
     case .success(let athlete, _):
-      HapticGenerator.success.generateHaptic()
+      Haptic.success.generate()
       view?.presenterDidRecieveAthlete(athlete: athlete)
     }
   }

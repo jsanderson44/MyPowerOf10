@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Po10UI
 
 /// Rounded action button with optional loading state
 final class SearchTextField: UITextField {

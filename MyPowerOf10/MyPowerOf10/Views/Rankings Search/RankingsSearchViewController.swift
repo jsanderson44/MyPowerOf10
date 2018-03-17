@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Po10Model
+import Po10UI
 
 protocol RankingsSearchViewControllerDelegate: class {
   func rankingsSearchViewController(_ controller: RankingsSearchViewController, didReceiveRankings rankings: [Ranking], fromRequest request: RankingSearchRequest)
@@ -132,19 +134,19 @@ final class RankingsSearchViewController: UIViewController {
 // MARK: RankingsSearchPresenterView
 
 extension RankingsSearchViewController: RankingsSearchPresenterView {
-  func presenterDidReceiveYears(years: [RankingQueryItem]) {
+  func presenterDidReceiveYears(years: [RankingSearchRequest.RankingQueryItem]) {
     yearPicker.configure(withItems: years, placeholder: "Year", delegate: self)
   }
   
-  func presenterDidReceiveRegions(regions: [RankingQueryItem]) {
+  func presenterDidReceiveRegions(regions: [RankingSearchRequest.RankingQueryItem]) {
     regionPicker.configure(withItems: regions, placeholder: "Region/Nation", delegate: self)
   }
   
-  func presenterDidReceiveAgeGroups(ageGroups: [RankingQueryItem]) {
+  func presenterDidReceiveAgeGroups(ageGroups: [RankingSearchRequest.RankingQueryItem]) {
     ageGroupPicker.configure(withItems: ageGroups, placeholder: "Age Group", delegate: self)
   }
   
-  func presenterDidRecieveEvents(events: [RankingQueryItem]) {
+  func presenterDidRecieveEvents(events: [RankingSearchRequest.RankingQueryItem]) {
     eventsPicker.configure(withItems: events, placeholder: "Event", delegate: self)
   }
   
@@ -176,7 +178,7 @@ extension RankingsSearchViewController: RankingsSearchPresenterView {
 
 extension RankingsSearchViewController: DropdownPickerViewDelegate {
   
-  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingQueryItem) {
+  func dropdownPickerView(_ dropdownPickerView: DropdownPickerView, didChangeSelectRankingQueryItem rankingQueryItem: RankingSearchRequest.RankingQueryItem) {
     switch dropdownPickerView {
     case ageGroupPicker: presenter.selectedAgeGroup = rankingQueryItem
     case yearPicker: presenter.selectedYear = rankingQueryItem
