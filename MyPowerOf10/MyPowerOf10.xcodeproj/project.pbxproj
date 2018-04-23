@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6A66FDD0FD1E7024421163FE /* Pods_MyPowerOf10Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7D2C0B3240167CC8F17864 /* Pods_MyPowerOf10Tests.framework */; };
-		8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE89C594C42E3E3567F1E97 /* Pods_MyPowerOf10.framework */; };
 		912C64E31FFA697000CD9797 /* RankingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64E01FFA697000CD9797 /* RankingResultsViewController.swift */; };
 		912C64E41FFA697000CD9797 /* RankingResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912C64E11FFA697000CD9797 /* RankingResultsViewController.xib */; };
 		912C64E51FFA697000CD9797 /* RankingResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C64E21FFA697000CD9797 /* RankingResultsPresenter.swift */; };
@@ -54,9 +53,7 @@
 		91A2C974205D74EF008019F1 /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFB205D748B00FE8159 /* Events.plist */; };
 		91A2C975205D74EF008019F1 /* AgeGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFC205D748B00FE8159 /* AgeGroups.plist */; };
 		91A2C976205D74EF008019F1 /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C17EFD205D748B00FE8159 /* Regions.plist */; };
-		91A2C977205D76C8008019F1 /* Po10UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EF8205D6EFC00FE8159 /* Po10UI.framework */; };
 		91A2C978205D76C8008019F1 /* Po10UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EF8205D6EFC00FE8159 /* Po10UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91A2C979205D76C8008019F1 /* FoundationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EA3205D663D00FE8159 /* FoundationExtension.framework */; };
 		91A2C97A205D76C8008019F1 /* FoundationExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EA3205D663D00FE8159 /* FoundationExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91A2C97B205D76C8008019F1 /* Po10Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17E55205D5FEF00FE8159 /* Po10Model.framework */; };
 		91A2C97C205D76C8008019F1 /* Po10Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17E55205D5FEF00FE8159 /* Po10Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -66,7 +63,6 @@
 		91A4FCAB1FAF498500D8493D /* AthleteSearchListOneAthlete.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCAA1FAF498500D8493D /* AthleteSearchListOneAthlete.html */; };
 		91A4FCAD1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4FCAC1FAF499800D8493D /* AthleteSearchHTMLParserTests.swift */; };
 		91A4FCB11FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html in Resources */ = {isa = PBXBuildFile; fileRef = 91A4FCB01FAF5FC800D8493D /* AthleteSearchListMultiAthletes.html */; };
-		91C17E54205D5FEF00FE8159 /* Po10Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17E55205D5FEF00FE8159 /* Po10Model.framework */; };
 		91C17EA2205D663D00FE8159 /* FoundationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EA3205D663D00FE8159 /* FoundationExtension.framework */; };
 		91C17EF7205D6EFC00FE8159 /* Po10UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C17EF8205D6EFC00FE8159 /* Po10UI.framework */; };
 		91D402591FAF42E70032ED26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D402581FAF42E70032ED26 /* AppDelegate.swift */; };
@@ -185,11 +181,7 @@
 				91A2C97B205D76C8008019F1 /* Po10Model.framework in Frameworks */,
 				91C17EF7205D6EFC00FE8159 /* Po10UI.framework in Frameworks */,
 				91C17EA2205D663D00FE8159 /* FoundationExtension.framework in Frameworks */,
-				91C17E54205D5FEF00FE8159 /* Po10Model.framework in Frameworks */,
 				91A2C97D205D76C8008019F1 /* Pods_MyPowerOf10.framework in Frameworks */,
-				91A2C979205D76C8008019F1 /* FoundationExtension.framework in Frameworks */,
-				8119C4AAB35F8E5F9D6F2723 /* Pods_MyPowerOf10.framework in Frameworks */,
-				91A2C977205D76C8008019F1 /* Po10UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +541,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = JohnSanderson;
 				TargetAttributes = {
 					91D402541FAF42E70032ED26 = {
@@ -818,6 +810,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -825,6 +818,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -875,6 +869,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -882,6 +877,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

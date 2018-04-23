@@ -28,7 +28,7 @@ struct AthleteProfileHTMLParser {
   func athleteProfile() throws -> Athlete {
     guard let name: String = document.css(".athleteprofilesubheader h2").first?.text?.cleaned else { throw AthleteProfileParsingError.couldNotParseAthlete }
     
-    let infoComponents: [String] = document.css("#cphBody_pnlAthleteDetails td").flatMap { (details) in
+    let infoComponents: [String] = document.css("#cphBody_pnlAthleteDetails td").compactMap { (details) in
       guard let component = details.text else { return nil }
       return component
     }
@@ -51,7 +51,7 @@ struct AthleteProfileHTMLParser {
     let coach = infoComponents[safe: countyIndex+7]
     
     var count = 0
-    let bestPerformances: [Performance] = document.css("#cphBody_divBestPerformances .bestperformancesheader").flatMap { (eventElement) in
+    let bestPerformances: [Performance] = document.css("#cphBody_divBestPerformances .bestperformancesheader").compactMap { (eventElement) in
       guard let result = document.css("td[style=\"background-color:LightPink;\"]")[safe: count]?.text,
         let event = eventElement.css("b").first?.text,
         event != "Event" else { return nil }

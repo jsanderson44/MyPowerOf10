@@ -21,7 +21,7 @@ struct RankingsSearchHTMLParser {
   }
   
   func rankings() -> [Ranking] {
-    let rankings: [Ranking] = document.css("#cphBody_lblCachedRankingList tr").flatMap { (ranking) in
+    let rankings: [Ranking] = document.css("#cphBody_lblCachedRankingList tr").compactMap { (ranking) in
       guard ranking.className != "rankinglisttitle",
         ranking.className != "rankinglistheadings",
         var athleteID = ranking.css("a[href]").first?.toHTML?.digitsOnly else { return nil }

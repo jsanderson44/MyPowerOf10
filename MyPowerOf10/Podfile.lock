@@ -5,14 +5,24 @@ PODS:
 
 DEPENDENCIES:
   - HapticGenerator
-  - Kanna (~> 4.0.0)
+  - Kanna (from `https://github.com/tid-kijyun/Kanna`, branch `feature/v4.0.0`)
   - TABResourceLoader (~> 7.0.0)
+
+EXTERNAL SOURCES:
+  Kanna:
+    :branch: feature/v4.0.0
+    :git: https://github.com/tid-kijyun/Kanna
+
+CHECKOUT OPTIONS:
+  Kanna:
+    :commit: 81ce91fd485b637517c340c73590a9b59ac9f7d5
+    :git: https://github.com/tid-kijyun/Kanna
 
 SPEC CHECKSUMS:
   HapticGenerator: 86fb346c9fe95ef86b0859eb4b7ff829ac8e351f
   Kanna: d5ae2a26472f7e7a474e7f36a9cd8aa2c8c63ad3
   TABResourceLoader: 771230e1089e98fe29b4d5a0b214e14ec97fba6b
 
-PODFILE CHECKSUM: 18dbb0c49226a42e81b48d32f9ebea2b157aa566
+PODFILE CHECKSUM: cd1adf254a15516ca9f109932972ff39b34022f8
 
 COCOAPODS: 1.3.1

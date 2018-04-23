@@ -20,7 +20,7 @@ struct AthleteSearchHTMLParser {
   
   //TODO - Move trimming to here
   func athletesFromSearchResults() -> [AthleteResult] {
-    let athletes: [AthleteResult] = document.css("#cphBody_dgAthletes tr").flatMap { (athlete) in
+    let athletes: [AthleteResult] = document.css("#cphBody_dgAthletes tr").compactMap { (athlete) in
       guard let profileHTML = athlete.css("a[href]").first?.toHTML,
         var components = athlete.innerHTML?.components(separatedBy: .newlines) else { return nil }
       components.append(profileHTML)

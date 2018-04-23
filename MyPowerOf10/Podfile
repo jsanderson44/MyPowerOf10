@@ -4,7 +4,7 @@ use_frameworks!
 inhibit_all_warnings!
 workspace 'MyPowerOf10'
 
-pod 'Kanna', '~> 4.0.0'
+pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna', :branch => 'feature/v4.0.0'
 pod 'TABResourceLoader', '~> 7.0.0'
 pod 'HapticGenerator'
 

@@ -3,75 +3,76 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016B48A32FD22523D609C9F54ED4272C /* ResourceServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		01B3108374F14ADACA910F440B165DC2 /* PropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		02771D9323AF1E2D333FF91B8E17DB3E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3741311A04ED61E0A805B48754CFAB6A /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		079533200A213946F3C9492D7F5A9757 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0864B6C37B15396460042F449F735090 /* ResourceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		016B48A32FD22523D609C9F54ED4272C /* ResourceServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0E4B7630A79A38ACBCB34B0A8043E /* ResourceServiceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		01B3108374F14ADACA910F440B165DC2 /* PropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C099DD370C3007BC7AA10183AAAC58 /* PropertyListDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		02771D9323AF1E2D333FF91B8E17DB3E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997453FA84DF25B8271C209C90F3BB07 /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		079533200A213946F3C9492D7F5A9757 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7B399E1164F9A021E9D3574C81CEF /* HapticGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0864B6C37B15396460042F449F735090 /* ResourceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156AD6EAC472B07426F9D4ED74491B69 /* ResourceOperation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0BE470929D528EF3BB8D7DFAB9636800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0EE598C446F1BA2249C27F852210A971 /* ImageResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0EE598C446F1BA2249C27F852210A971 /* ImageResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8874FD34E96CDBF34B5292F23ACF8D /* ImageResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0FCDEB6CF9F01F8F661F4D81AE1D3CC4 /* Pods-FoundationExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FB04A85A618D1BB4E2497EFD78A315 /* Pods-FoundationExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1054D39C9CA1E807CBD9C0779A22D017 /* Pods-Po10UI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F9992BB6F9452986086B0D81D9B06 /* Pods-Po10UI-dummy.m */; };
 		12DAB5CD05E97CF2E89D3EDCDCAE47AF /* Pods-Po10UI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF1CA4927DECF815C8712705E4CC2A7 /* Pods-Po10UI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12F1215BDBB7B4014E8A8EBA37D0DFF4 /* GenericNetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2384647FC99B791402599858126BA0D4 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		12F1215BDBB7B4014E8A8EBA37D0DFF4 /* GenericNetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F6349B64C88A6A0B56D32C8A98226 /* GenericNetworkDataResourceService.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		25EBC33759E31FC78E96F2ECA8A8CBDF /* Pods-MyPowerOf10-MyPowerOf10Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F304BC176177BD1440BBA6C39006A76 /* Pods-MyPowerOf10-MyPowerOf10Tests-dummy.m */; };
-		2A53BBBB44BE893076ADA379E5AEFF2F /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40FC0209A30D756577EB521D73B73F49 /* HapticGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */; };
+		37EF1AE9F6EEA47ADF8623BA190C8AE1 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7701734D12D76A4757C718592B2CDD /* CSS.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		40FC0209A30D756577EB521D73B73F49 /* HapticGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CBA3D3CCAE7636172D159E46095A74 /* HapticGenerator-dummy.m */; };
 		43084C7BA14EE2911E8B2DE9D8CA52EA /* Pods-MyPowerOf10-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD7A18D032422FBB9FC85B2D0EE831C /* Pods-MyPowerOf10-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE70F5DAC0BD9FA3FA2C8C0C6DCC077 /* Pods-Po10UI-Po10UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10A2C4C3DD638D495E7EC257ADBE2 /* Pods-Po10UI-Po10UITests-dummy.m */; };
-		54A2B82832E7EB8F4B784EC908E439F0 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		58429CA22FCEC0B155C4006C1AD0F341 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5068CB30342CE1B889BC8919C369FDFC /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = D39B49F5F930CB81F4A408C011621851 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54A2B82832E7EB8F4B784EC908E439F0 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A126F9ADD9E086062314B4967525C1 /* ResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		557210A78351721F263437679F0C614F /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFBB93BF2779A303A4E7452A1C4023 /* Deprecated.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		59A22A80ED40F8BC4DFE9252155E349F /* Pods-Po10Model-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26410F41D5C0883122AA6DF309703152 /* Pods-Po10Model-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AE887F6A2AC4A9A66769A69F389AB9D /* Pods-Po10UI-Po10UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587AEF3F25835F10355289B339FFCD2D /* Pods-Po10UI-Po10UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BE2040E3788135C5C72DA4DF92C7DF7 /* Pods-FoundationExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B4E9586CAB94991128B9FA435503E /* Pods-FoundationExtension-dummy.m */; };
 		6085AC3B9A71C1830533B3182D412C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6ABB29688AC188B0DFA70860098EFB11 /* NetworkImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6ADDB372030582054CAE4F5CF6431613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6EF03DAA45C4DD490C7B6EE991398B2A /* NetworkJSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6ABB29688AC188B0DFA70860098EFB11 /* NetworkImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65491124B07A88B258857291DB17A543 /* NetworkImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6DEB55F54A9EFF6FCA75B573CFF08767 /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BBF87E13578302353C7807DC4BF9F0 /* Kanna-dummy.m */; };
+		6EF03DAA45C4DD490C7B6EE991398B2A /* NetworkJSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915706A4A30695D611643E186176635 /* NetworkJSONDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		72892809A38A1CF93EB133C89D96DB19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		798AB83FC3C33E65932A98D75B67FA1B /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7BA891966216D1FC6CF026AC28273CAD /* BaseAsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7D64D9A6375E84D46AD3760EB95AC54D /* NetworkJSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		798AB83FC3C33E65932A98D75B67FA1B /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE238845498E2BF4B4DE8A4E2C2B6A /* URLSessionType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7A591A657500E4870B465A9A162A9C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7BA891966216D1FC6CF026AC28273CAD /* BaseAsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409A603BEFB78CF4A742FB99255BEA7 /* BaseAsynchronousOperation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D64D9A6375E84D46AD3760EB95AC54D /* NetworkJSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDD9A0FE21CCD28969C9872B668D1D /* NetworkJSONDictionaryResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7FEA33D58286A89D6A7D5C19A9DE84E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		812D4ECC523233E55AF269C2F2303DB8 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		812D4ECC523233E55AF269C2F2303DB8 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E64018D8C0473CAD986951C8AE98EF2 /* GlobalFunctions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8403D6DC0788C951C12B994608F7F57F /* Pods-MyPowerOf10-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4182BE4CA83440CFEF5790FB537140B /* Pods-MyPowerOf10-dummy.m */; };
 		849587598ACE377D70990F04149B36CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		86A191F6028BD51E4E54434A2A0A1F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		91850F94F6E339A779B215BD1037D691 /* DataResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		91850F94F6E339A779B215BD1037D691 /* DataResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54D643F0396363B41C50ED2FAA389E /* DataResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		92DE529FC0E2AB7A0B4F557D8F288B00 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407CA8A7A94CEB451E760177AB3010C /* Kanna.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		93AC16340856A56D3276B232190A3F20 /* Pods-Po10Model-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F82BE71F34A65F07E42FB63785EF2AD /* Pods-Po10Model-dummy.m */; };
+		958603139AA7BC0E80A2A604523087D3 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A51B55F7893652A2AA906FD27EA5DE39 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B243F5CDFEFD2FCF41D48D264B06443 /* Pods-FoundationExtension-FoundationExtensionTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1A90E6986FD8A2D596B5C6F2AEE3EF /* Pods-FoundationExtension-FoundationExtensionTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A433F77140BB4CA3EF2F762DDA328AB9 /* JSONParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A581284125AC67684FD1A8EDA59E6660 /* NetworkPropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A2D2AB69B8832FF9BE1A309EC2F4A28B /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5122E45FB014159164163AF82DC3A48 /* libxmlHTMLNode.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A433F77140BB4CA3EF2F762DDA328AB9 /* JSONParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2812E5201324FD5625C66582E80BA3E4 /* JSONParsingError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A581284125AC67684FD1A8EDA59E6660 /* NetworkPropertyListDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84CB2391D0D1E5829E278E1553E129A /* NetworkPropertyListDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A9E1F68324383D12BE67D1516DAC68B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AEB1ACFD10C41B3BB3CEAA4FAB815124 /* Pods-FoundationExtension-FoundationExtensionTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E27B5AF64456EBEDC00F2C45A72E69 /* Pods-FoundationExtension-FoundationExtensionTests-dummy.m */; };
 		B04CF2DC2E2C483BC7CE1E7F42455D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B0C6B10193A7842C4D68B624204ECC83 /* JSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B12F9395C88E9C96400B0A6BD59A1772 /* NetworkJSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C00CFEE5F083603BD753182EF1FCD627 /* NetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B0C6B10193A7842C4D68B624204ECC83 /* JSONDictionaryResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E704F2E455C28EE5343EA58C89218912 /* JSONDictionaryResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B12F9395C88E9C96400B0A6BD59A1772 /* NetworkJSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2C132805D797BD60C3FE79A45015A /* NetworkJSONArrayResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B2094FB53CFCD431CDF5AB0C7FE7FC39 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB69E056FF3D00FE6263C95B3972908 /* libxmlHTMLDocument.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C00CFEE5F083603BD753182EF1FCD627 /* NetworkDataResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9842AA5DFF601AD2C93522A05444880 /* NetworkDataResourceService.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C5B20957621C4835C0E77219DFB83C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C7E4270F72045902072BEE91593066FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C861034BF5C43201D36FE676D6F4BE78 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CCD49B7000FB804E36031169585BFAF9 /* TABResourceLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDF35C2D5676931C40BDEF5D18F7D3BD /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */; };
-		CF395A5C5BFAB49A97B938205B4164E3 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CFA3EAAAA80FF0758B59BCED7377B479 /* JSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D3DE2E6A6DADB0261A5271BFADAE168F /* TABResourceLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */; };
-		D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D99BDED8807144C6D77740E61D535C6C /* NetworkServiceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DF1E69A80B67452441E2AB3F8F632AB4 /* NSThread+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DFB169E190915B8E5BF500A5B5EC7913 /* NetworkResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CCD49B7000FB804E36031169585BFAF9 /* TABResourceLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0FF067612A1F917F54E2730173E5CD /* TABResourceLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFA3EAAAA80FF0758B59BCED7377B479 /* JSONArrayResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FE7C65691C4A1C4EA8EC7DA390BEB /* JSONArrayResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3DE2E6A6DADB0261A5271BFADAE168F /* TABResourceLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB52EEC6B6CED08C016F4E6D9E89862 /* TABResourceLoader-dummy.m */; };
+		D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4B26F38C8A5C7447AA720B64B05B38 /* HapticGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D99BDED8807144C6D77740E61D535C6C /* NetworkServiceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B046A631D2B38828ED57257094ABD /* NetworkServiceActivity.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DF1E69A80B67452441E2AB3F8F632AB4 /* NSThread+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89CF1F0205F57F58069F8A7399A587 /* NSThread+Additions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DFB169E190915B8E5BF500A5B5EC7913 /* NetworkResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DEC1B22C15DF3B79F3D1B003C3C53 /* NetworkResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E0BC7D86387F162E2EFD9AB2B925FADD /* Pods-MyPowerOf10-MyPowerOf10Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B539B49EB39D18F278B7D18D9FA68836 /* Pods-MyPowerOf10-MyPowerOf10Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2162CF9254601A9E04B46F922E4D466 /* Pods-Po10Model-Po10ModelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B87333E5BB44C0674B6E86CAC7A6A2 /* Pods-Po10Model-Po10ModelTests-dummy.m */; };
-		E3CC015223B05D0B85E210C26A5A208B /* JSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E3CC015223B05D0B85E210C26A5A208B /* JSONDecodableResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EF805771ED1A88E05A246F9A283EDD /* JSONDecodableResourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EFC6BC4C7A6C09024FA447A39628510C /* Pods-Po10Model-Po10ModelTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B40DA82A0EFA64864818ECA36813774 /* Pods-Po10Model-Po10ModelTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC6530BD11B5AFF3A1D989AA680957B7 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FC6530BD11B5AFF3A1D989AA680957B7 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1479DE76F668A4AA8CC2D4CCC1313B /* NetworkResponseHandler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FE06B406B810A447C318972C9F9B62C2 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7EBEC163F20CF10BCFE80A7F3AB81 /* libxmlParserOption.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,14 +94,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		08F97BF4037BFF0C8D0D9D7AA0674CE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		297CE91A445A00ADF1D5D6ED3922FA37 /* PBXContainerItemProxy */ = {
@@ -149,14 +150,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		6E4CB76B925CB51BB6412AF66059BCF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		98CA48441BF8C8941EA3A3C788F18269 /* PBXContainerItemProxy */ = {
@@ -177,14 +178,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		A3E77A11F7C3E707E2ECC642C885B8C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		AFCA404D04E09AFF7E015E2B96CA48B2 /* PBXContainerItemProxy */ = {
@@ -212,7 +213,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 		F1A36494847830F132FC38A6BB12FCB4 /* PBXContainerItemProxy */ = {
@@ -240,7 +241,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
 			remoteInfo = Kanna;
 		};
 /* End PBXContainerItemProxy section */
@@ -248,147 +249,156 @@
 /* Begin PBXFileReference section */
 		03133C6661435274E22F9D5E69CFD3A9 /* Pods-Po10UI-Po10UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10UI-Po10UITests-resources.sh"; sourceTree = "<group>"; };
 		05ED13E99F3CF2E794E76A8545619872 /* Pods-Po10Model-Po10ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10Model-Po10ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/PropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
-		076933F0FCDB8F910887B03325F755B4 /* Pods_Po10Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Po10Model.framework; path = "Pods-Po10Model.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07A56BB3C6462666AB12D13737F1D906 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
+		076933F0FCDB8F910887B03325F755B4 /* Pods_Po10Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Po10Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C53153D15C84260E6C2CA160B236FCD /* Pods-FoundationExtension-FoundationExtensionTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoundationExtension-FoundationExtensionTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
 		0F304BC176177BD1440BBA6C39006A76 /* Pods-MyPowerOf10-MyPowerOf10Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10-MyPowerOf10Tests-dummy.m"; sourceTree = "<group>"; };
 		0F82BE71F34A65F07E42FB63785EF2AD /* Pods-Po10Model-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Po10Model-dummy.m"; sourceTree = "<group>"; };
-		13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOperation.swift; path = Sources/TABResourceLoader/Operations/ResourceOperation.swift; sourceTree = "<group>"; };
-		134F479FC3475DA957A77CDB3C85FE43 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TABResourceLoader.framework; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134F479FC3475DA957A77CDB3C85FE43 /* TABResourceLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABResourceLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		156AD6EAC472B07426F9D4ED74491B69 /* ResourceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOperation.swift; path = Sources/TABResourceLoader/Operations/ResourceOperation.swift; sourceTree = "<group>"; };
 		162132655A65DF32BC6B3AEC95237F47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1731A36AE9508125C681805E7E5B2FEB /* Pods-Po10UI-Po10UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Po10UI-Po10UITests.modulemap"; sourceTree = "<group>"; };
+		16BBF87E13578302353C7807DC4BF9F0 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		1731A36AE9508125C681805E7E5B2FEB /* Pods-Po10UI-Po10UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Po10UI-Po10UITests.modulemap"; sourceTree = "<group>"; };
 		177A31A72643B40A15932012C1D1DFDE /* Pods-FoundationExtension-FoundationExtensionTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoundationExtension-FoundationExtensionTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		183F9992BB6F9452986086B0D81D9B06 /* Pods-Po10UI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Po10UI-dummy.m"; sourceTree = "<group>"; };
-		19F31490D07EE3D04EF7C32296180A18 /* Pods_MyPowerOf10_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10_MyPowerOf10Tests.framework; path = "Pods-MyPowerOf10-MyPowerOf10Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F31490D07EE3D04EF7C32296180A18 /* Pods_MyPowerOf10_MyPowerOf10Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10_MyPowerOf10Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAECECDC284E3D2B014D2BA9F0FF39A /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
 		1B578839708CA8AB788E927B2009787A /* Pods-FoundationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoundationExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkImageResource.swift; path = "Sources/TABResourceLoader/Concrete types/Resources/NetworkImageResource.swift"; sourceTree = "<group>"; };
-		1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
-		1EBE3A2E9A000A99E47557B00B2757FA /* HapticGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HapticGenerator.framework; path = HapticGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFAB3D808A54CA0477967CA701D3A22 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		1E7701734D12D76A4757C718592B2CDD /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
+		1EBE3A2E9A000A99E47557B00B2757FA /* HapticGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HapticGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED7F720CDA6F990F27F5B0F4FC5951D /* Pods-Po10Model-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Po10Model-acknowledgements.plist"; sourceTree = "<group>"; };
 		231896D9988E554BDF8B899FC9B98FC5 /* Pods-Po10UI-Po10UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Po10UI-Po10UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2409A603BEFB78CF4A742FB99255BEA7 /* BaseAsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAsynchronousOperation.swift; path = Sources/TABResourceLoader/Operations/BaseAsynchronousOperation.swift; sourceTree = "<group>"; };
 		26410F41D5C0883122AA6DF309703152 /* Pods-Po10Model-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Po10Model-umbrella.h"; sourceTree = "<group>"; };
+		2812E5201324FD5625C66582E80BA3E4 /* JSONParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsingError.swift; path = "Sources/TABResourceLoader/Concrete types/JSONParsingError.swift"; sourceTree = "<group>"; };
 		28A873152117DF02AEA8BF2E326132CD /* Pods-Po10Model-Po10ModelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Po10Model-Po10ModelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A5708609F0501FA746B59548276B1B0 /* Pods-MyPowerOf10-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-resources.sh"; sourceTree = "<group>"; };
 		2B40DA82A0EFA64864818ECA36813774 /* Pods-Po10Model-Po10ModelTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Po10Model-Po10ModelTests-umbrella.h"; sourceTree = "<group>"; };
-		2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/NetworkDataResourceService.swift; sourceTree = "<group>"; };
-		32DC7B9213BA14D2882827A90FB10D7E /* Pods-MyPowerOf10-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
-		32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsingError.swift; path = "Sources/TABResourceLoader/Concrete types/JSONParsingError.swift"; sourceTree = "<group>"; };
-		3741311A04ED61E0A805B48754CFAB6A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Sources/TABResourceLoader/Concrete types/Result.swift"; sourceTree = "<group>"; };
+		32DC7B9213BA14D2882827A90FB10D7E /* Pods-MyPowerOf10-MyPowerOf10Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10-MyPowerOf10Tests.modulemap"; sourceTree = "<group>"; };
 		37E27B5AF64456EBEDC00F2C45A72E69 /* Pods-FoundationExtension-FoundationExtensionTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoundationExtension-FoundationExtensionTests-dummy.m"; sourceTree = "<group>"; };
 		38E96C7076D9776597A507BD183D86CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399BD7ABE37C3E1F35F62AEE622C3205 /* Pods-MyPowerOf10-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-frameworks.sh"; sourceTree = "<group>"; };
 		39BECE7DFC1C9ED9296D3D32831633EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4B26F38C8A5C7447AA720B64B05B38 /* HapticGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-umbrella.h"; sourceTree = "<group>"; };
 		3DA718746803CEE7238D40BC3197841D /* Pods-FoundationExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoundationExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E7922CC7EB3930DBE81F9C8D1DFB6CF /* HapticGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HapticGenerator.modulemap; sourceTree = "<group>"; };
 		3FD10A2C4C3DD638D495E7EC257ADBE2 /* Pods-Po10UI-Po10UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Po10UI-Po10UITests-dummy.m"; sourceTree = "<group>"; };
-		424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
 		42764C3E615E4798C6FC24473140DFF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452CB3F12C2475FA4642D13E09FB7CB7 /* Pods-MyPowerOf10-MyPowerOf10Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-MyPowerOf10Tests-frameworks.sh"; sourceTree = "<group>"; };
-		494685D4594F1CA0A81B360A0E78FE0B /* Pods-Po10Model-Po10ModelTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Po10Model-Po10ModelTests.modulemap"; sourceTree = "<group>"; };
-		498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		494685D4594F1CA0A81B360A0E78FE0B /* Pods-Po10Model-Po10ModelTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Po10Model-Po10ModelTests.modulemap"; sourceTree = "<group>"; };
 		4B5B89CB2730CFBF9DD4F9C2B47B23EA /* Pods-Po10Model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10Model.release.xcconfig"; sourceTree = "<group>"; };
+		4BB52EEC6B6CED08C016F4E6D9E89862 /* TABResourceLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABResourceLoader-dummy.m"; sourceTree = "<group>"; };
 		4BF1CA4927DECF815C8712705E4CC2A7 /* Pods-Po10UI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Po10UI-umbrella.h"; sourceTree = "<group>"; };
-		527A36E1B576A5C7E1AE17B424651421 /* Pods-FoundationExtension-FoundationExtensionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FoundationExtension-FoundationExtensionTests.modulemap"; sourceTree = "<group>"; };
+		527A36E1B576A5C7E1AE17B424651421 /* Pods-FoundationExtension-FoundationExtensionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FoundationExtension-FoundationExtensionTests.modulemap"; sourceTree = "<group>"; };
 		55F717097315AF2A8A49B7B28950E0A5 /* Pods-FoundationExtension-FoundationExtensionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoundationExtension-FoundationExtensionTests-frameworks.sh"; sourceTree = "<group>"; };
 		57C12C9B2175A4DC786D5483FF246670 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-umbrella.h"; sourceTree = "<group>"; };
 		587AEF3F25835F10355289B339FFCD2D /* Pods-Po10UI-Po10UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Po10UI-Po10UITests-umbrella.h"; sourceTree = "<group>"; };
 		58A19E2845AA8E6219C532266C3D1A57 /* Pods-FoundationExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoundationExtension-resources.sh"; sourceTree = "<group>"; };
-		5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONArrayResourceType.swift"; sourceTree = "<group>"; };
-		5C312F279F6AA50E1874FA0975690C84 /* Pods-Po10Model.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Po10Model.modulemap"; sourceTree = "<group>"; };
-		5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABResourceLoader.xcconfig; sourceTree = "<group>"; };
+		5A54D643F0396363B41C50ED2FAA389E /* DataResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/DataResourceType.swift"; sourceTree = "<group>"; };
+		5AB7EBEC163F20CF10BCFE80A7F3AB81 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
+		5C312F279F6AA50E1874FA0975690C84 /* Pods-Po10Model.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Po10Model.modulemap"; sourceTree = "<group>"; };
 		60B0A14C2BEFBF52B8211DD5FB3BC0BA /* Pods-MyPowerOf10-MyPowerOf10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10-MyPowerOf10Tests.release.xcconfig"; sourceTree = "<group>"; };
-		60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkServiceActivity.swift; path = Sources/TABResourceLoader/Services/NetworkServiceActivity.swift; sourceTree = "<group>"; };
-		615CE406737C4280D664E923558F87A6 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
+		615CE406737C4280D664E923558F87A6 /* Pods-MyPowerOf10.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyPowerOf10.modulemap"; sourceTree = "<group>"; };
+		65491124B07A88B258857291DB17A543 /* NetworkImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkImageResource.swift; path = "Sources/TABResourceLoader/Concrete types/Resources/NetworkImageResource.swift"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		663725A397C3E842834F70FB83C2DBC5 /* Pods-Po10UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10UI.release.xcconfig"; sourceTree = "<group>"; };
-		684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
-		69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ImageResourceType.swift"; sourceTree = "<group>"; };
-		6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDecodableResourceType.swift"; sourceTree = "<group>"; };
-		6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
 		6DD7A18D032422FBB9FC85B2D0EE831C /* Pods-MyPowerOf10-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPowerOf10-umbrella.h"; sourceTree = "<group>"; };
+		6E64018D8C0473CAD986951C8AE98EF2 /* GlobalFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = "Sources/TABResourceLoader/Helper functions/GlobalFunctions.swift"; sourceTree = "<group>"; };
 		72155797958E6789FC17978D3EC2B7E9 /* Pods-MyPowerOf10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10.debug.xcconfig"; sourceTree = "<group>"; };
-		7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkPropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
-		72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABResourceLoader-dummy.m"; sourceTree = "<group>"; };
 		746FB86308CA46C0E7CDFF90045CB964 /* Pods-Po10UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10UI.debug.xcconfig"; sourceTree = "<group>"; };
 		7510900070F14A26D3A6DB64C28624EE /* Pods-Po10Model-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10Model-resources.sh"; sourceTree = "<group>"; };
 		75F74EE05436D29095E9020172C1923D /* Pods-Po10UI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10UI-resources.sh"; sourceTree = "<group>"; };
-		7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-umbrella.h"; sourceTree = "<group>"; };
-		76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceServiceType.swift; path = Sources/TABResourceLoader/Protocols/ResourceServiceType.swift; sourceTree = "<group>"; };
-		7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		76A457512F9121CBBE3B143CECA04F54 /* TABResourceLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABResourceLoader.modulemap; sourceTree = "<group>"; };
 		78594B407E2DA5322F992197D193D313 /* Pods-FoundationExtension-FoundationExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoundationExtension-FoundationExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD0E4B7630A79A38ACBCB34B0A8043E /* ResourceServiceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceServiceType.swift; path = Sources/TABResourceLoader/Protocols/ResourceServiceType.swift; sourceTree = "<group>"; };
 		7F34078B6A5E9179583F28D741AF2227 /* Pods-MyPowerOf10-MyPowerOf10Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPowerOf10-MyPowerOf10Tests-resources.sh"; sourceTree = "<group>"; };
 		7FA7FEFA90EAFCEABA4A77E0B560E0CD /* Pods-Po10UI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Po10UI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82CBA3D3CCAE7636172D159E46095A74 /* HapticGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticGenerator-dummy.m"; sourceTree = "<group>"; };
+		862A7C924A7C82DF36539A85F8E5D7B0 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		872DCBBABB8E1C519F03E498B3D18458 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880515EFDFA5CF68463EEB4E7BD4744B /* Pods-MyPowerOf10-MyPowerOf10Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPowerOf10-MyPowerOf10Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		88153CA0D9446949B0F614193DE50455 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8915706A4A30695D611643E186176635 /* NetworkJSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDecodableResourceType.swift"; sourceTree = "<group>"; };
 		8C1B4E9586CAB94991128B9FA435503E /* Pods-FoundationExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoundationExtension-dummy.m"; sourceTree = "<group>"; };
 		8F7DFA97C32B148C35C99AD918B88A46 /* Pods-Po10Model-Po10ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10Model-Po10ModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FE0F69F8EA2FC31EAE348C711CF90EA /* TABResourceLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABResourceLoader.xcconfig; sourceTree = "<group>"; };
 		90E1BB69941059A59F395D4CD4B9F9A0 /* Pods-Po10UI-Po10UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10UI-Po10UITests-frameworks.sh"; sourceTree = "<group>"; };
-		9159F54079B588FB11D845D4778E4C9F /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kanna.modulemap; sourceTree = "<group>"; };
 		92B87333E5BB44C0674B6E86CAC7A6A2 /* Pods-Po10Model-Po10ModelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Po10Model-Po10ModelTests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9472609483A1858841F67683F2AAFDF1 /* Pods-FoundationExtension-FoundationExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoundationExtension-FoundationExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
-		94E57F93419B07FF4FE1EA9C99A199E7 /* Pods_Po10Model_Po10ModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Po10Model_Po10ModelTests.framework; path = "Pods-Po10Model-Po10ModelTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E57F93419B07FF4FE1EA9C99A199E7 /* Pods_Po10Model_Po10ModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Po10Model_Po10ModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		997453FA84DF25B8271C209C90F3BB07 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "Sources/TABResourceLoader/Concrete types/Result.swift"; sourceTree = "<group>"; };
+		99A126F9ADD9E086062314B4967525C1 /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ResourceType.swift"; sourceTree = "<group>"; };
+		9C0FF067612A1F917F54E2730173E5CD /* TABResourceLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-umbrella.h"; sourceTree = "<group>"; };
 		9E88B82D9B61DC9298E3AD4294408328 /* Pods-MyPowerOf10-MyPowerOf10Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPowerOf10-MyPowerOf10Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONArrayResourceType.swift"; sourceTree = "<group>"; };
-		A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctions.swift; path = "Sources/TABResourceLoader/Helper functions/GlobalFunctions.swift"; sourceTree = "<group>"; };
 		A2ECC4C7701E1D104E5E2FBA5E182DE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A344AEB4CA84BDA557FBD292BBA2C270 /* Pods-Po10UI-Po10UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Po10UI-Po10UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ResourceType.swift"; sourceTree = "<group>"; };
-		A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticGenerator-dummy.m"; sourceTree = "<group>"; };
-		A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+		A51B55F7893652A2AA906FD27EA5DE39 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		A6EF805771ED1A88E05A246F9A283EDD /* JSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDecodableResourceType.swift"; sourceTree = "<group>"; };
+		A8140B137E875321FE8CE3FFB6141680 /* HapticGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-prefix.pch"; sourceTree = "<group>"; };
+		AA3D32FC514E59C2F61BE0487DDFC088 /* HapticGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.xcconfig; sourceTree = "<group>"; };
 		AA9FA9F5117AD9264515CDE0DBBEBA0C /* Pods-FoundationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoundationExtension.release.xcconfig"; sourceTree = "<group>"; };
 		AADAE63A5BA456F7DA3E6E27F991BC3F /* Pods-Po10Model-Po10ModelTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10Model-Po10ModelTests-frameworks.sh"; sourceTree = "<group>"; };
-		AC9C8273C9FEDEBF926B3F8A93EEC7F4 /* Pods_Po10UI_Po10UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Po10UI_Po10UITests.framework; path = "Pods-Po10UI-Po10UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD48A61670B97F04AAAB82FE1F47BACF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B275FB494AFB8EEF78740C4E37B954E2 /* Pods_FoundationExtension_FoundationExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoundationExtension_FoundationExtensionTests.framework; path = "Pods-FoundationExtension-FoundationExtensionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9C8273C9FEDEBF926B3F8A93EEC7F4 /* Pods_Po10UI_Po10UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Po10UI_Po10UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B275FB494AFB8EEF78740C4E37B954E2 /* Pods_FoundationExtension_FoundationExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundationExtension_FoundationExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33313D57F4D846E6F387AE06D5B73A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B539B49EB39D18F278B7D18D9FA68836 /* Pods-MyPowerOf10-MyPowerOf10Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPowerOf10-MyPowerOf10Tests-umbrella.h"; sourceTree = "<group>"; };
-		B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSThread+Additions.swift"; path = "Sources/TABResourceLoader/Extensions/NSThread+Additions.swift"; sourceTree = "<group>"; };
 		B6FCB56F588418C923AFAE4918A6B67A /* Pods-Po10UI-Po10UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10UI-Po10UITests.release.xcconfig"; sourceTree = "<group>"; };
-		B9124CB8B79F79D581195546FA18CCF1 /* Pods_FoundationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoundationExtension.framework; path = "Pods-FoundationExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84CB2391D0D1E5829E278E1553E129A /* NetworkPropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkPropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkPropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		B9124CB8B79F79D581195546FA18CCF1 /* Pods_FoundationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2DEC1B22C15DF3B79F3D1B003C3C53 /* NetworkResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkResourceType.swift"; sourceTree = "<group>"; };
 		BB69BE14F156B14566DD58B425529334 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBA25C7542E7333E3C92D824983C7D9B /* HapticGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-prefix.pch"; sourceTree = "<group>"; };
-		BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericNetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/GenericNetworkDataResourceService.swift; sourceTree = "<group>"; };
+		BC1479DE76F668A4AA8CC2D4CCC1313B /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponseHandler.swift; path = Sources/TABResourceLoader/Services/NetworkResponseHandler.swift; sourceTree = "<group>"; };
 		BE2FE1B194C28C07C3818ECC0EB5C779 /* Pods-FoundationExtension-FoundationExtensionTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoundationExtension-FoundationExtensionTests-resources.sh"; sourceTree = "<group>"; };
-		BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionType.swift; path = Sources/TABResourceLoader/Services/URLSessionType.swift; sourceTree = "<group>"; };
+		BFC2C132805D797BD60C3FE79A45015A /* NetworkJSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONArrayResourceType.swift"; sourceTree = "<group>"; };
 		C1D8D6D9C856617B07653EE0FE6F4DE5 /* Pods-Po10UI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Po10UI-acknowledgements.plist"; sourceTree = "<group>"; };
 		C2FB04A85A618D1BB4E2497EFD78A315 /* Pods-FoundationExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoundationExtension-umbrella.h"; sourceTree = "<group>"; };
-		C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/DataResourceType.swift"; sourceTree = "<group>"; };
-		C80E36BD1829DC5C2DBC6B56A2C6F481 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDecodableResourceType.swift"; sourceTree = "<group>"; };
+		C32F6349B64C88A6A0B56D32C8A98226 /* GenericNetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericNetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/GenericNetworkDataResourceService.swift; sourceTree = "<group>"; };
+		C4FFBB93BF2779A303A4E7452A1C4023 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Kanna/Deprecated.swift; sourceTree = "<group>"; };
+		CABE238845498E2BF4B4DE8A4E2C2B6A /* URLSessionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionType.swift; path = Sources/TABResourceLoader/Services/URLSessionType.swift; sourceTree = "<group>"; };
+		CB6B046A631D2B38828ED57257094ABD /* NetworkServiceActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkServiceActivity.swift; path = Sources/TABResourceLoader/Services/NetworkServiceActivity.swift; sourceTree = "<group>"; };
 		CF512EA5E2C71AD0EC89AEDE5F71F336 /* Pods-MyPowerOf10-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPowerOf10-acknowledgements.plist"; sourceTree = "<group>"; };
-		D01E0AA27DAACA73F578F066350C7058 /* Pods-FoundationExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FoundationExtension.modulemap"; sourceTree = "<group>"; };
+		D01E0AA27DAACA73F578F066350C7058 /* Pods-FoundationExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FoundationExtension.modulemap"; sourceTree = "<group>"; };
 		D23A1F813A4FE8AC00A6DC7A98C5E742 /* Pods-Po10UI-Po10UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10UI-Po10UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D39B49F5F930CB81F4A408C011621851 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+		D407CA8A7A94CEB451E760177AB3010C /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
 		D4182BE4CA83440CFEF5790FB537140B /* Pods-MyPowerOf10-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPowerOf10-dummy.m"; sourceTree = "<group>"; };
-		D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
+		D5122E45FB014159164163AF82DC3A48 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
 		D5E182195F72CB066C1EEA923916D33F /* Pods-Po10Model-Po10ModelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Po10Model-Po10ModelTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
-		D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponseHandler.swift; path = Sources/TABResourceLoader/Services/NetworkResponseHandler.swift; sourceTree = "<group>"; };
+		D7C099DD370C3007BC7AA10183AAAC58 /* PropertyListDecodableResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListDecodableResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/PropertyListDecodableResourceType.swift"; sourceTree = "<group>"; };
+		D9842AA5DFF601AD2C93522A05444880 /* NetworkDataResourceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkDataResourceService.swift; path = Sources/TABResourceLoader/Services/NetworkDataResourceService.swift; sourceTree = "<group>"; };
+		DAB69E056FF3D00FE6263C95B3972908 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
 		DB39EAC4581B802C5049C5FB676BBA2E /* Pods-MyPowerOf10-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPowerOf10-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DC328A2DA24DCBB436809A2D68449175 /* Pods-Po10Model.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Po10Model.debug.xcconfig"; sourceTree = "<group>"; };
-		DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
-		DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
-		DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkResourceType.swift"; sourceTree = "<group>"; };
 		E07300CB3BD813AB4D41123E48C1DFAE /* Pods-Po10Model-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Po10Model-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E15FE7C65691C4A1C4EA8EC7DA390BEB /* JSONArrayResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONArrayResourceType.swift"; sourceTree = "<group>"; };
+		E42F05958AFECFF1541416F68E75AE47 /* TABResourceLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-prefix.pch"; sourceTree = "<group>"; };
 		E4B5AA785BD17A5D5F423E07C86839CB /* Pods-MyPowerOf10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10.release.xcconfig"; sourceTree = "<group>"; };
-		E6E076528EFB4B443821E9153AC0E617 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9F258FE944F3716A8AB6DF991D0AB1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DDD9A0FE21CCD28969C9872B668D1D /* NetworkJSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkJSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/NetworkJSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
+		E6E076528EFB4B443821E9153AC0E617 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E704F2E455C28EE5343EA58C89218912 /* JSONDictionaryResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/JSONDictionaryResourceType.swift"; sourceTree = "<group>"; };
 		EC3E1061BD6478877D02D64206176254 /* Pods-Po10Model-Po10ModelTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Po10Model-Po10ModelTests-resources.sh"; sourceTree = "<group>"; };
+		EC89CF1F0205F57F58069F8A7399A587 /* NSThread+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSThread+Additions.swift"; path = "Sources/TABResourceLoader/Extensions/NSThread+Additions.swift"; sourceTree = "<group>"; };
 		ED1A90E6986FD8A2D596B5C6F2AEE3EF /* Pods-FoundationExtension-FoundationExtensionTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoundationExtension-FoundationExtensionTests-umbrella.h"; sourceTree = "<group>"; };
-		F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.xcconfig; sourceTree = "<group>"; };
-		F3DEA720B102E7BB497CB3884004D479 /* TABResourceLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABResourceLoader-prefix.pch"; sourceTree = "<group>"; };
+		F166629AE77932276CC91E59347BB673 /* HapticGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HapticGenerator.modulemap; sourceTree = "<group>"; };
 		F427AE0CD1C6FD2E67FC5FC6555D2CA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4430A8C476B1199A1C03CFD045F001C /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyPowerOf10.framework; path = "Pods-MyPowerOf10.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4B0BCF74E41C53EBD45D13120A30C90 /* Pods-Po10UI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Po10UI.modulemap"; sourceTree = "<group>"; };
-		F7CF2F235F7AEB0B56AB6116FED74B35 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		F4430A8C476B1199A1C03CFD045F001C /* Pods_MyPowerOf10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPowerOf10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B0BCF74E41C53EBD45D13120A30C90 /* Pods-Po10UI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Po10UI.modulemap"; sourceTree = "<group>"; };
+		F4E7B399E1164F9A021E9D3574C81CEF /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		F8F09B781FBD45DE34296F13AC892A88 /* Pods-FoundationExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoundationExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9514939C02168E89F7D4073F71F1B33 /* Pods-MyPowerOf10-MyPowerOf10Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPowerOf10-MyPowerOf10Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC8DBDD7E5D0C490563AC4436FD79E53 /* Pods_Po10UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Po10UI.framework; path = "Pods-Po10UI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAsynchronousOperation.swift; path = Sources/TABResourceLoader/Operations/BaseAsynchronousOperation.swift; sourceTree = "<group>"; };
+		FC8874FD34E96CDBF34B5292F23ACF8D /* ImageResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResourceType.swift; path = "Sources/TABResourceLoader/Protocols/Resource types/ImageResourceType.swift"; sourceTree = "<group>"; };
+		FC8DBDD7E5D0C490563AC4436FD79E53 /* Pods_Po10UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Po10UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A22E6F60E29070B51192251E223A083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A591A657500E4870B465A9A162A9C09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F3465F5377844A76449582BFD840729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,14 +455,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B26FEF1A0E7E734EE57A74A7D845B0F9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6ADDB372030582054CAE4F5CF6431613 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C16463B3B25CBDECF25090389E8898E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,20 +482,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DA99192EF1984E35D21651268EB1C9D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E7922CC7EB3930DBE81F9C8D1DFB6CF /* HapticGenerator.modulemap */,
-				F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */,
-				A4BD4C7C21B080629ED050EF37053B45 /* HapticGenerator-dummy.m */,
-				BBA25C7542E7333E3C92D824983C7D9B /* HapticGenerator-prefix.pch */,
-				7652C73F71E75B3DFA45DB2D2328567D /* HapticGenerator-umbrella.h */,
-				E9F258FE944F3716A8AB6DF991D0AB1D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HapticGenerator";
-			sourceTree = "<group>";
-		};
 		0E9F5DD1BE4B42F1F40CD5844F07680A /* Pods-MyPowerOf10-MyPowerOf10Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +498,20 @@
 			);
 			name = "Pods-MyPowerOf10-MyPowerOf10Tests";
 			path = "Target Support Files/Pods-MyPowerOf10-MyPowerOf10Tests";
+			sourceTree = "<group>";
+		};
+		1E11134585A80DA985ABD57BDF25A8DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F166629AE77932276CC91E59347BB673 /* HapticGenerator.modulemap */,
+				AA3D32FC514E59C2F61BE0487DDFC088 /* HapticGenerator.xcconfig */,
+				82CBA3D3CCAE7636172D159E46095A74 /* HapticGenerator-dummy.m */,
+				A8140B137E875321FE8CE3FFB6141680 /* HapticGenerator-prefix.pch */,
+				3C4B26F38C8A5C7447AA720B64B05B38 /* HapticGenerator-umbrella.h */,
+				872DCBBABB8E1C519F03E498B3D18458 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HapticGenerator";
 			sourceTree = "<group>";
 		};
 		1FEF7F5455354F365EF8C4E2FC55EAEA /* Pods-Po10Model-Po10ModelTests */ = {
@@ -565,16 +567,6 @@
 			path = "Target Support Files/Pods-FoundationExtension";
 			sourceTree = "<group>";
 		};
-		4AA8843555CF193669BE36879BAB392E /* HapticGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				D46FCDF988F2893888A23737F2E2AE31 /* HapticGenerator.swift */,
-				0DA99192EF1984E35D21651268EB1C9D /* Support Files */,
-			);
-			name = HapticGenerator;
-			path = HapticGenerator;
-			sourceTree = "<group>";
-		};
 		4D656DC51787A8565670E5D73BDE59C5 /* Pods-Po10UI-Po10UITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,73 +602,29 @@
 			path = "Target Support Files/Pods-Po10UI";
 			sourceTree = "<group>";
 		};
-		78510A005AAD11A3E7779EFD9E8AD3C9 /* TABResourceLoader */ = {
-			isa = PBXGroup;
-			children = (
-				FE448232D646FB4CE7CB196202985296 /* BaseAsynchronousOperation.swift */,
-				C3DB01381C568E733F96243B7AC5EC0A /* DataResourceType.swift */,
-				BC50D12B80FCEA77321D78F1F43F406F /* GenericNetworkDataResourceService.swift */,
-				A0B948C1EB15B885E50801678BB79C53 /* GlobalFunctions.swift */,
-				69A379CCA4EAD03806D8876B975AF18F /* ImageResourceType.swift */,
-				5AD5870FF25F7F5F8B7A6EAF058085FC /* JSONArrayResourceType.swift */,
-				6AA4016C9DF0E374495BF016F68738F6 /* JSONDecodableResourceType.swift */,
-				1EB9E63B08D236ED5FEFA184FA4C49AA /* JSONDictionaryResourceType.swift */,
-				32E3142B46B5F3886D32817EE2E92C1C /* JSONParsingError.swift */,
-				2BAB4C3D9CC9C40F2DAE590599F461F6 /* NetworkDataResourceService.swift */,
-				1E4ACF65A881C8455A067A13EAF3A8BA /* NetworkImageResource.swift */,
-				A09C7B95EC98D90E5451F519DD3D1B7A /* NetworkJSONArrayResourceType.swift */,
-				C9A6182557FF741474549E78A2A3F55F /* NetworkJSONDecodableResourceType.swift */,
-				DC3E86A0FFDF946696F3A64FD914A2B9 /* NetworkJSONDictionaryResourceType.swift */,
-				7267F74C10F7DAC161E4DE1FA42B73E2 /* NetworkPropertyListDecodableResourceType.swift */,
-				DCC6CA78EE51B75367FDDA04A3BBF878 /* NetworkResourceType.swift */,
-				D9ED2F6AD15208572455268BC12DE2BE /* NetworkResponseHandler.swift */,
-				60B5C7A58C169442FCB4092D07F6461E /* NetworkServiceActivity.swift */,
-				B669EF207CA8AA03BEB31C768D553F59 /* NSThread+Additions.swift */,
-				06E0E2CD6B3D4C2F8C7F71B305FA7579 /* PropertyListDecodableResourceType.swift */,
-				13000C2F5F045390FE9D6F9A358552C7 /* ResourceOperation.swift */,
-				76B2CBDD9F5B8A5D630390FDF20D89CD /* ResourceServiceType.swift */,
-				A399CCB4952ED7784CE3A52536236903 /* ResourceType.swift */,
-				3741311A04ED61E0A805B48754CFAB6A /* Result.swift */,
-				BEAF30CBF5E8807991FD8B1976E7FC5D /* URLSessionType.swift */,
-				BBEB6BA6232EC20658F87A251C83D8ED /* Support Files */,
-			);
-			name = TABResourceLoader;
-			path = TABResourceLoader;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				89B756C7447209095CC72D46C0577C3D /* Pods */,
+				FED70D6136F09ED0A736F148EBE7FA9C /* Pods */,
 				F1A6B4BED390D15B2DB3E1A209749D53 /* Products */,
 				DBA5BD35B973BF175DD0B769B0EFA06C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		89B756C7447209095CC72D46C0577C3D /* Pods */ = {
+		B12A5787DEC4B26A81637C7066A5209B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AA8843555CF193669BE36879BAB392E /* HapticGenerator */,
-				EA076E3D8DB3548F84291018435BC9C5 /* Kanna */,
-				78510A005AAD11A3E7779EFD9E8AD3C9 /* TABResourceLoader */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9079215FA5DB5B956E3BDB30922356A1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C80E36BD1829DC5C2DBC6B56A2C6F481 /* Info.plist */,
-				9159F54079B588FB11D845D4778E4C9F /* Kanna.modulemap */,
-				7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */,
-				0F0D17C041EF0C64CD5618E334C71362 /* Kanna-dummy.m */,
-				F7CF2F235F7AEB0B56AB6116FED74B35 /* Kanna-prefix.pch */,
-				6CEB7FA0BB8364FBD55203914C920E78 /* Kanna-umbrella.h */,
+				88153CA0D9446949B0F614193DE50455 /* Info.plist */,
+				76A457512F9121CBBE3B143CECA04F54 /* TABResourceLoader.modulemap */,
+				8FE0F69F8EA2FC31EAE348C711CF90EA /* TABResourceLoader.xcconfig */,
+				4BB52EEC6B6CED08C016F4E6D9E89862 /* TABResourceLoader-dummy.m */,
+				E42F05958AFECFF1541416F68E75AE47 /* TABResourceLoader-prefix.pch */,
+				9C0FF067612A1F917F54E2730173E5CD /* TABResourceLoader-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Kanna";
+			path = "../Target Support Files/TABResourceLoader";
 			sourceTree = "<group>";
 		};
 		B21D5D2A0299DABF9D0DD0D3B7833FD1 /* Pods-Po10Model */ = {
@@ -696,26 +644,21 @@
 			path = "Target Support Files/Pods-Po10Model";
 			sourceTree = "<group>";
 		};
-		BBEB6BA6232EC20658F87A251C83D8ED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD48A61670B97F04AAAB82FE1F47BACF /* Info.plist */,
-				07A56BB3C6462666AB12D13737F1D906 /* TABResourceLoader.modulemap */,
-				5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */,
-				72DA8C807801026C0E5FAF398AF6679E /* TABResourceLoader-dummy.m */,
-				F3DEA720B102E7BB497CB3884004D479 /* TABResourceLoader-prefix.pch */,
-				57E71D78C58FDB0784E1315BA66F8801 /* TABResourceLoader-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TABResourceLoader";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB66840A5724750EB24403F38E323986 /* HapticGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				F4E7B399E1164F9A021E9D3574C81CEF /* HapticGenerator.swift */,
+				1E11134585A80DA985ABD57BDF25A8DD /* Support Files */,
+			);
+			path = HapticGenerator;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -741,19 +684,51 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EA076E3D8DB3548F84291018435BC9C5 /* Kanna */ = {
+		F17C67803776920309F96DAB15F49C71 /* TABResourceLoader */ = {
 			isa = PBXGroup;
 			children = (
-				684ED80A1FCF6762B2AC04B5443B089C /* CSS.swift */,
-				A7DBA76109AEC73ADF2638497B1D86FA /* Kanna.h */,
-				DC9709C9FA9500B8EF37BCF10DD209C5 /* Kanna.swift */,
-				D6A73A69CC726C5C1728B02C80681F33 /* libxmlHTMLDocument.swift */,
-				498B4733519C3DB874A9E750241A5088 /* libxmlHTMLNode.swift */,
-				424CB5C5DEE166960BAE624CFF98E12F /* libxmlParserOption.swift */,
-				9079215FA5DB5B956E3BDB30922356A1 /* Support Files */,
+				2409A603BEFB78CF4A742FB99255BEA7 /* BaseAsynchronousOperation.swift */,
+				5A54D643F0396363B41C50ED2FAA389E /* DataResourceType.swift */,
+				C32F6349B64C88A6A0B56D32C8A98226 /* GenericNetworkDataResourceService.swift */,
+				6E64018D8C0473CAD986951C8AE98EF2 /* GlobalFunctions.swift */,
+				FC8874FD34E96CDBF34B5292F23ACF8D /* ImageResourceType.swift */,
+				E15FE7C65691C4A1C4EA8EC7DA390BEB /* JSONArrayResourceType.swift */,
+				A6EF805771ED1A88E05A246F9A283EDD /* JSONDecodableResourceType.swift */,
+				E704F2E455C28EE5343EA58C89218912 /* JSONDictionaryResourceType.swift */,
+				2812E5201324FD5625C66582E80BA3E4 /* JSONParsingError.swift */,
+				D9842AA5DFF601AD2C93522A05444880 /* NetworkDataResourceService.swift */,
+				65491124B07A88B258857291DB17A543 /* NetworkImageResource.swift */,
+				BFC2C132805D797BD60C3FE79A45015A /* NetworkJSONArrayResourceType.swift */,
+				8915706A4A30695D611643E186176635 /* NetworkJSONDecodableResourceType.swift */,
+				E6DDD9A0FE21CCD28969C9872B668D1D /* NetworkJSONDictionaryResourceType.swift */,
+				B84CB2391D0D1E5829E278E1553E129A /* NetworkPropertyListDecodableResourceType.swift */,
+				BB2DEC1B22C15DF3B79F3D1B003C3C53 /* NetworkResourceType.swift */,
+				BC1479DE76F668A4AA8CC2D4CCC1313B /* NetworkResponseHandler.swift */,
+				CB6B046A631D2B38828ED57257094ABD /* NetworkServiceActivity.swift */,
+				EC89CF1F0205F57F58069F8A7399A587 /* NSThread+Additions.swift */,
+				D7C099DD370C3007BC7AA10183AAAC58 /* PropertyListDecodableResourceType.swift */,
+				156AD6EAC472B07426F9D4ED74491B69 /* ResourceOperation.swift */,
+				7DD0E4B7630A79A38ACBCB34B0A8043E /* ResourceServiceType.swift */,
+				99A126F9ADD9E086062314B4967525C1 /* ResourceType.swift */,
+				997453FA84DF25B8271C209C90F3BB07 /* Result.swift */,
+				CABE238845498E2BF4B4DE8A4E2C2B6A /* URLSessionType.swift */,
+				B12A5787DEC4B26A81637C7066A5209B /* Support Files */,
 			);
-			name = Kanna;
-			path = Kanna;
+			path = TABResourceLoader;
+			sourceTree = "<group>";
+		};
+		F19C81F0BF2FEA862440C918A6A74413 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B33313D57F4D846E6F387AE06D5B73A7 /* Info.plist */,
+				1AAECECDC284E3D2B014D2BA9F0FF39A /* Kanna.modulemap */,
+				862A7C924A7C82DF36539A85F8E5D7B0 /* Kanna.xcconfig */,
+				16BBF87E13578302353C7807DC4BF9F0 /* Kanna-dummy.m */,
+				1DFAB3D808A54CA0477967CA701D3A22 /* Kanna-prefix.pch */,
+				A51B55F7893652A2AA906FD27EA5DE39 /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
 			sourceTree = "<group>";
 		};
 		F1A6B4BED390D15B2DB3E1A209749D53 /* Products */ = {
@@ -792,9 +767,43 @@
 			path = "Target Support Files/Pods-FoundationExtension-FoundationExtensionTests";
 			sourceTree = "<group>";
 		};
+		F6A691C74B73EF6CCF2FFB09E15B6CCA /* Kanna */ = {
+			isa = PBXGroup;
+			children = (
+				1E7701734D12D76A4757C718592B2CDD /* CSS.swift */,
+				C4FFBB93BF2779A303A4E7452A1C4023 /* Deprecated.swift */,
+				D39B49F5F930CB81F4A408C011621851 /* Kanna.h */,
+				D407CA8A7A94CEB451E760177AB3010C /* Kanna.swift */,
+				DAB69E056FF3D00FE6263C95B3972908 /* libxmlHTMLDocument.swift */,
+				D5122E45FB014159164163AF82DC3A48 /* libxmlHTMLNode.swift */,
+				5AB7EBEC163F20CF10BCFE80A7F3AB81 /* libxmlParserOption.swift */,
+				F19C81F0BF2FEA862440C918A6A74413 /* Support Files */,
+			);
+			path = Kanna;
+			sourceTree = "<group>";
+		};
+		FED70D6136F09ED0A736F148EBE7FA9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB66840A5724750EB24403F38E323986 /* HapticGenerator */,
+				F6A691C74B73EF6CCF2FFB09E15B6CCA /* Kanna */,
+				F17C67803776920309F96DAB15F49C71 /* TABResourceLoader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		03746546494E3152D2020D516EEB9EF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958603139AA7BC0E80A2A604523087D3 /* Kanna-umbrella.h in Headers */,
+				5068CB30342CE1B889BC8919C369FDFC /* Kanna.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0436421E17283D57EBDC3ADFD012AE8E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,15 +857,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DAB5CD05E97CF2E89D3EDCDCAE47AF /* Pods-Po10UI-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3CA17BFDDB0A81444254ACD04D49309 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */,
-				436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,13 +944,13 @@
 			productReference = 134F479FC3475DA957A77CDB3C85FE43 /* TABResourceLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */ = {
+		25622BDCA24151D7C101C916DCD4C64D /* Kanna */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 032FE6A4FF03E43B2C60899A35389C7F /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildConfigurationList = 7AB44AF8BAEE9AAA4A1F43C81EA08FFD /* Build configuration list for PBXNativeTarget "Kanna" */;
 			buildPhases = (
-				6CD9E554199D2CA18C53DB65C91A55CC /* Sources */,
-				B26FEF1A0E7E734EE57A74A7D845B0F9 /* Frameworks */,
-				A3CA17BFDDB0A81444254ACD04D49309 /* Headers */,
+				BAC24B47BF914E45EF1EF5BC3995CB07 /* Sources */,
+				0A22E6F60E29070B51192251E223A083 /* Frameworks */,
+				03746546494E3152D2020D516EEB9EF2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1105,7 +1105,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1120,7 +1120,7 @@
 			projectRoot = "";
 			targets = (
 				ADEF9D39441057203023056F7B95656D /* HapticGenerator */,
-				4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */,
+				25622BDCA24151D7C101C916DCD4C64D /* Kanna */,
 				23FFF249C7DA7CDB274D058AF790C72A /* Pods-FoundationExtension */,
 				AA5E92537468B40AD58829EB2C3B01EF /* Pods-FoundationExtension-FoundationExtensionTests */,
 				1045282FFFD4B5D8814E4E9B0CD19ADD /* Pods-MyPowerOf10 */,
@@ -1200,19 +1200,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CD9E554199D2CA18C53DB65C91A55CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF395A5C5BFAB49A97B938205B4164E3 /* CSS.swift in Sources */,
-				CDF35C2D5676931C40BDEF5D18F7D3BD /* Kanna-dummy.m in Sources */,
-				2384647FC99B791402599858126BA0D4 /* Kanna.swift in Sources */,
-				2A53BBBB44BE893076ADA379E5AEFF2F /* libxmlHTMLDocument.swift in Sources */,
-				58429CA22FCEC0B155C4006C1AD0F341 /* libxmlHTMLNode.swift in Sources */,
-				C861034BF5C43201D36FE676D6F4BE78 /* libxmlParserOption.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6E859614311D373EED679C1837BBF52C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1227,6 +1214,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1054D39C9CA1E807CBD9C0779A22D017 /* Pods-Po10UI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC24B47BF914E45EF1EF5BC3995CB07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF1AE9F6EEA47ADF8623BA190C8AE1 /* CSS.swift in Sources */,
+				557210A78351721F263437679F0C614F /* Deprecated.swift in Sources */,
+				6DEB55F54A9EFF6FCA75B573CFF08767 /* Kanna-dummy.m in Sources */,
+				92DE529FC0E2AB7A0B4F557D8F288B00 /* Kanna.swift in Sources */,
+				B2094FB53CFCD431CDF5AB0C7FE7FC39 /* libxmlHTMLDocument.swift in Sources */,
+				A2D2AB69B8832FF9BE1A309EC2F4A28B /* libxmlHTMLNode.swift in Sources */,
+				FE06B406B810A447C318972C9F9B62C2 /* libxmlParserOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1272,19 +1273,19 @@
 		3311738BC5AFB65DB324143071059E50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = 6E4CB76B925CB51BB6412AF66059BCF2 /* PBXContainerItemProxy */;
 		};
 		4B177CF3DA3802B1841D999154343AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = A23A33F0BF68787ACC1314A11C321F9A /* PBXContainerItemProxy */;
 		};
 		559836AF980ED5EE55F16C186F7985B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = 0775AF310729A20ADC1CAA457844E2C4 /* PBXContainerItemProxy */;
 		};
 		56565091BD5992DD85F150D98A8A2645 /* PBXTargetDependency */ = {
@@ -1320,7 +1321,7 @@
 		753AF9216AD73104538CCC981C88B343 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = A3E77A11F7C3E707E2ECC642C885B8C5 /* PBXContainerItemProxy */;
 		};
 		7E32817AB7D4E327ED0B97B4E7D6A686 /* PBXTargetDependency */ = {
@@ -1338,7 +1339,7 @@
 		9131D0339A6A0BD4A9BDEDBA1072F65E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = 4DECFFAF56863112D74EC7CC3E67E473 /* PBXContainerItemProxy */;
 		};
 		95CEC09897B36EC7B3F1E40C69FF379A /* PBXTargetDependency */ = {
@@ -1362,13 +1363,13 @@
 		B2B856A1C6F005466AE79067A15EABBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = 08F97BF4037BFF0C8D0D9D7AA0674CE2 /* PBXContainerItemProxy */;
 		};
 		C87A0777D691DD57D962957DA734D275 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = FD3A0615426FF5467E5A1A14AB8D1D93 /* PBXContainerItemProxy */;
 		};
 		CBA1936B96D9CE3101A8F0984C439480 /* PBXTargetDependency */ = {
@@ -1380,7 +1381,7 @@
 		DBB41B1BB6AD54BDD8A36228A8ACE711 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
 			targetProxy = D643DBC9111DD49C0CFE91CF9DCAE8FB /* PBXContainerItemProxy */;
 		};
 		E41BEAEAC34924A75AC9011E117D88FF /* PBXTargetDependency */ = {
@@ -1406,7 +1407,7 @@
 /* Begin XCBuildConfiguration section */
 		08AD8BD38BBB04A41B6FDC6BD3AB158A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */;
+			baseConfigurationReference = 8FE0F69F8EA2FC31EAE348C711CF90EA /* TABResourceLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1436,38 +1437,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		0FC474435DC47E9D7786419F05CADEFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				PRODUCT_NAME = Kanna;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		15B1BFD23F4C9C86D0550F9B849575CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1613,6 +1582,39 @@
 			};
 			name = Release;
 		};
+		38D1C435E733760E0E4C890BF5798DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862A7C924A7C82DF36539A85F8E5D7B0 /* Kanna.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				PRODUCT_NAME = Kanna;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		405479199B7C95CA9E44676AC3843FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6FCB56F588418C923AFAE4918A6B67A /* Pods-Po10UI-Po10UITests.release.xcconfig */;
@@ -1735,6 +1737,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1742,6 +1745,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1831,6 +1835,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1838,6 +1843,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2018,7 +2024,7 @@
 		};
 		B39713D896860B5059F9D4CF60FADD66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D2ABF49A7E2E5C51AC8FFFC4911811A /* TABResourceLoader.xcconfig */;
+			baseConfigurationReference = 8FE0F69F8EA2FC31EAE348C711CF90EA /* TABResourceLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2048,9 +2054,9 @@
 			};
 			name = Debug;
 		};
-		B95B708773288EADDC6D7DFCAE425B08 /* Release */ = {
+		CEC62F01F79177F6FF23BE0A907FD0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7754FB5BAD963090472A8803C73D5E30 /* Kanna.xcconfig */;
+			baseConfigurationReference = 862A7C924A7C82DF36539A85F8E5D7B0 /* Kanna.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2072,18 +2078,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D86BB096CF91DDD75CA30FD544F6142E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */;
+			baseConfigurationReference = AA3D32FC514E59C2F61BE0487DDFC088 /* HapticGenerator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2188,7 +2193,7 @@
 		};
 		F42C00BB5ED5B1CEB3E4B8661E42CCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A166F28A1F670924942D7821055B0D /* HapticGenerator.xcconfig */;
+			baseConfigurationReference = AA3D32FC514E59C2F61BE0487DDFC088 /* HapticGenerator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2293,15 +2298,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		032FE6A4FF03E43B2C60899A35389C7F /* Build configuration list for PBXNativeTarget "Kanna" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FC474435DC47E9D7786419F05CADEFC /* Debug */,
-				B95B708773288EADDC6D7DFCAE425B08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1AD9B26C0F0CAF6FA7ACF77CC9E58A27 /* Build configuration list for PBXNativeTarget "Pods-FoundationExtension-FoundationExtensionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2343,6 +2339,15 @@
 			buildConfigurations = (
 				AC7B791E3D4A6AB8963FB581609C78EA /* Debug */,
 				45A181AA515E4F0B2769946B5D53FED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB44AF8BAEE9AAA4A1F43C81EA08FFD /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC62F01F79177F6FF23BE0A907FD0AE /* Debug */,
+				38D1C435E733760E0E4C890BF5798DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
