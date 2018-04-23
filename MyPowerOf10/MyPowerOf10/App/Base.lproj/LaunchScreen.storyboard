@@ -22,8 +22,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBottom" translatesAutoresizingMaskIntoConstraints="NO" id="RYW-uo-CbQ">
+                                <rect key="frame" x="-3" y="406" width="347" height="264"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchTop" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-ef-Gdf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                                <rect key="frame" x="-3" y="-3" width="381" height="251"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ten" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-NQ-cYD">
                                 <rect key="frame" x="43" y="218" width="316" height="250"/>
@@ -32,14 +35,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zh4-NQ-cYD" secondAttribute="trailing" constant="16" id="0pe-hh-1Tu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pj0-ef-Gdf" secondAttribute="trailing" id="5B1-fa-fjy"/>
+                            <constraint firstAttribute="trailing" secondItem="Pj0-ef-Gdf" secondAttribute="trailing" constant="-3" id="5B1-fa-fjy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G8n-mt-DHc" secondAttribute="trailing" id="KxY-QB-wlK"/>
                             <constraint firstItem="Zh4-NQ-cYD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZXh-aR-IZN"/>
                             <constraint firstItem="G8n-mt-DHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="euC-0h-lLs"/>
-                            <constraint firstItem="Pj0-ef-Gdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g0y-5U-lfs"/>
-                            <constraint firstItem="Pj0-ef-Gdf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ifz-ii-HUA"/>
+                            <constraint firstItem="Pj0-ef-Gdf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-3" id="g0y-5U-lfs"/>
+                            <constraint firstAttribute="bottom" secondItem="RYW-uo-CbQ" secondAttribute="bottom" constant="-3" id="gA6-Oy-atI"/>
+                            <constraint firstItem="Pj0-ef-Gdf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-3" id="ifz-ii-HUA"/>
                             <constraint firstAttribute="bottom" secondItem="G8n-mt-DHc" secondAttribute="bottom" id="kkH-od-lBf"/>
                             <constraint firstItem="G8n-mt-DHc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vN2-kH-Qyy"/>
+                            <constraint firstItem="RYW-uo-CbQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-3" id="yNK-4S-tKW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launchBottom" width="347" height="264"/>
         <image name="launchTop" width="375" height="251"/>
         <image name="ten" width="316" height="250"/>
     </resources>
